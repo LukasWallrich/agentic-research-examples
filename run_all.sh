@@ -13,5 +13,6 @@ Rscript R/03c_prereg_tables.R         # prediction tables used in the preregistr
 Rscript R/04_confirmatory.R           # preregistered confirmatory analyses
 Rscript R/05_exploratory.R            # exploratory analyses (labelled as such)
 Rscript R/05b_sensitivity.R           # post-hoc sensitivity analyses
+Rscript R/05c_within_cells_table.R    # descriptive table of within-item cells
 Rscript R/06_figures.R                # figures
 quarto render manuscript/manuscript.qmd   # manuscript (docx and html)

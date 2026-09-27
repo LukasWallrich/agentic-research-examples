@@ -57,7 +57,9 @@ m <- fits$h1$pooled$model
 curve <- W[, .(x = seq(quantile(x, .025), quantile(x, .975), length.out = 100)), by = .(cell)]
 curve[, `:=`(xx = x * abs(x), pid = NA_character_)]
 curve[, y := predict(m, newdata = curve, re.form = ~ (1 + x + xx || cell))]
-W[, study_label := sprintf("%s (%s anchors)", reference_short, fifelse(anchortype == 1, "random", "fixed"))]
+cite_label <- c("Bahník, 2021a" = "Bahník (2021)", "Frech et al., 2021" = "Frech et al. (2021)",
+                "Yoon et al., 2021, Form C" = "Yoon et al. (2021)", "Imhoff & Barker, 2022, Study 2" = "Imhoff & Barker (2023)")
+W[, study_label := sprintf("%s, %s anchors", cite_label[reference_short], fifelse(anchortype == 1, "random", "fixed"))]
 labs_cell <- unique(W[, .(cell, study_label)])
 binned <- merge(binned, labs_cell, by = "cell")
 curve <- merge(curve, labs_cell, by = "cell")

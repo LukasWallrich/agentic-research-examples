@@ -19,6 +19,7 @@ The preregistration is `prereg/preregistration.md`, committed and tagged `prereg
 - `R/00_fetch.R` checks the full SHA-256 of the data file instead of its first 16 characters.
 - `R/04_confirmatory.R`: the H2 fallback (Q23) now checks whether clubSandwich is installed before using it, as Q23 specified; the fallback was not triggered. Warnings from robustness fits R2 and R3 are now labelled in the log.
 - `R/design_sets.R`: removed the misspelt task type "quantitity" from the list of ratio-scale task types; all 94 rows with that label have anchortype 5 and were excluded anyway.
+- Two numerical safeguards in the preregistered code are not described in the preregistration text: `cell_indices()` floors each condition's MAD at 0.001 before computing standard errors, and R4 drops cells whose raw-scale index has a standard error of zero. Neither changed the analysed cell set.
 - Effect: after these changes every confirmatory output file except the H3 level columns (D1) is byte-identical to commit 14ec907.
 
 **D4. Relative-curvature CI convention (clarification).**

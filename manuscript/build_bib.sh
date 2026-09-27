@@ -17,4 +17,6 @@ while read -r key doi year; do
   title=$(grep -m1 -i "title *=" <<<"$bib" | sed -E 's/.*title *= *\{(.*)\},?/\1/' | cut -c1-90)
   echo "$key | $doi | $title"
 done < dois.txt
-sed -i '' 's|<b>lmerTest</b>|lmerTest|' refs.bib
+# Clean-ups: Crossref titles can contain HTML tags; one author name is mis-split in Crossref.
+sed -i '' -E 's#</?(b|i|sub|sup)>##g' refs.bib
+sed -i '' 's|M\. Huys, Quentin J\.|Huys, Quentin J. M.|g' refs.bib

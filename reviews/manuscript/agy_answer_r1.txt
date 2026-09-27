@@ -1,0 +1,117 @@
+## Answer
+
+### Peer Review for *Judgment and Decision Making*
+
+**Manuscript Title:** *Extreme anchors lose proportional pull: A preregistered, model-based test of how anchoring scales with anchor extremity in open trial-level data*  
+**Author:** Lukas Wallrich  
+
+---
+
+### Overview
+
+This manuscript addresses an important, long-standing theoretical and empirical question in judgment and decision making: how does an anchor's proportional influence scale with its extremity? The paper makes notable methodological contributions: it formalizes five cognitive process models on a common log-elasticity metric, simulates their predictions across the exact empirical designs of the Open Anchoring Quest (OpAQ) dataset, preregisters the predictions and analytical decision rules before accessing outcome data, and reports analyses with exemplary computational reproducibility.
+
+However, several substantial issues regarding the calibration of conclusions, theoretical framing, selective reporting of exploratory analyses, and missing descriptive information must be addressed. Below is a detailed list of major and minor comments.
+
+---
+
+### Numbered Comments
+
+#### 1. [MAJOR] Overgeneralized conclusions versus narrow empirical base (Dependence on Bahník, 2021)
+* **Location:** Title, Abstract (lines 6–28), Discussion (lines 606–614, 726–738).
+* **Problem:** The manuscript titles itself *"Extreme anchors lose proportional pull"* and presents this as a general empirical property of numeric anchoring. However, 83% of the within-item estimates (6,578 out of 7,949) and 13 of the 20 cells come from a single study: Bahník (2021a). Furthermore, all 13 items in that study are physical lengths, heights, and distances measured in metres (e.g., football field, Cheops pyramid, Eiffel tower, Burj Khalifa), evaluated using uniformly generated random anchors between 1 and 1,000. In robustness check R3, when Bahník (2021a) is excluded, the curvature estimate becomes completely uninformative: $g = -0.045$, 95% CI $[-0.358, 0.268]$, spanning zero widely. Thus, the confirmatory within-item evidence is essentially an observation about a single experimental paradigm using physical dimensions with random anchors. While this limitation is mentioned in the Discussion (lines 683–688), the Title, Abstract, and Conclusion state the finding as an established general rule.
+* **Suggested Fix:** Calibrate the claims throughout the Title, Abstract, and Discussion. The title should be tempered (e.g., *"Do extreme anchors lose proportional pull? Diminishing elasticity for random anchors in physical estimation and an across-study puzzle"*). The Abstract and Introduction must state upfront that the confirmatory within-item evidence is dominated by a single study and domain.
+
+---
+
+#### 2. [MAJOR] Unwarranted extrapolation from random anchors to strategic applied anchoring
+* **Location:** Introduction (lines 46–50), Discussion (lines 662–670, 734–736).
+* **Problem:** In the Introduction, the paper motivates the research by arguing that *"negotiators, litigants and survey designers choose anchor values, and whether an extreme opening offer buys proportionally more influence than a moderate one depends on this relation"* (lines 47–50), and concludes: *"For anyone choosing an anchor, the within-item evidence implies diminishing returns to extremity"* (lines 734–735). This is an unjustified leap. The within-item evidence is 85% explicitly random numbers (and 100% random among the items showing significant within-item curvature). In contrast, in the across-cell analysis of 128 cells—where anchors were deliberate, fixed, or informative—the slope was *positive* ($d = +0.050$, and $d = +0.065$, $p < .05$ without Weber et al.). Strategic opening offers in negotiations or legal claims are intentional communicative acts laden with conversational implicatures (Gricean relevance), not arbitrary lottery spins. Advising practitioners that opening offers suffer diminishing returns based on random anchors for physical heights directly contradicts the paper's own across-cell findings on fixed anchors.
+* **Suggested Fix:** Remove or heavily qualify all practical advice to negotiators and litigants. Explicitly discuss that diminishing returns may be restricted to anchors perceived as arbitrary or uninformative, and highlight that deliberate, communicative anchors might behave very differently (as hinted by the across-cell slope).
+
+---
+
+#### 3. [MAJOR] Theoretical framing of M1 as a strawman and artifactual "survival" of M1R
+* **Location:** Abstract (lines 24–25), Process Models (lines 107–126), Model Adequacy / Table 2 (lines 488–492, 505), Discussion (lines 618–629, 709–713).
+* **Problem:**
+  1. *Strawman status of M1:* Model M1 ("anchor-and-adjust with a fixed number of adjustments") is framed as a leading cognitive account. However, no theorist defends fixed-step adjustment across arbitrary anchor distances. Lieder et al. (2018) specifically introduced resource rationality (M1R) precisely because a fixed number of adjustments is psychologically implausible. Classical anchoring-and-adjustment (Epley & Gilovich, 2001, 2006) posits adjustment to the edge of a plausible range (M3), not a fixed step count. Presenting M1 as a serious competing theory to be "contradicted" sets up a computational strawman.
+  2. *Artifactual survival of M1R:* The Abstract states that *"Only the resource-rational variant... survived the preregistered model checks."* This implies superior descriptive validity, but the survival is purely an artifact of model flexibility. In Table 2, M1R's predicted curvature was $g \in [-0.029, 0.082]$ (median $+0.003$); the observed curvature ($g = -0.041$) actually fell *outside* M1R's 95% predictive interval. M1R "survived" solely because the preregistered survival rule allowed a disjunction (`g_inside | rho_inside`), and M1R's predictive interval for relative curvature $\rho = g/b$ was pathologically diffuse ($[-0.37, 1.39]$) due to simulation replicates where $b \approx 0$. Furthermore, M3 and M4 accurately predicted the observed curvature ($g = -0.041$ was squarely inside both M3's $[-0.071, -0.022]$ and M4's $[-0.110, -0.017]$ intervals), but were eliminated because they failed on the across-cell slope $d$—which the author argues is confounded by item properties!
+* **Suggested Fix:**
+  1. Clarify in the theoretical introduction that M1 is a baseline mechanistic null, not a model advocated in the literature.
+  2. Explicitly clarify in the Abstract, Results, and Discussion that M1R failed to predict the observed curvature $g$, and that its technical survival was purely a function of diffuse predictive intervals under an "OR" rule.
+  3. Note that for the within-item curvature $g$, plausibility-discounting and boundary models (M3 and M4) were empirically accurate.
+
+---
+
+#### 4. [MAJOR] Selective reporting of Exploratory Analysis E4 (Extremity scaled by response spread)
+* **Location:** Results (lines 558–564), Discussion (lines 658–661), Analysis script (`R/05_exploratory.R`, lines 60–67).
+* **Problem:** In the Results section, the manuscript reports: *"When we divided extremity by the spread of log estimates within each anchor condition... the slope turned negative, d = -0.023, [-0.037, -0.010]. This is consistent with original authors having placed anchors further from the truth for quantities that people know less well."* However, inspection of `R/05_exploratory.R` reveals that a multivariable meta-regression was also estimated (`m4b`, adjusting for spread as an independent predictor: `mods = ~ extremity + spread`). In that model, the extremity slope remained *positive*: $d = +0.028$, 95% CI $[-0.050, 0.106]$ (`E4_slope_adjusting_spread` in `output/exploratory/exploratory_results.csv`). Dividing extremity by spread creates a ratio variable ($X / Y$) where the denominator is correlated with the outcome's standard error denominator, introducing well-known spurious ratio artifacts (Kronmal, 1993). Reporting only the ratio specification while omitting the simultaneous regression presents a selectively tidy narrative that the across-cell discrepancy is resolved.
+* **Suggested Fix:** Transparently report both exploratory specifications in the Results text: the ratio model ($d = -0.023$) and the multivariable model ($d = +0.028$). Discuss that when controlling for spread without forming a ratio, the extremity slope remains positive, and urge appropriate caution regarding ratio artifacts.
+
+---
+
+#### 5. [MAJOR] Missing descriptive table of the 20 within-item cells
+* **Location:** Method (lines 251–265).
+* **Problem:** The entire confirmatory test of H1 rests on 20 item-study cells. Currently, the manuscript describes these cells only in a brief narrative paragraph (lines 253–260). A JDM reader has no direct way to examine the items, target quantities, true values, anchor ranges, number of anchor levels, sample sizes, or anchor types without inspecting raw data files. This obscures essential design characteristics (e.g., that 13 items are lengths from Bahník, 4 are high-anchor-only items from Frech et al., 2 are from Yoon et al., and only 1 item has 20 anchor levels from Imhoff & Barker).
+* **Suggested Fix:** Add a comprehensive descriptive table of the 20 within-item cells to the main manuscript (or as Table 1, shifting subsequent tables). Include columns for: Study citation, Item text/target, Unit/dimension, True value ($t$), Number of participants, Number of distinct anchor levels, Range of anchors used, Anchor type (random vs. fixed), and Anchor side (high only vs. both).
+
+---
+
+#### 6. [MINOR] Quadratic model turnover artifact ($x|x|$)
+* **Location:** Measures (lines 276–281), Results (lines 421–424).
+* **Problem:** The quadratic specification $y = a_{\text{cell}} + b x + g x|x|$ implies a local elasticity of $b + 2g|x|$. With $b = 0.307$ and $g = -0.041$, the implied elasticity becomes negative when $|x| > b / (2|g|) = 0.307 / 0.082 \approx 3.74$ log units (an anchor differing from the true value by a factor $> 42$). In Bahník (2021a), anchors as low as 1 were used for Salto Angel ($t = 979$, $|x| = 6.89$) and Cheops pyramid ($t = 139$, $|x| = 4.93$). Beyond $|x| = 3.74$, this polynomial model mechanically forces estimates to move in the opposite direction of the anchor (a contrast effect).
+* **Suggested Fix:** Explicitly acknowledge this mathematical property of the $x|x|$ model. State the turnover threshold ($|x| \approx 3.74$) and emphasize that the piecewise linear model (robustness check R2), which does not force a contrast turnaround, confirms the flattening without this polynomial artifact.
+
+---
+
+#### 7. [MINOR] Degrees of freedom jump in random-anchor stratum due to model step-down
+* **Location:** Results (lines 427–428), `output/confirmatory/h1_within.csv`.
+* **Problem:** In the pooled H1 model, Satterthwaite degrees of freedom for $g$ are $df = 9.10$ ($p < .001$), reflecting cell-level clustering across 20 cells. In the random-anchor stratum, however, the degrees of freedom jump to $df = 3936.38$ ($p = 1.17 \times 10^{-9}$). This occurred because the full model failed to converge, triggering the preregistered fallback to drop the random curvature variance `(0 + xx | cell)`. Dropping this variance treats cell curvature as fixed across cells, shifting the effective denominator from the cell level to the observation level.
+* **Suggested Fix:** Add a brief note in the text clarifying that the random-effects step-down for the random-anchor stratum eliminated the between-cell curvature variance, which accounts for the dramatic jump in degrees of freedom and anticonservatively small $p$-value.
+
+---
+
+#### 8. [MINOR] Weighting artifacts in across-cell meta-regression (H2)
+* **Location:** Method (lines 365–371), Results / Sensitivity (lines 598–603).
+* **Problem:** The sampling variance of the anchoring index is $SE(AI)^2 \propto 1 / (x_{\text{high}} - x_{\text{low}})^2$. By definition, cells with more extreme anchors have wider anchor spreads, resulting in smaller $SE(AI)$ and higher inverse-variance weights. Sensitivity analysis S3 confirms that the 10 most precise cells carried 60.6% of the total meta-regression weight. This mathematical coupling between the predictor (extremity) and precision creates an inherent weighting artifact.
+* **Suggested Fix:** Note in the Method or Discussion that the formulation of $SE(AI)$ naturally assigns greater weight to cells with wider anchor separations, explaining why precision is strongly tied to extremity.
+
+---
+
+#### 9. [MINOR] Reporting two divergent "mean anchoring indices" without explanation
+* **Location:** Results (lines 453–454, 514–515).
+* **Problem:** In line 453, the text reports: *"the mean log anchoring index was 0.42, [0.35, 0.48]"*, whereas in line 514, it reports: *"weighted mean log anchoring index = 0.241"*. Readers will be confused by this substantial difference (0.42 vs. 0.24) without an explanation in the text.
+* **Suggested Fix:** Explain in the text that 0.42 is the multilevel meta-regression intercept (REML, accounting for study- and cell-level variance), whereas 0.241 is the fixed-effects inverse-variance weighted mean across cells (used to match the simulation estimator, per Deviation D1).
+
+---
+
+#### 10. [MINOR] Citation and reporting inconsistencies
+* **Location:** References, Method, Results.
+* **Problem:**
+  1. *Imhoff & Barker year:* Cited as 2023 in the manuscript text and references (lines 67, 186, 260, 846), but referenced as "2022" in `preregistration.md` (lines 59, 73), `deviations.md` (line 37), and output tables (`S2_without_Imhoff & Barker, 2022, Study 2`).
+  2. *Bahník citation:* Cited as "Bahník (2021)" in the text (lines 254, 525, 685, 779), but as "Bahník (2021a)" in the preregistration, code, and `design_cells.csv`.
+  3. *Participant counts:* Line 253 reports 1,492 participants before exclusion; Results (line 406) reports 7,949 estimates after dropping 3 rows, but omits the final post-exclusion participant count (1,491, per `h1_within.csv`).
+* **Suggested Fix:** Harmonize the citation years (clarify that OpAQ labeled Imhoff & Barker as 2022, but the final published paper is 2023) and report the final sample size consistently (7,949 estimates from 1,491 participants).
+
+---
+
+#### 11. [MINOR] Intuitive interpretation of elasticity and curvature units for JDM readers
+* **Location:** Measures (lines 271–285), Results (lines 420–424).
+* **Problem:** While log elasticity ($b$) and curvature ($g$) are mathematically principled, many behavioral decision-making researchers think in terms of percentage adjustments or raw anchoring indices.
+* **Suggested Fix:** Provide a brief concrete example in the text (e.g., estimating a quantity whose true value is 100 with anchors of 25, 50, 200, 400, and 1,000), showing the predicted median estimates and implied local anchoring indices across those anchor levels. This will make the practical meaning of $b = 0.31$ and $g = -0.041$ immediately transparent.
+
+---
+
+### Overall Recommendation
+
+**Recommendation:** **Major Revision**
+
+**Summary of Recommendation:**
+The paper addresses a core theoretical puzzle in JDM with exemplary computational rigor, code transparency, and preregistration discipline. However, several **MAJOR** issues remain that prevent immediate acceptance:
+1. The empirical finding of diminishing proportional pull rests almost entirely (83% of data) on a single study (Bahník, 2021a) involving random anchors on physical lengths, requiring substantive recalibration of the Title, Abstract, and Conclusions.
+2. The generalization from random anchors to strategic, deliberate anchors (negotiations, litigation) is ungrounded and contradicts the paper's own across-cell results.
+3. The theoretical framing sets up M1 as a strawman and declares M1R as having "survived" despite failing on curvature, solely due to diffuse predictive intervals under a disjunctive evaluation rule.
+4. Exploratory analysis E4 selectively reported a ratio specification while omitting the simultaneous multivariable model where the extremity slope remained positive.
+5. A comprehensive descriptive table of the 20 within-item cells is missing.
+
+Once these major issues are thoroughly addressed, this manuscript will represent an exceptionally strong, nuanced, and transparent contribution to the journal.
