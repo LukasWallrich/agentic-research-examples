@@ -1,0 +1,2 @@
+n_cells,n_studies,n_rows,mean_ai,mean_ai_lo,mean_ai_hi,slope,slope_lo,slope_hi,slope_p,robust_fallback,verdict
+128,40,22533,0.416290382592647,0.348716950354897,0.483863814830398,0.0500186957865835,-0.013285939731631,0.113323331304798,0.121473028216876,FALSE,inconclusive
