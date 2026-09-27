@@ -8,3 +8,5 @@ data/raw/*
 
 scratch_litgaps/
 scoping/scratch_journals/
+manuscript/scratch_*
+manuscript/*_files/

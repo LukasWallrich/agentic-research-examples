@@ -65,3 +65,15 @@ print(pair[, .(cells = .N), by = reference_short][order(-cells)])
 sink()
 fwrite(cells, file.path("output", "design_cells.csv"))
 message("Wrote ", out)
+
+# Key counts for the manuscript
+suppressMessages(source(file.path("R", "design_sets.R")))
+s <- build_sets(d)
+fwrite(data.table(
+  opaq_rows = nrow(d), opaq_studies = uniqueN(d$reference_short), opaq_items = uniqueN(d$anchoring_item),
+  opaq_cells = uniqueN(d[, .(reference_short, anchoring_item)]),
+  within_rows = nrow(s$within), within_cells = uniqueN(s$within$cell), within_studies = uniqueN(s$within$reference_short),
+  within_participants = uniqueN(s$within$pid),
+  across_rows = nrow(s$across_rows), across_cells = nrow(s$across_cells), across_studies = uniqueN(s$across_cells$study),
+  across_items = uniqueN(s$across_cells$item), across_participants = uniqueN(s$across_rows$pid)
+), file.path("output", "design_counts.csv"))

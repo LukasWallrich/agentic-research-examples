@@ -3,7 +3,7 @@
 
 source(file.path("R", "read_opaq.R"))
 
-ratio_tasktypes <- c("quantity", "quantitity", "number", "price", "length", "height", "distance",
+ratio_tasktypes <- c("quantity", "number", "price", "length", "height", "distance",
                      "weight", "population", "volume", "speed", "duration", "birth rate",
                      "income", "width", "area", "circumference", "age")
 # Studies whose anchors were computed from each participant's own unanchored estimates.

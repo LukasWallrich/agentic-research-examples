@@ -41,17 +41,17 @@ Index: <model>
 1:     M0    FALSE       TRUE        FALSE    FALSE          FALSE
 2:     M1    FALSE      FALSE         TRUE     TRUE          FALSE
 3:    M1R    FALSE       TRUE         TRUE     TRUE           TRUE
-4:     M2    FALSE      FALSE        FALSE    FALSE           TRUE
+4:     M2    FALSE      FALSE        FALSE    FALSE          FALSE
 5:     M3     TRUE      FALSE        FALSE     TRUE          FALSE
-6:     M4     TRUE      FALSE        FALSE     TRUE          FALSE
-   survives_shape survives_level
-           <lgcl>         <lgcl>
-1:          FALSE          FALSE
-2:          FALSE          FALSE
-3:           TRUE           TRUE
-4:          FALSE          FALSE
-5:          FALSE          FALSE
-6:          FALSE          FALSE
+6:     M4     TRUE      FALSE        FALSE     TRUE           TRUE
+   mean_ai_weighted survives_shape survives_level
+              <num>         <lgcl>         <lgcl>
+1:        0.2407028          FALSE          FALSE
+2:        0.2407028          FALSE          FALSE
+3:        0.2407028           TRUE           TRUE
+4:        0.2407028          FALSE          FALSE
+5:        0.2407028          FALSE          FALSE
+6:        0.2407028          FALSE           TRUE
                   analysis          est           lo          hi
                     <char>        <num>        <num>       <num>
 1:  R1_median_regression_g -0.058942532 -0.075459052 -0.04084279

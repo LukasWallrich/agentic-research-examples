@@ -11,3 +11,7 @@ Rscript R/03_simulate_predictions.R   # model predictions on the OpAQ designs
 Rscript R/03b_decision_properties.R   # operating characteristics of the decision rules
 Rscript R/03c_prereg_tables.R         # prediction tables used in the preregistration
 Rscript R/04_confirmatory.R           # preregistered confirmatory analyses
+Rscript R/05_exploratory.R            # exploratory analyses (labelled as such)
+Rscript R/05b_sensitivity.R           # post-hoc sensitivity analyses
+Rscript R/06_figures.R                # figures
+quarto render manuscript/manuscript.qmd   # manuscript (docx and html)

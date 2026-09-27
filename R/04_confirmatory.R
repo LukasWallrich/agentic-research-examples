@@ -94,7 +94,8 @@ fit_h2 <- function(ci, mods = ~ extremity) {
                 error = function(e) NULL)
   robust_fallback <- is.null(m)
   if (robust_fallback) {   # Q23 fallback
-    m <- robust(rma(ai, ai_se^2, mods = mods, data = ci, method = "REML"), cluster = ci$study, clubSandwich = TRUE)
+    m <- robust(rma(ai, ai_se^2, mods = mods, data = ci, method = "REML"), cluster = ci$study,
+                clubSandwich = requireNamespace("clubSandwich", quietly = TRUE))
   }
   list(model = m, robust_fallback = robust_fallback)
 }
@@ -113,13 +114,16 @@ h2_tab[, verdict := shape_verdict(mean_ai_lo, slope_lo, slope_hi, slope_lo, slop
 
 # ---- H3: model adequacy ----------------------------------------------------------------------------
 pi <- fread(file.path("output", "predictive_intervals.csv"))
-obs <- list(g = h1$pooled$g, rho = h1$pooled$rho, slope = h2_tab$slope)
+obs <- list(g = h1$pooled$g, rho = h1$pooled$rho, slope = h2_tab$slope,
+            # same estimator as fit_across() in the simulation (deviation D1 in deviations.md)
+            mean_ai_weighted = weighted.mean(ci_A$ai, 1 / ci_A$ai_se^2))
 h3_tab <- pi[, .(model,
                  g_inside = obs$g >= g_lo & obs$g <= g_hi,
                  rho_inside = obs$rho >= rho_lo & obs$rho <= rho_hi,
                  slope_inside = obs$slope >= slope_lo & obs$slope <= slope_hi,
                  b_inside = h1$pooled$b >= b_lo & h1$pooled$b <= b_hi,
-                 mean_ai_inside = h2_tab$mean_ai >= ai_lo & h2_tab$mean_ai <= ai_hi)]
+                 mean_ai_inside = obs$mean_ai_weighted >= ai_lo & obs$mean_ai_weighted <= ai_hi,
+                 mean_ai_weighted = obs$mean_ai_weighted)]
 # Shape criteria decide survival; level criteria (b, mean index) depend on the calibration to
 # Jacowitz & Kahneman and are reported separately. M0 is also contradicted when gate G1 passes.
 h3_tab[, survives_shape := (g_inside | rho_inside) & slope_inside]
@@ -145,14 +149,16 @@ rob <- list()
 # R2: piecewise slopes, knot at |x| = 1
 {
   d <- drop_gross_errors(W)[, h := sign(x) * pmax(abs(x) - 1, 0)]
-  m <- lmerTest::lmer(y ~ x + h + (1 + x + h || cell) + (1 | pid), data = d)
+  m <- withCallingHandlers(lmerTest::lmer(y ~ x + h + (1 + x + h || cell) + (1 | pid), data = d),
+                           warning = function(w) { message("R2 warning: ", conditionMessage(w)); invokeRestart("muffleWarning") })
   co <- summary(m)$coefficients
   rob$R2_far_minus_near_slope <- c(est = co["h", "Estimate"], lo = co["h", "Estimate"] - qt(.975, co["h", "df"]) * co["h", "Std. Error"],
                                    hi = co["h", "Estimate"] + qt(.975, co["h", "df"]) * co["h", "Std. Error"])
 }
 # R3: without Bahník (2021a)
 {
-  f3 <- fit_h1(W[reference_short != "Bahník, 2021a"])
+  f3 <- withCallingHandlers(fit_h1(W[reference_short != "Bahník, 2021a"]),
+                            warning = function(w) { message("R3 warning: ", conditionMessage(w)); invokeRestart("muffleWarning") })
   rob$R3_without_bahnik_g <- c(est = f3$g, lo = f3$g_ci[1], hi = f3$g_ci[2])
 }
 # R4: raw-scale anchoring index

@@ -1,0 +1,21 @@
+cell,reference_short,anchortype,n,slope_near,slope_far,diff,diff_se
+"Bahník, 2021a || length of a typical football field (metres)","Bahník, 2021a",1,512,0.276201758954169,0.030715881879209,-0.24548587707496,0.161448989183647
+"Bahník, 2021a || height of the highest (Cheops) Pyramid in Giza (metres)","Bahník, 2021a",1,489,0.540587884993692,-0.0220251398714418,-0.562613024865133,0.182686925375268
+"Bahník, 2021a || distance of the subway tracks between stations Muzeum and Hlavni nadrazi (metres)","Bahník, 2021a",1,510,0.359419286979688,-0.146185400002521,-0.505604686982209,0.0866041236395704
+"Bahník, 2021a || length of the Wenceslas Square (metres)","Bahník, 2021a",1,510,0.242880789729756,0.0147166066486345,-0.228164183081122,0.0833821405573986
+"Bahník, 2021a || height of the highest tree in the world (metres)","Bahník, 2021a",1,512,0.322469459570639,-0.0136421038503881,-0.336111563421027,0.202707710360338
+"Bahník, 2021a || Length of the Petrin funicular (metres)","Bahník, 2021a",1,510,0.368988381008088,0.184429859182,-0.184558521826088,0.108759988019782
+"Bahník, 2021a || height of the tallest waterfall Salto Angel (metres)","Bahník, 2021a",1,507,0.407640767332638,0.259870133906411,-0.147770633426227,0.153756342878949
+"Bahník, 2021a || length of the Great Strahov Stadion (metres)","Bahník, 2021a",1,494,0.251014813780106,-0.0287860474106871,-0.279800861190793,0.122813626418985
+"Bahník, 2021a || Height of the Eiffel tower (m)","Bahník, 2021a",1,511,0.196086390145604,0.066062263047002,-0.130024127098602,0.103385517994804
+"Bahník, 2021a || length of the Nusle bridge (metres)","Bahník, 2021a",1,511,0.241365282777994,-0.00908425079829767,-0.250449533576291,0.0854486184956464
+"Bahník, 2021a || height of the tallest bridge viaduct Millau (metres)","Bahník, 2021a",1,511,0.251781790889691,0.244745390605344,-0.00703640028434683,0.13561679532488
+"Bahník, 2021a || length of the longest ship (metres)","Bahník, 2021a",1,492,0.293093588776027,0.256121203094549,-0.0369723856814774,0.119560302117365
+"Bahník, 2021a || height of the tallest skyscraper Burj Khalifa (metres)","Bahník, 2021a",1,507,0.179894552743026,0.00780395465492062,-0.172090598088105,0.101393822406105
+"Frech et al., 2021 || Distance between Lisbon and Moscow (km)","Frech et al., 2021",2,104,,,,
+"Frech et al., 2021 || Population of Rome","Frech et al., 2021",2,104,,,,
+"Frech et al., 2021 || Altitude of Mt. Kilimanjaro (m)","Frech et al., 2021",2,104,,,,
+"Frech et al., 2021 || Average number of babies born each day in Germany","Frech et al., 2021",2,104,,,,
+"Yoon et al., 2021, Form C || Average price of a sofa bed at IKEA (USD)","Yoon et al., 2021, Form C",1,85,,,,
+"Yoon et al., 2021, Form C || Number of novels written by Stephen King","Yoon et al., 2021, Form C",1,86,0.169561674706498,-0.0346934418226772,-0.204255116529175,0.203448730430707
+"Imhoff & Barker, 2022, Study 2 || Height of the Cologne cathedral (m)","Imhoff & Barker, 2022, Study 2",2,786,0.540956887722252,0.278075830378015,-0.262881057344237,0.097129285452148

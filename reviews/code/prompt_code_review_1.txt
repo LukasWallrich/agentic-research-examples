@@ -1,0 +1,18 @@
+You are reviewing the analysis code and results of a preregistered secondary-data study in judgement and decision making. Repository root: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper (read-only for you).
+
+Read in this order:
+1. prereg/preregistration.md (the plan; committed and tagged prereg-v1 before outcome data were read; check with `git log --format='%h %ci %s'` and `git show --stat prereg-v1`).
+2. R/read_opaq.R, R/design_sets.R, R/models.R, R/estimators.R, R/02_calibrate_models.R, R/03_simulate_predictions.R, R/03b_decision_properties.R, R/03c_prereg_tables.R, R/04_confirmatory.R, run_all.sh.
+3. Outputs: output/prereg_tables.md, output/predictive_intervals.csv, output/confirmatory/*.csv, output/confirmatory_log.txt, output/dry_run/*.csv.
+4. decision_log.md, deviations.md.
+
+The raw data file data/raw/opaq_70a.csv (47 MB) is present; you may inspect it with R or shell if needed to check a claim (the preregistration is already committed, so reading outcomes is now allowed).
+
+Check and report concretely (file:line, what is wrong, why it matters, suggested fix):
+A. Does R/04_confirmatory.R implement exactly what the preregistration specifies (Q13-Q24)? List every mismatch, however small (inclusion rules, gross-error rule, estimators, CI methods, gates, verdict order, H3 survival rule, robustness analyses R1-R7).
+B. Correctness bugs in any R file: data.table scoping errors, wrong merges/joins, NA handling, the delta-method SE for rho, the median SE formula (1.2533*MAD/sqrt(n)), the cell-level anchoring index, the meta-regression, the bootstrap in R1 (is it a proper participant-cluster bootstrap?), random seeds and reproducibility (mclapply + set.seed), anything that would make `./run_all.sh` fail or not reproduce the committed outputs.
+C. Do the simulation models in R/models.R implement their stated theories (M1 fixed-step Metropolis-Hastings adjustment; M1R resource-rational number of adjustments minimising expected absolute error + time cost; M2 constant weight; M3 adjust to plausible boundary; M4 plausibility-discounted integration)? Any error that would change the sign predictions?
+D. Are the confirmatory results in output/confirmatory/ correctly read off and are the verdicts right given the preregistered rules? Any statistical concern with the H1 mixed model (e.g., Satterthwaite df = 9 for the curvature, only 20 cells, 13 of them from one study), the fixed-anchor stratum gate failing, the H2 meta-regression warning about extreme sampling-variance ratios (MAD floor 1e-3), and the within vs across discrepancy (within-item curvature negative; across-cell slope positive-leaning)?
+E. Anything else a sceptical methods reviewer would flag.
+
+Be concrete and prioritise: label each finding MAJOR (could change a conclusion or breaks reproducibility), MINOR, or NITPICK. End with your final answer under a heading "## Answer".
