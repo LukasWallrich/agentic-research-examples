@@ -1,0 +1,136 @@
+### 1. Comparative Evaluation of the Four Shortlisted Options
+
+---
+
+#### Option A: Anchoring Process Models vs. Anchor Extremity (OpAQ)
+* **Can it fail, and is that result plausible?**
+  * **Yes, it can decisively fail.** The four candidate models make qualitatively distinct predictions for the slope of the Anchoring Index ($AI = \frac{\Delta \text{Estimates}}{\Delta \text{Anchors}}$) across anchor extremity:
+    * **$M_1$ (Resource-Rational Adjustment; Lieder et al., 2018):** Adjustment steps are cost-penalized. At extreme anchors, adjustment terminates early relative to the distance required, causing estimates to remain pulled far toward the anchor; thus, proportional $AI$ is predicted to rise or remain elevated.
+    * **$M_2$ (Anchor Integration Model; Turner & Schley, 2016):** Constant-weight averaging predicts that the anchor’s proportional weight $w$ is invariant to extremity; thus, the slope is flat ($d(AI)/d(\text{extremity}) = 0$).
+    * **$M_3$ (Insufficient Adjustment to Plausible Boundary; Epley & Gilovich, 2006):** Search terminates at the nearest boundary of a subjective credibility range $[L, U]$. Once an anchor lies beyond this range, the estimate stops at the boundary ($U$ or $L$), leaving $\Delta \text{Estimates} \le U - L$ fixed while $\Delta \text{Anchors} \to \infty$. Thus, $AI$ must strictly fall toward 0.
+    * **$M_4$ (Plausibility-Gated Selective Accessibility; Strack & Mussweiler, 1997; Wegener et al., 2001):** Highly extreme or implausible anchors fail to activate target-consistent features, causing $AI$ to collapse steeply or produce contrast.
+  * **Plausibility:** Highly plausible. Classical experimental papers (e.g., Chapman & Johnson, 1994; Jacowitz & Kahneman, 1995; Sleeth-Keppler, 2013) demonstrate that while *absolute* mean differences often grow with anchor distance, the *proportional* effect ($AI$) reliably decays for extreme anchors. Rejecting $M_1$ or $M_2$ is empirically likely.
+* **Has it essentially been done already?**
+  * **No.** Key components exist, but they have never been synthesized into a competitive computational model test on open meta-analytic data:
+    * Jacowitz & Kahneman (1995) introduced $AI$, but only evaluated 15th vs. 85th percentile anchors.
+    * Wegener et al. (2001) tested extreme vs. moderate anchors, but focused on absolute effect sizes in small bespoke experiments.
+    * Turner & Schley (2016) and Lieder et al. (2018) formulated their respective models, but Lieder et al. tested theirs on synthetic numerical dot-estimation tasks rather than semantic general-knowledge corpora.
+    * Röseler & Schütz (2022, PsyArXiv `wf2tn`) conducted a meta-analysis on OpAQ, but modeled standardized mean differences (**Hedges' $g$**, finding $g$ increases with distance, $b = 0.040$) rather than the Anchoring Index ($AI$). They explicitly called for a unitless metric to model the adjustment-extremity relationship.
+* **Most serious threat to validity:**
+  * **Severe cross-item and design confounding.** In OpAQ, anchor extremity was not randomly assigned across items. Researchers chose anchors idiosyncratically; items with high underlying uncertainty were assigned wider anchors. Furthermore, items with bounded scales (percentages, ratings) mechanically truncate responses near the boundary, compressing $AI$ regardless of psychological process.
+
+---
+
+#### Option B: Decision Noise and the Risk-Elicitation Puzzle (Basel-Berlin Risk Study)
+* **Can it fail, and is that result plausible?**
+  * **Yes, but it sets up a known strawman.** If a pure-noise agent cannot reproduce the observed low-to-moderate positive correlations among lottery tasks ($r \approx 0.15 - 0.30$) or fails out-of-sample likelihood tests against a model with heterogeneous risk preferences, it fails. That it will fail is virtually certain: pure noise models predict zero correlation across structurally distinct tasks unless driven by shared choice-set mechanics.
+* **Has it essentially been done already?**
+  * **Yes, extensively.** Decomposing decision noise versus preference heterogeneity on the Basel-Berlin Risk Study (BBRS; Frey et al., 2017) has already been published by the original team (Pedroni, Frey, Bruhin, Dutilh, Hertwig, & Rieskamp, 2017, *eLife*) and followed up by structural econometrics literature (e.g., Enke & Graeber, 2023; Beauchamp et al., 2020; Vieider, 2021). Furthermore, recent preprints (e.g., arXiv:2607.05686, arXiv:2609.12291) directly benchmark stochastic choice models and decision noise against cross-task risk correlations.
+* **Most serious threat to validity:**
+  * **Total lack of novelty and extreme competition.** The paper would enter a heavily saturated field where the baseline hypothesis ("noise alone explains all cross-task variance") is already widely rejected in favor of joint latent-trait plus cognitive-uncertainty models. Additionally, BBRS raw files contain potentially sensitive demographic fields.
+
+---
+
+#### Option C: Noise-Only Over/Underconfidence (Good Judgment Project)
+* **Can it fail, and is that result plausible?**
+  * **Yes.** If empirical confidence-accuracy calibration falls outside the posterior predictive interval of a zero-bias noisy observer (e.g., persistent overconfidence on easy items or severe skew), the model fails.
+* **Has it essentially been done already?**
+  * **Yes, repeatedly for 30 years.** The "noise/error model" of overconfidence and the hard-easy effect is one of the oldest debates in JDM (Erev, Wallsten, & Budescu, 1994, *Psychol Rev*; Soll, 1996; Juslin, Winman, & Olsson, 2000, *Psychol Rev*; Moore & Healy, 2008). Re-running this on GJP quizzes is a routine re-demonstration.
+* **Most serious threat to validity:**
+  * **Fatal sample size ($32 + 15 = 47$ items).** Item-sampling variance in calibration research is notoriously high. With only 47 items, statistical power to distinguish true epistemic overconfidence from response-scale noise is inadequate; posterior predictive intervals will be too wide to draw rigorous theoretical conclusions.
+
+---
+
+#### Option D: Frozen-Parameter Social-Influence Revision Model
+* **Can it fail, and is that result plausible?**
+  * **Yes.** Out-of-sample predictions on Becker et al. (2019) could correlate $\le 0$ with observed question-level error changes or perform worse than an unweighted mean.
+* **Has it essentially been done already?**
+  * **Yes.** Jayles et al. (2017, 2020), Becker et al. (2017, 2019), and Almaatouq et al. (2020, 2021) have systematically cross-fitted linear and non-linear revision functions (e.g., French-Harary-DeGroot, distance-weighted averaging) across crowd estimation paradigms.
+* **Most serious threat to validity:**
+  * **Single-dataset target with severe interface confounds.** The out-of-sample test rests on exactly one dataset with few questions. Differences in user interface (e.g., displaying peer medians vs. full distributions vs. network neighbor avatars) alter social weighting, meaning a frozen-parameter model will likely fail due to task-display idiosyncrasies rather than psychological validity.
+
+---
+
+### 2. Methodological Blueprint for Option A
+
+#### (a) Defining "Anchor Extremity" Without Knowing Individual Uncertainty
+* **Why Options 2 and 3 are fundamentally invalid:**
+  * *Option 2 (SD of within-condition anchored estimates):* Contaminated by the treatment. Anchoring can induce consensus or bi-modality, directly altering variance post-treatment.
+  * *Option 3 (Between-person SD of pooled estimates):* **Mathematically fatal collider/endogeneity.** The pooled variance across high and low anchor conditions contains the treatment effect:
+    $$\text{Var}(\text{Pooled}) = \frac{\text{Var}(Y_H) + \text{Var}(Y_L)}{2} + \frac{(\bar{Y}_H - \bar{Y}_L)^2}{4}$$
+    Items with large anchoring effects automatically have larger pooled SDs. Dividing anchor distance by this pooled SD creates a mechanical negative correlation between extremity and effect size.
+* **The Defensible, Outcome-Free Solution:**
+  1. **Primary Metric (Relative Design Distance on Log Scale):** For open-scale positive ratio items (355 of 412 items in OpAQ), define anchor extremity relative to the true value:
+     $$\text{Extremity}_A = |\ln(A) - \ln(\text{True})| \quad \text{or} \quad \Delta \ln(A) = \ln(A_{\text{high}}) - \ln(A_{\text{low}})$$
+     This relies solely on experimental design parameters ($A$) and factual ground truth ($\text{True}$), preserving strict outcome blinding.
+  2. **Controlling for Item-Level Uncertainty:** Because an anchor of $3 \times \text{True}$ is plausible for national populations but absurd for human body temperature, item uncertainty must be accounted for without using anchored responses. Two preregisterable strategies:
+     * *Normative Anchor-Percentile Coding:* Many studies in OpAQ used the Jacowitz & Kahneman (1995) protocol, where anchors were established as specific percentiles (e.g., 15th vs. 85th) of a pilot calibration sample. The design metadata (where recorded) provides a standardized uncertainty metric.
+     * *Hierarchical Item Random Intercepts:* Include random intercepts and random slopes for item ID ($\sim (1 + \text{Extremity} \mid \text{Item})$). This isolates the extremity slope within items that share the same underlying uncertainty distribution.
+
+---
+
+#### (b) Confounds Threatening an Across-Item Regression
+1. **Endogenous Anchor Selection:** Experimenters set wider anchor intervals for items they intuitively knew had higher uncertainty, confounding anchor distance with item ambiguity.
+2. **Scale Boundedness and Closed Scales:** Items assessing percentages ($0-100\%$), probabilities, or bounded Likert scales constrain estimates. If an extreme anchor lies near or beyond a boundary (e.g., $95\%$ or $110\%$), participant estimates cannot exceed $100\%$, artificially capping the numerator of $AI$.
+3. **Format and Anchortype Heterogeneity:** OpAQ combines provided anchors (selective accessibility; Strack & Mussweiler) with self-generated anchors (insufficient adjustment; Epley & Gilovich). Pooling these without an interaction term confounds process mechanisms.
+4. **Heavy Tails and Multiplicative Noise:** Estimates of open ratio quantities (e.g., populations) are log-normally distributed. Outliers in raw space can dominate arithmetic means, generating unstable $AI$ values.
+
+---
+
+#### (c) Mechanical and Artefactual Drivers of $AI$
+* **The Inherent Denominator Explosion:**
+  The Anchoring Index is defined as:
+  $$AI = \frac{\bar{Y}_{\text{high}} - \bar{Y}_{\text{low}}}{A_{\text{high}} - A_{\text{low}}}$$
+  Because human estimates are naturally constrained by credibility or scale bounds (e.g., $|\bar{Y}_{\text{high}} - \bar{Y}_{\text{low}}| \le B$), as anchor distance $A_{\text{high}} - A_{\text{low}} \to \infty$, the denominator grows indefinitely while the numerator is bounded. **Therefore, $AI$ must mechanically decline toward zero at extreme distances under almost any bounded generative process.**
+* **Safeguards Against Mechanical Artifacts:**
+  1. **Simulate a Zero-Adjustment / Bounded Null Agent:** Pass a synthetic agent with fixed subjective bounds $[L_i, U_i]$ (who does not adjust from anchors at all, but simply samples from their prior truncated to the scale) through the exact experimental designs. The empirical regression slope must be benchmarked against this mechanical baseline to verify whether human $AI$ drops faster or slower than purely mechanical bounding predicts.
+  2. **Reformulate the Estimator as Elasticity:** Instead of regressing the composite ratio $AI$, estimate a trial-level log-log regression:
+     $$\ln(Y_{ijk}) = \beta_0 + \beta_1 \ln(A_{ijk}) + \beta_2 \ln(\text{True}_i) + u_i + v_j + \epsilon_{ijk}$$
+     Here, $\beta_1$ represents the direct elasticity of estimates with respect to anchors. A model predicting saturation ($M_1$) predicts $\beta_1$ to increase with extremity, whereas boundary models ($M_3, M_4$) predict $\beta_1 \to 0$ for extreme anchors.
+  3. **Restrict Primary Process Tests to Unbounded Ratio Scales:** Filter out closed scales ($0-100\%$, ratings) for the primary model horse race, analyzing bounded items in a dedicated secondary beta/tobit model.
+
+---
+
+#### (d) Within-Item Comparisons and Preregistration Strategy
+* **Is a within-item comparison stronger?**
+  **Yes, substantially.** Comparing different anchor extremities across the *same* item eliminates all item-level confounds (true value, domain familiarity, scale bounds, prior distribution).
+* **How to preregister without unblinding the outcome data:**
+  You can inspect and filter design variables (`item_id`, `anchor_value`, `anchor_high`, `study_id`, `scale_type`) without looking at participant estimates (`estimate`).
+  * **Preregistered Two-Tier Contingency Protocol:**
+    1. **Tier 1 (Within-Item Subset):** Define an automated algorithmic filter: select all unique items that were administered with $\ge 2$ distinct high-anchor values or distinct anchor distances across studies or conditions. Set a preregistered sample threshold:
+       > *"If at least $K \ge 20$ items have multiple anchor distances with $N \ge 50$ per condition, Tier 1 is our primary confirmatory test."*
+    2. **Tier 2 (Full-Corpus Mundlak Decomposition):** For the full dataset, specify a within-between mixed-effects model (Mundlak / Bell & Jones, 2015). Decompose anchor extremity $E_{ij}$ for item $i$ in study $j$ into:
+       * The item-mean extremity: $\bar{E}_i$ (between-item variation)
+       * The within-item deviation: $(E_{ij} - \bar{E}_i)$ (pure within-item variation)
+       The coefficient on $(E_{ij} - \bar{E}_i)$ isolates the unconfounded within-item causal effect of extremity across the entire corpus.
+
+---
+
+### 3. Recommendation and Path to Publication
+
+## Answer
+
+### Recommended Choice: Option A (Anchoring Process Models vs. Anchor Extremity)
+
+Option A is the strongest, most viable project. Options B, C, and D suffer from critical flaws: Option B is heavily saturated and risks immediate scooping; Option C is fatally underpowered ($N = 47$ items); and Option D relies on a single target dataset with severe interface confounds. 
+
+Option A leverages a massive open dataset (OpAQ: 96 studies, ~21,000 participants, 412 items) to resolve an explicit, unmet demand in the literature (Röseler & Schütz, 2022). It pits four foundational, competing theoretical frameworks against one another in a formal computational simulation.
+
+### Roadmap to a Top-Tier JDM Publication (*Decision*, *Psychonomic Bulletin & Review*, or *Judgment and Decision Making*):
+
+1. **Synthetic-to-Empirical Forward Simulation:**
+   * Write explicit generative computational models for all four candidate processes:
+     * $M_1$: Resource-rational random walk with step-cost stopping (Lieder et al., 2018).
+     * $M_2$: Constant-weight anchor integration (Turner & Schley, 2016).
+     * $M_3$: Sequential adjustment to the boundary of subjective plausibility (Epley & Gilovich, 2006).
+     * $M_4$: Kernel-density plausibility-gated selective accessibility (Strack & Mussweiler, 1997).
+   * Simulate synthetic agents through the exact item-anchor pairs present in OpAQ. Fit the identical statistical regression pipeline to both simulated and empirical data to generate distinctive model-signature curves.
+2. **Defensible, Outcome-Free Metrics:**
+   * Pre-register relative anchor distance on the log scale ($|\ln(A) - \ln(\text{True})|$) for all positive ratio items as the primary extremity metric.
+   * Completely reject pooled or within-condition response SDs to avoid endogeneity.
+3. **Mundlak Within-Between Item Decomposition:**
+   * Implement a hierarchical mixed-effects model separating within-item extremity deviations from between-item averages. This eliminates cross-item selection bias and guarantees valid causal inference even if multi-anchor items are limited.
+4. **Benchmarking Against a Bounded Null Model:**
+   * Explicitly account for the mechanical denominator explosion of $AI$ by simulating a zero-adjustment bounded agent, demonstrating whether human adjustment decay exceeds algebraic scaling constraints.
+5. **The `anchortype` Moderation Test:**
+   * Exploit the `anchortype` variable in OpAQ (self-generated vs. provided anchors). $M_3$ was formulated specifically for self-generated anchors, whereas $M_4$ was formulated for provided anchors. Testing whether the extremity slope interacts with `anchortype` provides an unprecedented empirical test of the dual-mechanism debate of anchoring.

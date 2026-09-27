@@ -1,0 +1,10 @@
+data/raw/*
+!data/raw/.gitkeep
+.Rhistory
+.DS_Store
+*_cache/
+*_files/
+.quarto/
+
+scratch_litgaps/
+scoping/scratch_journals/

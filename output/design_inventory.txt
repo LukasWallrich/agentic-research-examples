@@ -1,0 +1,417 @@
+Rows: 95735 
+Studies (reference_short): 95 
+Items (anchoring_item text): 402 
+Item x study cells: 466 
+
+-- anchortype (rows)
+   anchortype     N
+        <int> <int>
+1:          1 12611
+2:          2 68977
+3:          3  8811
+4:          4   548
+5:          5  4472
+6:         NA   316
+-- scaletype (rows)
+   scaletype     N
+       <int> <int>
+1:         1 76360
+2:         2 14270
+3:         3  5102
+4:        NA     3
+-- comparative_question (rows)
+   comparative_question     N
+                  <int> <int>
+1:                    0 23440
+2:                    1 72295
+-- direction (rows)
+   direction     N
+       <int> <int>
+1:         0 85675
+2:         1 10060
+-- incentive (rows)
+   incentive     N
+       <int> <int>
+1:         0 49170
+2:         1 43832
+3:         2  1721
+4:         3  1012
+-- experiment_type (rows)
+   experiment_type     N
+             <int> <int>
+1:               1 67972
+2:               2 27104
+3:               3   659
+-- stimulitype (rows)
+   stimulitype     N
+         <int> <int>
+1:           1 77103
+2:           2    59
+3:           3 17029
+4:           9  1544
+-- sampletype (rows)
+   sampletype     N
+        <int> <int>
+1:          1 95676
+2:          2    59
+-- anchorhigh (rows)
+   anchorhigh     N
+        <int> <int>
+1:          0 45220
+2:          1 45436
+3:         NA  5079
+-- tasktype (rows, top 40)
+                 tasktype     N
+                   <char> <int>
+ 1:              quantity 14204
+ 2:            percentage  9362
+ 3:                 price  9227
+ 4:                length  8426
+ 5:                height  7405
+ 6:                  date  7132
+ 7:                   age  4885
+ 8:           temperature  4568
+ 9:              distance  4279
+10:                weight  4135
+11:            population  4084
+12:                volume  3098
+13:                 speed  2735
+14:              duration  1978
+15:            preference  1890
+16:    willingness to pay  1793
+17:            birth rate  1565
+18:            proportion  1264
+19:        self-judgments  1128
+20:            evaluation   584
+21:           probability   512
+22:                income   377
+23: willingness to accept   316
+24:             lightness   231
+25:       self-perception   163
+26:                 width    97
+27:            quantitity    94
+28:                  area    74
+29:                number    67
+30:         circumference    62
+                 tasktype     N
+                   <char> <int>
+
+Rows with non-numeric anchor: 4280 
+Rows with missing/non-numeric true value: 24696 
+
+-- Item x study cells by anchor configuration
+   has_both_sides two_fixed_values     N
+           <lgcl>           <lgcl> <int>
+1:           TRUE             TRUE   310
+2:           TRUE            FALSE    31
+3:          FALSE            FALSE   118
+
+-- Cells by anchortype
+   anchortype     N
+       <char> <int>
+1:          2   305
+2:          3    55
+3:          1    48
+4:          5    21
+5:        1/2    20
+6:          4     6
+7:                4
+
+-- Cells by scaletype
+   scaletype     N
+      <char> <int>
+1:         1   335
+2:         2    86
+3:         3    31
+4:       1/3     6
+5:       2/3     1
+
+-- Classic fixed two-anchor cells (anchortype 2/3): 269 ; with positive anchors and true value: 228 ; open scale: 152 
+   n per cell (quantiles):
+  0%  10%  25%  50%  75%  90% 100% 
+  15   32   77  141  199  602 1002 
+   log(A_high/A_low) quantiles:
+        0%         5%        10%        25%        50%        75%        90% 
+0.01005539 0.15245073 0.83058468 1.29270366 1.46359794 2.94443898 3.21887582 
+       95%       100% 
+4.60517019 8.66221663 
+   log(A_high/true) quantiles:
+           0%            5%           10%           25%           50% 
+-6.259384e-01 -2.166666e-07  3.779367e-02  3.163682e-01  6.008922e-01 
+          75%           90%           95%          100% 
+ 8.919230e-01  1.731569e+00  2.122941e+00  3.714459e+00 
+   log(true/A_low) quantiles:
+        0%         5%        10%        25%        50%        75%        90% 
+-0.3184537  0.0621490  0.3627266  0.6921546  0.9162907  1.9181454  2.6279573 
+       95%       100% 
+ 2.9586219  6.2763302 
+   Cells where true value lies outside [A_low, A_high]: 13 
+
+-- Within-item extremity variation
+Cells with >1 distinct anchor value on a side: 91 
+                      reference_short
+                               <char>
+ 1:               Cheek & Norem, 2020
+ 2:               Cheek & Norem, 2020
+ 3:    Imhoff & Barker, 2022, Study 2
+ 4:               Cheek & Norem, 2017
+ 5:                     Bahník, 2021a
+ 6:                     Bahník, 2021a
+ 7:                     Bahník, 2021a
+ 8:                     Bahník, 2021a
+ 9:                     Bahník, 2021a
+10:                     Bahník, 2021a
+11:                     Bahník, 2021a
+12:                     Bahník, 2021a
+13:                     Bahník, 2021a
+14:                     Bahník, 2021a
+15:                     Bahník, 2021a
+16:                     Bahník, 2021a
+17:                     Bahník, 2021a
+18:      Klamar et al., 2018, Study 2
+19:   Lee & Morewedge, 2021, Study 6b
+20:   Lee & Morewedge, 2021, Study 6b
+21:              Röseler et al., 2022
+22:      Klamar et al., 2018, Study 2
+23: Harris et al., 2019, Experiment 2
+24: Harris et al., 2019, Experiment 1
+25:      Lewis et al., 2019, Study S1
+26:                Frech et al., 2021
+27:                Frech et al., 2021
+28:                Frech et al., 2021
+29:                Frech et al., 2021
+30:      Lewis et al., 2019, Study S1
+31:      Lewis et al., 2019, Study S1
+32:      Lewis et al., 2019, Study S1
+33:      Lewis et al., 2019, Study S1
+34:      Lewis et al., 2019, Study S1
+35:      Lewis et al., 2019, Study S1
+36:      Lewis et al., 2019, Study S1
+37:      Lewis et al., 2019, Study S1
+38:         Yoon et al., 2021, Form A
+39:         Yoon et al., 2021, Form A
+40:      Lewis et al., 2019, Study S1
+                      reference_short
+                               <char>
+                                                                       anchoring_item
+                                                                               <char>
+ 1:                                Amount of gas used per month by American (gallons)
+ 2:                                                  Population of Chicago (millions)
+ 3:                                               Height of the Cologne cathedral (m)
+ 4:                                                  Population of Chicago (millions)
+ 5:                                       length of a typical football field (metres)
+ 6:                                  height of the highest tree in the world (metres)
+ 7: distance of the subway tracks between stations Muzeum and Hlavni nadrazi (metres)
+ 8:                                           Length of the Petrin funicular (metres)
+ 9:                                                    Height of the Eiffel tower (m)
+10:                                               length of the Nusle bridge (metres)
+11:                              height of the tallest bridge viaduct Millau (metres)
+12:                                           length of the Wenceslas Square (metres)
+13:                              height of the tallest waterfall Salto Angel (metres)
+14:                            height of the tallest skyscraper Burj Khalifa (metres)
+15:                                      length of the Great Strahov Stadion (metres)
+16:                                               length of the longest ship (metres)
+17:                           height of the highest (Cheops) Pyramid in Giza (metres)
+18:                                             Average temperature of Antarctica (C)
+19:                                                         Number of dots in graph B
+20:                                                         Number of dots in graph A
+21:                                                           Population of Wiesbaden
+22:                                                               Altitude of Ulm (m)
+23:                                              Average price of a new car (Pounds2)
+24:                                               Average price of a new car (Pounds)
+25:                                   Preference of being able to fly over read minds
+26:                                           Distance between Lisbon and Moscow (km)
+27:                                                                Population of Rome
+28:                                                   Altitude of Mt. Kilimanjaro (m)
+29:                                 Average number of babies born each day in Germany
+30:                             Memory of US presidents versus foreign capital cities
+31:                                      Memory of foreign countries versus US states
+32:                                         Preference of the color green over yellow
+33:                                         Preference of cheese over pepperoni pizza
+34:                                               Preference of saxophone over violin
+35:                                           Preference of chicken coop over pet pig
+36:                                       Preference of watching movies over TV shows
+37:                                                           Preference of Barcelona
+38:                                  Average low January temperature in St. Louis (F)
+39:                                            Year Van Gogh painted The Starry Night
+40:               Scariness of going underwater in a submarine over flying in a plane
+                                                                       anchoring_item
+                                                                               <char>
+    n_high_values n_low_values anchortype     n
+            <int>        <int>     <char> <int>
+ 1:             0            2          2   927
+ 2:             0            2          2   925
+ 3:            12            8          2   786
+ 4:             0            2          2   597
+ 5:           362           46          1   512
+ 6:           357           43          1   512
+ 7:           225          180          1   511
+ 8:           196          192          1   511
+ 9:           262          133          1   511
+10:           198          205          1   511
+11:           271          125          1   511
+12:           111          293          1   510
+13:            11          381          1   507
+14:            68          330          1   507
+15:           272          114          1   494
+16:           214          170          1   492
+17:           353           34          1   489
+18:             2            0          1   223
+19:             0            2          3   203
+20:             0            2          3   197
+21:             2            0          2   169
+22:             0            2          1   149
+23:             2            0          2   127
+24:             0            2          2   125
+25:             2            0          2   107
+26:            10            0          2   104
+27:            10            0          2   104
+28:            10            0          2   104
+29:            10            0          2   104
+30:             2            0          2   101
+31:             2            0          2   101
+32:             2            0          2   100
+33:             2            0          2   100
+34:             2            0          2    99
+35:             2            0          2    98
+36:             2            0          2    98
+37:             2            0          2    98
+38:            20           13          1    96
+39:            27           31          1    96
+40:             2            0          2    95
+    n_high_values n_low_values anchortype     n
+            <int>        <int>     <char> <int>
+
+Items (by identical text) appearing in >1 study as classic pairs: 23 ; with >1 distinct spread: 11 
+                                                   anchoring_item n_studies
+                                                           <char>     <int>
+ 1: Number of natural sciences and mathematics students in Israel         7
+ 2:                               Year the telephone was invented         4
+ 3:                                      Grade for an examination         3
+ 4:                   Number of United Nations (UN) member states         3
+ 5:   Average number of babies born each day in the United States         3
+ 6:                             Maximum speed of a housecat (mph)         3
+ 7:                  Average winter temperature of Antarctica (F)         3
+ 8:                      Average annual temperature in the UK (C)         3
+ 9:           Willingness to pay for 2 star hotel (USD per night)         3
+10:           Willingness to pay for 4 star hotel (USD per night)         3
+11:         Amount of gas used per month by an American (gallons)         2
+12:                      number of correctly solved math problems         2
+13:                                      number of climbed stairs         2
+14:                      Reported age in earliest memory (months)         2
+15:                        Height of the tallest sequioa tree (m)         2
+16:                               Height of the Eiffel Tower (ft)         2
+17:                                      Length of the Rhein (km)         2
+18:                                    Length of the Sambesi (km)         2
+19:                                      Length of the Volga (km)         2
+20:                                       Length of the Tejo (km)         2
+21:                                  Length of the Rio Purus (km)         2
+22:                                 Length of the Rio Grande (km)         2
+23:                                         Population of Chicago         2
+                                                   anchoring_item n_studies
+                                                           <char>     <int>
+    n_spreads
+        <int>
+ 1:         1
+ 2:         2
+ 3:         1
+ 4:         2
+ 5:         2
+ 6:         1
+ 7:         1
+ 8:         2
+ 9:         2
+10:         2
+11:         1
+12:         2
+13:         2
+14:         1
+15:         2
+16:         2
+17:         1
+18:         1
+19:         1
+20:         1
+21:         1
+22:         1
+23:         2
+    n_spreads
+        <int>
+
+-- Studies contributing classic pairs: 72 
+                                 reference_short cells
+                                          <char> <int>
+ 1:             Barrera & Navajas, 2018, Study 2    30
+ 2:               Röseler, 2021, Study 2 pretest    30
+ 3:                           Weber et al., 2021    17
+ 4:             Barrera & Navajas, 2018, Study 1    14
+ 5:                         Röseler et al., 2020    12
+ 6:                          Cheek & Norem, 2017    10
+ 7:                                Bahník, 2021b    10
+ 8:                 Klamar et al., 2018, Study 1     9
+ 9:                                Röseler, 2016     8
+10:                                Röseler, 2017     8
+11:                Ambrus, Hartig, & McKay, 2021     8
+12:                          Cheek & Norem, 2022     6
+13:                      Röseler & Röseler, 2017     6
+14:                       Röseler, 2021, Study 2     6
+15:                         Röseler et al., 2022     5
+16:                          Cheek & Norem, 2020     4
+17:                               Röseler, 2016b     4
+18:                       Schindler et al., 2021     4
+19:                 Shanks et al., 2020, Study 3     4
+20:                               Genschow, 2019     3
+21:              Lee & Morewedge, 2021, Study 1a     3
+22:              Lee & Morewedge, 2021, Study 1b     3
+23:                   Papenmeier & Rebholz, 2021     3
+24:                               Pavlovic, 2021     3
+25:                               Pavlovic, 2022     3
+26:               Bahník & Strack, 2016, Study 2     2
+27:              Lee & Morewedge, 2021, Study 3a     2
+28:              Lee & Morewedge, 2021, Study 3b     2
+29:              Lee & Morewedge, 2021, Study 4a     2
+30:              Lee & Morewedge, 2021, Study 6a     2
+31: Röseler, Schütz, Baumeister, & Starker, 2020     2
+32:                       Schreiter et al., 2021     2
+33:                 Shanks et al., 2020, Study 2     2
+34:                              Hedgebeth, 2021     2
+35:               Bahník & Strack, 2016, Study 1     1
+36:          Bermeitinger & Unger, 2014, Study 1     1
+37:          Bermeitinger & Unger, 2014, Study 2     1
+38:          Bermeitinger & Unger, 2014, Study 3     1
+39:  Cheek, Coe-Odess, & Schwartz, 2015, Study 1     1
+40: Cheek, Coe-Odess, & Schwartz, 2015, Study 2a     1
+41: Cheek, Coe-Odess, & Schwartz, 2015, Study 2b     1
+42: Cheek, Coe-Odess, & Schwartz, 2015, Study 3a     1
+43: Cheek, Coe-Odess, & Schwartz, 2015, Study 3b     1
+44:  Cheek, Coe-Odess, & Schwartz, 2015, Study 4     1
+45:             Dijkstra & Wessel, 2021, Study 3     1
+46:                                  Dohle, 2021     1
+47:                 Freira et al., 2020, Study 1     1
+48:                 Freira et al., 2020, Study 2     1
+49:                 Freira et al., 2020, Study 3     1
+50:                 Freira et al., 2020, Study 4     1
+51:            Harris et al., 2019, Experiment 1     1
+52:            Harris et al., 2019, Experiment 2     1
+53:            Harris et al., 2019, Experiment 3     1
+54:            Harris et al., 2019, Experiment 4     1
+55:            Harris et al., 2019, Experiment 5     1
+56:                      Klusmann & Wessel, 2019     1
+57:             Lammers & Burgmer, 2017, Study 1     1
+58:             Lammers & Burgmer, 2017, Study 2     1
+59:             Lammers & Burgmer, 2017, Study 3     1
+60:             Lammers & Burgmer, 2017, Study 4     1
+61:           Milstein and Halali, 2021, Study 1     1
+62:           Milstein and Halali, 2021, Study 2     1
+63:           Milstein and Halali, 2021, Study 3     1
+64:           Milstein and Halali, 2021, Study 4     1
+65:           Milstein and Halali, 2021, Study 5     1
+66:           Milstein and Halali, 2021, Study 6     1
+67:           Milstein and Halali, 2021, Study 7     1
+68:                                 Molden, 2020     1
+69:                          Rinn & Henkel, 2021     1
+70:       Röseler & Wackershauser-Sablotny, 2017     1
+71:              Zimdahl & Undorf, 2021, Study 3     1
+72:                           McKay et al., 2022     1
+                                 reference_short cells
+                                          <char> <int>
