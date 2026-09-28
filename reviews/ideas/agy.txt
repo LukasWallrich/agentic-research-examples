@@ -1,0 +1,143 @@
+### 1. Critical Assessment: Novelty, Tautology, and Psychological Content
+
+#### The Tautology Trap
+The core premise risks resting on a **mathematical truism**:
+1. *Sign invariance under uniform disagreement*: Because $A - H = 0$ whenever $A = H$, conditioning on $A \neq H$ simply divides the expected difference by the scalar $P(A \neq H) > 0$. Proving or simulating that an unbiased paired estimator preserves the sign of $(E[A] - E[H])$ is arithmetic, not a scientific discovery.
+2. *Absolute accuracy degradation*: Conditioned on disagreement with a generally accurate human, the advisor is evaluated exclusively on trials where at least one agent failed. If human baseline accuracy is high (e.g., 80%), then on disagreement trials human accuracy is 0% (when $H=0, A=1$) or 100% (when $H=1, A=0$). The advisor's accuracy on these trials is strictly $P(A=1, H=0) / P(A \neq H)$. Comparing this conditioned rate to an unconditional baseline ($E[H] = 0.80$) is a classic selection bias / conditioning on a collider. Demonstrating that an agent making this comparison rejects a superior advisor is simply demonstrating that a misspecified estimator fails.
+
+If the paper merely shows:
+- "Estimator A (absolute) is biased and rejects the AI"
+- "Estimator B (paired difference) is unbiased and accepts the AI"
+
+...it will be rejected as trivial. Reviewers will rightly ask: *Why simulate what can be stated in two lines of elementary probability?*
+
+#### What Rescues the Project from Triviality?
+The project becomes a substantive contribution to Judgment and Decision Making (JDM) and cognitive science **only if** it focuses on three non-trivial, dynamic questions:
+1. **Finite-Horizon Bias–Variance Tradeoff**: In finite horizons ($T \in [50, 500]$), does inverse-propensity weighting (IPW) actually improve cumulative decision quality (regret), or do extreme propensity weights inflate variance so severely that a biased/unweighted heuristic or an exploration floor achieves higher utility?
+2. **Endogenous Sampling & Reliance Traps (Hot Stove Dynamics)**: When feedback auditing is coupled with reliance decisions (i.e., you only see advisor output or verify it when you distrust or disagree), learning becomes non-stationary and self-reinforcing. Can a superior advisor be permanently abandoned due to early noise runs under confidence-targeted sampling?
+3. **Cognitive Information-Architecture Explanation for Algorithm Aversion**: Instead of attributing algorithm aversion to vague psychological biases ("distrust of machines," "perfectionism"), this framework can show that algorithm aversion can emerge as a **rational artifact of an ecology where humans track absolute performance under disagreement-contingent sampling**.
+
+---
+
+### 2. Demarcation: Mathematical Identities vs. Uncertain Predictions
+
+To maintain rigor, the paper must explicitly partition what is deductively proven from what is computationally or behaviorally open.
+
+| Level | Phenomenon | Epistemic Status | Why It Matters |
+| :--- | :--- | :--- | :--- |
+| **Mathematical Identity** | Sign invariance of paired difference: $\text{sgn}(E[A - H \mid A \neq H]) = \text{sgn}(E[A - H])$ under uniform disagreement selection. | **Deductive Truism** (Do not frame as hypothesis). | Establishes the normative benchmark: paired tracking is immune to pure disagreement filtering. |
+| **Mathematical Identity** | Selection bias of absolute tracking: $E[A \mid A \neq H] < E[A]$ whenever $P(A=1 \mid A=H) > P(A=1 \mid A \neq H)$. | **Deductive Truism** (Do not frame as hypothesis). | Formally proves why comparing audited AI accuracy to an unconditional standard is structurally biased. |
+| **Uncertain Computational Prediction** | **Bias–Variance Regret Inversion**: Under finite $T$ and confidence-skewed sampling, IPW estimation produces *higher* cumulative regret than an unweighted paired tracker with an exploration floor $\epsilon$. | **Open Computational Problem** | IPW removes asymptotic bias but explodes finite-sample variance; optimal reliance requires quantifying this crossover. |
+| **Uncertain Computational Prediction** | **Absorbing Reliance Collapse**: Error correlation $\rho_{A,H}$ between human and AI interacts non-linearly with confidence targeting: high $\rho$ restricts disagreements to hard cases, causing catastrophic premature abandonment of superior AI. | **Open Computational Problem** | Closed-form solutions for non-stationary threshold reliance with endogenous feedback are intractable. |
+| **Falsifiable Behavioral Hypothesis** | **Feedback Format Inoculation**: Providing paired counterfactual feedback ($A$ and $H$ outcomes side-by-side on audit) eliminates algorithm aversion under uniform audits, but *fails* under voluntary (confidence-targeted) audits. | **Falsifiable Empirical Hypothesis** | Refutes domain-general "algorithm hostility"; confirms reliance depends on the information ecology. |
+
+---
+
+### 3. Formal Generative Environment & Calibration Assumptions
+
+The simulation must specify an explicit, grounded generative model rather than arbitrary payoff matrices.
+
+#### Task and Signal Detection Model
+On each trial $t \in \{1, \dots, T\}$:
+- True state: $S_t \in \{-1, +1\}$ with prior $P(S_t = +1) = 0.5$.
+- Human latent signal: $x_{H,t} = S_t + \epsilon_{H,t}$, where $\epsilon_{H,t} \sim \mathcal{N}(0, \sigma_H^2)$.
+- Advisor latent signal: $x_{A,t} = S_t + \epsilon_{A,t}$, where $\epsilon_{A,t} \sim \mathcal{N}(0, \sigma_A^2)$.
+- Error covariance: $\text{Cov}(\epsilon_{H,t}, \epsilon_{A,t}) = \rho \sigma_H \sigma_A$, with correlation $\rho \in [0, 0.8]$.
+- Decisions: $\hat{y}_{H,t} = \text{sgn}(x_{H,t})$ and $\hat{y}_{A,t} = \text{sgn}(x_{A,t})$.
+- Advisor superiority: Set $\sigma_A < \sigma_H$ such that $d'_A > d'_H$ (AI accuracy > human accuracy).
+
+#### Human Subjective Confidence and Calibration
+- Normative posterior confidence: $c^*_{H,t} = P(S_t = \hat{y}_{H,t} \mid x_{H,t}) = \frac{1}{1 + \exp(-2 |x_{H,t}| / \sigma_H^2)}$.
+- Subjective confidence parameterization:
+  $$c_{H,t} = \frac{1}{1 + \exp\left(-\frac{2 |x_{H,t}|^{\gamma_{\text{cal}}}}{\sigma_H^2} - \beta_{\text{over}}\right)}$$
+  - $\beta_{\text{over}} = 0, \gamma_{\text{cal}} = 1$: Perfectly calibrated.
+  - $\beta_{\text{over}} > 0$: Unconditional overconfidence (elevation of confidence).
+  - $\gamma_{\text{cal}} < 1$: Hard-easy compression (underconfident on easy, overconfident on hard trials).
+
+#### Auditing Policies (Sampling Ecologies)
+Feedback $F_t \in \{0, 1\}$ reveals true state $S_t$ (and thus both accuracies):
+1. **Random Audit (Control)**: $P(F_t = 1) = p_0$.
+2. **Uniform Disagreement**: $P(F_t = 1) = p_0 \cdot \mathbb{I}(\hat{y}_{H,t} \neq \hat{y}_{A,t})$.
+3. **Confidence-Targeted Disagreement (Confirmation / Spite Mode)**:
+   Audit when human feels certain they are right and wants to verify the AI's mistake:
+   $$P(F_t = 1 \mid \hat{y}_{H,t} \neq \hat{y}_{A,t}) = \pi_{\min} + (1 - \pi_{\min}) \cdot (c_{H,t})^{\theta}, \quad \theta > 0$$
+4. **Confidence-Targeted Disagreement (Doubt / Help-Seeking Mode)**:
+   Audit when human is uncertain:
+   $$P(F_t = 1 \mid \hat{y}_{H,t} \neq \hat{y}_{A,t}) = \pi_{\min} + (1 - \pi_{\min}) \cdot (1 - c_{H,t})^{\theta}, \quad \theta > 0$$
+   *(Where $\pi_{\min} \ge 0$ is the exploration floor).*
+
+---
+
+### 4. Psychological Predictions Refutable by Empirical Data
+
+To ensure psychological substance, the simulation parameters must map directly onto testable laboratory paradigms (e.g., 2AFC visual perceptual discrimination or general-knowledge estimation with AI advice):
+
+1. **The Disagreement-Induced Negativity Bias (Absolute vs. Paired)**:
+   - *Prediction*: If human participants naturally track absolute AI performance on audited trials ($A_t$) against an implicit prior rather than relative difference ($A_t - H_t$), then under uniform disagreement auditing, providing an explicit running counter of human accuracy on those exact same audited trials will reverse advisor abandonment and restore reliance to normative levels.
+   - *Refutation criterion*: If presenting concurrent human counterfactual accuracy fails to change reliance curves under uniform disagreement audits, the hypothesis that "algorithm aversion is an absolute-tracking sampling artifact" is refuted (pointing instead to affective or essentialist anti-algorithm bias).
+2. **Confidence-Auditing Asymmetry Effect**:
+   - *Prediction*: In tasks where humans are systematically overconfident (e.g., general knowledge / trivia), voluntary auditing will correlate positively with human confidence $c_H$ ("checking to catch the AI"), driving audited AI relative accuracy below zero and triggering reliance collapse. In perceptual tasks with conservative confidence calibration, voluntary auditing will correlate negatively with $c_H$ ("checking when lost"), boosting perceived AI superiority and increasing reliance.
+   - *Refutation criterion*: If the sign of reliance change across tasks does not track the correlation between $c_H$ and audit frequency on disagreement trials, the confidence-targeted selection mechanism is refuted.
+3. **Failure of Statistical Debiasers (IPW) in Human Cognition**:
+   - *Prediction*: Humans presented with propensity-weighted summaries of past performance will exhibit higher variance in trust and lower overall task performance than humans given a simple, unweighted exploration policy (forced random audits of agreement trials).
+
+---
+
+### 5. Precise, Feasible Simulation Design
+
+Avoid sprawling factorial combinations. Implement a focused **$4 \times 3 \times 2$ design** run across $M = 1,000$ synthetic agents per condition over horizon $T = 200$ trials (matching typical human experimental length).
+
+#### Factors
+1. **Belief Tracking Architecture (4 levels)**:
+   - **Model 1: Naive Absolute Tracker**: Updates estimated AI accuracy $\hat{\theta}_{A,t}$ only on audit trials: $\hat{\theta}_{A,t} = (1 - \alpha)\hat{\theta}_{A,t-1} + \alpha \mathbb{I}(\hat{y}_{A,t} = S_t)$. Compares $\hat{\theta}_{A,t}$ to a fixed human benchmark $\bar{\theta}_H = E[H]$.
+   - **Model 2: Naive Paired Tracker**: Updates estimated advantage $\hat{\Delta}_t = (1 - \alpha)\hat{\Delta}_{t-1} + \alpha (\mathbb{I}(\hat{y}_{A,t}=S_t) - \mathbb{I}(\hat{y}_{H,t}=S_t))$.
+   - **Model 3: Full IPW Paired Tracker**: Weights updates by $\frac{1}{P(F_t = 1 \mid c_{H,t}, \hat{y}_{H,t}, \hat{y}_{A,t})}$.
+   - **Model 4: Clipped / Regularized IPW Tracker**: Weights updates by $\min\left(w_{\max}, \frac{1}{P(F_t = 1)}\right)$ or uses an $\epsilon$-floor without weighting.
+2. **Auditing Ecology (3 levels)**:
+   - Level A: Uniform Disagreement ($P(F \mid A \neq H) = 0.5$).
+   - Level B: Spite Auditing ($\theta = 2$, high confidence audits, $\pi_{\min} = 0.05$).
+   - Level C: Doubt Auditing ($\theta = 2$, low confidence audits, $\pi_{\min} = 0.05$).
+3. **Error Correlation (2 levels)**:
+   - Low: $\rho = 0.1$ (Independent errors; abundant disagreement).
+   - High: $\rho = 0.7$ (Correlated errors; disagreement concentrated in ambiguous, high-noise trials).
+
+#### Decision Rule & Reliance
+- On each trial, probability of delegating to AI:
+  $$P(\text{Rely}_t) = \frac{1}{1 + \exp\left(-\lambda \hat{\Delta}_t\right)}$$
+  (For Model 1, substitute $\hat{\Delta}_t = \hat{\theta}_{A,t} - \bar{\theta}_H$). Set sensitivity $\lambda = 5$, learning rate $\alpha = 0.05$.
+
+#### Primary Evaluative Metrics
+1. **Cumulative Regret ($R_T$)**: Expected loss relative to an oracle agent that always chooses $\max(d'_A, d'_H)$.
+2. **Premature Abandonment Rate**: Proportion of runs where $P(\text{Rely}_t) < 0.10$ for all $t > 100$ despite $d'_A > d'_H$.
+3. **Weighting Efficiency Ratio ($\text{WER}$)**: $\text{MSE}(\hat{\Delta}_{\text{IPW}}) / \text{MSE}(\hat{\Delta}_{\text{Naive Paired}})$, explicitly mapping when the variance penalty of IPW outweighs its debiasing benefit across $T$.
+
+---
+
+## Answer
+
+### Critique and Refined Research Plan
+
+#### 1. Is this too trivial?
+**Yes, in its bare mathematical form; No, if structured as a finite-sample bias–variance problem and an ecological model of algorithm aversion.**
+- *Trivial aspect*: Proving that $E[A - H \mid A \neq H]$ shares the sign of $E[A - H]$ is a basic identity of binary differences ($A=H \implies A-H=0$). Simulating this asymptotic truth would be tautological.
+- *Non-trivial contribution*: In finite horizons ($T \le 200$), trust updating based on confidence-skewed sampling faces a severe **bias–variance dilemma**. Inverse-propensity weighting (IPW) is asymptotically unbiased but exhibits extreme variance under selective auditing, while unweighted paired tracking is biased when audits depend on confidence. Showing where IPW causes higher cumulative decision regret than a biased heuristic—and how an exploration floor ($\pi_{\min}$) resolves this trade-off—provides a genuine, publishable computational insight.
+
+#### 2. Clear Partitioning of Knowledge
+- **Mathematical Truism (Do not simulate as a hypothesis)**:
+  $E[A - H \mid A \neq H] = \frac{E[A - H]}{P(A \neq H)}$; sign is unconditionally preserved under uniform disagreement auditing. Absolute tracking $E[A \mid A \neq H]$ is structurally downward-biased whenever human baseline accuracy is above chance.
+- **Uncertain Computational Prediction**:
+  Under confidence-targeted auditing (auditing when human confidence is high), naive paired difference estimators flip sign, causing reliance collapse. Due to propensity score inflation, IPW tracking yields *greater* cumulative regret than an unweighted paired tracker paired with a minimal exploration floor ($\pi_{\min} \approx 0.10$).
+- **Falsifiable Psychological Prediction**:
+  Algorithm aversion observed under selective verification can be eliminated by presenting paired counterfactual feedback ($A$ and $H$ accuracy evaluated simultaneously) under uniform audits, but will persist under voluntary audits because human overconfidence concentrates audits on trials where the human happens to be correct.
+
+#### 3. Minimal, Feasible Simulation Specification
+- **Task Environment**: Signal detection 2AFC with $S \in \{-1, +1\}$, horizon $T=200$, $M=1,000$ runs. Set $d'_A = 1.8$ (AI), $d'_H = 1.2$ (Human). Vary error correlation $\rho \in \{0.1, 0.7\}$.
+- **Sampling Conditions**: (1) Uniform Disagreement, (2) High-Confidence Spite Auditing ($P(\text{Audit}) \propto c_H^2$), and (3) Low-Confidence Doubt Auditing ($P(\text{Audit}) \propto (1 - c_H)^2$), all with exploration floor $\pi_{\min} \in \{0, 0.05, 0.15\}$.
+- **Agent Trackers**:
+  1. *Absolute Tracker* (learns $\hat{\theta}_A$, compares to prior $\bar{\theta}_H$).
+  2. *Naive Paired Tracker* (learns $A_t - H_t$ on audited trials).
+  3. *IPW Paired Tracker* (weights by $1 / P(\text{Audit}_t)$).
+  4. *Clipped-IPW Tracker* (weights capped at $w_{\max} = 5$).
+- **Primary Outcomes**: Cumulative Regret ($R_T$) and Probability of Permanent Reliance Collapse ($P(\text{Rely}) < 0.10$).
+
+This design avoids expansive side-studies, bypasses mathematical tautologies, grounds the calibration in signal detection theory, and delivers clear, refutable empirical benchmarks for the JDM literature on algorithmic advice utilization.

@@ -1,0 +1,4707 @@
+[
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2026-09-17T01:37:50Z",
+      "timestamp": 1789609070103,
+      "version": "build-2803163510"
+    },
+    "reference-count": 0,
+    "publisher": "American Psychological Association (APA)",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Experimental Psychology: General"
+    ],
+    "DOI": "10.1037/xge0000960",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2020-10-01T14:58:43Z",
+      "timestamp": 1601564323000
+    },
+    "page": "507-526",
+    "source": "Crossref",
+    "is-referenced-by-count": 62,
+    "title": [
+      "The role of decision confidence in advice-taking and trust formation."
+    ],
+    "prefix": "10.1037",
+    "volume": "150",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-8826-2202",
+        "authenticated-orcid": false,
+        "given": "Niccol\u00f2",
+        "family": "Pescetelli",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicholas",
+        "family": "Yeung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "15",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "container-title": [
+      "Journal of Experimental Psychology: General"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://psycnet.apa.org/journals/xge/150/3/507.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          5
+        ]
+      ],
+      "date-time": "2024-02-05T22:46:48Z",
+      "timestamp": 1707173208000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://doi.apa.org/doi/10.1037/xge0000960"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2020-73321-001",
+      "33001684"
+    ],
+    "URL": "https://doi.org/10.1037/xge0000960",
+    "relation": {},
+    "ISSN": [
+      "1939-2222",
+      "0096-3445"
+    ],
+    "issn-type": [
+      {
+        "value": "1939-2222",
+        "type": "electronic"
+      },
+      {
+        "value": "0096-3445",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          4
+        ]
+      ],
+      "date-time": "2026-07-04T06:54:33Z",
+      "timestamp": 1783148073071,
+      "version": "3.54.6"
+    },
+    "reference-count": 45,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "9",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              27
+            ]
+          ],
+          "date-time": "2024-09-27T00:00:00Z",
+          "timestamp": 1727395200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100000265",
+        "name": "Medical Research Council",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1943590"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "1943590"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100000265",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS ONE"
+    ],
+    "abstract": "<jats:p>Previous research has shown that people are more influenced by advisors who are objectively more accurate, but also by advisors who tend to agree with their own initial opinions. The present experiments extend these ideas to consider people\u2019s choices of who they receive advice from\u2014the process of source selection. Across a series of nine experiments, participants were first exposed to advisors who differed in objective accuracy, the likelihood of agreeing with the participants\u2019 judgments, or both, and then were given choice over who would advise them across a series of decisions. Participants saw these advisors in the context of perceptual decision and general knowledge tasks, sometimes with feedback provided and sometimes without. We found evidence that people can discern accurate from inaccurate advice even in the absence of feedback, but that without feedback they are biased to select advisors who tend to agree with them. When choosing between advisors who are accurate vs. likely to agree with them, participants overwhelmingly choose accurate advisors when feedback is available, but show wide individual differences in preference when feedback is absent. These findings extend previous studies of advice influence to characterise patterns of advisor choice, with implications for how people select information sources and learn accordingly.</jats:p>",
+    "DOI": "10.1371/journal.pone.0311211",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2024-09-27T17:29:53Z",
+      "timestamp": 1727458193000
+    },
+    "page": "e0311211",
+    "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Preferences for advisor agreement and accuracy"
+    ],
+    "prefix": "10.1371",
+    "volume": "19",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3599-1580",
+        "authenticated-orcid": true,
+        "given": "Matt",
+        "family": "Jaquiery",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1905-2129",
+        "authenticated-orcid": true,
+        "given": "Nick",
+        "family": "Yeung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref001",
+        "first-page": "780",
+        "article-title": "Strategies for revising judgment: How (and how well) people use others\u2019 opinions",
+        "volume": "35",
+        "author": "JB Soll",
+        "year": "2009",
+        "journal-title": "Journal of Experimental Psychology: Learning, Memory, and Cognition"
+      },
+      {
+        "key": "pone.0311211.ref002",
+        "unstructured": "Sunstein CR. Republic.com. Princeton University Press; 2002."
+      },
+      {
+        "issue": "2\u20133",
+        "key": "pone.0311211.ref003",
+        "doi-asserted-by": "crossref",
+        "first-page": "227",
+        "DOI": "10.1080/08913811.2010.508634",
+        "article-title": "When deliberation produces extremism",
+        "volume": "22",
+        "author": "D Schkade",
+        "year": "2010",
+        "journal-title": "Critical Review"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref004",
+        "doi-asserted-by": "crossref",
+        "first-page": "127",
+        "DOI": "10.1016/j.obhdp.2006.07.001",
+        "article-title": "Advice taking and decision-making: An integrative literature review, and implications for the organizational sciences",
+        "volume": "101",
+        "author": "S Bonaccio",
+        "year": "2006",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref005",
+        "doi-asserted-by": "crossref",
+        "first-page": "260",
+        "DOI": "10.1006/obhd.2000.2909",
+        "article-title": "Advice Taking in Decision Making: Egocentric Discounting and Reputation Formation",
+        "volume": "83",
+        "author": "I Yaniv",
+        "year": "2000",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "key": "pone.0311211.ref006",
+        "doi-asserted-by": "crossref",
+        "first-page": "104810",
+        "DOI": "10.1016/j.cognition.2021.104810",
+        "article-title": "Confidence, advice seeking and changes of mind in decision making",
+        "volume": "215",
+        "author": "N Pescetelli",
+        "year": "2021",
+        "journal-title": "Cognition"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref007",
+        "doi-asserted-by": "crossref",
+        "first-page": "272",
+        "DOI": "10.1016/j.obhdp.2011.07.006",
+        "article-title": "The detrimental effects of power on confidence, advice taking, and accuracy",
+        "volume": "116",
+        "author": "KE See",
+        "year": "2011",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref008",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1002/bdm.539",
+        "article-title": "Effects of task difficulty on use of advice",
+        "volume": "20",
+        "author": "F Gino",
+        "year": "2007",
+        "journal-title": "Journal of Behavioral Decision Making"
+      },
+      {
+        "issue": "11",
+        "key": "pone.0311211.ref009",
+        "doi-asserted-by": "crossref",
+        "first-page": "e78433",
+        "DOI": "10.1371/journal.pone.0078433",
+        "article-title": "Social Influence and the Collective Dynamics of Opinion Formation",
+        "volume": "8",
+        "author": "M Moussa\u00efd",
+        "year": "2013",
+        "journal-title": "PLOS ONE"
+      },
+      {
+        "key": "pone.0311211.ref010",
+        "doi-asserted-by": "crossref",
+        "first-page": "2381",
+        "DOI": "10.3389/fpsyg.2018.02381",
+        "article-title": "Why Does Advice Discounting Occur? The Combined Roles of Confidence and Trust",
+        "volume": "9",
+        "author": "X Wang",
+        "year": "2018",
+        "journal-title": "Frontiers in Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref011",
+        "doi-asserted-by": "crossref",
+        "first-page": "288",
+        "DOI": "10.1006/obhd.2000.2926",
+        "article-title": "Trust, Confidence, and Expertise in a Judge-Advisor System",
+        "volume": "84",
+        "author": "JA Sniezek",
+        "year": "2001",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "key": "pone.0311211.ref012",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1016/j.concog.2014.02.002",
+        "article-title": "Does interaction matter? Testing whether a confidence heuristic can replace interaction in collective decision-making",
+        "volume": "26",
+        "author": "D Bang",
+        "year": "2014",
+        "journal-title": "Consciousness and Cognition"
+      },
+      {
+        "issue": "10",
+        "key": "pone.0311211.ref013",
+        "doi-asserted-by": "crossref",
+        "first-page": "1431",
+        "DOI": "10.1037/xge0000471",
+        "article-title": "The persuasive power of knowledge: Testing the confidence heuristic",
+        "volume": "147",
+        "author": "BD Pulford",
+        "year": "2018",
+        "journal-title": "Journal of Experimental Psychology: General"
+      },
+      {
+        "key": "pone.0311211.ref014",
+        "doi-asserted-by": "crossref",
+        "first-page": "71",
+        "DOI": "10.1016/j.jecp.2015.04.007",
+        "article-title": "Young children heed advice selectively",
+        "volume": "138",
+        "author": "H Rakoczy",
+        "year": "2015",
+        "journal-title": "Journal of Experimental Child Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref015",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1016/j.ijforecast.2010.05.003",
+        "article-title": "Judgmental aggregation strategies depend on whether the self is involved",
+        "volume": "27",
+        "author": "JB Soll",
+        "year": "2011",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref016",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.1016/j.obhdp.2011.10.001",
+        "article-title": "Power, competitiveness, and advice taking: Why the powerful don\u2019t listen",
+        "volume": "117",
+        "author": "LP Tost",
+        "year": "2012",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref017",
+        "doi-asserted-by": "crossref",
+        "first-page": "170",
+        "DOI": "10.1027/1618-3169/a000361",
+        "article-title": "On the Inability to Ignore Useless Advice: A Case for Anchoring in the Judge-Advisor-System",
+        "volume": "64",
+        "author": "T Schultze",
+        "year": "2017",
+        "journal-title": "Experimental Psychology"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref018",
+        "doi-asserted-by": "crossref",
+        "first-page": "507",
+        "DOI": "10.1037/xge0000960",
+        "article-title": "The role of decision confidence in advice-taking and trust formation",
+        "volume": "150",
+        "author": "N Pescetelli",
+        "year": "2021",
+        "journal-title": "Journal of Experimental Psychology: General"
+      },
+      {
+        "key": "pone.0311211.ref019",
+        "first-page": "450",
+        "article-title": "Vox populi (the wisdom of crowds)",
+        "volume": "75",
+        "author": "F Galton",
+        "year": "1907",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "pone.0311211.ref020",
+        "doi-asserted-by": "crossref",
+        "first-page": "105264",
+        "DOI": "10.1016/j.cognition.2022.105264",
+        "article-title": "Flexible use of confidence to guide advice requests",
+        "volume": "230",
+        "author": "N Carlebach",
+        "year": "2023",
+        "journal-title": "Cognition"
+      },
+      {
+        "issue": "11",
+        "key": "pone.0311211.ref021",
+        "doi-asserted-by": "crossref",
+        "first-page": "12391",
+        "DOI": "10.1038/s41598-018-25558-7",
+        "article-title": "Large networks of rational agents form persistent echo chambers",
+        "volume": "8",
+        "author": "JK Madsen",
+        "year": "2018",
+        "journal-title": "Scientific Reports"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0311211.ref022",
+        "doi-asserted-by": "crossref",
+        "first-page": "555",
+        "DOI": "10.1037/a0015701",
+        "article-title": "Feeling validated versus being correct: A meta-analysis of selective exposure to information",
+        "volume": "135",
+        "author": "W Hart",
+        "year": "2009",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0311211.ref023",
+        "doi-asserted-by": "crossref",
+        "first-page": "665",
+        "DOI": "10.1080/15205436.2013.835425",
+        "article-title": "Challenges to Selective Exposure: Selective Seeking and Avoidance in a Multitasking Media Environment",
+        "volume": "17",
+        "author": "SM Jang",
+        "year": "2014",
+        "journal-title": "Mass Communication and Society"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref024",
+        "doi-asserted-by": "crossref",
+        "first-page": "248",
+        "DOI": "10.1080/08838151.2016.1164170",
+        "article-title": "Partisan Enclaves or Shared Media Experiences? A Network Approach to Understanding Citizens\u2019 Political News Environments",
+        "volume": "60",
+        "author": "BE Weeks",
+        "year": "2016",
+        "journal-title": "Journal of Broadcasting & Electronic Media"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref025",
+        "doi-asserted-by": "crossref",
+        "first-page": "194",
+        "DOI": "10.1086/267513",
+        "article-title": "Selective exposure to information: A critical review",
+        "volume": "31",
+        "author": "DO Sears",
+        "year": "1967",
+        "journal-title": "Public Opinion Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref026",
+        "doi-asserted-by": "crossref",
+        "first-page": "205630511772931",
+        "DOI": "10.1177/2056305117729314",
+        "article-title": "The Myth of Partisan Selective Exposure: A Portrait of the Online Political News Audience",
+        "volume": "3",
+        "author": "JL Nelson",
+        "year": "2017",
+        "journal-title": "Social Media + Society"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref027",
+        "doi-asserted-by": "crossref",
+        "first-page": "415",
+        "DOI": "10.1146/annurev.soc.27.1.415",
+        "article-title": "Birds of a feather: Homophily in social networks",
+        "volume": "27",
+        "author": "M McPherson",
+        "year": "2001",
+        "journal-title": "Annual review of sociology"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0311211.ref028",
+        "doi-asserted-by": "crossref",
+        "first-page": "778",
+        "DOI": "10.1037/h0022670",
+        "article-title": "Confidence, utility, and selective exposure: A partial replication",
+        "volume": "2",
+        "author": "JL Freedman",
+        "year": "1965",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref029",
+        "doi-asserted-by": "crossref",
+        "first-page": "322",
+        "DOI": "10.1037/met0000061",
+        "article-title": "Sequential hypothesis testing with Bayes factors: Efficiently testing mean differences",
+        "volume": "22",
+        "author": "FD Schonbrodt",
+        "year": "2017",
+        "journal-title": "Psychological methods"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref030",
+        "doi-asserted-by": "crossref",
+        "first-page": "709",
+        "DOI": "10.2307/258792",
+        "article-title": "An integrative model of organizational trust",
+        "volume": "20",
+        "author": "RC Mayer",
+        "year": "1995",
+        "journal-title": "Academy of management review"
+      },
+      {
+        "issue": "46",
+        "key": "pone.0311211.ref031",
+        "doi-asserted-by": "crossref",
+        "first-page": "15643",
+        "DOI": "10.1523/JNEUROSCI.1899-10.2010",
+        "article-title": "Decision Processes in Human Performance Monitoring",
+        "volume": "30",
+        "author": "M Steinhauser",
+        "year": "2010",
+        "journal-title": "Journal of Neuroscience"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref032",
+        "doi-asserted-by": "crossref",
+        "first-page": "1141",
+        "DOI": "10.1038/s41467-019-09075-3",
+        "article-title": "Forming global estimates of self-performance from local confidence",
+        "volume": "10",
+        "author": "M Rouault",
+        "year": "2019",
+        "journal-title": "Nature Communications"
+      },
+      {
+        "issue": "10",
+        "key": "pone.0311211.ref033",
+        "doi-asserted-by": "crossref",
+        "first-page": "2811",
+        "DOI": "10.1093/brain/awu221",
+        "article-title": "Domain-specific impairment in metacognitive accuracy following anterior prefrontal lesions",
+        "volume": "137",
+        "author": "SM Fleming",
+        "year": "2014",
+        "journal-title": "Brain"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref034",
+        "doi-asserted-by": "crossref",
+        "first-page": "104",
+        "DOI": "10.1016/j.obhdp.2006.05.006",
+        "article-title": "Using advice from multiple sources to revise and improve judgments",
+        "volume": "103",
+        "author": "I Yaniv",
+        "year": "2007",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref035",
+        "doi-asserted-by": "crossref",
+        "first-page": "234",
+        "DOI": "10.1016/j.obhdp.2008.03.001",
+        "article-title": "Do we listen to advice just because we paid for it? The impact of advice cost on its use",
+        "volume": "107",
+        "author": "F Gino",
+        "year": "2008",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "key": "pone.0311211.ref036",
+        "unstructured": "Jaquiery M. oxacclab/esmData: Thesis. Zenodo; 2021. Available from: https://zenodo.org/record/5543803."
+      },
+      {
+        "key": "pone.0311211.ref037",
+        "unstructured": "Team RC. R: A language and environment for statistical computing. Vienna, Austria; 2021. Available from: https://www.R-project.org/."
+      },
+      {
+        "key": "pone.0311211.ref038",
+        "unstructured": "Team R. RStudio: Integrated development environment for r. Boston, MA; 2021. Available from: http://www.rstudio.com/."
+      },
+      {
+        "key": "pone.0311211.ref039",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xie Y. Dynamic documents with R and knitr. 2nd ed. Boca Raton, Florida: Chapman and Hall/CRC; 2015. Available from: https://yihui.org/knitr/.",
+        "DOI": "10.1201/b15166"
+      },
+      {
+        "issue": "43",
+        "key": "pone.0311211.ref040",
+        "doi-asserted-by": "crossref",
+        "first-page": "1686",
+        "DOI": "10.21105/joss.01686",
+        "article-title": "Welcome to the tidyverse",
+        "volume": "4",
+        "author": "H Wickham",
+        "year": "2019",
+        "journal-title": "Journal of Open Source Software"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref041",
+        "doi-asserted-by": "crossref",
+        "first-page": "273",
+        "DOI": "10.1080/14640746808400161",
+        "article-title": "Reasoning about a rule",
+        "volume": "20",
+        "author": "PC Wason",
+        "year": "1968",
+        "journal-title": "Quarterly Journal of Experimental Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref042",
+        "doi-asserted-by": "crossref",
+        "first-page": "265",
+        "DOI": "10.1111/j.1083-6101.2009.01440.x",
+        "article-title": "Echo chambers online?: Politically motivated selective exposure among Internet news users",
+        "volume": "14",
+        "author": "RK Garrett",
+        "year": "2009",
+        "journal-title": "Journal of Computer-Mediated Communication"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref043",
+        "doi-asserted-by": "crossref",
+        "first-page": "158",
+        "DOI": "10.1027/1864-1105/a000265",
+        "article-title": "Avoiding the Other Side? An eye-tracking study of selective exposure and selective avoidance effects in response to political advertising",
+        "volume": "32",
+        "author": "D Schmuck",
+        "year": "2020",
+        "journal-title": "Journal Of Media Psychology-Theories Methods And Applications"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref044",
+        "doi-asserted-by": "crossref",
+        "first-page": "116",
+        "DOI": "10.1037/0022-3514.42.1.116",
+        "article-title": "The need for cognition",
+        "volume": "42",
+        "author": "JT Cacioppo",
+        "year": "1982",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref045",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1002/per.2271",
+        "article-title": "Testing the Information-Seeking Theory of Openness/Intellect",
+        "volume": "35",
+        "author": "HK Jach",
+        "year": "2021",
+        "journal-title": "European Journal of Personality"
+      }
+    ],
+    "container-title": [
+      "PLOS ONE"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0311211",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2024-09-27T17:30:06Z",
+      "timestamp": 1727458206000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0311211"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Diego A.",
+        "family": "Forero",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "editor"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ]
+    },
+    "references-count": 45,
+    "journal-issue": {
+      "issue": "9",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            27
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1371/journal.pone.0311211",
+    "relation": {},
+    "ISSN": [
+      "1932-6203"
+    ],
+    "issn-type": [
+      {
+        "value": "1932-6203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          19
+        ]
+      ],
+      "date-time": "2026-08-19T17:26:17Z",
+      "timestamp": 1787160377137,
+      "version": "build-2736575974"
+    },
+    "reference-count": 20,
+    "publisher": "SAGE Publications",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              1,
+              8
+            ]
+          ],
+          "date-time": "2010-01-08T00:00:00Z",
+          "timestamp": 1262908800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Psychol Sci"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          2
+        ]
+      ]
+    },
+    "abstract": "<jats:p>People tend to grossly underestimate the trustworthiness of other people. We tested whether this cynicism grows out of an asymmetry in the feedback people receive when they decide to trust others. When people trust others, they painfully learn when other people prove to be untrustworthy; however, when people refrain from trusting others, they fail to learn of instances when the other person would have honored their trust. Participants saw short videos of other people and had to decide whether to trust each person in an economic game. Participants overall underestimated the trustworthiness of the people they viewed, regardless of whether they were given financial incentives to provide accurate estimates. However, people who received symmetric feedback about the trustworthiness of others (i.e., who received feedback regardless of their own decision to trust) exhibited reduced cynicism relative to those who received no feedback or asymmetric feedback (i.e., who received feedback only after they trusted the other person).</jats:p>",
+    "DOI": "10.1177/0956797609358586",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          8
+        ]
+      ],
+      "date-time": "2010-01-08T22:20:52Z",
+      "timestamp": 1262989252000
+    },
+    "page": "189-193",
+    "source": "Crossref",
+    "is-referenced-by-count": 84,
+    "title": [
+      "Why So Cynical?"
+    ],
+    "prefix": "10.1177",
+    "volume": "21",
+    "author": [
+      {
+        "given": "Detlef",
+        "family": "Fetchenhauer",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Cologne"
+          },
+          {
+            "name": "University of Groningen"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Dunning",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Cornell University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146167207309201"
+      },
+      {
+        "key": "bibr2-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/a0013195"
+      },
+      {
+        "key": "bibr3-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/game.1995.1027"
+      },
+      {
+        "key": "bibr4-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0096-3445.137.3.403"
+      },
+      {
+        "key": "bibr5-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.112.4.951"
+      },
+      {
+        "key": "bibr6-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4324/9780203337998"
+      },
+      {
+        "key": "bibr7-0956797609358586",
+        "doi-asserted-by": "crossref",
+        "volume-title": "Social motivation",
+        "author": "Dunning D.",
+        "DOI": "10.4324/9780203833995"
+      },
+      {
+        "key": "bibr8-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.79.6.861"
+      },
+      {
+        "key": "bibr9-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146167205284007"
+      },
+      {
+        "key": "bibr10-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.87.3.293"
+      },
+      {
+        "key": "bibr11-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature01474"
+      },
+      {
+        "key": "bibr12-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joep.2008.04.006"
+      },
+      {
+        "key": "bibr13-0956797609358586",
+        "author": "Fetchenhauer D.",
+        "journal-title": "Evolution & Human Behavior"
+      },
+      {
+        "key": "bibr14-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.95.1.128"
+      },
+      {
+        "key": "bibr15-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511808098"
+      },
+      {
+        "key": "bibr16-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/3094850"
+      },
+      {
+        "key": "bibr17-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0003-066X.54.12.1053"
+      },
+      {
+        "key": "bibr18-0956797609358586",
+        "volume-title": "Human inference: Strategies and shortcomings of social judgment",
+        "author": "Nisbett R.E.",
+        "year": "1980"
+      },
+      {
+        "key": "bibr19-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0022-1031(03)00015-5"
+      },
+      {
+        "key": "bibr20-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/a0015072"
+      }
+    ],
+    "container-title": [
+      "Psychological Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0956797609358586",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/0956797609358586",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0956797609358586",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2026-05-01T22:53:23Z",
+      "timestamp": 1777676003000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/0956797609358586"
+      }
+    },
+    "subtitle": [
+      "Asymmetric Feedback Underlies Misguided Skepticism Regarding the Trustworthiness of Others"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          8
+        ]
+      ]
+    },
+    "references-count": 20,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/0956797609358586"
+    ],
+    "URL": "https://doi.org/10.1177/0956797609358586",
+    "relation": {},
+    "ISSN": [
+      "0956-7976",
+      "1467-9280"
+    ],
+    "issn-type": [
+      {
+        "value": "0956-7976",
+        "type": "print"
+      },
+      {
+        "value": "1467-9280",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          8
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          16
+        ]
+      ],
+      "date-time": "2026-09-16T08:06:10Z",
+      "timestamp": 1789545970307,
+      "version": "build-2803163510"
+    },
+    "reference-count": 271,
+    "publisher": "American Psychological Association (APA)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Psychological Review"
+    ],
+    "DOI": "10.1037/0033-295x.112.4.951",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2005,
+          11,
+          1
+        ]
+      ],
+      "date-time": "2005-11-01T16:34:05Z",
+      "timestamp": 1130862845000
+    },
+    "page": "951-978",
+    "source": "Crossref",
+    "is-referenced-by-count": 218,
+    "title": [
+      "Why Most People Disapprove of Me: Experience Sampling in Impression Formation."
+    ],
+    "prefix": "10.1037",
+    "volume": "112",
+    "author": [
+      {
+        "given": "Jerker",
+        "family": "Denrell",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "15",
+    "published-online": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "r1_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1177/0022002184015001001",
+        "article-title": "The development of ethnic attitudes: A critical review.",
+        "volume": "15",
+        "author": "Aboud",
+        "year": "1984",
+        "journal-title": "Journal of Cross-Cultural Psychology",
+        "ISSN": "https://id.crossref.org/issn/0022-0221",
+        "issn-type": "print"
+      },
+      {
+        "key": "r2_10.1037/0033-295X.112.4.951",
+        "volume-title": "Managing the flow of technology: Technology transfer and the dissemination of technological information within the R&D organization.",
+        "author": "Allen",
+        "year": "1978"
+      },
+      {
+        "key": "r3_10.1037/0033-295X.112.4.951",
+        "volume-title": "The nature of prejudice.",
+        "author": "Allport",
+        "year": "1954"
+      },
+      {
+        "key": "r4_10.1037/0033-295X.112.4.951",
+        "volume-title": "Social penetration: The development of interpersonal relationships.",
+        "author": "Altman",
+        "year": "1973"
+      },
+      {
+        "key": "r5_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0042539"
+      },
+      {
+        "key": "r6_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0026816"
+      },
+      {
+        "key": "r7_10.1037/0033-295X.112.4.951",
+        "volume-title": "Foundations of information integration theory.",
+        "author": "Anderson",
+        "year": "1981"
+      },
+      {
+        "key": "r8_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0035578"
+      },
+      {
+        "key": "r9_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "227",
+        "DOI": "10.3758/BF03342263",
+        "article-title": "The effect of a pratfall on increasing interpersonal attractiveness.",
+        "volume": "4",
+        "author": "Aronson",
+        "year": "1966",
+        "journal-title": "Psychonomic Science",
+        "ISSN": "https://id.crossref.org/issn/0033-3131",
+        "issn-type": "print"
+      },
+      {
+        "key": "r10_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.86.4.736"
+      },
+      {
+        "key": "r11_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0055756"
+      },
+      {
+        "key": "r12_10.1037/0033-295X.112.4.951",
+        "first-page": "236",
+        "article-title": "Inter-ethnic attitudes and behaviour in British multi-racial schools.",
+        "volume-title": "Race and education across cultures",
+        "author": "Bagley",
+        "year": "1975"
+      },
+      {
+        "key": "r13_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "275",
+        "DOI": "10.1177/089124300014002004",
+        "article-title": "The glass ceiling hypothesis: A comparative study of the United States, Sweden, and Australia.",
+        "volume": "14",
+        "author": "Baxter",
+        "year": "2000",
+        "journal-title": "Gender & Society",
+        "ISSN": "https://id.crossref.org/issn/0891-2432",
+        "issn-type": "print"
+      },
+      {
+        "key": "r14_10.1037/0033-295X.112.4.951",
+        "first-page": "413",
+        "article-title": "Interpersonal attraction.",
+        "volume-title": "Handbook of social psychology",
+        "author": "Berscheid",
+        "year": "1985",
+        "edition": "3rd ed."
+      },
+      {
+        "key": "r15_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.72.3.544"
+      },
+      {
+        "key": "r16_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2089717"
+      },
+      {
+        "key": "r17_10.1037/0033-295X.112.4.951",
+        "volume-title": "The dynamics of bureaucracy: A study of interpersonal relations in two governmental agencies.",
+        "author": "Blau",
+        "year": "1963"
+      },
+      {
+        "key": "r18_10.1037/0033-295X.112.4.951",
+        "volume-title": "Inequality and heterogeneity: A primitive theory of social structure.",
+        "author": "Blau",
+        "year": "1977"
+      },
+      {
+        "key": "r19_10.1037/0033-295X.112.4.951",
+        "volume-title": "Structural contexts of opportunities.",
+        "author": "Blau",
+        "year": "1994"
+      },
+      {
+        "key": "r20_10.1037/0033-295X.112.4.951",
+        "volume-title": "Crosscutting social circles: Testing a macrostructural theory of intergroup relations.",
+        "author": "Blau",
+        "year": "1984"
+      },
+      {
+        "key": "r21_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "277",
+        "DOI": "10.1080/00224545.1976.9711939",
+        "article-title": "Acquaintance links between residents of a high rise building: An application of the \"small world\" method.",
+        "volume": "100",
+        "author": "Bochner",
+        "year": "1976",
+        "journal-title": "The Journal of Social Psychology",
+        "ISSN": "https://id.crossref.org/issn/0022-4545",
+        "issn-type": "print"
+      },
+      {
+        "key": "r22_10.1037/0033-295X.112.4.951",
+        "unstructured": "Bonney. 1947"
+      },
+      {
+        "key": "r23_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/mnsc.49.4.432.14428"
+      },
+      {
+        "key": "r24_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2786324"
+      },
+      {
+        "key": "r25_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0037266"
+      },
+      {
+        "key": "r26_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/256204"
+      },
+      {
+        "key": "r27_10.1037/0033-295X.112.4.951",
+        "volume-title": "Ethnocentrism and intergroup attitudes: East African evidence.",
+        "author": "Brewer",
+        "year": "1976"
+      },
+      {
+        "key": "r28_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.ps.36.020185.001251"
+      },
+      {
+        "key": "r29_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "281",
+        "DOI": "10.1016/B978-0-12-497780-8.50019-X",
+        "article-title": "Beyond the contact hypothesis: Theoretical perspectives on desegregation.",
+        "volume-title": "Groups in contact: The psychology of desegregation",
+        "author": "Brewer",
+        "year": "1984"
+      },
+      {
+        "key": "r30_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1037/10037-000",
+        "volume-title": "Perception and communication.",
+        "author": "Broadbent",
+        "year": "1958"
+      },
+      {
+        "key": "r31_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "11",
+        "DOI": "10.1002/cd.23220008804",
+        "article-title": "Pages from a sociometric notebook: An analysis of nomination and rating scale measures of acceptance, rejection, and social preference.",
+        "volume": "88",
+        "author": "Bukowski",
+        "year": "2000",
+        "journal-title": "New Directions for Child and Adolescent Development",
+        "ISSN": "https://id.crossref.org/issn/1520-3247",
+        "issn-type": "print"
+      },
+      {
+        "key": "r32_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0278-7393.14.1.3"
+      },
+      {
+        "key": "r33_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1037/14496-000",
+        "volume-title": "Stochastic models for learning.",
+        "author": "Bush",
+        "year": "1955"
+      },
+      {
+        "key": "r34_10.1037/0033-295X.112.4.951",
+        "volume-title": "The attraction paradigm.",
+        "author": "Byrne",
+        "year": "1971"
+      },
+      {
+        "key": "r35_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.70.4.661"
+      },
+      {
+        "key": "r36_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1468-0262.00054"
+      },
+      {
+        "key": "r37_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0021-9010.71.4.672"
+      },
+      {
+        "key": "r38_10.1037/0033-295X.112.4.951",
+        "unstructured": "Carranza. 2004"
+      },
+      {
+        "key": "r39_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2574767"
+      },
+      {
+        "key": "r40_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/jesp.1997.1329"
+      },
+      {
+        "key": "r41_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.1002/cd.23220008807",
+        "article-title": "Stability of sociometric categories.",
+        "volume": "88",
+        "author": "Cillessen",
+        "year": "2000",
+        "journal-title": "New Directions for Child and Adolescent Development",
+        "ISSN": "https://id.crossref.org/issn/1520-3247",
+        "issn-type": "print"
+      },
+      {
+        "key": "r42_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "227",
+        "DOI": "10.1287/mnsc.40.2.227",
+        "article-title": "Fortune favors the prepared firm.",
+        "volume": "40",
+        "author": "Cohen",
+        "year": "1994",
+        "journal-title": "Management Science",
+        "ISSN": "https://id.crossref.org/issn/0025-1909",
+        "issn-type": "print"
+      },
+      {
+        "key": "r43_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0021-9010.83.1.102"
+      },
+      {
+        "key": "r44_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "837",
+        "DOI": "10.1177/107769907905600420",
+        "article-title": "Newspaper coverage of causes of death.",
+        "volume": "56",
+        "author": "Combs",
+        "year": "1979",
+        "journal-title": "The Journalism Quarterly",
+        "ISSN": "https://id.crossref.org/issn/0196-3031",
+        "issn-type": "print"
+      },
+      {
+        "key": "r45_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "251",
+        "DOI": "10.1037/h0087147",
+        "article-title": "White fears and native apprehensions: An integrated threat theory approach to intergroup attitudes.",
+        "volume": "33",
+        "author": "Corenblum",
+        "year": "2001",
+        "journal-title": "Canadian Journal of Behavioural Science",
+        "ISSN": "https://id.crossref.org/issn/0008-400X",
+        "issn-type": "print"
+      },
+      {
+        "key": "r46_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "655",
+        "DOI": "10.1353/sof.2001.0091",
+        "article-title": "The glass ceiling effect.",
+        "volume": "80",
+        "author": "Cotter",
+        "year": "2001",
+        "journal-title": "Social Forces",
+        "ISSN": "https://id.crossref.org/issn/0037-7732",
+        "issn-type": "print"
+      },
+      {
+        "key": "r47_10.1037/0033-295X.112.4.951",
+        "volume-title": "The hidden power of social networks: Understanding how work really gets done in organizations.",
+        "author": "Cross",
+        "year": "2004"
+      },
+      {
+        "key": "r48_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/5326.983927"
+      },
+      {
+        "key": "r49_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/jvbe.1999.1711"
+      },
+      {
+        "key": "r50_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1422863"
+      },
+      {
+        "key": "r51_10.1037/0033-295X.112.4.951",
+        "volume-title": "Optimal statistical decisions.",
+        "author": "DeGroot",
+        "year": "1970"
+      },
+      {
+        "key": "r52_10.1037/0033-295X.112.4.951",
+        "volume-title": "A cognitive approach to performance appraisal: A program of research.",
+        "author": "DeNisi",
+        "year": "1997"
+      },
+      {
+        "key": "r53_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/orsc.14.3.227.15164"
+      },
+      {
+        "key": "r54_10.1037/0033-295X.112.4.951",
+        "unstructured": "Denrell. 2005"
+      },
+      {
+        "key": "r55_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/orsc.12.5.523.10092"
+      },
+      {
+        "key": "r56_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.60.4.531"
+      },
+      {
+        "key": "r57_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "265",
+        "DOI": "10.1177/002200275800200401",
+        "article-title": "Trust and suspicion.",
+        "volume": "2",
+        "author": "Deutsch",
+        "year": "1958",
+        "journal-title": "The Journal of Conflict Resolution",
+        "ISSN": "https://id.crossref.org/issn/0022-0027",
+        "issn-type": "print"
+      },
+      {
+        "key": "r58_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0033731"
+      },
+      {
+        "key": "r59_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.37.10.1758"
+      },
+      {
+        "key": "r60_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1080/0305498780040203",
+        "article-title": "Intergroup attitudes in multi-ethnic schools.",
+        "volume": "4",
+        "author": "D'Souza",
+        "year": "1978",
+        "journal-title": "Oxford Review of Education",
+        "ISSN": "https://id.crossref.org/issn/0305-4985",
+        "issn-type": "print"
+      },
+      {
+        "key": "r61_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-3-662-12880-0",
+        "volume-title": "Random iterative models.",
+        "author": "Duflo",
+        "year": "1997"
+      },
+      {
+        "key": "r62_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.110.1.109"
+      },
+      {
+        "key": "r63_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.36.4.424"
+      },
+      {
+        "key": "r64_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15327752jpa5003_8"
+      },
+      {
+        "key": "r65_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.85.5.395"
+      },
+      {
+        "key": "r66_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146167203254605"
+      },
+      {
+        "key": "r67_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "365",
+        "DOI": "10.1177/000312240406900303",
+        "article-title": "Race, gender, and workplace power.",
+        "volume": "69",
+        "author": "Elliott",
+        "year": "2004",
+        "journal-title": "American Sociological Review",
+        "ISSN": "https://id.crossref.org/issn/0003-1224",
+        "issn-type": "print"
+      },
+      {
+        "key": "r68_10.1037/0033-295X.112.4.951",
+        "first-page": "385",
+        "article-title": "The contact hypothesis and racial attitudes among Black Americans.",
+        "volume": "75",
+        "author": "Ellison",
+        "year": "1994",
+        "journal-title": "Social Science Quarterly",
+        "ISSN": "https://id.crossref.org/issn/0038-4941",
+        "issn-type": "print"
+      },
+      {
+        "key": "r69_10.1037/0033-295X.112.4.951",
+        "first-page": "848",
+        "article-title": "Predicting how people play games: Reinforcement learning in experimental games with unique, mixed strategy equilibria.",
+        "volume": "88",
+        "author": "Erev",
+        "year": "1998",
+        "journal-title": "The American Economic Review",
+        "ISSN": "https://id.crossref.org/issn/0002-8282",
+        "issn-type": "print"
+      },
+      {
+        "key": "r70_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.87.3.293"
+      },
+      {
+        "key": "r71_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.111.2.304"
+      },
+      {
+        "key": "r72_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0021-9010.66.2.127"
+      },
+      {
+        "key": "r73_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/obhd.1994.1030"
+      },
+      {
+        "key": "r74_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.2307/3707362",
+        "volume-title": "Social pressures in informal groups: A study of human factors in housing.",
+        "author": "Festinger",
+        "year": "1950"
+      },
+      {
+        "key": "r75_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.103.1.193"
+      },
+      {
+        "key": "r76_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.107.4.659"
+      },
+      {
+        "key": "r77_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.4324/9780203641538",
+        "volume-title": "Stereotyping as inductive hypothesis testing.",
+        "author": "Fiedler",
+        "year": "2004"
+      },
+      {
+        "key": "r78_10.1037/0033-295X.112.4.951",
+        "volume-title": "To dwell among friends: Personal networks in town and city.",
+        "author": "Fischer",
+        "year": "1982"
+      },
+      {
+        "key": "r79_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "889",
+        "DOI": "10.1037/0022-3514.38.6.889",
+        "article-title": "Attention and weight in person perception: The impact of negative and extreme behavior.",
+        "volume": "38",
+        "author": "Fiske",
+        "year": "1981",
+        "journal-title": "Journal of Personality and Social Psychology",
+        "ISSN": "https://id.crossref.org/issn/0022-3514",
+        "issn-type": "print"
+      },
+      {
+        "key": "r80_10.1037/0033-295X.112.4.951",
+        "volume-title": "Social cognition",
+        "author": "Fiske",
+        "year": "1991",
+        "edition": "2nd ed."
+      },
+      {
+        "key": "r81_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/3094870"
+      },
+      {
+        "key": "r82_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0043167"
+      },
+      {
+        "key": "r83_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2785194"
+      },
+      {
+        "key": "r84_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.100.2.298"
+      },
+      {
+        "key": "r85_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "351",
+        "DOI": "10.1080/00221309.1986.9711045",
+        "article-title": "The robustness of the recency effect: Studies using legal evidence.",
+        "volume": "113",
+        "author": "Furnham",
+        "year": "1986",
+        "journal-title": "The Journal of General Psychology",
+        "ISSN": "https://id.crossref.org/issn/0022-1309",
+        "issn-type": "print"
+      },
+      {
+        "key": "r86_10.1037/0033-295X.112.4.951",
+        "volume-title": "Reducing intergroup bias: The common ingroup identity model.",
+        "author": "Gaertner",
+        "year": "2000"
+      },
+      {
+        "key": "r87_10.1037/0033-295X.112.4.951",
+        "first-page": "213",
+        "article-title": "Can we trust trust?",
+        "volume-title": "Trust: Making and breaking cooperative relationships",
+        "author": "Gambetta",
+        "year": "1988"
+      },
+      {
+        "key": "r88_10.1037/0033-295X.112.4.951",
+        "unstructured": "Gans. 2004"
+      },
+      {
+        "key": "r89_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0022-1031(02)00517-6"
+      },
+      {
+        "key": "r90_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0054720"
+      },
+      {
+        "key": "r91_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "469",
+        "DOI": "10.1177/0022002786030003004",
+        "article-title": "The power approach to intergroup hostility.",
+        "volume": "30",
+        "author": "Giles",
+        "year": "1986",
+        "journal-title": "The Journal of Conflict Resolution",
+        "ISSN": "https://id.crossref.org/issn/0022-0027",
+        "issn-type": "print"
+      },
+      {
+        "key": "r92_10.1037/0033-295X.112.4.951",
+        "volume-title": "How we know what isn't so: The fallibility of human reason in everyday life.",
+        "author": "Gilovich",
+        "year": "1991"
+      },
+      {
+        "key": "r93_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2112015"
+      },
+      {
+        "key": "r94_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Guadagni. A logit model of brand choice based on scanner data. 2 203 1983",
+        "DOI": "10.1287/mksc.2.3.203"
+      },
+      {
+        "key": "r95_10.1037/0033-295X.112.4.951",
+        "volume-title": "Gender in practice: A study of lawyers' lives.",
+        "author": "Hagan",
+        "year": "1995"
+      },
+      {
+        "key": "r96_10.1037/0033-295X.112.4.951",
+        "volume-title": "The scientific community.",
+        "author": "Hagstrom",
+        "year": "1975"
+      },
+      {
+        "key": "r97_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0022-1031(76)80006-6"
+      },
+      {
+        "key": "r98_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "152",
+        "DOI": "10.1515/auk-1992-0204",
+        "article-title": "The street-level epistemology of trust.",
+        "volume": "14",
+        "author": "Hardin",
+        "year": "1992",
+        "journal-title": "Analyse & Kritik",
+        "ISSN": "https://id.crossref.org/issn/0171-5860",
+        "issn-type": "print"
+      },
+      {
+        "key": "r99_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1912352"
+      },
+      {
+        "key": "r100_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/322086"
+      },
+      {
+        "key": "r101_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/0022-4537.00234"
+      },
+      {
+        "key": "r102_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0030-5073(78)90058-2"
+      },
+      {
+        "key": "r103_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0029848"
+      },
+      {
+        "key": "r104_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.71.4.654"
+      },
+      {
+        "key": "r105_10.1037/0033-295X.112.4.951",
+        "article-title": "(in press). Risky prospects: When valued through a window of sampled experiences.",
+        "volume-title": "Information sampling and adaptive cognition.",
+        "author": "Hertwig"
+      },
+      {
+        "key": "r106_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.psych.53.100901.135109"
+      },
+      {
+        "key": "r107_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "501",
+        "DOI": "10.1037/0022-3514.57.2.201",
+        "article-title": "The role of typical diagnosticity in stereotype-based judgments.",
+        "volume": "57",
+        "author": "Hilton",
+        "year": "1989",
+        "journal-title": "Journal of Personality and Social Psychology",
+        "ISSN": "https://id.crossref.org/issn/0022-3514",
+        "issn-type": "print"
+      },
+      {
+        "key": "r108_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.psych.47.1.237"
+      },
+      {
+        "key": "r109_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/obhd.1999.2875"
+      },
+      {
+        "key": "r110_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2786131"
+      },
+      {
+        "key": "r111_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/256279"
+      },
+      {
+        "key": "r112_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0010-0285(92)90002-J"
+      },
+      {
+        "key": "r113_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2087919"
+      },
+      {
+        "key": "r114_10.1037/0033-295X.112.4.951",
+        "volume-title": "Social behavior: Its elementary forms.",
+        "author": "Homans",
+        "year": "1961"
+      },
+      {
+        "key": "r115_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.ps.29.020178.000555"
+      },
+      {
+        "key": "r116_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2393451"
+      },
+      {
+        "key": "r117_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/258823"
+      },
+      {
+        "key": "r118_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/obhd.1993.1015"
+      },
+      {
+        "key": "r119_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "700",
+        "DOI": "10.1177/0146167293196005",
+        "article-title": "Dimensions of contact as predictors of intergroup anxiety, perceived out-group variability, and out-group attitude: An integrative model.",
+        "volume": "19",
+        "author": "Islam",
+        "year": "1993a",
+        "journal-title": "Personality and Social Psychology Bulletin",
+        "ISSN": "https://id.crossref.org/issn/0146-1672",
+        "issn-type": "print"
+      },
+      {
+        "key": "r120_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.64.6.936"
+      },
+      {
+        "key": "r121_10.1037/0033-295X.112.4.951",
+        "volume-title": "Leadership and isolation: A study of personality in inter-personal relations.",
+        "author": "Jennings",
+        "year": "1950"
+      },
+      {
+        "key": "r122_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/256513"
+      },
+      {
+        "key": "r123_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jussim. Naturally occurring interpersonal expectancies. 15 74 1995",
+        "DOI": "10.2307/2580623"
+      },
+      {
+        "key": "r124_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0034747"
+      },
+      {
+        "key": "r125_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1914185"
+      },
+      {
+        "key": "r126_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.1037/0008-400X.28.3.171",
+        "article-title": "Ethnic attitudes as a function of ethnic presence.",
+        "volume": "28",
+        "author": "Kalin",
+        "year": "1996",
+        "journal-title": "Canadian Journal of Behavioural Science",
+        "ISSN": "https://id.crossref.org/issn/0008-400X",
+        "issn-type": "print"
+      },
+      {
+        "key": "r127_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "97",
+        "DOI": "10.1037/h0081246",
+        "article-title": "The social ecology of ethnic attitudes in Canada.",
+        "volume": "14",
+        "author": "Kalin",
+        "year": "1982",
+        "journal-title": "Canadian Journal of Behavioural Science",
+        "ISSN": "https://id.crossref.org/issn/0008-400X",
+        "issn-type": "print"
+      },
+      {
+        "key": "r128_10.1037/0033-295X.112.4.951",
+        "volume-title": "Men and women of the corporation.",
+        "author": "Kanter",
+        "year": "1977"
+      },
+      {
+        "key": "r129_10.1037/0033-295X.112.4.951",
+        "volume-title": "A first course in stochastic processes.",
+        "author": "Karlin",
+        "year": "1975"
+      },
+      {
+        "key": "r130_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/jesp.1994.1021"
+      },
+      {
+        "key": "r131_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.107.4.914"
+      },
+      {
+        "key": "r132_10.1037/0033-295X.112.4.951",
+        "unstructured": "Kelley. 1948"
+      },
+      {
+        "key": "r133_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-6494.1950.tb01260.x"
+      },
+      {
+        "key": "r134_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/(SICI)1099-0992(199903/05)29:2/3<219::AID-EJSP925>3.0.CO;2-X"
+      },
+      {
+        "key": "r135_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.94.2.211"
+      },
+      {
+        "key": "r136_10.1037/0033-295X.112.4.951",
+        "first-page": "153",
+        "article-title": "Stereotypes and behavioral confirmation: From interpersonal to intergroup perspectives.",
+        "volume-title": "Advances in experimental social psychology",
+        "volume": "Vol. 35",
+        "author": "Klein",
+        "year": "2003"
+      },
+      {
+        "key": "r137_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0021-9010.70.1.56"
+      },
+      {
+        "key": "r138_10.1037/0033-295X.112.4.951",
+        "first-page": "149",
+        "article-title": "Patterns of contact and communication in scientific research collaborations.",
+        "volume-title": "Intellectual teamwork: Social and technological foundations of cooperative work",
+        "author": "Kraut",
+        "year": "1990"
+      },
+      {
+        "key": "r139_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.71.3.536"
+      },
+      {
+        "key": "r140_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.65.4.670"
+      },
+      {
+        "key": "r141_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.108.3.480"
+      },
+      {
+        "key": "r142_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0036018"
+      },
+      {
+        "key": "r143_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.126.3.390"
+      },
+      {
+        "key": "r144_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/acprof:oso/9780199242726.001.0001",
+        "volume-title": "The collegial phenomenon: The social mechanisms of cooperation among peers in a corporate law partnership.",
+        "author": "Lazega",
+        "year": "2001"
+      },
+      {
+        "key": "r145_10.1037/0033-295X.112.4.951",
+        "volume-title": "Bayesian statistics: An introduction.",
+        "author": "Lee",
+        "year": "1989"
+      },
+      {
+        "key": "r146_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1348/096317900166886"
+      },
+      {
+        "key": "r147_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2785447"
+      },
+      {
+        "key": "r148_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/jesp.2001.1475"
+      },
+      {
+        "key": "r149_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0027045"
+      },
+      {
+        "key": "r150_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0029205"
+      },
+      {
+        "key": "r151_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1368430203006001013"
+      },
+      {
+        "key": "r152_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1128977"
+      },
+      {
+        "key": "r153_10.1037/0033-295X.112.4.951",
+        "volume-title": "Ethnocentrism: Theories of conflict, ethnic attitudes, and group behavior.",
+        "author": "Levine",
+        "year": "1972"
+      },
+      {
+        "key": "r154_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "341",
+        "DOI": "10.1177/1368430201004004004",
+        "article-title": "Intergroup perceptual accuracy predicts real-life intergroup interactions.",
+        "volume": "4",
+        "author": "Li",
+        "year": "2001",
+        "journal-title": "Group Processes & Intergroup Relations",
+        "ISSN": "https://id.crossref.org/issn/1368-4302",
+        "issn-type": "print"
+      },
+      {
+        "key": "r155_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1368430204041398"
+      },
+      {
+        "key": "r156_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2392493"
+      },
+      {
+        "key": "r157_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.85.4.772"
+      },
+      {
+        "key": "r158_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.39.5.821"
+      },
+      {
+        "key": "r159_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2096282"
+      },
+      {
+        "key": "r160_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.37.11.2098"
+      },
+      {
+        "key": "r161_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0041109"
+      },
+      {
+        "key": "r162_10.1037/0033-295X.112.4.951",
+        "first-page": "109",
+        "article-title": "The power of liking: Consequences of interpersonal attitudes derived from a liberalized view of secondary reinforcements.",
+        "volume-title": "Advances in experimental social psychology",
+        "volume": "Vol. 6",
+        "author": "Lott",
+        "year": "1972"
+      },
+      {
+        "key": "r163_10.1037/0033-295X.112.4.951",
+        "volume-title": "Individual choice behavior: A theoretical analysis.",
+        "author": "Luce",
+        "year": "1959"
+      },
+      {
+        "key": "r164_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Maassen. A ratings-based approach to two-dimensional sociometric status determination. 88 55 2000",
+        "DOI": "10.1002/cd.23220008806"
+      },
+      {
+        "key": "r165_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.72.4.791"
+      },
+      {
+        "key": "r166_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/3094850"
+      },
+      {
+        "key": "r167_10.1037/0033-295X.112.4.951",
+        "volume-title": "Identification problems in the social sciences.",
+        "author": "Manski",
+        "year": "1995"
+      },
+      {
+        "key": "r168_10.1037/0033-295X.112.4.951",
+        "volume-title": "The set-up-to-fail syndrome: How good managers cause great people to fail.",
+        "author": "Manzoni",
+        "year": "2002"
+      },
+      {
+        "key": "r169_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.103.2.309"
+      },
+      {
+        "key": "r170_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2095397"
+      },
+      {
+        "key": "r171_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0730888404263908"
+      },
+      {
+        "key": "r172_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "1201",
+        "DOI": "10.1353/sof.2003.0065",
+        "article-title": "Gender and career dynamics within a segmented professional labor market: The case of law academia.",
+        "volume": "81",
+        "author": "McBrier",
+        "year": "2003",
+        "journal-title": "Social Forces",
+        "ISSN": "https://id.crossref.org/issn/0037-7732",
+        "issn-type": "print"
+      },
+      {
+        "key": "r173_10.1037/0033-295X.112.4.951",
+        "first-page": "198",
+        "article-title": "Structural discrete probability models derived from theories of choice.",
+        "volume-title": "Structural analysis of discrete data with econometric applications",
+        "author": "McFadden",
+        "year": "1981"
+      },
+      {
+        "key": "r174_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2095356"
+      },
+      {
+        "key": "r175_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.soc.27.1.415"
+      },
+      {
+        "key": "r176_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0378-3758(99)00198-6"
+      },
+      {
+        "key": "r177_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "817",
+        "DOI": "10.1287/mnsc.41.5.817",
+        "article-title": "Sequential choice under ambiguity: Intuitive solutions to the armed-bandit problem.",
+        "volume": "41",
+        "author": "Meyer",
+        "year": "1995",
+        "journal-title": "Management Science",
+        "ISSN": "https://id.crossref.org/issn/0025-1909",
+        "issn-type": "print"
+      },
+      {
+        "key": "r178_10.1037/0033-295X.112.4.951",
+        "first-page": "103",
+        "article-title": "Affiliation preferences as a function of attitude and ability similarity.",
+        "volume-title": "Social comparison processes: Theoretical and empirical perspectives",
+        "author": "Miller",
+        "year": "1977"
+      },
+      {
+        "key": "r179_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.86.5.696"
+      },
+      {
+        "key": "r180_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0023513"
+      },
+      {
+        "key": "r181_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-1031(92)90055-O"
+      },
+      {
+        "key": "r182_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1002/ejsp.2420220202",
+        "article-title": "Ingroup bias as a function of salience, relevance, and status: An integration.",
+        "volume": "22",
+        "author": "Mullen",
+        "year": "1992",
+        "journal-title": "European Journal of Social Psychology",
+        "ISSN": "https://id.crossref.org/issn/0046-2772",
+        "issn-type": "print"
+      },
+      {
+        "key": "r183_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1130013"
+      },
+      {
+        "key": "r184_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.113.1.99"
+      },
+      {
+        "key": "r185_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "69",
+        "DOI": "10.1177/001872674700100105",
+        "article-title": "Autistic hostility and social reality.",
+        "volume": "1",
+        "author": "Newcomb",
+        "year": "1947",
+        "journal-title": "Human Relations",
+        "ISSN": "https://id.crossref.org/issn/0018-7267",
+        "issn-type": "print"
+      },
+      {
+        "key": "r186_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0063098"
+      },
+      {
+        "key": "r187_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0046141"
+      },
+      {
+        "key": "r188_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1037/13156-000",
+        "volume-title": "The acquaintance process.",
+        "author": "Newcomb",
+        "year": "1961"
+      },
+      {
+        "key": "r189_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/257436"
+      },
+      {
+        "key": "r190_10.1037/0033-295X.112.4.951",
+        "volume-title": "Human inference: Strategies and shortcomings of social judgment.",
+        "author": "Nisbett",
+        "year": "1980"
+      },
+      {
+        "key": "r191_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "67",
+        "DOI": "10.1521/soco.1989.7.1.67",
+        "article-title": "Predicting interpersonal attraction from small samples: A reanalysis of Newcomb's acquaintance study.",
+        "volume": "7",
+        "author": "Nisbett",
+        "year": "1989",
+        "journal-title": "Social Cognition",
+        "ISSN": "https://id.crossref.org/issn/0278-016X",
+        "issn-type": "print"
+      },
+      {
+        "key": "r192_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0749-5978(88)90025-8"
+      },
+      {
+        "key": "r193_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "455",
+        "DOI": "10.1002/ejsp.2420010405",
+        "article-title": "The positive-negative asymmetry: On cognitive consistency and positivity bias.",
+        "volume": "1",
+        "author": "Peeters",
+        "year": "1971",
+        "journal-title": "European Journal of Social Psychology",
+        "ISSN": "https://id.crossref.org/issn/0046-2772",
+        "issn-type": "print"
+      },
+      {
+        "key": "r194_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.62.2.189"
+      },
+      {
+        "key": "r195_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0047133"
+      },
+      {
+        "key": "r196_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1177/0146167297232006",
+        "article-title": "Generalized intergroup contact effects on prejudice.",
+        "volume": "23",
+        "author": "Pettigrew",
+        "year": "1997",
+        "journal-title": "Personality and Social Psychology Bulletin",
+        "ISSN": "https://id.crossref.org/issn/0146-1672",
+        "issn-type": "print"
+      },
+      {
+        "key": "r197_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.psych.49.1.65"
+      },
+      {
+        "key": "r198_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pettigrew. 2000",
+        "DOI": "10.1049/ic:20000207"
+      },
+      {
+        "key": "r199_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146167204264244"
+      },
+      {
+        "key": "r200_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146167203029006011"
+      },
+      {
+        "key": "r201_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/003355302760193896"
+      },
+      {
+        "key": "r202_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.86.1.61"
+      },
+      {
+        "key": "r203_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "979",
+        "DOI": "10.1037/0022-3514.43.5.979",
+        "article-title": "Physical attractiveness in social interactions: II. Why does appearance affect social experience?",
+        "volume": "45",
+        "author": "Reis",
+        "year": "1982",
+        "journal-title": "Journal of Personality and Social Psychology",
+        "ISSN": "https://id.crossref.org/issn/0022-3514",
+        "issn-type": "print"
+      },
+      {
+        "key": "r204_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2657438"
+      },
+      {
+        "key": "r205_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "100",
+        "DOI": "10.1177/002202217400500107",
+        "article-title": "Person perception, self-identity, and ethnic group preference in Anglo, Black, and Chicano preschool and third-grade children.",
+        "volume": "5",
+        "author": "Rice",
+        "year": "1974",
+        "journal-title": "Journal of Cross-Cultural Psychology",
+        "ISSN": "https://id.crossref.org/issn/0022-0221",
+        "issn-type": "print"
+      },
+      {
+        "key": "r206_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0021-9010.79.3.341"
+      },
+      {
+        "key": "r207_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2392495"
+      },
+      {
+        "key": "r208_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0049-089X(81)90010-7"
+      },
+      {
+        "key": "r209_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/BF02322211",
+        "volume-title": "Pygmalion in the classroom: Teacher expectations and children's intellectual development.",
+        "author": "Rosenthal",
+        "year": "1968"
+      },
+      {
+        "key": "r210_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-1031(77)90049-X"
+      },
+      {
+        "key": "r211_10.1037/0033-295X.112.4.951",
+        "volume-title": "Introduction to probability models",
+        "author": "Ross",
+        "year": "2000",
+        "edition": "7th ed."
+      },
+      {
+        "key": "r212_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1111/j.1540-4560.1985.tb01130.x",
+        "article-title": "Social categorization and behavioral episodes: A cognitive analysis of the effects of intergroup contact.",
+        "volume": "41",
+        "author": "Rothbart",
+        "year": "1985",
+        "journal-title": "The Journal of Social Issues",
+        "ISSN": "https://id.crossref.org/issn/0022-4537",
+        "issn-type": "print"
+      },
+      {
+        "key": "r213_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0021-9010.76.6.873"
+      },
+      {
+        "key": "r214_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0096-3445.111.1.23"
+      },
+      {
+        "key": "r215_10.1037/0033-295X.112.4.951",
+        "unstructured": "Schwartz. 1966"
+      },
+      {
+        "key": "r216_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0037446"
+      },
+      {
+        "key": "r217_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146167203261888"
+      },
+      {
+        "key": "r218_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0040554"
+      },
+      {
+        "key": "r219_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.105.1.131"
+      },
+      {
+        "key": "r220_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.psych.50.1.273"
+      },
+      {
+        "key": "r221_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.36.11.1202"
+      },
+      {
+        "key": "r222_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "256",
+        "DOI": "10.1521/soco.1982.1.3.256",
+        "article-title": "Testing hypotheses about human nature: Assessing the accuracy of social stereotypes.",
+        "volume": "1",
+        "author": "Snyder",
+        "year": "1982",
+        "journal-title": "Social Cognition",
+        "ISSN": "https://id.crossref.org/issn/0278-016X",
+        "issn-type": "print"
+      },
+      {
+        "key": "r223_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/146254"
+      },
+      {
+        "key": "r224_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.111.1.42"
+      },
+      {
+        "key": "r225_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "229",
+        "DOI": "10.1016/B978-0-12-497780-8.50017-6",
+        "article-title": "The role of ignorance in intergroup relations.",
+        "volume-title": "Groups in contact: The psychology of desegregation",
+        "author": "Stephan",
+        "year": "1984"
+      },
+      {
+        "key": "r226_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "157",
+        "DOI": "10.1111/j.1540-4560.1985.tb01134.x",
+        "article-title": "Intergroup anxiety.",
+        "volume": "41",
+        "author": "Stephan",
+        "year": "1985",
+        "journal-title": "The Journal of Social Issues",
+        "ISSN": "https://id.crossref.org/issn/0022-4537",
+        "issn-type": "print"
+      },
+      {
+        "key": "r227_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0021641"
+      },
+      {
+        "key": "r228_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-6494.1958.tb01580.x"
+      },
+      {
+        "key": "r229_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1468-2958.1986.tb00092.x"
+      },
+      {
+        "key": "r230_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.105.3.409"
+      },
+      {
+        "key": "r231_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2786519"
+      },
+      {
+        "key": "r232_10.1037/0033-295X.112.4.951",
+        "volume-title": "Social identity and intergroup relations.",
+        "author": "Tajfel",
+        "year": "1982"
+      },
+      {
+        "key": "r233_10.1037/0033-295X.112.4.951",
+        "first-page": "33",
+        "article-title": "An integrative theory of intergroup conflict.",
+        "volume-title": "The social psychology of intergroup relations",
+        "author": "Tajfel",
+        "year": "1979"
+      },
+      {
+        "key": "r234_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1002/ejsp.2420010202",
+        "article-title": "Social categorization and intergroup behavior.",
+        "volume": "1",
+        "author": "Tajfel",
+        "year": "1971",
+        "journal-title": "European Journal of Social Psychology",
+        "ISSN": "https://id.crossref.org/issn/0046-2772",
+        "issn-type": "print"
+      },
+      {
+        "key": "r235_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-1031(69)90057-2"
+      },
+      {
+        "key": "r236_10.1037/0033-295X.112.4.951",
+        "volume-title": "Theories of intergroup relations: International social psychological perspectives",
+        "author": "Taylor",
+        "year": "1994",
+        "edition": "2nd ed."
+      },
+      {
+        "key": "r237_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2657265"
+      },
+      {
+        "key": "r238_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "190",
+        "DOI": "10.1017/CBO9780511809477.014",
+        "article-title": "The availability bias in social perception and interaction.",
+        "volume-title": "Judgment under uncertainty: Heuristics and biases",
+        "author": "Taylor",
+        "year": "1982"
+      },
+      {
+        "key": "r239_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/3033716"
+      },
+      {
+        "key": "r240_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0058940"
+      },
+      {
+        "key": "r241_10.1037/0033-295X.112.4.951",
+        "volume-title": "The social psychology of groups.",
+        "author": "Thibaut",
+        "year": "1959"
+      },
+      {
+        "key": "r242_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146167202239042"
+      },
+      {
+        "key": "r243_10.1037/0033-295X.112.4.951",
+        "volume-title": "Culture and social behavior.",
+        "author": "Triandis",
+        "year": "1994"
+      },
+      {
+        "key": "r244_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/15298860309028"
+      },
+      {
+        "key": "r245_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/256368"
+      },
+      {
+        "key": "r246_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0021-9010.73.2.228"
+      },
+      {
+        "key": "r247_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0010-0285(73)90033-9"
+      },
+      {
+        "key": "r248_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.87.2.211"
+      },
+      {
+        "key": "r249_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/(SICI)1099-0992(199709/10)27:5<495::AID-EJSP826>3.0.CO;2-K"
+      },
+      {
+        "key": "r250_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/S15327957PSPR0801_2"
+      },
+      {
+        "key": "r251_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.110.3.536"
+      },
+      {
+        "key": "r252_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/hrm.1021"
+      },
+      {
+        "key": "r253_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Varma. Interpersonal affect and performance appraisal: A field study. 49 341 1996",
+        "DOI": "10.1111/j.1744-6570.1996.tb01803.x"
+      },
+      {
+        "key": "r254_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "741",
+        "DOI": "10.1080/00224545.1992.9712104",
+        "article-title": "Ethnic group preferences and the evaluation of ethnic identity among adolescents in the Netherlands.",
+        "volume": "132",
+        "author": "Verkuyten",
+        "year": "1992",
+        "journal-title": "The Journal of Social Psychology",
+        "ISSN": "https://id.crossref.org/issn/0022-4545",
+        "issn-type": "print"
+      },
+      {
+        "key": "r255_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/jrpe.1996.0016"
+      },
+      {
+        "key": "r256_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.88.1.121"
+      },
+      {
+        "key": "r257_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.45.5.961"
+      },
+      {
+        "key": "r258_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/227836"
+      },
+      {
+        "key": "r259_10.1037/0033-295X.112.4.951",
+        "volume-title": "Sequential methods in statistics.",
+        "author": "Wetherill",
+        "year": "1966"
+      },
+      {
+        "key": "r260_10.1037/0033-295X.112.4.951",
+        "volume-title": "Organizational intelligence.",
+        "author": "Wilensky",
+        "year": "1967"
+      },
+      {
+        "key": "r261_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/CBO9780511813658",
+        "volume-title": "Probability with martingales.",
+        "author": "Williams",
+        "year": "1991"
+      },
+      {
+        "key": "r262_10.1037/0033-295X.112.4.951",
+        "volume-title": "Strangers next door: Ethnic relations in American communities.",
+        "author": "Williams",
+        "year": "1964"
+      },
+      {
+        "key": "r263_10.1037/0033-295X.112.4.951",
+        "volume-title": "Markets and hierarchies: Analysis and anti-trust implications.",
+        "author": "Williamson",
+        "year": "1975"
+      },
+      {
+        "key": "r264_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.64.3.327"
+      },
+      {
+        "key": "r265_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-1031(74)90059-6"
+      },
+      {
+        "key": "r266_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.128.3.421"
+      },
+      {
+        "key": "r267_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.77.4.698"
+      },
+      {
+        "key": "r268_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "387",
+        "DOI": "10.3758/BF03193783",
+        "article-title": "Comparison of basic assumptions embedded in learning models for experience based decision-making.",
+        "volume": "12",
+        "author": "Yechiam",
+        "year": "2005",
+        "journal-title": "Psychonomic Bulletin & Review",
+        "ISSN": "https://id.crossref.org/issn/1069-9384",
+        "issn-type": "print"
+      },
+      {
+        "key": "r269_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "crossref",
+        "first-page": "737",
+        "DOI": "10.1177/009365091018006002",
+        "article-title": "Face-to-face communication in an office setting: The effects of position, proximity, and exposure.",
+        "volume": "18",
+        "author": "Zahn",
+        "year": "1991",
+        "journal-title": "Communication Research",
+        "ISSN": "https://id.crossref.org/issn/0093-6502",
+        "issn-type": "print"
+      },
+      {
+        "key": "r270_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0025848"
+      },
+      {
+        "key": "r271_10.1037/0033-295X.112.4.951",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/001872676001300102"
+      }
+    ],
+    "container-title": [
+      "Psychological Review"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://psycnet.apa.org/journals/rev/112/4/951.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          5
+        ]
+      ],
+      "date-time": "2025-01-05T08:13:19Z",
+      "timestamp": 1736064799000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://doi.apa.org/doi/10.1037/0033-295X.112.4.951"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "references-count": 271,
+    "journal-issue": {
+      "issue": "4",
+      "published-online": {
+        "date-parts": [
+          [
+            2005
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2005-13637-011",
+      "16262475"
+    ],
+    "URL": "https://doi.org/10.1037/0033-295x.112.4.951",
+    "relation": {},
+    "ISSN": [
+      "1939-1471",
+      "0033-295X"
+    ],
+    "issn-type": [
+      {
+        "value": "1939-1471",
+        "type": "electronic"
+      },
+      {
+        "value": "0033-295X",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2026-09-26T14:53:52Z",
+      "timestamp": 1790434432136,
+      "version": "4.1.0"
+    },
+    "reference-count": 0,
+    "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "HCOMP"
+    ],
+    "abstract": "<jats:p>Mixed-initiative systems allow users to interactively provide feedback to potentially improve system performance. Human feedback can correct model errors and update model parameters to dynamically adapt to changing data. Additionally, many users desire the ability to have a greater level of control and fix perceived flaws in systems they rely on. However, how the ability to provide feedback to autonomous systems influences user trust is a largely unexplored area of research. Our research investigates how the act of providing feedback can affect user understanding of an intelligent system and its accuracy. We present a controlled experiment using a simulated object detection system with image data to study the effects of interactive feedback collection on user impressions. The results show that providing human-in-the-loop feedback lowered both participants\u2019 trust in the system and their perception of system accuracy, regardless of whether the system accuracy improved in response to their feedback. These results highlight the importance of considering the effects of allowing end-user feedback on user trust when designing intelligent systems.</jats:p>",
+    "DOI": "10.1609/hcomp.v8i1.7464",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          18
+        ]
+      ],
+      "date-time": "2022-10-18T07:28:03Z",
+      "timestamp": 1666078083000
+    },
+    "page": "63-72",
+    "source": "Crossref",
+    "is-referenced-by-count": 57,
+    "title": [
+      "Soliciting Human-in-the-Loop User Feedback for Interactive Machine Learning Reduces User Trust and Impressions of Model Accuracy"
+    ],
+    "prefix": "10.1609",
+    "volume": "8",
+    "author": [
+      {
+        "given": "Donald",
+        "family": "Honeycutt",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mahsan",
+        "family": "Nourani",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eric",
+        "family": "Ragan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "9382",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          1
+        ]
+      ]
+    },
+    "container-title": [
+      "Proceedings of the AAAI Conference on Human Computation and Crowdsourcing"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://ojs.aaai.org/index.php/HCOMP/article/download/7464/7291",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://ojs.aaai.org/index.php/HCOMP/article/download/7464/7291",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          18
+        ]
+      ],
+      "date-time": "2022-10-18T07:28:03Z",
+      "timestamp": 1666078083000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ojs.aaai.org/index.php/HCOMP/article/view/7464"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1609/hcomp.v8i1.7464",
+    "relation": {},
+    "ISSN": [
+      "2769-1349",
+      "2769-1330"
+    ],
+    "issn-type": [
+      {
+        "value": "2769-1349",
+        "type": "electronic"
+      },
+      {
+        "value": "2769-1330",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T08:39:28Z",
+      "timestamp": 1790498368871,
+      "version": "4.1.0"
+    },
+    "reference-count": 90,
+    "publisher": "Institute for Operations Research and the Management Sciences (INFORMS)",
+    "issue": "5",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Organization Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2001,
+          10
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Individuals and social systems are often portrayed as risk averse and resistant to change. Such propensities are characteristically attributed to individual, organizational, and cultural traits such as risk aversion, uncertainty-avoidance, discounting, and an unwillingness to change. This paper explores an alternative interpretation of such phenomena. We show how the reproduction of successful actions inherent in adaptive processes, such as learning and competitive selection and reproduction, results in a bias against alternatives that initially may appear to be worse than they actually are. In particular, learning and selection are biased against both risky and novel alternatives. Because the biases are products of the tendency to reproduce success that is inherent in the sequential sampling of adaptation, they are reduced whenever the reproduction of success is attenuated. In particular, when adaptation is slowed, made imprecise, or recalled less reliably, the propensity to engage in risky and new activities is increased. These protections against the error of rejecting potentially good alternatives on inadequate experiential evidence are costly, however. They increase the likelihood of persisting with alternatives that are poor in the long run as well as in the short run.</jats:p>",
+    "DOI": "10.1287/orsc.12.5.523.10092",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2003,
+          12,
+          30
+        ]
+      ],
+      "date-time": "2003-12-30T05:56:10Z",
+      "timestamp": 1072763770000
+    },
+    "page": "523-538",
+    "source": "Crossref",
+    "is-referenced-by-count": 560,
+    "title": [
+      "Adaptation as Information Restriction: The Hot Stove Effect"
+    ],
+    "prefix": "10.1287",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Jerker",
+        "family": "Denrell",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute of International Business, Stockholm School of Economics, Box 6501, 113 83 Stockholm, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James G.",
+        "family": "March",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "71 Cubberley, Stanford University, Stanford, California 94305-3096"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "109",
+    "reference": [
+      {
+        "key": "B1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2667053"
+      },
+      {
+        "key": "B2",
+        "volume-title": "Organizations Evolving",
+        "author": "Aldrich H.",
+        "year": "1999"
+      },
+      {
+        "key": "B3",
+        "first-page": "123",
+        "volume-title": "Res. Organ. Behavior",
+        "volume": "10",
+        "author": "Amabile T. M.",
+        "year": "1988"
+      },
+      {
+        "key": "B4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/mnsc.36.2.140"
+      },
+      {
+        "key": "B5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.247.4945.920"
+      },
+      {
+        "key": "B6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2234208"
+      },
+      {
+        "key": "B7",
+        "volume-title": "The Dynamics of Industrial Competition: A North American Perspective",
+        "author": "Baldwin J. R.",
+        "year": "1998"
+      },
+      {
+        "key": "B8",
+        "volume-title": "Social Learning Theory",
+        "author": "Bandura A.",
+        "year": "1977"
+      },
+      {
+        "key": "B9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2393811"
+      },
+      {
+        "key": "B10",
+        "volume-title": "Learning and Rationality in Economics",
+        "author": "Blume L. E.",
+        "year": "1995"
+      },
+      {
+        "key": "B11",
+        "volume-title": "The Reforming Organization",
+        "author": "Brunsson N.",
+        "year": "1993"
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0749-5978(86)90004-X"
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/14496-000"
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/orsc.3.1.20"
+      },
+      {
+        "key": "B15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/230579"
+      },
+      {
+        "key": "B16",
+        "volume-title": "Mathematical Psychology: An Elementary Introduction",
+        "author": "Coombs C. H.",
+        "year": "1970"
+      },
+      {
+        "key": "B17",
+        "volume-title": "A Behavioral Theory of the Firm",
+        "author": "Cyert R. D.",
+        "year": "1963"
+      },
+      {
+        "issue": "2",
+        "key": "B18",
+        "first-page": "332",
+        "volume": "75",
+        "author": "David P. A.",
+        "year": "1985",
+        "journal-title": "Amer. Econom. Rev."
+      },
+      {
+        "key": "B19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2095101"
+      },
+      {
+        "key": "B20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1911358"
+      },
+      {
+        "key": "B21",
+        "volume-title": "Ulysses and the Sirens: Studies in Rationality and Irrationality",
+        "author": "Elster J.",
+        "year": "1984",
+        "edition": "2"
+      },
+      {
+        "key": "B22",
+        "volume-title": "An Introduction to Probability Theory and Its Applications",
+        "volume": "1",
+        "author": "Feller W.",
+        "year": "1968",
+        "edition": "3"
+      },
+      {
+        "key": "B23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5465/amr.1991.4278962"
+      },
+      {
+        "key": "B24",
+        "volume-title": "The Winner-Take-It-All Society: Why Few at the Top Get So Much More Than the Rest of Us",
+        "author": "Frank R. H.",
+        "year": "1995"
+      },
+      {
+        "key": "B25",
+        "volume-title": "Essays in Positive Economics",
+        "author": "Friedman M.",
+        "year": "1953"
+      },
+      {
+        "key": "B26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2393656"
+      },
+      {
+        "key": "B27",
+        "volume-title": "Genetic Algorithms in Search, Optimization, and Machine Learning",
+        "author": "Goldberg D. E.",
+        "year": "1989"
+      },
+      {
+        "key": "B28",
+        "first-page": "252",
+        "volume-title": "Conceptual Issues in Evolutionary Biology",
+        "author": "Gould S. J.",
+        "year": "1984"
+      },
+      {
+        "key": "B29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2393985"
+      },
+      {
+        "key": "B30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2393591"
+      },
+      {
+        "key": "B31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2667030"
+      },
+      {
+        "key": "B32",
+        "volume-title": "Dynamics of Organizational Populations",
+        "author": "Hannan M. T.",
+        "year": "1992"
+      },
+      {
+        "key": "B33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/226424"
+      },
+      {
+        "key": "B34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2095567"
+      },
+      {
+        "key": "B35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2393735"
+      },
+      {
+        "key": "B36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2393533"
+      },
+      {
+        "key": "B37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2391877"
+      },
+      {
+        "issue": "2",
+        "key": "B38",
+        "first-page": "298",
+        "volume": "75",
+        "author": "Herriott S. R.",
+        "year": "1985",
+        "journal-title": "Amer. Econom. Rev. Proc."
+      },
+      {
+        "key": "B39",
+        "volume-title": "Development Projects Observed",
+        "author": "Hirschman A. O.",
+        "year": "1967"
+      },
+      {
+        "key": "B40",
+        "volume-title": "Adaptation in Natural and Artificial Systems",
+        "author": "Holland J. H.",
+        "year": "1975"
+      },
+      {
+        "key": "B41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/orsc.2.1.88"
+      },
+      {
+        "key": "B42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7551/mitpress/4168.001.0001"
+      },
+      {
+        "key": "B43",
+        "volume-title": "The Origins of Order: Self-Organization and Selection in Evolution",
+        "author": "Kauffman S. A.",
+        "year": "1993"
+      },
+      {
+        "key": "B44",
+        "volume-title": "Toward a Marxist Humanism: Essays on the Left Today",
+        "author": "Kolakowski L.",
+        "year": "1968"
+      },
+      {
+        "key": "B45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/mnsc.38.5.623"
+      },
+      {
+        "key": "B46",
+        "first-page": "195",
+        "volume-title": "Computation Organizational Theory",
+        "author": "Lant T. K.",
+        "year": "1994"
+      },
+      {
+        "key": "B47",
+        "first-page": "147",
+        "volume": "11",
+        "author": "Lant T. K.",
+        "year": "1990",
+        "journal-title": "Strategic Management J."
+      },
+      {
+        "key": "B48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/orsc.3.1.47"
+      },
+      {
+        "key": "B49",
+        "volume-title": "An Introduction to Models in the Social Sciences",
+        "author": "Lave C. A.",
+        "year": "1975"
+      },
+      {
+        "key": "B50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2393202"
+      },
+      {
+        "key": "B51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/mnsc.43.7.934"
+      },
+      {
+        "key": "B52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0167-2681(81)90012-3"
+      },
+      {
+        "key": "B53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/smj.4250141009"
+      },
+      {
+        "key": "B54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.so.14.080188.001535"
+      },
+      {
+        "key": "B55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/3003464"
+      },
+      {
+        "key": "B56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/mnsc.33.1.107"
+      },
+      {
+        "key": "B57",
+        "volume-title": "The Theory of Island Biogeography",
+        "author": "MacArthur R. H.",
+        "year": "1967"
+      },
+      {
+        "key": "B58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3102/00346543042004413"
+      },
+      {
+        "key": "B59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0167-2681(88)90004-2"
+      },
+      {
+        "key": "B60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/orsc.2.1.71"
+      },
+      {
+        "key": "B61",
+        "volume-title": "A Primer on Decision Making",
+        "author": "March J. G.",
+        "year": "1994"
+      },
+      {
+        "key": "B62",
+        "first-page": "427",
+        "volume": "2",
+        "author": "March J. G.",
+        "year": "1995",
+        "journal-title": "Organ."
+      },
+      {
+        "key": "B63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.103.2.309"
+      },
+      {
+        "key": "B64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.99.1.172"
+      },
+      {
+        "key": "B65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/9781503618411"
+      },
+      {
+        "key": "B66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/226550"
+      },
+      {
+        "key": "B67",
+        "volume-title": "Permanently Failing Organizations",
+        "author": "Meyer M. W.",
+        "year": "1989"
+      },
+      {
+        "key": "B68",
+        "first-page": "261",
+        "volume": "14",
+        "author": "Mezias S. J.",
+        "year": "1997",
+        "journal-title": "Adv. Strategic Management"
+      },
+      {
+        "key": "B69",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/smj.4250140202"
+      },
+      {
+        "key": "B70",
+        "first-page": "179",
+        "volume-title": "Evolutionary Dynamics of Organizations",
+        "author": "Mezias S. J.",
+        "year": "1994"
+      },
+      {
+        "key": "B71",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5465/amr.1993.3997509"
+      },
+      {
+        "key": "B72",
+        "first-page": "115",
+        "volume-title": "Research in Organizational Behavior",
+        "volume": "17",
+        "author": "Miner A. S.",
+        "year": "1995"
+      },
+      {
+        "key": "B73",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/orsc.7.1.88"
+      },
+      {
+        "key": "B74",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781452204703.n3"
+      },
+      {
+        "key": "B75",
+        "volume-title": "An Evolutionary Theory of Economic Change",
+        "author": "Nelson R.",
+        "year": "1982"
+      },
+      {
+        "key": "B76",
+        "volume-title": "Thinking in Time: The Uses of History for Decision-Makers",
+        "author": "Neustadt R. E.",
+        "year": "1986"
+      },
+      {
+        "key": "B77",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0090-2616(84)90011-1"
+      },
+      {
+        "key": "B78",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/003355399555945"
+      },
+      {
+        "key": "B79",
+        "volume-title": "Diffusion of Innovations",
+        "author": "Rogers E. M.",
+        "year": "1995",
+        "edition": "4"
+      },
+      {
+        "key": "B80",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-0531(74)90066-0"
+      },
+      {
+        "key": "B81",
+        "volume-title": "Risk Taking: A Managerial Perspective",
+        "author": "Shapira Zur",
+        "year": "1995"
+      },
+      {
+        "key": "B82",
+        "volume-title": "Reinforcement Learning: An Introduction",
+        "author": "Sutton R. S.",
+        "year": "1998"
+      },
+      {
+        "key": "B83",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2392383"
+      },
+      {
+        "key": "B84",
+        "volume-title": "Following the Equator: A Journey Around the World",
+        "author": "Twain M.",
+        "year": "1897"
+      },
+      {
+        "key": "B85",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/257004"
+      },
+      {
+        "key": "B86",
+        "volume-title": "Sequential Analysis",
+        "author": "Wald A.",
+        "year": "1947"
+      },
+      {
+        "key": "B87",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/258607"
+      },
+      {
+        "key": "B88",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2391875"
+      },
+      {
+        "issue": "1",
+        "key": "B89",
+        "doi-asserted-by": "crossref",
+        "first-page": "97",
+        "DOI": "10.1093/genetics/16.2.97",
+        "volume": "16",
+        "author": "Wright S.",
+        "year": "1931",
+        "journal-title": "Genetics"
+      },
+      {
+        "key": "B90",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1540-5915.1979.tb00026.x"
+      }
+    ],
+    "container-title": [
+      "Organization Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubsonline.informs.org/doi/pdf/10.1287/orsc.12.5.523.10092",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          2
+        ]
+      ],
+      "date-time": "2023-04-02T15:02:43Z",
+      "timestamp": 1680447763000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubsonline.informs.org/doi/10.1287/orsc.12.5.523.10092"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2001,
+          10
+        ]
+      ]
+    },
+    "references-count": 90,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [
+          [
+            2001,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1287/orsc.12.5.523.10092"
+    ],
+    "URL": "https://doi.org/10.1287/orsc.12.5.523.10092",
+    "relation": {},
+    "ISSN": [
+      "1047-7039",
+      "1526-5455"
+    ],
+    "issn-type": [
+      {
+        "value": "1047-7039",
+        "type": "print"
+      },
+      {
+        "value": "1526-5455",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2001,
+          10
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          3
+        ]
+      ],
+      "date-time": "2026-09-03T14:43:14Z",
+      "timestamp": 1788446594224,
+      "version": "build-2803163510"
+    },
+    "reference-count": 77,
+    "publisher": "Wiley",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2024-07-01T00:00:00Z",
+          "timestamp": 1719792000000
+        },
+        "content-version": "am",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2024-07-01T00:00:00Z",
+          "timestamp": 1719792000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000006",
+        "name": "Office of Naval Research",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "N00014\u201021\u20101\u20102707"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "N00014\u201021\u20101\u20102707"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000006",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100017005",
+        "name": "Allen Institute for Artificial Intelligence",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100017005",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "AI Magazine"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          9
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>The current literature on AI\u2010advised decision making\u2014involving explainable AI systems advising human decision makers\u2014presents a series of inconclusive and confounding results. To synthesize these findings, we propose a simple theory that elucidates the frequent failure of AI explanations to engender appropriate reliance and complementary decision making performance. In contrast to other common desiderata, for example, interpretability or spelling out the AI's reasoning process, we argue that explanations are only useful to the extent that they <jats:italic>allow a human decision maker to verify the correctness of the AI's prediction</jats:italic>. Prior studies find in many decision making contexts that AI explanations <jats:italic>do not</jats:italic> facilitate such verification. Moreover, most tasks fundamentally do not allow easy verification, regardless of explanation method, limiting the potential benefit of any type of explanation. We also compare the objective of complementary performance with that of appropriate reliance, decomposing the latter into the notions of outcome\u2010graded and strategy\u2010graded\u00a0reliance.</jats:p>",
+    "DOI": "10.1002/aaai.12182",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2024-07-01T15:23:45Z",
+      "timestamp": 1719847425000
+    },
+    "page": "317-332",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 40,
+    "title": [
+      "In search of verifiability: Explanations rarely enable complementary performance in AI\u2010advised decision making"
+    ],
+    "prefix": "10.1002",
+    "volume": "45",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0612-5782",
+        "authenticated-orcid": false,
+        "given": "Raymond",
+        "family": "Fok",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Washington Seattle Washington USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel S.",
+        "family": "Weld",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Allen Institute for AI Seattle Washington USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_11_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2018.2870052"
+      },
+      {
+        "key": "e_1_2_11_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12911-021-01542-6"
+      },
+      {
+        "key": "e_1_2_11_4_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Alqaraawi Ahmed MartinSchuessler PhilippWei\u00df EnricoCostanza andNadiaBerthouze.2020. \u201cEvaluating Saliency Map Explanations for Convolutional Neural Networks: A User Study.\u201d InProceedings of the 25th International Conference on Intelligent User Interfaces (IUI '20) Cagliari Italy 275\u2013285.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3377325.3377519"
+      },
+      {
+        "key": "e_1_2_11_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v35i8.16819"
+      },
+      {
+        "key": "e_1_2_11_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/hcomp.v7i1.5285"
+      },
+      {
+        "key": "e_1_2_11_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v33i01.33012429"
+      },
+      {
+        "key": "e_1_2_11_8_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bansal Gagan TongshuangWu JoyceZhou RaymondFok BesmiraNushi EceKamar Marco TulioRibeiro andDanielWeld.2021. \u201cDoes the Whole Exceed Its Parts? The Effect of AI Explanations on Complementary Team Performance.\u201d InProceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI'21) Yokohama Japan 16.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3411764.3445717"
+      },
+      {
+        "key": "e_1_2_11_9_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bell Andrew IanSolano\u2010Kamaiko OdedNov andJuliaStoyanovich.2022. \u201cIt's Just Not That Simple: An Empirical Study of the Accuracy\u2010Explainability Trade\u2010off in Machine Learning for Public Policy.\u201d In2022 ACM Conference on Fairness Accountability and Transparency (FAccT'22) Seoul Republic of Korea 248\u2013266.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3531146.3533090"
+      },
+      {
+        "key": "e_1_2_11_10_1",
+        "unstructured": "Bilgic Mustafa andRaymond J.Mooney.2005. \u201cExplaining Recommendations: Satisfaction vs. Promotion.\u201d InProceedings of Beyond Personalization 2005: A Workshop on the Next Stage of Recommender Systems Research at the 2005 International Conference on Intelligent User Interfaces (IUI '05) 1\u20136.San Diego CA: Association for Computing Machinery."
+      },
+      {
+        "key": "e_1_2_11_11_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Biran Or andKathleenMcKeown.2017. \u201cHuman\u2010Centric Justification of Machine Learning Predictions.\u201d InProceedings of the Twenty\u2010Sixth International Joint Conference on Artificial Intelligence 1461\u20131467.Melbourne Australia: International Joint Conferences on Artificial Intelligence Organization.",
+        "DOI": "10.24963/ijcai.2017/202"
+      },
+      {
+        "key": "e_1_2_11_12_1",
+        "unstructured": "Bowman Samuel R. JeeyoonHyun EthanPerez EdwinChen CraigPettit ScottHeiner Kamil\u0117Luko\u0161i\u016bt\u0117 et al.2022. \u201cMeasuring Progress on Scalable Oversight for Large Language Models.\u201darXiv preprint arXiv:2211.03540."
+      },
+      {
+        "key": "e_1_2_11_13_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bu\u00e7inca Zana PhoebeLin Krzysztof Z.Gajos andElena L.Glassman.2020. \u201cProxy Tasks and Subjective Measures Can Be Misleading in Evaluating Explainable AI Systems.\u201d InProceedings of the 25th International Conference on Intelligent User Interfaces (IUI '20) Cagliari Italy 454\u2013464.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3377325.3377498"
+      },
+      {
+        "key": "e_1_2_11_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3449287"
+      },
+      {
+        "key": "e_1_2_11_15_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bunt Andrea MatthewLount andCatherineLauzon.2012. \u201cAre Explanations Always Important? A Study of Deployed Low\u2010Cost Intelligent Interactive Systems.\u201d InProceedings of the 2012 ACM International Conference on Intelligent User Interfaces (IUI'12) Lisbon Portugal 169\u2013178.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/2166966.2166996"
+      },
+      {
+        "key": "e_1_2_11_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1368430211419174"
+      },
+      {
+        "key": "e_1_2_11_17_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Carton Samuel QiaozhuMei andPaulResnick.2020. \u201cFeature\u2010Based Explanations Don't Help People Detect Misclassifications of Online Toxicity.\u201d InProceedings of the International AAAI Conference on Web and Social Media14 95\u2013106.",
+        "DOI": "10.1609/icwsm.v14i1.7282"
+      },
+      {
+        "key": "e_1_2_11_18_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Caruana Rich YinLou JohannesGehrke PaulKoch MarcSturm andNoemieElhadad.2015. \u201cIntelligible Models for HealthCare: Predicting Pneumonia Risk and Hospital 30\u2010Day Readmission.\u201d InProceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining KDD'15 Sydney NSW Australia 1721\u20131730. New York NY USA: Association for Computing Machinery.",
+        "DOI": "10.1145/2783258.2788613"
+      },
+      {
+        "key": "e_1_2_11_19_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chandrasekaran Arjun VirajPrabhu DeshrajYadav PrithvijitChattopadhyay andDeviParikh.2018. \u201cDo Explanations Make VQA Models More Predictable to a Human?\u201d InProceedings of the 2018 Conference on Empirical Methods in Natural Language Processing 1036\u20131042.Brussels Belgium: Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/D18-1128"
+      },
+      {
+        "key": "e_1_2_11_20_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen Chacha Shi Feng Amit Sharma and Chenhao Tan. 2023. \u201cMachine Explanations and Human Understanding.\u201d InProceedings of the 2023 ACM Conference on Fairness Accountability and Transparency (FAccT'23) Chicago IL USA 1. New York NY USA: Association for Computing Machinery.",
+        "DOI": "10.1145/3593013.3593970"
+      },
+      {
+        "key": "e_1_2_11_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3610219"
+      },
+      {
+        "key": "e_1_2_11_22_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cheng Hao\u2010Fei RuotongWang ZhengZhang FionaO'Connell TerranceGray F.Maxwell Harper andHaiyiZhu.2019. \u201cExplaining Decision\u2010Making Algorithms through UI: Strategies to Help Non\u2010Expert Stakeholders.\u201d InProceedings of the 2019 CHI Conference on Human Factors in Computing Systems 1\u201312.Glasgow Scotland UK: ACM.",
+        "DOI": "10.1145/3290605.3300789"
+      },
+      {
+        "key": "e_1_2_11_23_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chromik Michael MalinEiband FelicitasBuchner AdrianKr\u00fcger andAndreasButz.2021. \u201cI Think I Get Your Point AI! The Illusion of Explanatory Depth in Explainable AI.\u201d In26th International Conference on Intelligent User Interfaces 307\u2013317.College Station TX USA: ACM.",
+        "DOI": "10.1145/3397481.3450644"
+      },
+      {
+        "key": "e_1_2_11_24_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Das Devleena andSoniaChernova.2020. \u201cLeveraging Rationales to Improve Human Task Performance.\u201d InProceedings of the 25th International Conference on Intelligent User Interfaces (IUI'20) Cagliari Italy 510\u2013518.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3377325.3377512"
+      },
+      {
+        "key": "e_1_2_11_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0749-5978(92)90044-8"
+      },
+      {
+        "key": "e_1_2_11_26_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Eiband Malin DanielBuschek AlexanderKremer andHeinrichHussmann.2019. \u201cThe Impact of Placebic Explanations on Trust in Intelligent Systems.\u201d InExtended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems (CHI EA'19) Glasgow Scotland UK 1\u20136.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3290607.3312787"
+      },
+      {
+        "key": "e_1_2_11_27_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Feng Shi andJordanBoyd\u2010Graber.2019. \u201cWhat Can AI Do for Me? Evaluating Machine Learning Interpretations in Cooperative Play.\u201d InProceedings of the 24th International Conference on Intelligent User Interfaces (IUI'19) Marina del Ray California 229\u2013239.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3301275.3302265"
+      },
+      {
+        "key": "e_1_2_11_28_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gajos Krzysztof Z. andLenaMamykina.2022. \u201cDo People Engage Cognitively with AI? Impact of AI Assistance on Incidental Learning.\u201d In27th International Conference on Intelligent User Interfaces (IUI'22) Helsinki Finland 794\u2013806.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3490099.3511138"
+      },
+      {
+        "key": "e_1_2_11_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3432934"
+      },
+      {
+        "key": "e_1_2_11_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2589-7500(21)00208-9"
+      },
+      {
+        "key": "e_1_2_11_31_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Valeria Gonz\u00e1lez Ana GaganBansal AngelaFan YasharMehdad RobinJia andSrinivasanIyer.2021. \u201cDo Explanations Help Users Detect Errors in Open\u2010Domain QA? An Evaluation of Spoken vs. Visual Explanations.\u201d InFindings of the Association for Computational Linguistics: ACL\u2010IJCNLP 2021 1103\u20131116.Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/2021.findings-acl.95"
+      },
+      {
+        "key": "e_1_2_11_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3359152"
+      },
+      {
+        "key": "e_1_2_11_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0065-2601(08)60248-8"
+      },
+      {
+        "key": "e_1_2_11_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.91.3.517"
+      },
+      {
+        "key": "e_1_2_11_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/icwsm.v13i01.3226"
+      },
+      {
+        "key": "e_1_2_11_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41398-021-01224-x"
+      },
+      {
+        "key": "e_1_2_11_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/tacl_a_00367"
+      },
+      {
+        "key": "e_1_2_11_38_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jesus S\u00e9rgio CatarinaBel\u00e9m VladimirBalayan Jo\u00e3oBento PedroSaleiro PedroBizarro andJo\u00e3oGama.2021. \u201cHow Can I Choose An Explainer? An Application\u2010grounded Evaluation of Post\u2010hoc Explanations.\u201d InProceedings of the 2021 ACM Conference on Fairness Accountability and Transparency FAccT'21 805\u2013815.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3442188.3445941"
+      },
+      {
+        "key": "e_1_2_11_39_1",
+        "volume-title": "Thinking, Fast and Slow",
+        "author": "Kahneman Daniel",
+        "year": "2011"
+      },
+      {
+        "key": "e_1_2_11_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-020-0232-8"
+      },
+      {
+        "key": "e_1_2_11_41_1",
+        "unstructured": "Kim Joon Sik ValerieChen DanishPruthi Nihar B.Shah andAmeetTalwalkar.2023. \u201cAssisting Human Decisions in Document Matching.\u201darXiv preprint arXiv:2302.08450."
+      },
+      {
+        "key": "e_1_2_11_42_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kim Sunnie S. Y. NicoleMeister Vikram V.Ramaswamy RuthFong andOlgaRussakovsky.2022. \u201cHIVE: Evaluating the Human Interpretability of Visual Explanations.\u201d InComputer Vision \u2013 ECCV 2022: 17th European Conference Proceedings Part XII Tel Aviv Israel October 23\u201327 2022 280\u2013298.Berlin Heidelberg:Springer\u2010Verlag.",
+        "DOI": "10.1007/978-3-031-19775-8_17"
+      },
+      {
+        "key": "e_1_2_11_43_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kim Sunnie S. Y. Elizabeth AnneWatkins OlgaRussakovsky RuthFong andAndr\u00e9sMonroy\u2010Hern\u00e1ndez.2023. \u201c\u201cHelp Me Help the AI\u201d: Understanding How Explainability Can Support Human\u2010AI Interaction.\u201d InProceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI'23) Hamburg Germany 1\u201317.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3544548.3581001"
+      },
+      {
+        "key": "e_1_2_11_44_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lai Vivian HanLiu andChenhaoTan.2020. \u201c\u201cWhy is \u2018Chicago\u2019 Deceptive?\u201d Towards Building Model\u2010Driven Tutorials for Humans.\u201d InProceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI'20) Honolulu HI USA 1\u201313.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3313831.3376873"
+      },
+      {
+        "key": "e_1_2_11_45_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lai Vivian andChenhaoTan.2019. \u201cOn Human Predictions with Explanations and Predictions of Machine Learning Models: A Case Study on Deception Detection.\u201d InProceedings of the Conference on Fairness Accountability and Transparency (FAT*'19) Atlanta GA USA 29\u201338.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3287560.3287590"
+      },
+      {
+        "key": "e_1_2_11_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.38.6.941"
+      },
+      {
+        "key": "e_1_2_11_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-1031(86)90022-3"
+      },
+      {
+        "key": "e_1_2_11_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.90.4.644"
+      },
+      {
+        "key": "e_1_2_11_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-1031(66)90032-1"
+      },
+      {
+        "key": "e_1_2_11_50_1",
+        "unstructured": "Lee Mina MeghaSrivastava AmeliaHardy JohnThickstun EsinDurmus AshwinParanjape InesGerard\u2010Ursin et\u00a0al.2023. \u201cEvaluating Human\u2010Language Model Interaction.\u201dTransactions on Machine Learning Research."
+      },
+      {
+        "key": "e_1_2_11_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3479867"
+      },
+      {
+        "key": "e_1_2_11_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tics.2006.08.004"
+      },
+      {
+        "key": "e_1_2_11_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41551-018-0304-0"
+      },
+      {
+        "key": "e_1_2_11_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artint.2018.07.007"
+      },
+      {
+        "key": "e_1_2_11_55_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Miller Tim.2023. \u201cExplainable AI is Dead Long Live Explainable AI! Hypothesis\u2010Driven Decision Support Using Evaluative AI.\u201d InProceedings of the 2023 ACM Conference on Fairness Accountability and Transparency (FAccT'23) Chicago IL USA 333\u2013342.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3593013.3594001"
+      },
+      {
+        "key": "e_1_2_11_56_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mittelstadt Brent ChrisRussell andSandraWachter.2019. \u201cExplaining Explanations in AI.\u201d InProceedings of the Conference on Fairness Accountability and Transparency (FAT*'19) Atlanta GA USA 279\u2013288.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3287560.3287574"
+      },
+      {
+        "key": "e_1_2_11_57_1",
+        "first-page": "26422",
+        "article-title": "The Effectiveness of Feature Attribution Methods and its Correlation with Automatic Evaluation Scores",
+        "volume": "34",
+        "author": "Nguyen Giang",
+        "year": "2021",
+        "journal-title": "Advances in Neural Information Processing Systems"
+      },
+      {
+        "key": "e_1_2_11_58_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mahsan Nourani ChiradeepRoy Jeremy EBlock Donald RHoneycutt TahrimaRahman EricRagan andVibhavGogate.2021. \u201cAnchoring Bias Affects Mental Model Formation and User Reliance in Explainable AI Systems.\u201d In26th International Conference on Intelligent User Interfaces 340\u2013350.College Station TX USA:ACM.",
+        "DOI": "10.1145/3397481.3450639"
+      },
+      {
+        "key": "e_1_2_11_59_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Parrish Alicia HarshTrivedi EthanPerez AngelicaChen NikitaNangia JasonPhang andSamuelBowman.2022. \u201cSingle\u2010Turn Debate Does Not Help Humans Answer Hard Reading\u2010Comprehension Questions.\u201d InProceedings of the First Workshop on Learning with Natural Language Supervision 17\u201328.Dublin Ireland:Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/2022.lnls-1.3"
+      },
+      {
+        "key": "e_1_2_11_60_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Poursabzi\u2010Sangdeh Forough Daniel GGoldstein Jake MHofman Jennifer WortmanVaughan andHannaWallach.2021. \u201cManipulating and Measuring Model Interpretability.\u201d InProceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI'21) Yokohama Japan 1\u201352pages.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3411764.3445315"
+      },
+      {
+        "key": "e_1_2_11_61_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "RibeiroMarco Tulio SameerSingh andCarlosGuestrin.2016. \u201c\u201cWhy Should I Trust You?\u201d: Explaining the Predictions of Any Classifier.\u201d InProceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining KDD'16 San Francisco California USA 1135\u20131144.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/2939672.2939778"
+      },
+      {
+        "key": "e_1_2_11_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42256-019-0048-x"
+      },
+      {
+        "key": "e_1_2_11_63_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Schemmer Max NiklasKuehl CarinaBenz AndreaBartos andGerhardSatzger.2023. \u201cAppropriate Reliance on AI Advice: Conceptualization and the Effect of Explanations.\u201d InProceedings of the 28th International Conference on Intelligent User Interfaces (IUI'23) Sydney NSW Australia 410\u2013422.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3581641.3584066"
+      },
+      {
+        "key": "e_1_2_11_64_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sivaraman Venkatesh Leigh ABukowski JoelLevin Jeremy M.Kahn andAdamPerer.2023. \u201cIgnore Trust or Negotiate: Understanding Clinician Acceptance of AI\u2010Based Treatment Recommendations in Health Care.\u201d InProceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI'23) Hamburg Germany 1\u201318.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3544548.3581075"
+      },
+      {
+        "key": "e_1_2_11_65_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Stasser Garold andBethDietz\u2010Uhler.2001. \u201cCollective Choice Judgment and Problem Solving.\u201dBlackwell Handbook of Social Psychology 31\u201355.Malden MA USA:Blackwell Publishers Ltd.",
+        "DOI": "10.1002/9780470998458.ch2"
+      },
+      {
+        "key": "e_1_2_11_66_1",
+        "volume-title": "Group Process and Productivity",
+        "author": "Steiner Ivan Dale",
+        "year": "1972"
+      },
+      {
+        "key": "e_1_2_11_67_1",
+        "first-page": "34287",
+        "article-title": "Visual Correspondence\u2010Based Explanations Improve AI Robustness and Human\u2010AI Team Accuracy",
+        "volume": "35",
+        "author": "Reza Taesiri Mohammad",
+        "year": "2022",
+        "journal-title": "Advances in Neural Information Processing Systems"
+      },
+      {
+        "key": "e_1_2_11_68_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tan Chenhao.2022. \u201cOn the Diversity and Limits of Human Explanations.\u201d InProceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies 2173\u20132188.Seattle USA:Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/2022.naacl-main.158"
+      },
+      {
+        "key": "e_1_2_11_69_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-020-0942-0"
+      },
+      {
+        "key": "e_1_2_11_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3579605"
+      },
+      {
+        "key": "e_1_2_11_71_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang Danding QianYang AshrafAbdul andBrian Y.Lim.2019. \u201cDesigning Theory\u2010Driven User\u2010Centric Explainable AI.\u201d InProceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI'19) Glasgow Scotland UK 1\u201315.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3290605.3300831"
+      },
+      {
+        "key": "e_1_2_11_72_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang Xinru andMingYin.2021. \u201cAre Explanations Helpful? A Comparative Study of the Effects of Explanations in AI\u2010Assisted Decision\u2010Making.\u201d In26th International Conference on Intelligent User Interfaces 318\u2013328.College Station TX USA:ACM.",
+        "DOI": "10.1145/3397481.3450650"
+      },
+      {
+        "key": "e_1_2_11_73_1",
+        "unstructured": "Weerts Hilde J. P. WernervanIpenburg andMykolaPechenizkiy.2019. \u201cA Human\u2010Grounded Evaluation of SHAP for Alert Processing.\u201darXiv preprint arXiv:1907:03324."
+      },
+      {
+        "key": "e_1_2_11_74_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3282486"
+      },
+      {
+        "key": "e_1_2_11_75_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yang Fumeng ZhuanyiHuang JeanScholtz andDustin L.Arendt.2020. \u201cHow Do Visual Explanations Foster End Users' Appropriate Trust in Machine Learning?\u201d InProceedings of the 25th International Conference on Intelligent User Interfaces (IUI'20) Cagliari Italy 189\u2013201.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3377325.3377480"
+      },
+      {
+        "key": "e_1_2_11_76_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yu Kun ShlomoBerkovsky RonnieTaib JianlongZhou andFangChen.2019. \u201cDo I Trust My Machine Teammate? An Investigation from Perception to Decision.\u201d InProceedings of the 24th International Conference on Intelligent User Interfaces (IUI'19) Marina del Ray California 460\u2013468.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3301275.3302277"
+      },
+      {
+        "key": "e_1_2_11_77_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang Yunfeng Q. VeraLiao andRachel K. E.Bellamy.2020. \u201cEffect of Confidence and Explanation on Accuracy and Trust Calibration in AI\u2010Assisted Decision Making.\u201d InProceedings of the 2020 Conference on Fairness Accountability and Transparency (FAT*'20) Barcelona Spain 295\u2013305.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3351095.3372852"
+      },
+      {
+        "key": "e_1_2_11_78_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zylberajch Hugo PiyawatLertvittayakumjorn andFrancescaToni.2021. \u201cHILDIF: Interactive Debugging of NLI Models Using Influence Functions.\u201d InProceedings of the First Workshop on Interactive Learning for Natural Language Processing 1\u20136.Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/2021.internlp-1.1"
+      }
+    ],
+    "container-title": [
+      "AI Magazine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/aaai.12182",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/aaai.12182",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2024-09-26T05:24:54Z",
+      "timestamp": 1727328294000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1002/aaai.12182"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "references-count": 77,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            9
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/aaai.12182"
+    ],
+    "URL": "https://doi.org/10.1002/aaai.12182",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0738-4602",
+      "2371-9621"
+    ],
+    "issn-type": [
+      {
+        "value": "0738-4602",
+        "type": "print"
+      },
+      {
+        "value": "2371-9621",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2023-06-05",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-03-13",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-07-01",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+]

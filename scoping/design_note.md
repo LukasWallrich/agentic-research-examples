@@ -1,24 +1,11 @@
-# Design note (pre-preregistration draft)
+# Candidate study specification (before preregistration)
 
-## Question
-How does the proportional influence of an anchor on numeric estimates change as the anchor becomes more extreme? Four process models predict different shapes of the anchor-to-estimate response function on the log scale.
+Question: When does correcting confidence-selected feedback improve the decision to use an advisor, given a fixed number of verified outcomes?
 
-## Models (generative scale: natural log of the quantity)
-Participant p has belief centre mu_p ~ N(m, sigma_b^2) with m = log(true) + bias, internal uncertainty sigma, response noise.
-- M0 null: y = mu_p + e.
-- M1 resource-rational adjustment (Lieder et al., 2018): Metropolis-Hastings chain starts at the anchor x, t steps with Gaussian proposals (SD s*sigma) targeting N(mu_p, sigma^2); y = final state. Local elasticity rises with |x - mu|.
-- M2 constant-weight integration (Turner & Schley, 2016 AIM): y = w x + (1 - w) mu_p + e. Elasticity flat.
-- M3 adjust to the edge of the plausible range (Epley & Gilovich, 2006): y = x if |x - mu_p| < k sigma, else mu_p + sign(x - mu_p) k sigma. Elasticity 1 near, 0 far.
-- M4 plausibility-discounted integration (selective accessibility with plausibility gate; Wegener et al., 2001): y = mu_p + w (x - mu_p) exp(-(x - mu_p)^2 / (2 c^2 sigma^2)) + e. Elasticity falls and turns negative beyond c sigma.
-Each model's parameters are drawn from ranges that reproduce Jacowitz & Kahneman's (1995) anchoring index (about .49 with anchors at the 15th and 85th percentiles), allowing .30-.60. sigma, sigma_b and bias are drawn from wide ranges.
+Binary initial human/advisor decisions; truth feedback verifies both initial responses. Two human-confidence strata have accuracies .60 and .90. Confidence labels are calibrated by construction. Advisor accuracy varies across strata. Both-correct probabilities range over their full Frechet bounds. This is a deliberately transparent scenario model, not fitted human psychology.
 
-## Data subsets (design-only inventory, output/design_inventory.txt)
-- Within-item set (primary): item-study cells with >= 3 distinct exogenous anchor values, positive ratio-scale quantity, known true value, open scale. Bahník (2021a): 13 items, ~500 participants each, random anchors 1-1000. Imhoff & Barker (2022, Study 2): 1 item, 20 fixed anchors, n = 786. Frech et al. (2021): 4 items, 10 high anchors each, n = 104. Yoon et al. (2021): 2 ratio-scale items with random anchors. Excluded: Röseler & Wagner (2021; anchors computed from each participant's unanchored estimates and participants selected on anchored responses); WTP/WTA items without a true value.
-- Across-cell set (secondary): classic fixed two-anchor cells (anchortype 2/3), positive ratio-scale quantity, open scale, known true value (about 150 cells, ~70 studies).
+Distinguish three statements: (1) paired disagreement evidence preserves the sign of global accuracy advantage under uniform disagreement sampling, a mathematical identity; (2) confidence selection can reverse that sign only when conditional advantages have different signs, an analytic boundary; (3) the finite-label deployment-regret tradeoff among absolute, paired, inverse-weighted, and clipped-weighted learners, the computational question.
 
-## Estimators (applied identically to simulated and real data)
-- Within-item: trial-level mixed model on y~ = log(estimate/true) with x~ = log(anchor/true): y~ = a_c + b x~ + g x~|x~| + random intercepts and slopes by cell, random intercepts by participant. g > 0: elasticity rises with extremity (M1); g ~ 0 (equivalence bounds from simulation): M2; g < 0: M3/M4.
-- Across-cell: log anchoring index per cell = (median log est_high - median log est_low) / (log a_high - log a_low), meta-regressed on mean |x~| with random effects for study.
+Each simulated learner sees a fixed number of independent verified outcomes, then chooses globally between self and advisor. This targets an ex ante advisor-adoption decision, not optimal confidence-contingent delegation. Equal feedback counts are the primary resource constraint; expected opportunities needed to acquire those counts must also be reported. No endogenous audit/reliance loop is assumed. Calling this a model of hot-stove dynamics, permanent abandonment, or cumulative regret would be inaccurate.
 
-## Inference
-Compare the observed g (95% CI) with each model's simulated predictive interval on the exact OpAQ design. Decision table for every outcome cell.
+Future behavioural test: randomise both feedback schedule (uniform vs confidence-skewed disagreement) and summary display (advisor accuracy vs paired accuracy vs selection-adjusted paired estimate); measure estimated comparative accuracy and ex ante advisor choice on fresh randomly drawn tasks. Under the proposed display-to-estimator mapping, paired display should increase correct adoption under uniform disagreement feedback but lose protection when confidence selection reverses the audited advantage. Selection-adjusted display should recover at sufficient feedback budgets. Human failure to follow these quantitative predictions refutes the proposed mapping; it does not refute probability identities. No existing behavioural confirmation is claimed.

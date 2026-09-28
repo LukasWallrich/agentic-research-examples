@@ -1,0 +1,83 @@
+# Review: disagreement-triggered feedback and advisor trust learning
+
+## Mathematical identities: prove these, don't simulate them
+
+Let D be the disagreement indicator and c_A, c_H the correctness indicators for the AI and the human.
+
+1. **Agreement trials add no difference.** When the two agree, both are right or both are wrong. So acc_A − acc_H = P(D)·[P(c_A | D) − P(c_H | D)]. The sign is set only by the disagreement trials, and sampling disagreement trials uniformly keeps it. This holds for any number of response options.
+2. **Binary tasks.** On a disagreement exactly one party is correct, so P(c_A | D) = 1 − P(c_H | D). The relative tracker then reduces to one question: does the AI win more than 50% of disagreements?
+3. **The absolute tracker is biased.** P(c_A | D) is below acc_A whenever the AI is right more often on agreement trials than overall. For accuracies above 0.5 this holds by construction. How far the absolute tracker drifts can be written in closed form from P(D), acc_A and acc_H. This is selection bias, the same problem studied as "selective labels" and in off-policy evaluation.
+4. **Confidence-targeted reversal is Simpson's paradox.** The audited advantage is Σ_k w_k·Δ_k, where w_k is the audit weight and Δ_k the relative advantage in confidence stratum k. A reversal happens exactly when the reweighting flips the sign of that sum. It needs Δ_k to change sign across strata; heterogeneity alone is not enough. The reversal boundary is analytic.
+5. **Inverse-propensity weighting (IPW) with an exploration floor ε is unbiased**, and its variance grows roughly with 1/ε. For Bernoulli outcomes, the probability of ranking the two correctly after T audits can be computed exactly or with a normal approximation.
+
+**Verdict on novelty:** as framed, the contribution is items 1–5. A simulation of them only reproduces what the code was told to do, which makes the hypotheses tautological. I would not preregister "the absolute tracker rejects superior advisors under disagreement feedback" as a hypothesis. It is a theorem. State it in one paragraph with a figure.
+
+## Where real uncertainty exists
+
+- **(a) Which tracker people use.** This is psychological and unknown. People may code the advisor's hit rate on the feedback they see (absolute tracking). They may code who won each disagreement (relative tracking). Or they may do something egocentric: noticing the advisor's errors while discounting their own. The last option fits egocentric advice discounting and error-driven algorithm aversion. Cite these literatures only after verifying the references.
+- **(b) Feedback loops.** Reliance changes the final answers, and the audit rule may depend on final rather than initial disagreement. So the audited set depends on past trust. This is the only part that needs simulation: the fixed-point dynamics of trust, the disagreement set, and the audited evidence over a finite horizon.
+- **(c) Cost–benefit boundary in finite samples.** When does IPW's variance cost exceed its bias correction for a reliance decision made after T audits? This is partly analytic. It needs simulation only when combined with (b).
+
+## Minimal mechanism
+
+A single hybrid learner has two parameters:
+
+- **w ∈ [0, 1]** mixes the two evidence signals. The estimated advantage is Â = w·(p̂_A,audited − acc_H,known) + (1 − w)·(p̂_A − p̂_H)_audited. Here w = 1 is absolute tracking and w = 0 is relative tracking.
+- **λ** is an egocentric weight on the human's own errors (λ < 1 means own errors are underweighted).
+
+Reliance on trial t is a logistic function of Â_t with a sensitivity parameter β. Use a two-stage judge–advisor paradigm: initial judgment, advice, final judgment. Declare in advance whether audits condition on initial or final disagreement.
+
+## Discriminating predictions that data could refute
+
+These are conditional on the model, not programmed effects.
+
+- **P1 (agreement-rate test).** Hold the AI's disagreement win rate fixed, say 60%, and vary P(D) between 0.1 and 0.4. Relative tracking (w = 0) predicts no change in reliance. Absolute tracking predicts lower reliance at lower P(D), because the audited AI accuracy then falls further below the AI's true accuracy. If reliance under disagreement-only feedback does not vary with P(D), the model predicts w ≈ 0 and absolute tracking is refuted. This manipulation is the core of the study. The other two are secondary.
+- **P2 (self-error test).** Under disagreement feedback, λ < 1 predicts that trust falls more after the AI loses a disagreement than it rises after the AI wins one, even when the AI loses less than half of disagreements. This is testable in existing trial-level judge–advisor data.
+- **P3 (confidence targeting).** Audit only the disagreements where the human was highly confident. Relative learners should reverse their ranking only when Δ_k crosses zero across confidence strata. Absolute learners should drop further regardless. Where Δ_k stays positive in every stratum, a reversal in behaviour points to w > 0 or λ < 1, not to the selection rule.
+
+## Design (one simulation study, fully crossed, small)
+
+**Factors:**
+
+- **Feedback regime (5 levels):** random; uniform-disagreement; high-confidence-targeted; targeted + ε-floor without IPW; targeted + ε-floor + IPW.
+- **P(D):** 0.1 / 0.4.
+- **Confidence structure of Δ_k:** homogeneous / crossing.
+- **Learner:** w ∈ {0, 0.5, 1} × λ ∈ {0.6, 1}.
+- **Horizon:** T ∈ {20, 100} audited trials.
+- **ε:** 0.05 / 0.2.
+
+**Outcomes:**
+
+- probability of correctly ranking the AI and the human at T
+- cumulative regret: accuracy lost against the better of always-self and always-AI
+- bias and RMSE of Â
+
+The analytic benchmarks from identities 1–5 serve as correctness checks for the code. They are not results.
+
+**Parameter recovery:** simulate choices from known (w, λ, β). Show that w can be recovered only when P(D) varies within the design. That result tells future experimenters which manipulation they need, and it is the most useful practical output.
+
+## Calibration and target protocol (make explicit before simulating)
+
+- **Parameter sources:** take P(D), human confidence-by-accuracy curves and Δ_k from open trial-level judge–advisor or AI-assistance datasets. Specify inclusion rules in advance: binary tasks, recorded initial judgments, confidence ratings. Do not invent parameter values. Where no data exist, label the value as a scenario.
+- **Empirical target:** a two-stage experiment manipulating P(D) (via item selection) × feedback regime, with a preregistered test of w using a hierarchical fit. The paper proposes this experiment and does not claim to confirm it.
+
+## Answer
+
+As stated, the idea is mostly mathematical identities. Three results carry it:
+
+- Agreement trials add nothing to the accuracy difference, so uniformly sampled disagreement feedback keeps the sign of the advantage.
+- The absolute tracker's bias is closed-form selection bias.
+- Confidence-targeted reversal is Simpson's paradox. It happens only when the relative advantage changes sign across confidence strata.
+
+Simulating these would be tautological, so present them as theorems. The contribution becomes non-trivial if it does two things:
+
+1. Models the psychological unknown: a learner mixing absolute and relative evidence (weight w) with egocentric self-error discounting (λ), inside a judge–advisor loop where reliance changes which trials are audited.
+2. Derives refutable predictions. The central one: with the AI's disagreement win rate held fixed, reliance under disagreement-only feedback should fall as disagreement becomes rarer if and only if w > 0.
+
+Simulation is needed only for the feedback-loop dynamics and for finite-horizon trade-offs between IPW's bias correction and its variance cost. The design is:
+
+- feedback regime (5 levels) × P(D) (2) × confidence structure of Δ_k (2) × learner (w, λ) × horizon T (2) × ε (2)
+- outcomes: probability of correct ranking, regret, and bias/RMSE
+- parameter recovery showing that varying P(D) is required to identify w
+- parameters calibrated from preregistered extraction of open judge–advisor data
+- a proposed, unconfirmed human experiment as the empirical target
