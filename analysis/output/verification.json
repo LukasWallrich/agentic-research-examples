@@ -1,0 +1,42 @@
+{
+  "datasets_examined": {
+    "pass": true,
+    "detail": "180 rows"
+  },
+  "estimated_delta_bounds": {
+    "pass": true,
+    "detail": ""
+  },
+  "calibration_slope_positive": {
+    "pass": true,
+    "detail": "median 1.51"
+  },
+  "icc_in_range": {
+    "pass": true,
+    "detail": ""
+  },
+  "meta_ci_ordered": {
+    "pass": true,
+    "detail": ""
+  },
+  "sim_delta_bounded": {
+    "pass": true,
+    "detail": ""
+  },
+  "sim_lam_in_0_1": {
+    "pass": true,
+    "detail": ""
+  },
+  "sim_rho_positive": {
+    "pass": true,
+    "detail": ""
+  },
+  "aleatoric_reproducible_shape": {
+    "pass": true,
+    "detail": ""
+  },
+  "h6_reported": {
+    "pass": true,
+    "detail": ""
+  }
+}
