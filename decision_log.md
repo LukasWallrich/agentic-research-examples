@@ -39,3 +39,21 @@ Autonomous decisions for `ai-jdm-paper4`, in order. Each entry states the decisi
 ## D9. Honesty about what has been seen before preregistration
 - **Decision:** Record in the preregistration exactly which data properties were inspected before writing it: file names and sizes, column headers, counts of rows/subjects/stimuli, whether `Response` has two levels, and the fraction of `Stimulus` cells whose reconstructed truth is unique. No accuracy, confidence, or choice aggregates were computed.
 - **Reason:** The brief requires stating what has been seen for a secondary-data preregistration. Structural feasibility checks are necessary to design an analysable study, but must be disclosed.
+## D10. Item and vote definitions in the empirical leg
+- **Decision:** Define an item as a shared condition cell and a judge's vote as the sign of her recorded correctness, rather than reconstructing a per-item truth from responses.
+- **Reason:** Feasibility checks showed most datasets code `Stimulus` as a coarse condition, not a unique shared stimulus, so truth reconstruction is unreliable. Using recorded correctness directly makes the estimand well-defined across heterogeneous datasets.
+- **Consequence:** The empirical leg estimates how confidence reweighting changes the crowd's estimate of a shared condition, not a matched-stimulus group decision. Stated as the first weakness in `weaknesses.md`.
+
+## D11. Fixed an item-key parsing bug and re-included two datasets
+- **Decision:** After the first analysis run, fixed the item-key construction (pandas 3.0 preserves missing values through `astype(str)`), which had silently excluded two datasets as `parse_error`. Re-ran the full analysis; included datasets rose from 79 to 81.
+- **Reason:** The parse error was a data-engineering bug, not a preregistered exclusion.
+- **Recorded in** `deviations.md`. All manuscript numbers were regenerated from the corrected outputs.
+
+## D12. Target journal: *Judgment and Decision Making* (JDM)
+- **Decision:** Submit as a **Theory Article** to JDM.
+- **Reason:** The journal's scope explicitly lists "advances in methods for improving JDM (e.g., wisdom-of-the-crowd)" and "development of new theories / modification or specification of existing theories", which match a formal-plus-simulation-plus-empirical paper on aggregation weights. It requires data and code availability, which the project already provides, and uses APA citation style, which the manuscript follows. Article length is unrestricted. The finance and AI policies were read (Cambridge research publishing ethics guidelines; see `ai_disclosure.md`).
+- **Rejected:** *Decision* (APA) was a close second but the theory-first framing fits JDM's stated scope better; *Journal of Behavioral Decision Making* was less of a match for the wisdom-of-crowds framing.
+
+## D13. Supporting documents
+- **Decision:** Drafted `manuscript/cover_letter.md`, `ai_disclosure.md`, and `weaknesses.md`, and verified all 26 manuscript DOIs against Crossref (`manuscript/reference_audit.md`, zero failures).
+- **Reason:** Required by the brief and by JDM's author instructions.
