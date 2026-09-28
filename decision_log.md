@@ -57,3 +57,9 @@ Autonomous decisions for `ai-jdm-paper4`, in order. Each entry states the decisi
 ## D13. Supporting documents
 - **Decision:** Drafted `manuscript/cover_letter.md`, `ai_disclosure.md`, and `weaknesses.md`, and verified all 26 manuscript DOIs against Crossref (`manuscript/reference_audit.md`, zero failures).
 - **Reason:** Required by the brief and by JDM's author instructions.
+
+## D14. Review-driven revision and final framing
+- **Decision:** After codex (two rounds), agy, and the coarse-review pipeline, the pipeline bugs were fixed, the preregistered hypotheses were reported with their outcomes (H1 supported, H2 not supported, H3 supported, H4 descriptive, H5 not supported, H6 rejected), and the paper was reframed around the divergence between the decision and judge-prediction objectives.
+- **Reason:** The reviews found real errors (replacement sampling, unstable seeds, an ICC on trials, the H6 success rule, an even-`m` tie artefact) and a framing problem (the exploratory graded measure was leading while the preregistered decision measure was positive). Fixing them changed the H5 conclusion and the sign arbitration.
+- **Consequence:** The manuscript now leads with the preregistered decision result, labels the graded measure exploratory, reports that estimated shrinkage does not beat equal weighting, reports minimum detectable effects for the moderation nulls, and softens the model-rejection claim to the resolution of the mapping.
+- **Unresolved:** no general closed-form derivation of the boundary (a sign condition is given); the one-to-one stimulus-to-exemplar mapping is not recoverable from the corpus.
