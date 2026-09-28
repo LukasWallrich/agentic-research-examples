@@ -112,3 +112,39 @@ Source: `reviews/manuscript/agy_answer_r2.txt`. Agy judged every round-1 major i
 | A2-6 | Minor | E5 omits M1R's two across-cell matches. | Accepted; added. |
 | A2-7 | Minor | Hard-coded pre-exclusion count in the Limitations. | Accepted; now computed from the post-exclusion table. |
 | A2-8 | Minor | Literal "&amp;" in a journal name. | Accepted; the bibliography builder now converts it. |
+
+### Reviewer: coarse-review pipeline (full structured review; recommendation: major revision)
+
+Source: `reviews/coarse/coarse_review_r2.md` (reviewed the version after round-1 revisions, before the codex/agy round-2 changes). Run with `coarse-ink` 1.4.0, host Claude, model claude-opus-4-6, effort high.
+
+**Overall feedback**
+
+| # | Comment | Response |
+|---|---|---|
+| K1 | The primary result depends on one study and one item domain; narrow the claims or add data. | Accepted (narrowing). The abstract and conclusion restrict the claim to random anchors in the observed tasks and state that deliberate anchors remain open; no other open multi-anchor data exist in OpAQ. New data collection is outside the remit of this study. |
+| K2 | The binary survival rule rewards wide predictions; make the joint reproduction share the primary model-comparison metric. | Accepted in part. The preregistered rule is still reported as preregistered, but the Results now introduce the joint check as the more informative comparison and the abstract reports it (a plausible-boundary model reproduced the within-item pattern best; the resource-rational variant was too wide to test). We did not relabel the post-hoc check as primary, because it was not preregistered. |
+| K3 | The within/across divergence is unresolved; engage with what would resolve it. | Accepted. The Discussion now proposes a design that separates the two explanations (informative and random anchors at many levels for the same items, with elicited unanchored estimates and plausible ranges), and reports the new analyses (E7, E10) that bear on it. |
+| K4 | The quadratic form may impose the curvature; add a spline or multi-breakpoint specification. | Accepted. E9 fits five distance bands; slopes fall from 0.33 to about 0.12 and stay positive, without the reversal implied by the quadratic. |
+| K5 | Calibration to a single benchmark; add a second calibration target such as the elasticity in a published random-anchor study. | Rejected, with reason: any additional calibration target from OpAQ studies would use outcome data that the predictions are tested against, and the only large published random-anchor study with many anchor levels (Bahník, 2021) is the main source of the test data. The limitation is stated in the Discussion and in `weaknesses.md`; the raw-scale recalibration (S1) and relaxed-calibration check (E5) show how much depends on the calibration. |
+| K6 | The random-anchor stratum's fallback inflates precision; report item-level curvatures and a two-step estimate. | Accepted. E8 fits each cell separately and pools the 20 curvatures: γ = -0.046 [-0.068, -0.024], τ = 0.035, I² = 65%; 16 of 20 negative. |
+| K7 | Test the model the Discussion motivates (plausibility discount with a floor). | Accepted. E7 simulates M4 with a weight floor: 36 of 400 draws reproduce the within-item b and γ, 62 the across-cell slope, none both. |
+| K8 | Derive why Hedges' g rises mechanically under constant proportional pull. | Accepted. A short derivation is now in the Introduction. |
+| K9 | Test whether curvature covaries with item uncertainty (the plausibility mechanism). | Accepted. E10: no relation across 18 cells (slope 0.012 [-0.136, 0.159]); reported in Results and Discussion as not supporting the mechanism, with its limits (few items; outcome-based spread). |
+| K10 | Simulation assumptions too sparse in the text. | Accepted. Appendix Table A1 lists every distributional assumption. |
+
+**Detailed comments**
+
+| # | Comment | Response |
+|---|---|---|
+| K-1 | Yoon anchor ranges are inconsistent with heights or ages. | Accepted after checking Yoon et al.'s Appendix A: participants entered their height in inches or age and compared the target with that number; the entered values (8-1,500; 6-279) suggest other units and errors. The Method now says so and explains why the values are analysed as anchors (they are the numbers participants compared against). H1 without Yoon et al. is unchanged (S2). |
+| K-2 | H2 described as a null ("did not change detectably") instead of inconclusive. | Accepted; all such phrasings replaced by "inconclusive". |
+| K-3 | Preregistration credibility: git is self-operated; state registry, temporal separation, and what was seen. | Accepted in part. The Method now states that the timestamp is local and not independently verifiable, that the repository and its history will be made public, and what was seen before the commit. Registering on an external registry was not possible within the constraints (no accounts may be created); this is stated in `weaknesses.md`-adjacent documentation and left to the author before submission. |
+| K-4 | Author role statement contradicts the instruction; add responsibility statement. | Accepted. The statement now distinguishes the constraints the author set from the choices the AI made within them, and says the author is accountable. We did not write that the author reviewed all analyses, because that has not happened yet (see `ai_disclosure.md`). |
+| K-5 | M1R parameter deviation too vague; state which document governs. | Accepted; the parameter, both descriptions, and the rule that the committed code was treated as operative are now stated. |
+| K-6 | Apply the metric critique to Schley & Weingarten as well. | Accepted; added. |
+| K-7 | "Clarified" obscures whether the critical value was chosen post hoc. | Accepted; the text now states what the preregistration text said and that the preregistered code used the normal quantile for both simulation and analysis. |
+| K-8 | Symbol g used for both Hedges' g and the curvature. | Accepted; the curvature is now γ throughout; Hedges' g is always named in full. |
+| K-9 | Ambiguous metric for Strack & Mussweiler. | Accepted; "estimates z-standardised within each item". |
+| K-10 | Fixed-anchor stratum composition is fragile under the disputed classification. | Accepted; a sentence states the composition if the Cologne item were counted as random. |
+| K-11 | Chicago cell: clarify that no estimate entered any analysis. | Accepted; parenthetical added in the Results. |
+| K-12 | The secondary test inherits the extremity-item confound. | Accepted; qualifier added in the Introduction. |

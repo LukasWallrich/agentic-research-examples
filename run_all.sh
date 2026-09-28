@@ -16,5 +16,6 @@ Rscript R/05b_sensitivity.R           # post-hoc sensitivity analyses
 Rscript R/05c_within_cells_table.R    # descriptive table of within-item cells
 Rscript R/05d_raw_scale_model.R       # exploratory raw-scale constant-weight model (E6)
 Rscript R/05e_review_checks.R         # post-hoc checks requested in review round 1
+Rscript R/05f_round2_checks.R         # exploratory analyses requested in review round 2
 Rscript R/06_figures.R                # figures
 quarto render manuscript/manuscript.qmd   # manuscript (docx and html)
