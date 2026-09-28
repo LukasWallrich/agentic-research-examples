@@ -34,7 +34,7 @@ OUT = os.path.join(ROOT, "analysis", "output")
 os.makedirs(OUT, exist_ok=True)
 
 SEED = 20260928
-N_ITEMS = 40000
+N_ITEMS = 100000
 MMAX = 65
 M_LIST = [3, 4, 5, 7, 9, 13, 17, 25, 41, 65]
 LAM = np.round(np.arange(0, 1.0001, 0.05), 3)

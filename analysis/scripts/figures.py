@@ -30,11 +30,14 @@ ax[0].errorbar(g["delta"].mean().index, g["delta"].mean().values,
 ax[0].axhline(0, color="k", lw=0.8, ls="--")
 ax[0].set_xlabel("Group size $m$"); ax[0].set_ylabel(r"$\Delta$ crowd accuracy (CW $-$ EW)")
 ax[0].set_title("(a) Sign-accuracy advantage", loc="left", fontsize=9)
+for mval, cnt in g.size().items():
+    ax[0].annotate(int(cnt), (mval, g["delta"].mean().loc[mval]), textcoords="offset points",
+                   xytext=(0, -12), ha="center", fontsize=6, color="grey")
 incb = emp[emp["included"] == True]["brier_improvement"].dropna()
 ax[1].hist(incb, bins=25, color=C["sim"], edgecolor="white")
 ax[1].axvline(0, color="k", lw=0.8, ls="--")
 ax[1].axvline(incb.mean(), color=C["cw"], lw=1.5)
-ax[1].set_xlabel(r"$\Delta$ Brier (EW $-$ CW), leave-one-judge-out")
+ax[1].set_xlabel(r"$\Delta$ Brier (EW $-$ CW); negative = CW worse")
 ax[1].set_ylabel("Datasets")
 ax[1].set_title(f"(b) LOO-Brier, N={len(incb)} datasets", loc="left", fontsize=9)
 fig.tight_layout(); fig.savefig(os.path.join(FIG, "fig1_empirical.png"), dpi=200); plt.close(fig)
@@ -60,7 +63,7 @@ ax[0].set_xlabel("Calibration slope $\\beta$"); ax[0].set_ylabel("LOO-Brier impr
 ax[1].scatter(emp["icc_rho"], emp["brier_improvement"], s=12, alpha=0.7, color=C["acc"])
 ax[1].axhline(0, color="k", lw=0.8, ls="--")
 ax[1].set_xlabel("Within-item error correlation $\\rho$")
-fig.tight_layout(); fig.savefig(os.path.join(FIG, "fig3_moderation.png"), dpi=200); plt.close(fig)
+fig.tight_layout(); fig.savefig(os.path.join(FIG, "fig4_moderation.png"), dpi=200); plt.close(fig)
 
 # Fig 4: shrinkage curve for a representative cell (large phi) and a well-calibrated one
 fig, ax = plt.subplots(figsize=(4.2, 3.0))
@@ -70,6 +73,6 @@ for phi, col in [(0.0, C["ew"]), (2.0, C["cw"]), (4.0, C["sim"])]:
     ax.plot(sub["m"], sub["lam_star"], marker="o", ms=3, color=col, label=f"$\\phi$={phi}")
 ax.set_xscale("log"); ax.set_xlabel("Group size $m$"); ax.set_ylabel("Optimal shrinkage $\\lambda^*$")
 ax.set_ylim(-0.02, 1.02); ax.legend(frameon=False, fontsize=8)
-fig.tight_layout(); fig.savefig(os.path.join(FIG, "fig4_lambda.png"), dpi=200); plt.close(fig)
+fig.tight_layout(); fig.savefig(os.path.join(FIG, "fig3_lambda.png"), dpi=200); plt.close(fig)
 
 print("figures written to", FIG)

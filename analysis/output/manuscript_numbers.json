@@ -50,33 +50,33 @@
   "h6": {
     "criterion": "H6 (preregistered): sign agreement >= 0.60 on the crowd-accuracy gap at m = 7",
     "sign_accuracy_m7": {
-      "n_agree": 21,
+      "n_agree": 25,
       "n": 70,
-      "agreement": 0.3,
+      "agreement": 0.35714285714285715,
       "baseline_predict_negative": 0.3,
       "supported": false
     },
     "loo_brier_m7": {
-      "n_agree": 23,
+      "n_agree": 27,
       "n": 70,
-      "agreement": 0.32857142857142857,
+      "agreement": 0.38571428571428573,
       "baseline_predict_negative": 0.7857142857142857
     },
     "supported": false,
     "mapping": {
-      "n_mapped_to_one_cell": 9,
-      "n_below_min_sim_rho": 7
+      "n_mapped_to_one_cell": 8,
+      "n_below_min_sim_rho": 17
     }
   },
   "sim": {
     "n_cells": 120,
-    "any_negative_cell_sign": 87,
-    "frac_negative_cells_sign": 0.725,
-    "n_cells_with_positive_mean_brier": 33,
-    "frac_negative_cells_brier": 0.725,
-    "h2_sign_violations": 286,
-    "h2_brier_violations": 72,
+    "any_negative_cell_sign": 86,
+    "frac_negative_cells_sign": 0.7166666666666667,
+    "n_cells_with_positive_mean_brier": 41,
+    "frac_negative_cells_brier": 0.6583333333333333,
+    "h2_sign_violations": 275,
+    "h2_brier_violations": 83,
     "h2_total_steps": 1080,
-    "h3_cells_with_interior_lambda": 119
+    "h3_cells_with_interior_lambda": 117
   }
 }
