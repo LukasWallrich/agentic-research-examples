@@ -174,3 +174,48 @@ Source: `reviews/manuscript/agy_answer_r3.txt`. Agy re-checked all numbers again
 | A3-3 | Minor | The multi-band slopes at |x| ≥ 2 have CIs that include zero. | Accepted; qualified in the text. |
 | A3-4 | Minor | Appendix table called "Table A1" in the review log but "Table 4" in the manuscript. | Accepted; review log corrected (Quarto numbers tables consecutively). |
 | A3-5 | Minor | Repository link placeholder. | As X3-2: a step for the author before submission. |
+
+### Reviewer: coarse-review pipeline (round 3; recommendation: major revision)
+
+Source: `reviews/coarse/coarse_review_r3.md`. This review was run on the version submitted to round 3, before the round-3 codex and agy changes; several of its points (the fixed-anchor claim for the Cologne item, the Stephen King anchor range) had already been corrected in response to those reviewers. As this was the third and final round, we made the text changes and quick checks below and declined requests for new modelling frameworks, with reasons.
+
+**Overall feedback**
+
+| # | Comment | Response |
+|---|---|---|
+| L1 | The within-item finding is effectively a single-study result; foreground this and frame replication as necessary. | Accepted (already largely done in round 3): abstract, Discussion and Conclusion state that the evidence comes from random anchors, mostly in one study, and that there is no informative test for fixed anchors. |
+| L2 | Random anchors may engage different processing; restrict claims or give a theoretical account. | Accepted (restriction). The Discussion now says the models are silent about anchor type (see L-6), and the claims are restricted to random or self-generated anchors. |
+| L3 | The log scale does heavy lifting; justify it, ideally by comparing log-linear and raw-linear response functions. | Accepted in part. The raw-scale constant-weight model (E6) is the comparison the reviewer asks for: both scales predict a negative pooled curvature, and only the side-specific (exploratory) curvature separates them; the manuscript and `weaknesses.md` (point 3) say so. A formal model-selection exercise across items was not added in this final round. |
+| L4 | Replace the survival rule with a quantitative comparison (Bayes factors, scoring rules). | Rejected for this manuscript, with reason: the survival rule was preregistered and must be reported; the post-hoc joint check already provides a more informative comparison and is reported alongside it; building a likelihood-based comparison would require fitting the simulation models to the data (simulation-based inference), a new study rather than a revision in the final permitted round. Listed as a weakness. |
+| L5 | The within/across mismatch is theoretically unresolved; add a power analysis or demote H2. | Accepted (power analysis). New check R3a: the across-cell analysis had 80% power only for slopes of about ±0.09, close to the declines M3 and M4 predict, so it is a weak basis for judging them; stated in the Results. H2 remains a preregistered secondary test. |
+| L6 | Calibration to a single benchmark; calibrate to a subset of OpAQ and test on the rest. | Rejected, with reason: calibrating on OpAQ outcomes after seeing them would make the predictions no longer independent of the test data; a split-sample calibration would have had to be preregistered. The limitation is stated (Discussion, `weaknesses.md` point 2). |
+| L7 | Preregistration after reading design columns protects less than implied. | Accepted. The Method now states what the preregistration protects (estimation, exclusion and decision rules) and what it does not (hypothesis choice informed by design knowledge or by the language models' training data). |
+| L8 | No analytical derivation of each model's curvature sign. | Rejected for this round, with reason: the signs are derived by simulation on the actual designs, which is what the preregistration committed to; Figure 1 shows each model's local elasticity as a function of distance, and the equations are in `R/models.R`. An analytical appendix would help but is not needed to verify the predictions, which can be regenerated. |
+| L9 | Sensitivity of predictions to the shared simulation assumptions (noise, gross errors, uncertainty range) is unexplored. | Rejected for this round, with reason: a sensitivity grid over the simulation scaffolding is a substantial new analysis; the shape predictions of M1, M2, M3 and M4 follow from model structure, and the relaxed-calibration (E5) and raw-scale recalibration (S1) analyses address parameter sensitivity. Listed as a weakness (point 2). |
+| L10 | No power or detectable-effect analysis for H2. | Accepted (see L5). |
+
+**Detailed comments**
+
+| # | Comment | Response |
+|---|---|---|
+| L-1 | Yoon items are self-generated anchors; treatment asymmetric with the excluded study. | Accepted in part. The Method now explains the distinction (the excluded study's anchors were estimates of the target quantity; Yoon's are numbers about a different quantity) and keeps the preregistered OpAQ coding; H1 without the Yoon items was already reported (S2) and is unchanged. |
+| L-2 | AI training data may have shaped the hypotheses. | Accepted; stated in the Method (Use of AI tools). |
+| L-3 | κ rescaling is unquantified. | Accepted in substance: the conclusions about M1R concern the implemented (coded) version, whose predictions were preregistered; the Method states both definitions. Re-running M1R under the textual definition was not done; M1R is already described as not testable with these data. |
+| L-4 | Principle for keeping Weber et al. but removing the Shanks cell. | Accepted; the Results now state the principle (a preregistered rule removed all Shanks responses; the Weber mix-ups are unverified, so the study stays in and its influence is shown). |
+| L-5 | Accountability sentence in tension with disavowal of choices. | Accepted; the sentence now says the author is responsible for verifying the work before submission and is accountable for the content. |
+| L-6 | The models' equal predictions across anchor types are structural. | Accepted; rephrased. |
+| L-7 | Discussion blends exploratory and preregistered findings. | Accepted; the sentence now begins "In exploratory analyses". |
+| L-8 | The z-standardised result of Strack & Mussweiler may reflect the same metric artefact. | Accepted; added to the Introduction. |
+| L-9 | The Schley & Weingarten inference rests on an unverified conditional. | Accepted; now stated as conditional and unverified. |
+| L-10 | Simulated biases are generic, not item-specific. | Accepted; stated in the Limitations. |
+| L-11 | The banded analysis cannot adjudicate reversal. | Accepted; rephrased. |
+| L-12 | 18-item null framed as evidence against the mechanism. | Accepted; the test is now described as uninformative, with its effect size and interval first. |
+| L-13 | "Distances" missing in the Limitations. | Accepted. |
+| L-14 | The spread-scaled result leads before its endogeneity problem. | Accepted; restructured. |
+| L-15 | "Many different anchors" overstates the criterion. | Accepted; "at least three". |
+| L-16 | Barrera-Lemarchand description conflates specification and finding. | Accepted; rephrased to their estimated per-question weights (r = −.56). |
+| L-17 | Implausible Yoon anchor entries retained without robustness check. | Accepted; new check R3b: 80 of 171 entries are implausible as heights or ages; without them γ = −0.043 [−0.065, −0.021]. |
+| L-18 | Characterise the floor model's search space. | Accepted; ranges stated. |
+| L-19 | Uniqueness of the model-discriminating test overstated. | Accepted; rephrased. |
+
+The review process ends here (three rounds). In the final round agy raised no major issue; codex raised two (one fixed, one outside the project's remit); coarse-review raised framework-level requests, of which the feasible ones were implemented and the rest are declined above and listed in `weaknesses.md`.
