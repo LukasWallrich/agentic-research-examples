@@ -1,17 +1,17 @@
 {
-  "criterion": "H6 (preregistered): sign agreement >= 0.60 on the crowd-accuracy gap",
-  "sign_accuracy": {
-    "n_agree": 28,
-    "n": 76,
-    "agreement": 0.3684210526315789,
+  "criterion": "H6 (preregistered): sign agreement >= 0.60 on the crowd-accuracy gap at m = 7",
+  "sign_accuracy_m7": {
+    "n_agree": 21,
+    "n": 70,
+    "agreement": 0.3,
+    "baseline_predict_negative": 0.3,
     "supported": false
   },
   "loo_brier_m7": {
-    "n_agree": 26,
-    "n": 76,
-    "agreement": 0.34210526315789475,
-    "baseline_predict_negative": 0.7894736842105263,
-    "note": "simulated and empirical Brier compared at m = 7"
+    "n_agree": 23,
+    "n": 70,
+    "agreement": 0.32857142857142857,
+    "baseline_predict_negative": 0.7857142857142857
   },
   "supported": false,
   "mapping": {

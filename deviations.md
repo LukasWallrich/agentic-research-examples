@@ -64,3 +64,8 @@ Each deviation states what changed, when it was decided, whether that was before
 ## Summary for the reader
 
 The deviations that change what is reported as the headline result are **V2** (the graded estimand, added after the preregistered estimand proved ceiling-bound), **V5** (descriptive rather than random-effects summary), and **V6** (bug fixes that changed the H5 conclusion and the sign arbitration). The preregistered hypotheses are reported with their outcomes: H1 supported, H2 not supported, H3 supported, H4 descriptive, H5 not supported, H6 rejected. No deviation changed the direction of a conclusion in the paper's favour; V6 changed the H5 conclusion against the paper's original narrative, and the manuscript reports it that way.
+## V10. Tie rule in the simulation
+
+- **Change:** for even group sizes, the equal-weighted estimate can tie (mean vote zero). The first simulation counted a tie as an error for both rules, which inflated the simulated confidence-weighting advantage at `m = 4`. Ties now score 0.5 for both rules.
+- **Decided:** after a second independent code review flagged the artefact (mean EW accuracy had dropped from 0.753 at m = 3 to 0.651 at m = 4, creating a spurious +0.107 advantage at m = 4 and 120 of the reported H2 decreases).
+- **Effect:** the H2 decrease count falls from 289 to 286, the sign-gap example values change slightly, and H6 is now compared at a common group size (m = 7) on both sides. H2 remains unsupported and H6 remains rejected.

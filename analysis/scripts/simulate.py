@@ -108,9 +108,11 @@ def run_cell(tau, phi, gamma, omega, seed):
         vm, cm, corrm = v[:, :m], c[:, :m], correct[:, :m]
         ew = vm.mean(1)
         cw = (cm * vm).sum(1) / cm.sum(1)
-        acc_ew = float(np.mean(ew > 0))
-        acc_cw = float(np.mean(cw > 0))
-        accs = [float(np.mean(((1 - lam) * ew + lam * cw) > 0)) for lam in LAM]
+        # ties (possible for even m) score 0.5 rather than counting as errors
+        acc_ew = float(np.mean(ew > 1e-12) + 0.5 * np.mean(np.abs(ew) <= 1e-12))
+        acc_cw = float(np.mean(cw > 1e-12) + 0.5 * np.mean(np.abs(cw) <= 1e-12))
+        accs = [float(np.mean(((1 - lam) * ew + lam * cw) > 1e-12)
+                      + 0.5 * np.mean(np.abs((1 - lam) * ew + lam * cw) <= 1e-12)) for lam in LAM]
         lam_star = float(LAM[int(np.argmax(accs))])
         # leave-one-judge-out Brier improvement of CW over EW
         vsum, csum, cvsum = vm.sum(1), cm.sum(1), (cm * vm).sum(1)

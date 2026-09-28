@@ -40,7 +40,7 @@ check("sim_rho_plausible", bool((sim["rho"] > -0.05).all() and (sim["rho"] < 1).
 # reproduction: recompute one empirical dataset delta by hand and compare
 rng = np.random.default_rng(1)
 check("aleatoric_reproducible_shape", len(simd) > 0)
-check("h6_reported", "sign_accuracy" in h6)
+check("h6_reported", "sign_accuracy_m7" in h6)
 
 json.dump(checks, open(os.path.join(OUT, "verification.json"), "w"), indent=2)
 print(json.dumps(checks, indent=2))
