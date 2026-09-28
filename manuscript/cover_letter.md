@@ -1,21 +1,17 @@
-Dear Editors of *Judgment and Decision Making*,
+Dear Editors,
 
-Please consider the enclosed manuscript, "Anchor extremity and proportional anchor influence: A preregistered, model-based test in open trial-level data", as an Empirical Article.
+Please consider “Learning from disagreements: When selective feedback helps and harms advisor evaluation” as a Theory Article for *Judgment and Decision Making*.
 
-**What the paper does.** Anchoring theories disagree about how an anchor's influence changes as the anchor becomes more extreme, and the two recent meta-analyses reach different conclusions on this question. Much of the disagreement comes from measuring anchor influence as a standardised mean difference, which grows with anchor distance even when anchors pull estimates by a constant proportion. We derived the shape of the anchor-response function from five process models, including two versions of Lieder et al.'s (2018) resource-rational account. We then simulated these models on the exact designs of the Open Anchoring Quest, an openly licensed collection of trial-level anchoring data, and tested the predictions in a preregistered secondary analysis.
+The paper examines a comparative judgement that arises when evaluating advice: can selectively verified cases establish whether an advisor is more accurate than oneself? It distinguishes an elementary sign-preservation property of paired disagreement feedback from the finite-feedback costs of correcting confidence-dependent selection. The prospectively specified simulation reports both the benefit and cost of inverse weighting in prespecified contrasting environments. It also proposes a randomised feedback-display test that could reject the behavioural interpretation, which remains unvalidated.
 
-**Main findings.** Within items, estimates responded less to changes in the anchor when the anchor was far from the true value. This contradicts anchor-and-adjust with a fixed number of adjustments and constant-weight integration on the log scale, and matches the direction of plausibility-based accounts. Across two-anchor studies, where authors chose the anchor values, the relation between the anchoring index and extremity was inconclusive, and no model reproduced both patterns. We report the limits openly: the within-item evidence comes mostly from one study with random anchors, several model checks are exploratory, and the across-cell result is sensitive to influential cells.
+The study collected no new data and used no participant records. Its local research package includes the preregistration committed before hypothesis tests, raw synthetic histories, a single-command analysis pipeline, all scenario outputs, source verification, and independent reviews. The manuscript clearly identifies its local prospective commitment rather than describing it as a publicly registered study. Relevant prior work on advice learning, selective experience, human–AI policy learning, and audit allocation is discussed.
 
-**Fit with the journal.** The journal's aims name the analysis of existing data and process models, and the journal published two of the studies whose data we analyse (Bahník, 2021; Imhoff & Barker, 2023). The paper should interest readers who work on anchoring, on process models of judgement, and on how moderator analyses in meta-analyses are read.
+AI tools performed substantial work across the project, including design, analysis, drafting, and reviewing. The manuscript and accompanying disclosure identify their roles and available model information. No AI is proposed as an author. The intended human author must assess the analysis, approve the manuscript, and confirm the declarations before any submission.
 
-**Transparency.** The preregistration (following van den Akker et al.'s secondary-data template) was committed to version control before any outcome variable was read, together with frozen model predictions and the analysis code. All deviations are listed in the manuscript and in a separate file. Code, outputs, the preregistration and its full version history will be available in a public repository (link to be added before submission), and one script reproduces every number from the openly licensed raw data (CC-BY 4.0). The study used only anonymised secondary data. No new data were collected, and no ethics approval was sought; we can provide further information if the editors require it.
-
-**Use of artificial intelligence.** The study was designed, analysed and written by an AI system (Claude Opus 5.5, Anthropic) working autonomously under my instruction, and reviewed by two other AI systems. This is declared in the Methods and Acknowledgements, as the Cambridge University Press policy requires, and documented in full in the repository. No AI system is listed as an author, and I take responsibility for the content of the manuscript.
-
-The manuscript is not under consideration elsewhere. I declare no competing interests and no funding.
-
-Yours sincerely,
+Thank you for considering this theoretical contribution to judgement under selective feedback.
 
 Lukas Wallrich
-Birkbeck, University of London, United Kingdom
-ORCID 0000-0003-2121-5177
+
+---
+
+Preparation note: this is an unsent cover-letter draft. No submission or contact has occurred. Author affiliation, correspondence details, funding, competing interests, originality, and exclusive-submission declarations must be confirmed by the intended author before this letter is used; they have not been fabricated or certified by the automated workflow.

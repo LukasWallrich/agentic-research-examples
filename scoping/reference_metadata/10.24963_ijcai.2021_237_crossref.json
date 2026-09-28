@@ -1,0 +1,227 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          1
+        ]
+      ],
+      "date-time": "2026-09-01T09:47:29Z",
+      "timestamp": 1788256049805,
+      "version": "build-2803163510"
+    },
+    "publisher-location": "California",
+    "reference-count": 0,
+    "publisher": "International Joint Conferences on Artificial Intelligence Organization",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          8
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Human-machine complementarity is important when neither the algorithm nor the human yield dominant performance across all instances in a given domain. Most research on algorithmic decision-making solely centers on the algorithm's performance, while recent work that explores human-machine collaboration has framed the decision-making problems as classification tasks. In this paper, we first propose and then develop a solution for a novel human-machine collaboration problem in a bandit feedback setting. Our solution aims to exploit the human-machine complementarity to maximize decision rewards. We then extend our approach to settings with multiple human decision makers. We demonstrate the effectiveness of our proposed methods using both synthetic and real human responses, and find that our methods outperform both the algorithm and the human when they each make decisions on their own. We also show how personalized routing in the presence of multiple human decision-makers can further improve the human-machine team performance.</jats:p>",
+    "DOI": "10.24963/ijcai.2021/237",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          11
+        ]
+      ],
+      "date-time": "2021-08-11T11:00:49Z",
+      "timestamp": 1628679649000
+    },
+    "page": "1722-1728",
+    "source": "Crossref",
+    "is-referenced-by-count": 11,
+    "title": [
+      "Human-AI Collaboration with Bandit Feedback"
+    ],
+    "prefix": "10.24963",
+    "author": [
+      {
+        "given": "Ruijiang",
+        "family": "Gao",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Texas at Austin"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maytal",
+        "family": "Saar-Tsechansky",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Texas at Austin"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maria",
+        "family": "De-Arteaga",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Texas at Austin"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ligong",
+        "family": "Han",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Rutgers University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Min Kyung",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Texas Austin"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthew",
+        "family": "Lease",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Texas Austin"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "10584",
+    "event": {
+      "name": "Thirtieth International Joint Conference on Artificial Intelligence {IJCAI-21}",
+      "theme": "Artificial Intelligence",
+      "location": "Montreal, Canada",
+      "acronym": "IJCAI-2021",
+      "number": "30",
+      "sponsor": [
+        "International Joint Conferences on Artificial Intelligence Organization (IJCAI)"
+      ],
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            19
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            27
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          11
+        ]
+      ],
+      "date-time": "2021-08-11T11:02:10Z",
+      "timestamp": 1628679730000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.ijcai.org/proceedings/2021/237"
+      }
+    },
+    "subtitle": [],
+    "proceedings-subject": "Artificial Intelligence Research Articles",
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          8
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.24963/ijcai.2021/237",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          8
+        ]
+      ]
+    }
+  }
+}

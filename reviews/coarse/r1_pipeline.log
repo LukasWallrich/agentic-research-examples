@@ -1,0 +1,34 @@
+2026-09-28 11:36:56,824 INFO coarse-review: Running coarse pipeline (host=codex, model=gpt-6-sol, effort=high)
+2026-09-28 11:36:56,838 WARNING coarse.headless_clients: Codex on this machine does not expose `-c KEY=VALUE` config override (old version). Falling back to text-level effort injection. Upgrade Codex for native reasoning-effort control: npm install -g @openai/codex@latest
+11:37:25 - LiteLLM:INFO: utils.py:4382 - 
+LiteLLM completion() model= perplexity/sonar-pro-search; provider = openrouter
+2026-09-28 11:37:25,674 INFO LiteLLM: 
+LiteLLM completion() model= perplexity/sonar-pro-search; provider = openrouter
+11:37:51 - LiteLLM:INFO: utils.py:1759 - Wrapper: Completed Call, calling success_handler
+2026-09-28 11:37:51,548 INFO LiteLLM: Wrapper: Completed Call, calling success_handler
+2026-09-28 11:37:51,549 INFO coarse.agents.literature: Literature search completed via Perplexity
+2026-09-28 11:40:40,749 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:40:44,654 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:40:59,466 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:41:01,921 INFO coarse.quote_verify: Quote verification: 0 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:41:04,634 INFO coarse.quote_verify: Quote verification: 0 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:41:14,214 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:41:15,609 INFO coarse.quote_verify: Quote verification: 0 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:41:25,001 INFO coarse.quote_verify: Quote verification: 0 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:41:28,148 INFO coarse.quote_verify: Quote verification: 0 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:41:30,045 INFO coarse.quote_verify: Quote verification: 0 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:41:50,041 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:41:54,281 INFO coarse.quote_verify: Quote verification: 0 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:42:24,918 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:42:32,189 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:42:53,033 INFO coarse.quote_verify: Quote verification: 0 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:43:05,395 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:43:08,641 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:43:11,283 INFO coarse.quote_verify: Quote verification: 1 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:43:37,306 INFO coarse.quote_verify: Quote verification: 0 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:44:13,335 INFO coarse.quote_verify: Quote verification: 3 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:44:13,335 INFO coarse.quote_verify: Quote verification: 3 exact, 0 fuzzy-corrected, 0 dropped, 0 garbled-source matches
+2026-09-28 11:44:13,336 INFO coarse-review: Wrote 9648-char review to /Users/lukaswallrich/Documents/Coding/ai-jdm-paper3/reviews/coarse/r1/review_copy_r1_review.md
+
+  local:    /Users/lukaswallrich/Documents/Coding/ai-jdm-paper3/reviews/coarse/r1/review_copy_r1_review.md
+REVIEW COMPLETE

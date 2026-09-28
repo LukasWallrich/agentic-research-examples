@@ -1,0 +1,86 @@
+# Peer Review Report — Round 2
+
+**Manuscript Title:** Learning from disagreements: When selective feedback helps and harms advisor evaluation  
+**Author:** Lukas Wallrich  
+**Review Stage:** Round 2 (Evaluation of revised manuscript and Round 1 response log)  
+**Overall Recommendation:** **Accept with Minor Revisions** (No substantive major issues remain)
+
+---
+
+## 1. Executive Summary & Evaluation of Revisions
+
+In this second-round evaluation, the revised manuscript and the accompanying response log were scrutinized against the Round 1 critique, the underlying mathematical framework, the exact numerical checks, the scope of the decision task, and the proposed future behavioral extension.
+
+The revisions made between Round 1 and Round 2 are exemplary in their rigor, transparency, and responsiveness:
+1. **Mathematical Precision & Exact Checks:** The authors have replaced reliance on purely asymptotic or Monte Carlo arguments with an exact discrete score convolution framework ($G_m(z)$ Laurent polynomial approach). Independent exact calculations confirm the registered hypothesis contrasts (H1 exact difference: $-4.344$ percentage points, within the Monte Carlo interval $[-4.383, -4.332]$; H2 exact difference: $1.088$ percentage points, within $[-1.079, 1.145]$).
+2. **Epistemic Framing:** The manuscript consistently reframes the findings as formal model consequences and computational predictions of stipulated estimators within explicit environments, scrupulously avoiding conflation with human empirical behavior.
+3. **Analytic Transparency:** The derivation of the exact reversal threshold ($k^* = p\delta_L / [(1-p)|\delta_H|]$) and the explicit identification of the cap-2 neutral boundary under ratio 4 (where limiting adoption hovers near 50%) resolve previous ambiguities regarding estimator behavior.
+4. **Exploratory Extensions:** The reviewer-requested analyses—including fixed encounter budgets (opportunity costs), misspecified weights, matched focal comparisons (Table 3), and symmetric advantage sign patterns (E3)—are clearly labeled as exploratory and enrich the theoretical analysis without compromising prospective commitments.
+5. **Bounded Scope vs. Casewise Routing:** The authors have clearly demarcated the global adoption decision (e.g., fixed procurement or constrained batch handoff) from casewise routing, explicitly documenting the performance of the confidence-contingent oracle (85.0% vs. 80.0% fixed best in the crossing environment) and discussing within-stratum pairing.
+6. **Behavioral Refutability:** The proposed empirical test is formulated as a prospective, honestly refutable experiment (specifying shared sensitivity/lapse parameters across schedules, held-out model comparisons, disclosure controls, and raw-history vs. summary-display separations) without claiming empirical execution.
+7. **Integrity and Declarations:** The manuscript transparently retains the limitation of prospective local git commitments (distinguished from an external public registry) and accurately notes the autonomous local draft status requiring future human author endorsement before any formal submission.
+
+**Verdict on Major Issues:** **No substantive major issue remains.** The manuscript is theoretically sound, mathematically verified, and honestly bounded. A small number of minor, actionable refinements remain to ensure maximum clarity and formal precision prior to human endorsement and archiving.
+
+---
+
+## 2. Evaluation of Specific Domains
+
+### 2.1 Task Boundedness and Scope: Global Adoption vs. Casewise Routing
+Objections raised in Round 1 concerning why a decision maker would not route cases dynamically by confidence have been addressed properly:
+- The authors treat global adoption as a bounded, constrained decision problem (e.g., selecting an autonomous agent or vendor for a batch of tasks where runtime confidence interrogation is unavailable or costly).
+- The manuscript explicitly benchmarks this against the confidence-contingent oracle and evaluates within-stratum pairing. 
+- Demanding that a paper on global adoption solve casewise dynamic routing would confuse an objection to the chosen decision task with an error within the task. The scope of global adoption is well motivated, formally bounded, and fully justified.
+
+### 2.2 Numerical vs. Human Empirical Interpretation
+The manuscript successfully maintains the distinction between computational consequences and human cognitive mechanisms:
+- The estimators ($A-h$, $A-H$, IPW, capped IPW) are treated as candidate decision rules and software-display benchmarks, not confirmed mental operations.
+- Monte Carlo intervals and exact convolution checks are properly framed as measures of numerical integration precision and mathematical verification, respectively.
+
+### 2.3 Refutability of the Future Behavioral Extension
+The future experimental protocol outlined in Section 4.1 satisfies the criteria for honest scientific refutability:
+- It defines a concrete response family ($P(\text{adopt} \mid S) = \lambda/2 + (1-\lambda)\text{logit}^{-1}(\beta S)$) and prevents unfalsifiable post-hoc curve fitting by requiring parameters ($\beta, \lambda$) to be shared across sampling schedules.
+- It identifies distinct qualitative orderings on raw histories (e.g., unweighted paired evaluation predicting below-chance adoption in the crossing environment under ratio 4, whereas selection-aware evaluation predicts above-chance adoption).
+- It separates display compliance (following provided summary statistics) from unaided learning from raw event sequences, providing diagnostic power to distinguish cognitive updating from heuristic display trust.
+
+---
+
+## 3. Actionable Comments
+
+### Major Issues
+*None.*
+
+---
+
+### Minor Issues (Actionable)
+
+1. **Clarify Binary Choice Context at First Definition of $D$ in Analytic Framework**  
+   In the *Analytic framework*, the text states: *"Let $A$ and $H$ indicate the correctness of the advisor's and human's initial binary responses. Let $D$ indicate disagreement between those responses... On an agreement, $A-H=0$."*  
+   In multi-alternative tasks, two incorrect responses can disagree while $A-H=0$. While the text later notes in *Environments and selection* that *"For binary decisions, disagreement is equivalent to exactly one response being correct"*, this assumption should be stated explicitly at the very beginning of the *Analytic framework* (i.e., that the task is a two-alternative forced choice / binary decision, which guarantees that response agreement implies $A=H$ and disagreement implies $A+H=1$).
+
+2. **Formalize Integer-Scaled Increments in the Laurent Polynomial Definition**  
+   In *Exact finite-feedback risk*, $u_{mj}$ is introduced as raw score contributions (e.g., $A-h$, which contains fractions such as $0.25$ and $-0.75$), followed by the sentence: *"For rational scenario parameters, multiply by a common positive denominator so that these increments are integers. Define the finite Laurent polynomial $G_m(z)=\sum_j Q_j z^{u_{mj}}$."*  
+   To prevent minor formal confusion between the real-valued score increments and the integer polynomial powers, explicitly assign a symbol to the integer-scaled increments (e.g., $\tilde{u}_{mj} = M u_{mj}$, where $M$ is the least common positive denominator) and define $G_m(z) = \sum_j Q_j z^{\tilde{u}_{mj}}$, noting that the decision boundary $\tilde{s} = 0$ and the condition $\tilde{s}\Delta < 0$ are invariant under $M > 0$.
+
+3. **Explicit Definition of Relative Ratio $k$ in Framework Text**  
+   In the *Analytic framework*, the verification ratio is introduced as: *"Suppose high-confidence disagreements are verified $k$ times as often as low-confidence disagreements."*  
+   To align immediately with the notation in *Environments and selection* ($\pi_H = 1, \pi_L = 1/k$), explicitly state in the framework that $k = \pi_H / \pi_L \ge 1$ represents the relative auditing ratio between high- and low-confidence disagreements.
+
+4. **Case Presentation Order in Raw-History Behavioral Protocol**  
+   In Section 4.1 (*A behavioural test that could reject the account*), the raw-history condition displays ordered verified cases to human participants. Because human learners are susceptible to primacy and recency biases, whereas the mathematical estimators treat histories as exchangeable count sets, add a brief explicit note that trial presentation order within generated histories should be pseudorandomized or counterbalanced across participants to prevent order effects from confounding summary statistics.
+
+5. **Future Submission Administrative Requirements (Record-Only)**  
+   *Note: In accordance with reviewer instructions, the automated agent must not fabricate human approval or deposit external files.*  
+   Before any formal submission to an academic journal or public archive is executed:
+   - The prospective git commit (`68c07e4`) and complete reproduction bundle must be archived in a persistent public repository (e.g., OSF, Zenodo) with a permanent DOI.
+   - The intended human author (Lukas Wallrich) must independently review, verify, endorse, and assume full scholarly accountability for the manuscript, code, and declarations (including institutional affiliations, funding, and competing interests).
+
+---
+
+## Answer
+
+### Verdict
+**Accept with Minor Revisions.**
+
+### Substantive Major Issues
+**No substantive major issues remain.** The revisions made in Round 2 successfully resolved all prior mathematical, methodological, and framing concerns. The manuscript provides a rigorous, computationally validated, and appropriately bounded theoretical analysis. The minor actionable items listed above are purely expository refinements and administrative prerequisites for future human submission.

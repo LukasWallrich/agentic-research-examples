@@ -1,0 +1,83 @@
+{
+  "config": {
+    "seed": 20260928,
+    "runs": 20000,
+    "budgets": [
+      20,
+      100,
+      500
+    ],
+    "p_grid": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "a_low_grid": [
+      0.65,
+      0.8,
+      0.95
+    ],
+    "a_high_grid": [
+      0.7,
+      0.8,
+      0.9
+    ],
+    "overlap_grid": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "h_low": 0.6,
+    "h_high": 0.9,
+    "schedules": [
+      "random",
+      "d1",
+      "d2",
+      "d4",
+      "d8"
+    ],
+    "weight_cap": 2.0,
+    "tie_tolerance": 1e-12,
+    "regret_tolerance": 0.0005,
+    "contrast_z": 2.2414027276,
+    "homogeneous_control": {
+      "p": 0.5,
+      "a_low": 0.65,
+      "a_high": 0.95,
+      "r": 0.5
+    }
+  },
+  "python": "3.14.3 (main, Mar 10 2026, 18:02:52) [Clang 21.1.4 ]",
+  "numpy": "2.5.1",
+  "scipy": "1.18.1",
+  "pandas": "3.0.3",
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+  "generated_utc": "2026-09-28T10:59:19.778569+00:00",
+  "environment_count": 82,
+  "grid_count": 81,
+  "cells": 1230,
+  "histories": 24600000,
+  "category_order": [
+    "low_both_correct",
+    "low_human_only",
+    "low_advisor_only",
+    "low_both_wrong",
+    "high_both_correct",
+    "high_human_only",
+    "high_advisor_only",
+    "high_both_wrong"
+  ],
+  "raw_dtype": "uint16",
+  "rng": "NumPy PCG64, SeedSequence child per cell",
+  "hashes": {
+    "raw_counts.npz": "7b06cfe01691206c66eb578da4052ea6afb97ff020564d06205689047a0e5d9c",
+    "cells.json": "7cde7e56038b34247b60bf4a0191d42ff20b0e56c378583a530b87a00b46ab5b",
+    "summary.csv": "35752b82cecaffd67c705a0b389ea2a2764f8073f77aca4c5e33b67b24639ada",
+    "contrasts.csv": "883ef66d9dfcb314ccf753cdb3b36708159a3f6de32c2f5f8ecd6afd7846e685"
+  },
+  "source_hashes": {
+    "config.json": "658dad625f410f2d16efaa06dc5b742663c99a50d6bee65605e965139f2637a9",
+    "scripts/simulate.py": "53ceb715042635b23d0dd673f3ded6687f9ebe59c0e6556ccc7900780f46bb4c",
+    "requirements.txt": "9d42b2325c68a6d4cdc27da2ff7122d93f3cccc73b139e2dfbde9b439c19fe9f"
+  }
+}

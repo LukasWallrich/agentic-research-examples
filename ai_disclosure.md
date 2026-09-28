@@ -1,42 +1,14 @@
-# AI disclosure
+# AI use and accountability
 
-## Summary
+This research package was produced autonomously at the user's request on 28 September 2026. It is an AI-generated research draft for human evaluation, not a human-approved submission. No AI tool is an author. Lukas Wallrich is the intended human author; authorship, affiliation, declarations, and responsibility require his own assessment before any submission.
 
-This study was conceived, designed, preregistered, coded, analysed, written and reviewed by AI systems. The human author, Lukas Wallrich, set the task and its constraints in a single instruction and did not intervene in the work that followed. The author is accountable for the content under the policies of the target journal. The AI's role is disclosed here in full so that readers and editors can judge the work with that knowledge.
+- **OpenAI Codex, GPT-6 family**, through the Codex application and its collaboration agents: research design, literature and journal searches, mathematical reasoning, preregistration, simulation code, execution, numerical interpretation, prose, source checks, artifact preparation, and response to reviews. The session does not expose a more precise parent model identifier; no unsupported version claim is made.
+- **Claude**, through the authenticated local Claude Code CLI: idea and manuscript reviews. The manuscript review runtime reported `claude-fable-5-1` and auxiliary `claude-haiku-4-5-20251001`; reviewer JSON/logs preserve the metadata; the initial idea call used the authenticated CLI default and its response did not report the underlying model. No model version has been guessed.
+- **Gemini 3.8 Flash (High)**, through the authenticated `agy` CLI and agy-delegate skill: independent idea and manuscript reviews. Explicit model selection was used.
+- **Codex CLI**, through independent code review and coarse-ink 1.4.0: code/results checking and full multi-stage manuscript review. The completed coarse run used `gpt-6-sol` with high effort; a first failed attempt requested unsupported `gpt-5.4` and produced no review. Exact runtime settings and raw comments are retained under `reviews/`.
 
-## What the human author did
+AI-produced source claims and bibliographic records are checked against primary sources and DOI registries. Crossref is authoritative for the published records; arXiv/DataCite records are explicitly distinguished where Crossref has no entry. Simulated outcomes are generated from code, not composed by a language model. Every numerical manuscript result is inserted by the build script from saved analysis output. These checks reduce but do not eliminate error; none amounts to independent empirical validation or human author approval.
 
-- On 27 September 2026, gave one instruction: produce a complete, novel judgement-and-decision-making paper without collecting new data, working autonomously, recording decisions, preregistering before analysis, reviewing with other AI systems, and not submitting anything or contacting anyone.
-- Provided the working environment (Claude Code with access to R, Quarto, the web, OpenAlex and Crossref, and the codex and agy command-line tools) and the author's writing style guide.
-- Did not choose the research question, dataset, models, analyses or wording, and did not review the work before this record was written.
+No new human data were collected and no participant-level records used. Synthetic scenarios contain no personal identifiers. Paid API cost: two coarse literature-search calls are estimated at US$0.10 cumulatively, with a conservative allowance below US$0.20; no actual invoice is exposed. Authenticated subscriptions are used for model reviews and the manuscript's Markdown bypasses OCR. Any changes to actual spending are recorded in `decision_log.md`.
 
-Before any submission, the author would need to read and verify the work, take responsibility for every claim, deposit the repository with its full git history publicly (so that the preregistration timestamp can be inspected; it is currently only in a local repository), add the repository link to the manuscript and cover letter, and decide whether to submit. None of that has happened yet.
-
-## What the AI systems did
-
-| System | Version | Access | Role |
-|---|---|---|---|
-| Claude (Anthropic) | Claude Opus 5.5 (model id claude-opus-5-5, 1M-token context), run in Claude Code | Anthropic API / Claude Code | Lead agent. Scoped the literature and datasets (through subagents running the same model), chose the study, wrote the preregistration, the simulation models and all R code, ran all analyses, made the figures, wrote the manuscript, cover letter and all project documents, and responded to reviews. Every decision and its reason is in `decision_log.md`. |
-| Claude subagents | Claude Opus 5.5 | Claude Code Agent tool | Parallel literature searches, dataset licence checks, novelty checks, journal-policy extraction, citation-support checks. |
-| OpenAI Codex CLI | codex-cli 0.155.1 (default model) | `codex exec`, read-only sandbox | Critique of the study shortlist; review of code and results; manuscript reviews. Outputs in `reviews/`. |
-| Google Gemini via Antigravity CLI | Gemini 3.8 Flash (High) | `agy -p`, sandboxed | Critique of the study shortlist; manuscript reviews. Outputs in `reviews/`. |
-| coarse-review pipeline | coarse-ink 1.4.0 with Claude (claude-opus-4-6, effort high) run headlessly; Mistral OCR via OpenRouter for text extraction | `coarse-review` skill | Full structured peer review of the manuscript. Output in `reviews/`. |
-
-Dates of use: 27-28 September 2026.
-
-## Safeguards
-
-- **Preregistration before data contact.** The preregistration, frozen model predictions and analysis code were committed to git (tag `prereg-v1`, commit a40911b) before any outcome variable was read. The data reader (`R/read_opaq.R`) refuses to load the outcome column until the preregistration is committed. Only design columns were read before that commit; `prereg/preregistration.md` (Q18) lists them.
-- **Numbers come from code.** Every number in the manuscript is computed inline from files in `output/`, which `run_all.sh` regenerates from the raw data.
-- **References.** The bibliography was built by script from DOIs through doi.org content negotiation (Crossref and DataCite metadata); no reference was typed from memory. A separate agent checked each citation against the source text for support of the claim it is attached to (`manuscript/citation_check.md`).
-- **Independent review.** Two non-Anthropic AI systems reviewed the design, code and manuscript; all comments and responses are in `review_log.md`.
-
-## Known risks of AI authorship in this project
-
-- The same model family that wrote the paper also judged which reviewer comments to accept. Rejected comments and the reasons are listed in `review_log.md` so that a human can second-guess them.
-- Literature knowledge from model training may be out of date or wrong. Literature claims were therefore checked against retrieved texts, not recalled.
-- The AI chose the research question under an instruction to produce a paper. Scoping reports (`scoping/`) and the decision log show the alternatives considered.
-
-## Compliance with the target journal's policy
-
-Judgment and Decision Making applies the Cambridge University Press policy (`scoping/journals/jdm.md`): AI tools may not be listed as authors; AI use in analysis is described in the Methods; AI-generated text is declared in the Acknowledgements; AI-generated figures are declared in their captions; each declaration names the tool and version, the dates, how others can access it, and a full description of the use. The manuscript follows these rules. No AI system is listed as an author.
+This disclosure is also summarised in manuscript Methods and Acknowledgements, consistent with the current Cambridge/JDM AI-use policy. Files remain local; no manuscript was submitted, no account created, and no person contacted.

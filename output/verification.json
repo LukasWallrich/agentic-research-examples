@@ -1,0 +1,284 @@
+{
+  "passed": true,
+  "checks": {
+    "joint_tables": 82,
+    "margins": 164,
+    "sign_identities": 82,
+    "weighted_limits": 410,
+    "k1_equivalence": 492,
+    "raw_histories": 24600000,
+    "exact_binomial": 24,
+    "rng_reproductions": 3
+  },
+  "exact_checks": [
+    {
+      "env_id": "e040",
+      "n": 20,
+      "learner": "absolute",
+      "metric": "adoption",
+      "simulated": 0.066575,
+      "exact": 0.06723103182914256,
+      "error": 0.0006560318291425615,
+      "tolerance": 0.007830431727755,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 20,
+      "learner": "absolute",
+      "metric": "regret",
+      "simulated": 0.04667125,
+      "exact": 0.04663844840854289,
+      "error": 3.2801591457104484e-05,
+      "tolerance": 0.00048652158638776236,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 20,
+      "learner": "paired",
+      "metric": "adoption",
+      "simulated": 0.769225,
+      "exact": 0.7707482574304438,
+      "error": 0.0015232574304437918,
+      "tolerance": 0.013556533845456,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 20,
+      "learner": "paired",
+      "metric": "regret",
+      "simulated": 0.01153875,
+      "exact": 0.011462587128477794,
+      "error": 7.616287152220624e-05,
+      "tolerance": 0.0007728266922725001,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 100,
+      "learner": "absolute",
+      "metric": "adoption",
+      "simulated": 7.5e-05,
+      "exact": 0.0002725114946478713,
+      "error": 0.00019751149464787131,
+      "tolerance": 0.0003795029066820991,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 100,
+      "learner": "absolute",
+      "metric": "regret",
+      "simulated": 0.04999625,
+      "exact": 0.049986374425267655,
+      "error": 9.875574732344516e-06,
+      "tolerance": 0.00011397514533410497,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 100,
+      "learner": "paired",
+      "metric": "adoption",
+      "simulated": 0.95395,
+      "exact": 0.9529580193452907,
+      "error": 0.0009919806547092902,
+      "tolerance": 0.0070377880855625,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 100,
+      "learner": "paired",
+      "metric": "regret",
+      "simulated": 0.0023025,
+      "exact": 0.0023520990327354748,
+      "error": 4.959903273547492e-05,
+      "tolerance": 0.0004468894042781362,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 500,
+      "learner": "absolute",
+      "metric": "adoption",
+      "simulated": 0.0,
+      "exact": 3.5388542157401613e-15,
+      "error": 3.5388542157401613e-15,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 500,
+      "learner": "absolute",
+      "metric": "regret",
+      "simulated": 0.05,
+      "exact": 0.04999999999999986,
+      "error": 1.457167719820518e-16,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 500,
+      "learner": "paired",
+      "metric": "adoption",
+      "simulated": 0.99995,
+      "exact": 0.999911999812766,
+      "error": 3.800018723398857e-05,
+      "tolerance": 0.00035,
+      "passed": true
+    },
+    {
+      "env_id": "e040",
+      "n": 500,
+      "learner": "paired",
+      "metric": "regret",
+      "simulated": 2.5000000000000023e-06,
+      "exact": 4.400009361692591e-06,
+      "error": 1.9000093616925883e-06,
+      "tolerance": 0.00011250000000000002,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 20,
+      "learner": "absolute",
+      "metric": "adoption",
+      "simulated": 0.089775,
+      "exact": 0.08827546295860206,
+      "error": 0.0014995370413979359,
+      "tolerance": 0.008993896322104,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 20,
+      "learner": "absolute",
+      "metric": "regret",
+      "simulated": 0.04551125,
+      "exact": 0.04558622685207001,
+      "error": 7.49768520700092e-05,
+      "tolerance": 0.0005446948161052126,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 20,
+      "learner": "paired",
+      "metric": "adoption",
+      "simulated": 0.81165,
+      "exact": 0.8139079785845896,
+      "error": 0.0022579785845896483,
+      "tolerance": 0.012580259801751998,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 20,
+      "learner": "paired",
+      "metric": "regret",
+      "simulated": 0.0094175,
+      "exact": 0.009304601070770604,
+      "error": 0.00011289892922939672,
+      "tolerance": 0.0007240129900875001,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 100,
+      "learner": "absolute",
+      "metric": "adoption",
+      "simulated": 0.00095,
+      "exact": 0.0008752678931751831,
+      "error": 7.473210682481688e-05,
+      "tolerance": 0.0010837023221040001,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 100,
+      "learner": "absolute",
+      "metric": "regret",
+      "simulated": 0.0499525,
+      "exact": 0.049956236605341264,
+      "error": 3.736605341267407e-06,
+      "tolerance": 0.0001491851161052032,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 100,
+      "learner": "paired",
+      "metric": "adoption",
+      "simulated": 0.97825,
+      "exact": 0.9780695578699146,
+      "error": 0.00018044213008538978,
+      "tolerance": 0.004896203921186,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 100,
+      "learner": "paired",
+      "metric": "regret",
+      "simulated": 0.0010875,
+      "exact": 0.0010965221065042637,
+      "error": 9.022106504263765e-06,
+      "tolerance": 0.00033981019605931436,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 500,
+      "learner": "absolute",
+      "metric": "adoption",
+      "simulated": 0.0,
+      "exact": 9.05928395130148e-13,
+      "error": 9.05928395130148e-13,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 500,
+      "learner": "absolute",
+      "metric": "regret",
+      "simulated": 0.05,
+      "exact": 0.0499999999999548,
+      "error": 4.5199954890051686e-14,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 500,
+      "learner": "paired",
+      "metric": "adoption",
+      "simulated": 1.0,
+      "exact": 0.9999968431500417,
+      "error": 3.156849958330099e-06,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "env_id": "control",
+      "n": 500,
+      "learner": "paired",
+      "metric": "regret",
+      "simulated": 0.0,
+      "exact": 1.578424979797799e-07,
+      "error": 1.578424979797799e-07,
+      "tolerance": 0.0001,
+      "passed": true
+    }
+  ],
+  "primary_hypotheses": [
+    "H1",
+    "H2"
+  ],
+  "source_sha256": "fbd1675a2752f7b41178e201a55451efa8a1244d1d5c21df40a6e65c140edd3b"
+}

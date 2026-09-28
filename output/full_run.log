@@ -1,0 +1,202 @@
+Checked 4 packages in 5ms
+Generated 1/1230 cells
+Generated 151/1230 cells
+Generated 301/1230 cells
+Generated 451/1230 cells
+Generated 601/1230 cells
+Generated 751/1230 cells
+Generated 901/1230 cells
+Generated 1051/1230 cells
+Generated 1201/1230 cells
+[
+  {
+    "hypothesis": "H1",
+    "env_id": "e040",
+    "schedule": "d4",
+    "n": 100,
+    "contrast": "regret_ipw_minus_paired",
+    "mean": -0.04357375000000004,
+    "mcse": 0.00011453660540881221,
+    "ci_low": -0.0438304726597734,
+    "ci_high": -0.04331702734022669,
+    "confidence_level": 0.975,
+    "predicted_sign": -1,
+    "outcome": "supported"
+  },
+  {
+    "hypothesis": "H2",
+    "env_id": "control",
+    "schedule": "d8",
+    "n": 20,
+    "contrast": "regret_ipw_minus_paired",
+    "mean": 0.011122500000000009,
+    "mcse": 0.00014654333295964638,
+    "ci_low": 0.010794037373792663,
+    "ci_high": 0.011450962626207355,
+    "confidence_level": 0.975,
+    "predicted_sign": 1,
+    "outcome": "supported"
+  }
+]
+{
+  "passed": true,
+  "checks": {
+    "joint_tables": 82,
+    "margins": 164,
+    "sign_identities": 82,
+    "weighted_limits": 410,
+    "k1_equivalence": 492,
+    "raw_histories": 24600000,
+    "exact_binomial": 24,
+    "rng_reproductions": 3
+  }
+}
+{
+  "passed": true,
+  "method": "Independent rational joint tables; n-fold discrete convolution of integer score increments; independently scored saved focal histories",
+  "simulation_imports": false,
+  "focal_learner_checks": 120,
+  "primary": [
+    {
+      "hypothesis": "H1",
+      "exact_contrast": -0.04343921809507949,
+      "simulated_contrast": -0.043573749999999994,
+      "mcse": 0.0001145366054088121,
+      "difference_in_mcse": -1.1745756253236779,
+      "exact_inside_registered_interval": true
+    },
+    {
+      "hypothesis": "H2",
+      "exact_contrast": 0.010878183975226894,
+      "simulated_contrast": 0.0111225,
+      "mcse": 0.00014654333295964625,
+      "difference_in_mcse": 1.6671930400299022,
+      "exact_inside_registered_interval": true
+    }
+  ],
+  "source_sha256": "e6d90cf7ce5fbb0cd3e4e6db9d16d707be6acbcd83be230be3e149b269f66acc"
+}
+{
+  "rows": 180,
+  "checks_passed": true,
+  "focal_contrast_summaries": [
+    {
+      "scenario": "H1_scenario",
+      "environment": "crossing",
+      "schedule": "d4",
+      "encounters": 100,
+      "expected_labels": 15.0,
+      "equal_encounter_ipw_regret": 0.015214390965082245,
+      "equal_encounter_paired_regret": 0.03700111975743328,
+      "equal_encounter_ipw_minus_paired": -0.021786728792351037,
+      "equal_label_ipw_minus_paired": -0.04343921809507949
+    },
+    {
+      "scenario": "H2_scenario",
+      "environment": "homogeneous",
+      "schedule": "d8",
+      "encounters": 20,
+      "expected_labels": 1.5,
+      "equal_encounter_ipw_regret": 0.018304580303084784,
+      "equal_encounter_paired_regret": 0.016809672970620592,
+      "equal_encounter_ipw_minus_paired": 0.0014949073324641918,
+      "equal_label_ipw_minus_paired": 0.010878183975226892
+    }
+  ],
+  "misspecification_thresholds": [
+    {
+      "environment": "crossing",
+      "true_schedule": "d4",
+      "assumed_weight_threshold": 2.0,
+      "advisor_selected_above_threshold": true,
+      "positive_weights_always_correct": false,
+      "slope_per_encounter": 0.025,
+      "intercept_per_encounter": -0.05
+    },
+    {
+      "environment": "crossing",
+      "true_schedule": "d8",
+      "assumed_weight_threshold": 4.0,
+      "advisor_selected_above_threshold": true,
+      "positive_weights_always_correct": false,
+      "slope_per_encounter": 0.0125,
+      "intercept_per_encounter": -0.05
+    },
+    {
+      "environment": "homogeneous",
+      "true_schedule": "d4",
+      "assumed_weight_threshold": -4.0,
+      "advisor_selected_above_threshold": true,
+      "positive_weights_always_correct": true,
+      "slope_per_encounter": 0.00625,
+      "intercept_per_encounter": 0.025
+    },
+    {
+      "environment": "homogeneous",
+      "true_schedule": "d8",
+      "assumed_weight_threshold": -8.0,
+      "advisor_selected_above_threshold": true,
+      "positive_weights_always_correct": true,
+      "slope_per_encounter": 0.003125,
+      "intercept_per_encounter": 0.025
+    }
+  ],
+  "conditional_oracles": [
+    {
+      "environment": "crossing",
+      "global_oracle_accuracy": 0.8,
+      "confidence_stratum_oracle_accuracy": 0.85,
+      "accuracy_increment": 0.05
+    },
+    {
+      "environment": "homogeneous",
+      "global_oracle_accuracy": 0.8,
+      "confidence_stratum_oracle_accuracy": 0.8,
+      "accuracy_increment": 0.0
+    }
+  ]
+}
+{
+  "environment_count": 36,
+  "rows": 2160,
+  "checks_passed": true,
+  "equal_weight_checks": 432,
+  "maximum_probability_mass_error": 7.738254481637341e-14,
+  "tied_environment_count": 6,
+  "matched_k4_n100_pattern_ranges": [
+    {
+      "pattern": "advisor_better_both",
+      "schedule": "d4",
+      "n": 100,
+      "environments": 9,
+      "ipw_minus_paired_min": 0.0,
+      "ipw_minus_paired_max": 0.006698454176746202
+    },
+    {
+      "pattern": "advisor_better_high_only",
+      "schedule": "d4",
+      "n": 100,
+      "environments": 9,
+      "ipw_minus_paired_min": -0.023099478645200334,
+      "ipw_minus_paired_max": 0.006158399762893873
+    },
+    {
+      "pattern": "advisor_better_low_only",
+      "schedule": "d4",
+      "n": 100,
+      "environments": 9,
+      "ipw_minus_paired_min": -0.023099478645200327,
+      "ipw_minus_paired_max": 0.005623933802149102
+    },
+    {
+      "pattern": "advisor_worse_both",
+      "schedule": "d4",
+      "n": 100,
+      "environments": 9,
+      "ipw_minus_paired_min": 0.0,
+      "ipw_minus_paired_max": 0.006610728517386914
+    }
+  ]
+}
+Built manuscript.md, numerical ledger, and focal figures.
+Package audit passed.

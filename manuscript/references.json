@@ -1,0 +1,412 @@
+[
+  {
+    "id": "pescetelli2021",
+    "type": "article-journal",
+    "title": "The role of decision confidence in advice-taking and trust formation",
+    "author": [
+      {
+        "family": "Pescetelli",
+        "given": "Niccolò"
+      },
+      {
+        "family": "Yeung",
+        "given": "Nicholas"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1037/xge0000960",
+    "URL": "https://doi.org/10.1037/xge0000960",
+    "container-title": "Journal of Experimental Psychology: General",
+    "volume": "150",
+    "issue": "3",
+    "page": "507-526",
+    "publisher": "American Psychological Association (APA)"
+  },
+  {
+    "id": "jaquiery2024",
+    "type": "article-journal",
+    "title": "Preferences for advisor agreement and accuracy",
+    "author": [
+      {
+        "family": "Jaquiery",
+        "given": "Matt"
+      },
+      {
+        "family": "Yeung",
+        "given": "Nick"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ]
+    },
+    "DOI": "10.1371/journal.pone.0311211",
+    "URL": "https://doi.org/10.1371/journal.pone.0311211",
+    "container-title": "PLOS ONE",
+    "volume": "19",
+    "issue": "9",
+    "page": "e0311211",
+    "publisher": "Public Library of Science (PLoS)"
+  },
+  {
+    "id": "fetchenhauer2010",
+    "type": "article-journal",
+    "title": "Why so cynical? Asymmetric feedback underlies misguided skepticism regarding the trustworthiness of others",
+    "author": [
+      {
+        "family": "Fetchenhauer",
+        "given": "Detlef"
+      },
+      {
+        "family": "Dunning",
+        "given": "David"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1177/0956797609358586",
+    "URL": "https://doi.org/10.1177/0956797609358586",
+    "container-title": "Psychological Science",
+    "volume": "21",
+    "issue": "2",
+    "page": "189-193",
+    "publisher": "SAGE Publications"
+  },
+  {
+    "id": "denrell2005",
+    "type": "article-journal",
+    "title": "Why most people disapprove of me: Experience sampling in impression formation",
+    "author": [
+      {
+        "family": "Denrell",
+        "given": "Jerker"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "DOI": "10.1037/0033-295x.112.4.951",
+    "URL": "https://doi.org/10.1037/0033-295x.112.4.951",
+    "container-title": "Psychological Review",
+    "volume": "112",
+    "issue": "4",
+    "page": "951-978",
+    "publisher": "American Psychological Association (APA)"
+  },
+  {
+    "id": "honeycutt2020",
+    "type": "article-journal",
+    "title": "Soliciting human-in-the-loop user feedback for interactive machine learning reduces user trust and impressions of model accuracy",
+    "author": [
+      {
+        "family": "Honeycutt",
+        "given": "Donald R."
+      },
+      {
+        "family": "Nourani",
+        "given": "Mahsan"
+      },
+      {
+        "family": "Ragan",
+        "given": "Eric D."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1609/hcomp.v8i1.7464",
+    "URL": "https://doi.org/10.1609/hcomp.v8i1.7464",
+    "container-title": "Proceedings of the AAAI Conference on Human Computation and Crowdsourcing",
+    "volume": "8",
+    "page": "63-72",
+    "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+    "issue": "1"
+  },
+  {
+    "id": "denrell2001",
+    "type": "article-journal",
+    "title": "Adaptation as information restriction: The hot stove effect",
+    "author": [
+      {
+        "family": "Denrell",
+        "given": "Jerker"
+      },
+      {
+        "family": "March",
+        "given": "James G."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2001,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1287/orsc.12.5.523.10092",
+    "URL": "https://doi.org/10.1287/orsc.12.5.523.10092",
+    "container-title": "Organization Science",
+    "volume": "12",
+    "issue": "5",
+    "page": "523-538",
+    "publisher": "Institute for Operations Research and the Management Sciences (INFORMS)"
+  },
+  {
+    "id": "fok2024",
+    "type": "article-journal",
+    "title": "In search of verifiability: Explanations rarely enable complementary performance in AI-advised decision making",
+    "author": [
+      {
+        "family": "Fok",
+        "given": "Raymond"
+      },
+      {
+        "family": "Weld",
+        "given": "Daniel S."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1002/aaai.12182",
+    "URL": "https://doi.org/10.1002/aaai.12182",
+    "container-title": "AI Magazine",
+    "volume": "45",
+    "issue": "3",
+    "page": "317-332",
+    "publisher": "Wiley"
+  },
+  {
+    "id": "gao2021",
+    "type": "paper-conference",
+    "title": "Human-AI collaboration with bandit feedback",
+    "author": [
+      {
+        "family": "Gao",
+        "given": "Ruijiang"
+      },
+      {
+        "family": "Saar-Tsechansky",
+        "given": "Maytal"
+      },
+      {
+        "family": "De-Arteaga",
+        "given": "Maria"
+      },
+      {
+        "family": "Han",
+        "given": "Ligong"
+      },
+      {
+        "family": "Lee",
+        "given": "Min Kyung"
+      },
+      {
+        "family": "Lease",
+        "given": "Matthew"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.24963/ijcai.2021/237",
+    "URL": "https://doi.org/10.24963/ijcai.2021/237",
+    "container-title": "Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence",
+    "page": "1722-1728",
+    "publisher": "International Joint Conferences on Artificial Intelligence Organization"
+  },
+  {
+    "id": "einhorn1978",
+    "type": "article-journal",
+    "title": "Confidence in judgment: Persistence of the illusion of validity",
+    "author": [
+      {
+        "family": "Einhorn",
+        "given": "Hillel J."
+      },
+      {
+        "family": "Hogarth",
+        "given": "Robin M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1978,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1037/0033-295x.85.5.395",
+    "URL": "https://doi.org/10.1037/0033-295x.85.5.395",
+    "container-title": "Psychological Review",
+    "volume": "85",
+    "issue": "5",
+    "page": "395-416",
+    "publisher": "American Psychological Association (APA)"
+  },
+  {
+    "id": "mcnemar1947",
+    "type": "article-journal",
+    "title": "Note on the sampling error of the difference between correlated proportions or percentages",
+    "author": [
+      {
+        "family": "McNemar",
+        "given": "Quinn"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1947,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1007/bf02295996",
+    "URL": "https://doi.org/10.1007/bf02295996",
+    "container-title": "Psychometrika",
+    "volume": "12",
+    "issue": "2",
+    "page": "153-157",
+    "publisher": "Cambridge University Press (CUP)"
+  },
+  {
+    "id": "elwin2007",
+    "type": "article-journal",
+    "title": "Constructivist coding: Learning from selective feedback",
+    "author": [
+      {
+        "family": "Elwin",
+        "given": "Ebba"
+      },
+      {
+        "family": "Juslin",
+        "given": "Peter"
+      },
+      {
+        "family": "Olsson",
+        "given": "Henrik"
+      },
+      {
+        "family": "Enkvist",
+        "given": "Tommy"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1111/j.1467-9280.2007.01856.x",
+    "URL": "https://doi.org/10.1111/j.1467-9280.2007.01856.x",
+    "container-title": "Psychological Science",
+    "volume": "18",
+    "issue": "2",
+    "page": "105-110",
+    "publisher": "SAGE Publications"
+  },
+  {
+    "id": "zavattari2026",
+    "type": "article",
+    "title": "One human, N agents: Audit-budget allocation for LLM agent fleets under miscalibrated, correlated confidence",
+    "author": [
+      {
+        "family": "Zavattari",
+        "given": "Cesare"
+      },
+      {
+        "family": "Tommasi",
+        "given": "Alessandro"
+      },
+      {
+        "family": "Prencipe",
+        "given": "Giuseppe"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "DOI": "10.48550/arxiv.2607.28317",
+    "URL": "https://arxiv.org/abs/2607.28317",
+    "publisher": "arXiv",
+    "genre": "Preprint",
+    "note": "Preprint; DOI registered with DataCite (Crossref query returned HTTP 404).",
+    "number": "2607.28317"
+  },
+  {
+    "id": "li2026",
+    "type": "article",
+    "title": "Learning to trust: How humans mentally recalibrate AI confidence signals",
+    "author": [
+      {
+        "family": "Li",
+        "given": "ZhaoBin"
+      },
+      {
+        "family": "Steyvers",
+        "given": "Mark"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "DOI": "10.48550/arxiv.2603.22634",
+    "URL": "https://arxiv.org/abs/2603.22634",
+    "publisher": "arXiv",
+    "genre": "Preprint",
+    "note": "Preprint; DOI registered with DataCite (Crossref query returned HTTP 404).",
+    "number": "2603.22634"
+  }
+]

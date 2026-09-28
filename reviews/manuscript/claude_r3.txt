@@ -1,0 +1,72 @@
+# Round 3 review: selective outcome feedback and global advisor adoption
+
+**Verdict: minor revision. No substantive major issue remains within the declared scope.**
+
+This is the last of the three review rounds. I reviewed the manuscript text, the response log and the audit of the equal E3 minima. I did not edit any files or use external tools.
+
+## What I checked by hand
+
+These checks are arithmetic from the stated parameters. They are not reruns of the code.
+
+- **Crossing scenario.**
+  - Joint tables give disagreement rates d_L = 0.4 and d_H = 0.2, so d = 0.3.
+  - Δ = 0.05, the advisor's selected accuracy is 58.33%, and Δ/d = 0.167.
+  - At ratio 4, audit yield is 15%, selected accuracy is 41.67% and the paired contrast is −0.167.
+  - The threshold is k* = 2. Cap 2 at ratio 4 gives a zero numerator.
+  - The misspecification condition w > k/2 holds.
+  - Δ = 0.05 < d(2h−1) = 0.15, so the absolute rule is predicted to reject.
+  - Expected opportunities are 333.3 and 666.7. The oracle gives 85%.
+- **Homogeneous control.**
+  - d_L = 0.4 and d_H = 0.1.
+  - At ratio 8, yield is 0.075, which gives 266.7 opportunities and 1.5 expected labels per 20 encounters.
+- **Registered grid.**
+  - The counts 54 superior, 24 inferior and 3 tied are correct. So are the 24 reversals at ratio 8, all among superior advisors.
+  - Table 3 rows add up to their totals.
+- **Tables 1, 2 and 4 agree with each other.**
+  - Table 4 differences equal the exact values in Table 1: 0.421 − 4.765 = −4.344, and 1.302 − 0.214 = 1.088.
+  - Adoption rates in Table 2 convert to regrets that match Table 4 within Monte Carlo error.
+- **E3 extension.** The 36 environments and 6 ties are consistent with the design. The audit of the equal minima is correct: the low-confidence share among audited labels is 3/7, the numerators are 2B−100 and 5B−100, and the two worlds mirror each other.
+
+## Major issues
+
+None remain. The three major issues from round 2 are resolved in the text:
+
+- **Known sampling ratio.** The paper now states that a known ratio is sufficient but not necessary, and it gives the post-stratified estimator with its limits.
+- **One-sided registered grid.** The Methods and Results now say that every grid environment has δ_L > 0 ≥ δ_H.
+- **Third-party versus self-evaluation in the future test.** The initial test now compares two described sources, and self-evaluation needs a separate study.
+
+## Minor issues
+
+1. **Justify the global task where the objection is strongest.** The routing oracle gains 5 points in the crossing scenario, which is more than any focal regret difference. The weighting rule also needs the confidence-stratum labels that routing would use. The paper should say in one sentence why stratum labels exist during learning but not during deployment. For example, in a batch handoff the human makes no initial judgement, so their confidence is unavailable. This objects to the choice of task, not to an error within it. Without the sentence, the batch rationale is only asserted.
+2. **Say which schedule the selection-aware prediction applies to.** The prediction needs information about the selection: disclosure of the schedule or the encounter-count condition. Where the schedule is undisclosed, the account has no input and makes no prediction. State this, or that cell cannot count against it or in its favour.
+3. **Name the ratio in the paired prediction.** "Below chance under the crossing selective schedule" holds only for k > k* = 2. State k = 4, or state the condition.
+4. **Say how mixed strategies are handled.** A participant who weighs absolute and paired scores together can produce intermediate orderings. Say whether a mixture model is part of the prespecified model comparison. If it is not, say that "reversed ordering rejects an account" applies only to pure strategies.
+5. **Report numbers for the weight-misspecification analysis.** The text gives the analytic threshold and a qualitative statement that a wrong weight can improve one scenario. Add a small table or at least the focal values.
+6. **Extend the exact-risk formula to fixed encounters.** The formula assumes n labels. The fixed-encounter analysis (Table 4 and the E1 paragraph) has a random label count. State that an unaudited encounter enters as a zero-score category, or give the mixture form.
+7. **Define "random all-case" at fixed encounters.** Say that it means verifying every encountered case. The claim that it has the same risk as uniform-disagreement feedback depends on this.
+8. **Explain the inferior-advisor results in Table 3.** At 500 labels, weighting increases regret for 9 inferior-advisor environments. Add one clause: here selection supports the correct ranking, and correction removes that support. This matches the Discussion's point about informative selection and should be connected to it.
+9. **Fix leftover rebuttal phrasing.** "The cap was fixed prospectively" stands alone and reads as a defence. Merge it into the sentence about the cap's rationale.
+10. **Fix the Table 1 layout.** In the text rendering, the column headers "Monte Carlo difference / Exact difference / Monte Carlo interval" wrap and do not line up with the values. Check the PDF and HTML output.
+11. **Confirm the byline.** The response log says "draft; author approval pending" was added beside the author's name. The title and byline are not in the text I reviewed, so confirm this appears in the rendered output.
+12. **Strengthen the prospective-record statement.** A git hash does not prove a date. For a future public archive, keep the full, unsquashed history so that commit 68c07e4 and the commits before it can be checked. State this in the plan for public archiving.
+
+## Scope, registered contrasts and future test
+
+- **Scope.** The registered contrasts are correctly described as fixed consequences of the model, checked by exact convolution. The exploratory analyses (fixed encounter budgets, misspecified weights and the symmetric sign patterns) are labelled clearly and do not change the registered contrasts. The E3 extension uses only ±0.05 advantages, and the text says so. Apart from issue 1, the scope is justified well enough.
+- **Future behavioural test.** It is honestly refutable. It has shared sensitivity and lapse parameters, orderings computed from the realised histories, an inferior-advisor control, raw-history and disclosure conditions, and a separate self-evaluation stage. It is also clearly not presented as an executed experiment. Issues 2 to 4 would make the refutation conditions more precise.
+- **Response log.** It is accurate and complete. Declined requests have stated reasons.
+
+## Requirements for a future submission
+
+These are not defects in the current draft:
+
+- The intended human author must endorse the manuscript and take accountability for it.
+- The funding and competing-interest declarations need human confirmation.
+- The package needs a persistent public archive with a DOI.
+- The preregistration is a local git commitment and has no public timestamp. The paper states this limitation, and the statement must stay.
+
+I did not independently verify the reference metadata. The published entries match what I recall. I cannot confirm the two 2026 arXiv preprints, so the audit against the registries remains the evidence for them.
+
+## Answer
+
+**Minor revision.** No substantive major issue remains after the revisions. There are 12 minor comments. The most important are issue 1 (why confidence labels exist during learning but not deployment) and issues 2 to 4 (making the future test's refutation conditions precise). Human accountability, the declarations and public archiving remain requirements for a future submission. The paper must keep stating that the preregistration is a local git commitment, not a public one.

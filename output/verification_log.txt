@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "joint_tables": 82,
+    "margins": 164,
+    "sign_identities": 82,
+    "weighted_limits": 410,
+    "k1_equivalence": 492,
+    "raw_histories": 24600000,
+    "exact_binomial": 24,
+    "rng_reproductions": 3
+  }
+}

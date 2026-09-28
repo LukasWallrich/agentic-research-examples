@@ -11,3 +11,10 @@ scoping/scratch_journals/
 manuscript/scratch_*
 manuscript/*_files/
 /scratch_*
+.venv/
+__pycache__/
+output/raw_counts.npz
+tmp/
+*.aux
+*.log
+*.out

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "files": {
+    "output/raw_counts.npz": {
+      "before": "7b06cfe01691206c66eb578da4052ea6afb97ff020564d06205689047a0e5d9c",
+      "after": "7b06cfe01691206c66eb578da4052ea6afb97ff020564d06205689047a0e5d9c",
+      "identical": true
+    },
+    "output/summary.csv": {
+      "before": "35752b82cecaffd67c705a0b389ea2a2764f8073f77aca4c5e33b67b24639ada",
+      "after": "35752b82cecaffd67c705a0b389ea2a2764f8073f77aca4c5e33b67b24639ada",
+      "identical": true
+    },
+    "output/contrasts.json": {
+      "before": "6444ec1b202b9e3ccb03effd1842ae25e55f362a376454d18024a8abdafb8f8d",
+      "after": "6444ec1b202b9e3ccb03effd1842ae25e55f362a376454d18024a8abdafb8f8d",
+      "identical": true
+    }
+  },
+  "command": "./run_all.sh",
+  "checked_utc": "2026-09-28T11:00:14.872220+00:00",
+  "scope": "Raw synthetic histories and all registered summary/contrast bytes reproduced. Rendered PDF metadata timestamp is not expected to be byte-identical."
+}
