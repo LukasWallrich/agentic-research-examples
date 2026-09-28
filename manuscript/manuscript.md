@@ -1,5 +1,7 @@
 # When does weighting by confidence help the crowd? A finite-sample boundary and a test of the standard account
 
+**Article type:** Theory Article (with an empirical test)
+
 **Author to be determined.** Affiliation and correspondence to be supplied by the project owner before any submission. This manuscript is an AI-assisted draft prepared without submission; see the AI disclosure.
 
 ## Abstract
@@ -66,7 +68,7 @@ The sign-accuracy gap has a clear boundary (Figure 2b). Of the 120 simulated cel
 
 The graded estimate shows the same boundary more sharply (Figure 2a). CW improves the leave-one-judge-out Brier score when confidence is well calibrated (mean +0.0006 at $\phi=0$, $\tau=0$) and degrades it once overconfidence is present (−0.012 at $\phi=2$, −0.030 at $\phi=4$). Across the grid, 41 of 120 cells have a positive mean Brier improvement and 79 negative.
 
-An interior optimum is the rule rather than the exception. In 117 of the 120 cells the accuracy-optimal shrinkage $\lambda^\star$ lies strictly between 0 and 1 for at least one group size (Figure 3), so partial shrinking beats both pure rules almost everywhere. The optimal weight on confidence falls as overconfidence rises, reaching zero when confidence is uninformative.
+An interior optimum is common in the simulation, though it is an oracle result. In 117 of the 120 cells the accuracy-optimal shrinkage $\lambda^\star$, chosen with knowledge of the population parameters, lies strictly between 0 and 1 for at least one group size (Figure 3). The optimal weight on confidence falls as overconfidence rises, reaching zero when confidence is uninformative. Whether an estimated shrinkage weight helps in practice is a separate question, tested in Section 4.
 
 ![**Figure 3.** Accuracy-optimal shrinkage lambda* between equal weighting (0) and confidence weighting (1) against group size, for three levels of overconfidence. An interior optimum is the rule across the grid.](analysis/output/figures/fig3_lambda.png)
 
