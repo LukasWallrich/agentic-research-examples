@@ -2,15 +2,15 @@
 
 ## Summary
 
-This study was conceived, designed, preregistered, coded, analysed, written and reviewed by AI systems. The human author, Lukas Wallrich, set the task and its constraints in a single instruction and did not intervene in the work that followed. He is accountable for the content under the policies of the target journal. The AI's role is disclosed here in full so that readers and editors can judge the work with that knowledge.
+This study was conceived, designed, preregistered, coded, analysed, written and reviewed by AI systems. The human author, Lukas Wallrich, set the task and its constraints in a single instruction and did not intervene in the work that followed. The author is accountable for the content under the policies of the target journal. The AI's role is disclosed here in full so that readers and editors can judge the work with that knowledge.
 
 ## What the human author did
 
 - On 27 September 2026, gave one instruction: produce a complete, novel judgement-and-decision-making paper without collecting new data, working autonomously, recording decisions, preregistering before analysis, reviewing with other AI systems, and not submitting anything or contacting anyone.
-- Provided the working environment (Claude Code with access to R, Quarto, the web, OpenAlex and Crossref, and the codex and agy command-line tools) and his writing style guide.
+- Provided the working environment (Claude Code with access to R, Quarto, the web, OpenAlex and Crossref, and the codex and agy command-line tools) and the author's writing style guide.
 - Did not choose the research question, dataset, models, analyses or wording, and did not review the work before this record was written.
 
-Before any submission, the author would need to read and verify the work, take responsibility for every claim, and decide whether to submit. None of that has happened yet.
+Before any submission, the author would need to read and verify the work, take responsibility for every claim, deposit the repository with its full git history publicly (so that the preregistration timestamp can be inspected; it is currently only in a local repository), add the repository link to the manuscript and cover letter, and decide whether to submit. None of that has happened yet.
 
 ## What the AI systems did
 
@@ -20,7 +20,7 @@ Before any submission, the author would need to read and verify the work, take r
 | Claude subagents | Claude Opus 5.5 | Claude Code Agent tool | Parallel literature searches, dataset licence checks, novelty checks, journal-policy extraction, citation-support checks. |
 | OpenAI Codex CLI | codex-cli 0.155.1 (default model) | `codex exec`, read-only sandbox | Critique of the study shortlist; review of code and results; manuscript reviews. Outputs in `reviews/`. |
 | Google Gemini via Antigravity CLI | Gemini 3.8 Flash (High) | `agy -p`, sandboxed | Critique of the study shortlist; manuscript reviews. Outputs in `reviews/`. |
-| coarse-review pipeline | local Claude Code skill running Claude models headlessly | `coarse-review` skill | Full structured peer review of the manuscript. Output in `reviews/`. |
+| coarse-review pipeline | coarse-ink 1.4.0 with Claude (claude-opus-4-6, effort high) run headlessly; Mistral OCR via OpenRouter for text extraction | `coarse-review` skill | Full structured peer review of the manuscript. Output in `reviews/`. |
 
 Dates of use: 27-28 September 2026.
 
