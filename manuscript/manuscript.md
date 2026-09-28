@@ -64,13 +64,18 @@ The **failure condition** set in advance was that the simulation must reproduce 
 
 Across the 48 simulated cells, the sign-accuracy gap is positive almost everywhere and the harmful region is small. Only 5 of 48 cells (10%) show a negative gap at some group size, and they are the cells with the strongest overconfidence ($\phi=4$) and the weakest shared error. For example, at $\gamma=0.3$, $\tau=0$ and $\phi=4$, the mean gap is −0.006, while at the same $\gamma$ and $\tau$ with $\phi=0$ it is +0.050. The gap grows with group size over most of the range, consistent with the finite-sample reading, though there are local violations (51 of 384 steps exceed the Monte-Carlo tolerance in the negative direction).
 
-The picture changes for the continuous estimate. The leave-one-judge-out Brier improvement of CW over EW is negative in all 48 cells: at every combination of calibration and shared error we swept, reweighting by confidence made the estimate of a held-out judge's correctness slightly worse. The harm is small where confidence is well calibrated (mean Brier improvement +0.001 at $\phi=0$, $\gamma=0.3$) and larger where it is not (−0.014 at $\phi=4$, $\gamma=0.3$). This is the central simulation result: the majority decision is nearly unaffected by weighting, but the graded estimate is degraded, and the degradation tracks overconfidence.
+The picture changes for the continuous estimate. The leave-one-judge-out Brier improvement of CW over EW is negative in all 48 cells: at every combination of calibration and shared error we swept, reweighting by confidence made the estimate of a held-out judge's correctness slightly worse. The harm is small where confidence is well calibrated (Figure 2a; mean Brier improvement +0.001 at $\phi=0$, $\gamma=0.3$) and larger where it is not (−0.014 at $\phi=4$, $\gamma=0.3$). This is the central simulation result: the majority decision is nearly unaffected by weighting, but the graded estimate is degraded, and the degradation tracks overconfidence.
 
-An interior optimum is common. In 16 of the 48 cells the accuracy-optimal shrinkage $\lambda^\star$ lies strictly between 0 and 1 for at least one group size, so partial shrinking beats both pure rules. The optimal amount of weighting falls as overconfidence rises: when confidence is uninformative, the best rule is close to equal weighting, and any weight on confidence costs accuracy.
+An interior optimum is common (Figure 3). In 16 of the 48 cells the accuracy-optimal shrinkage $\lambda^\star$ lies strictly between 0 and 1 for at least one group size, so partial shrinking beats both pure rules. The optimal amount of weighting falls as overconfidence rises: when confidence is uninformative, the best rule is close to equal weighting, and any weight on confidence costs accuracy.
+
+
+![**Figure 2.** Simulated boundary surface (gamma = 0.3). Colour is the effect of confidence weighting as a function of overconfidence phi and shared error tau: (a) the leave-one-judge-out Brier improvement, negative throughout; (b) the sign-accuracy gap, positive for well-calibrated confidence and turning non-positive at high overconfidence.](analysis/output/figures/fig2_boundary.png)
+
+![**Figure 3.** Accuracy-optimal shrinkage lambda* between equal weighting (0) and confidence weighting (1) as a function of group size, for three levels of overconfidence. Partial shrinking is frequently optimal, and the optimal weight on confidence falls as confidence becomes less diagnostic.](analysis/output/figures/fig4_lambda.png)
 
 These results satisfy the failure condition. They reproduce, in sign, the empirical pattern of Section 4, and they are consistent with the finding that real groups behave closer to equal weighting than the confidence-optimal rule prescribes (Meyen et al., 2021).
 
-## 4. Empirical test across 80 datasets
+## 4. Empirical test across 81 datasets
 
 ### 4.1 Data and method
 
@@ -88,7 +93,13 @@ The majority-decision advantage of confidence weighting is negligible. Averaged 
 
 The continuous estimate tells a clearer story. The LOO-Brier improvement of CW over EW is −0.0008 on average (95% CI [−0.0013, −0.0004]) and is negative in 89% of datasets (Figure 1b). In other words, in almost every dataset, weighting other judges by confidence produced a slightly worse estimate of whether a given judge was correct than weighting them equally. The effect is small in absolute terms, as it must be when confidence is only weakly diagnostic, but it is consistent in sign and its confidence interval excludes zero.
 
-The moderation matches the theory. Regressing the LOO-Brier improvement on the calibration slope and the within-item error correlation, the error-correlation coefficient is negative and its confidence interval excludes zero (−0.020, SE 0.0095): the more errors correlate within an item, the more confidence weighting hurts. The calibration-slope coefficient is near zero (−0.00013, SE 0.00016). In the sign-accuracy regression, by contrast, the error-correlation coefficient is positive (+0.133, SE 0.057), which we read as a ceiling artefact rather than a substantive reversal, since the sign measure has little variance left to explain.
+![**Figure 1.** Confidence weighting versus equal weighting in 81 Confidence Database datasets. (a) The sign-accuracy advantage of CW over EW as a function of group size; points are means across datasets with 95% confidence intervals, and the dashed line is zero. (b) Distribution of the leave-one-judge-out Brier improvement of CW over EW across datasets; the red line marks the mean.](analysis/output/figures/fig1_empirical.png)
+
+
+The moderation matches the theory. Regressing the LOO-Brier improvement on the calibration slope and the within-item error correlation, the error-correlation coefficient is negative and its confidence interval excludes zero (−0.020, SE 0.0095): the more errors correlate within an item, the more confidence weighting hurts. The calibration-slope coefficient is near zero (−0.00013, SE 0.00016). In the sign-accuracy regression, by contrast, the error-correlation coefficient is positive (+0.133, SE 0.057), which we read as a ceiling artefact rather than a substantive reversal, since the sign measure has little variance left to explain (Figure 4).
+
+![**Figure 4.** Empirical moderation. Left: the leave-one-judge-out Brier improvement against the calibration slope. Right: the same against the within-item error correlation; the negative slope is the predicted pattern.](analysis/output/figures/fig3_moderation.png)
+
 
 We mapped each dataset to the nearest simulated cell in standardised (calibration, error-correlation) space. The simulation reproduced the sign of the LOO-Brier effect for 72 of 81 datasets (89%), meeting the preregistered criterion, but the sign of the sign-accuracy effect for only 30 of 81 (37%). The model therefore captures the continuous estimate but not the coarse decision, which is the pattern the simulation itself predicted.
 
