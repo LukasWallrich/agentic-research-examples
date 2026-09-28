@@ -44,7 +44,7 @@ Source: `reviews/manuscript/agy_answer_r1.txt` (reviewed the first draft).
 | A10 | Minor | Inconsistent labels: Imhoff & Barker 2022 vs 2023; Bahník 2021 vs 2021a; post-exclusion participant count. | Accepted. The Method now explains that the OpAQ labels ("Bahník, 2021a"; "Imhoff & Barker, 2022, Study 2") refer to Bahník (2021) and Imhoff & Barker (2023); Figure 2 and Table 1 use the publication labels. The preregistration keeps the OpAQ labels because it is frozen. Post-exclusion counts are in Table 1 and the Results. |
 | A11 | Minor | Give a concrete example of what b and g mean. | Accepted. Added: for a true value of 100, doubling the anchor raises the estimate by 21% from 50, 17% from 200 and 11% from 500 (numbers computed inline). |
 
-Rejected in part: A1's suggestion that "100% of the items showing significant within-item curvature" used random anchors is incorrect; the one fixed-anchor item with 20 levels also showed negative curvature (S2), which the manuscript reports.
+Rejected in part at round 1: we initially disputed A1's point that the well-resolved negative curvatures all came from random anchors, citing the fixed-anchor Cologne cathedral item. The citation check and codex (round 3, X3-1) showed that its authors describe those anchors as random, so A1 was right; the rejection was withdrawn in round 3 (see below).
 
 ### Reviewer: OpenAI Codex CLI (recommendation: major revision)
 
@@ -130,7 +130,7 @@ Source: `reviews/coarse/coarse_review_r2.md` (reviewed the version after round-1
 | K7 | Test the model the Discussion motivates (plausibility discount with a floor). | Accepted. E7 simulates M4 with a weight floor: 36 of 400 draws reproduce the within-item b and γ, 62 the across-cell slope, none both. |
 | K8 | Derive why Hedges' g rises mechanically under constant proportional pull. | Accepted. A short derivation is now in the Introduction. |
 | K9 | Test whether curvature covaries with item uncertainty (the plausibility mechanism). | Accepted. E10: no relation across 18 cells (slope 0.012 [-0.136, 0.159]); reported in Results and Discussion as not supporting the mechanism, with its limits (few items; outcome-based spread). |
-| K10 | Simulation assumptions too sparse in the text. | Accepted. Appendix Table A1 lists every distributional assumption. |
+| K10 | Simulation assumptions too sparse in the text. | Accepted. A table in the Appendix (Table 4) lists every distributional assumption. |
 
 **Detailed comments**
 
@@ -148,3 +148,29 @@ Source: `reviews/coarse/coarse_review_r2.md` (reviewed the version after round-1
 | K-10 | Fixed-anchor stratum composition is fragile under the disputed classification. | Accepted; a sentence states the composition if the Cologne item were counted as random. |
 | K-11 | Chicago cell: clarify that no estimate entered any analysis. | Accepted; parenthetical added in the Results. |
 | K-12 | The secondary test inherits the extremity-item confound. | Accepted; qualifier added in the Introduction. |
+
+## Round 3 (final): Manuscript review of the round-2 version
+
+### Reviewer: OpenAI Codex CLI (recommendation: major revision)
+
+Source: `reviews/manuscript/codex_answer_r3.txt`. Codex judged most earlier major concerns addressed and the rejection of K5 (second calibration target) defensible.
+
+| # | Severity | Comment | Response |
+|---|---|---|---|
+| X3-1 | Major | The Cologne cathedral item is used as evidence for fixed anchors although its authors describe the anchors as random; the round-1 rejection of A1 is therefore unpersuasive. | Accepted. The preregistered OpAQ-coded analysis is kept, but every claim that the decline was shown for fixed anchors was removed: the Results, Discussion, Limitations and Conclusion now state that all well-resolved within-item evidence comes from random or self-generated anchors, report the four remaining fixed-anchor items (Frech et al.) as imprecise, and say that the data contain no informative test for fixed, deliberately chosen anchors. The earlier rejection of A1 is withdrawn in the round-1 table. |
+| X3-2 | Major | The repository link is a placeholder, so the audit trail for the preregistration cannot be inspected; the plan should be described as committed locally. | Accepted in part. The Method now says the preregistration was committed to a local git repository, not a public registry, and that the timestamp is not independently verifiable. Rejected in part, with reason: publishing the repository is outside what this project may do (no accounts may be created and nothing may be published); `ai_disclosure.md` lists public deposit of the repository and its full history as a step for the author before any submission. |
+| X3-3 | Minor | The Schley & Weingarten inference assumes comparable response variability. | Accepted; condition added. |
+| X3-4 | Minor | "No model reproduced both patterns" overstates finite simulations. | Accepted; now "None of the evaluated model simulations reproduced both patterns". |
+| X3-5 | Minor | Gaussian proposals are unbounded, so "each step covers a bounded distance" is false. | Accepted; now "adjustment steps have a fixed typical size". |
+
+### Reviewer: Gemini 3.8 Flash via agy (recommendation: accept with minor revision; no major issues remain)
+
+Source: `reviews/manuscript/agy_answer_r3.txt`. Agy re-checked all numbers against `output/` and found them exact apart from item 1.
+
+| # | Severity | Comment | Response |
+|---|---|---|---|
+| A3-1 | Minor | The Stephen King anchors range from 6 to 267, not 279 (279 was a back-calculation from a rounded value in a review comment). | Accepted; the ranges are now computed inline from the data. |
+| A3-2 | Minor | The Method still describes the H3 rule in a way that contradicts the operational rule. | Accepted; the Method now states the rule exactly as coded (retain if d and at least one of γ and ρ lie inside). |
+| A3-3 | Minor | The multi-band slopes at |x| ≥ 2 have CIs that include zero. | Accepted; qualified in the text. |
+| A3-4 | Minor | Appendix table called "Table A1" in the review log but "Table 4" in the manuscript. | Accepted; review log corrected (Quarto numbers tables consecutively). |
+| A3-5 | Minor | Repository link placeholder. | As X3-2: a step for the author before submission. |

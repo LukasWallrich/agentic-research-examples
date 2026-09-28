@@ -1,0 +1,15 @@
+## Answer
+
+1. **MAJOR — Method, Results, Discussion and Conclusion (Cologne cathedral item).** Imhoff and Barker describe its anchors as random, yet the manuscript repeatedly treats this item as evidence from *fixed* anchors because OpAQ codes it that way. This also makes the rejection of reviewer A1’s observation—that the clearly negative, well-resolved item results come from random-anchor designs—unpersuasive. **Fix:** Preserve the preregistered OpAQ-coded analysis, but interpret the item according to its documented design. Report the fixed-anchor stratum without Cologne and remove claims of a demonstrated decline for fixed or deliberately chosen anchors.
+
+2. **MAJOR — Transparency and openness; Data availability.** The repository link is still a placeholder, so readers cannot inspect the frozen predictions, preregistration, deviations or version history on which the confirmatory claims depend. The manuscript appropriately discloses that its local git timestamp is not independently verifiable, but “preregistered” should not imply an externally time-stamped record. **Fix:** Provide the complete public repository and working link before submission, and consistently describe the plan as committed locally before outcome access, with that verification limit.
+
+3. **MINOR — Evidence on anchor extremity.** Equal standardised effects for “extreme” and other anchors imply a smaller proportional pull only if relevant response variability is comparable. **Fix:** Add that condition to the interpretation of Schley and Weingarten’s null result.
+
+4. **MINOR — Abstract and model adequacy.** “No model reproduced both patterns” is broader than the evidence from specified calibration grids and finite exploratory draws. **Fix:** Say that none of the evaluated calibrated simulations jointly reproduced the within-item and across-cell results; retain the distinction between M1R passing the preregistered rule and fitting poorly in the joint check.
+
+5. **MINOR — M1 description.** Its Gaussian step proposals are unbounded, so the claim that “each step covers a bounded distance” is literally false. **Fix:** Say that steps have a fixed typical scale, leaving sufficiently distant anchors incompletely adjusted after a fixed number of steps.
+
+Most earlier major statistical and interpretive concerns have been adequately addressed. The rejection of an additional OpAQ-based calibration target (K5) is defensible; it would risk using the main test data for calibration. The rejection of A1’s point about the supposedly fixed Cologne item is not.
+
+**Overall recommendation: major revision. MAJOR issues remain**, chiefly the interpretation of anchor type and the unavailable audit trail for the preregistered analysis.
