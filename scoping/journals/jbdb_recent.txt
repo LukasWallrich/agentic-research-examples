@@ -1,0 +1,100 @@
+2026 | 0 | Analytic Structuring, Psychological Empowerment, and Self‐Reported Trust Regulation in AI‐Framed Decision Support: Evidence From a Scenario‐Based Expe | https://doi.org/10.1002/bdm.70095
+2026 | 0 | Addressing Inequality or Sustainability? How Equal and Unequal Groups Use Endogenous Rule Changing to Manage Common Resources | https://doi.org/10.1002/bdm.70094
+2026 | 0 | Selective Social Information Sampling as a Mechanism Contributing to Age Differences in Risk‐Taking Propensity | https://doi.org/10.1002/bdm.70093
+2026 | 0 | Time Preference in Decisions With Recurring Payoffs | https://doi.org/10.1002/bdm.70091
+2026 | 0 | From Inaction Inertia to the Postdiscount Effect: How a Lower Price Reduces Subsequent Purchase After It Expires | https://doi.org/10.1002/bdm.70092
+2026 | 0 | The Rate of Social Discounting Under Independent Manipulation of Reward Delay for Self and for Another Person | https://doi.org/10.1002/bdm.70090
+2026 | 0 | The Effect of Construal Level on Mental Accounting: Abstract (vs. Concrete) Construal Reduces the Mental Labeling Effect | https://doi.org/10.1002/bdm.70089
+2026 | 0 | Catch and Spawn: An Angling Risk Task for Decreasing Risk Contexts | https://doi.org/10.1002/bdm.70088
+2026 | 0 | Issue Information | https://doi.org/10.1002/bdm.70061
+2026 | 0 |  | https://doi.org/10.1002/bdm.v39.4
+2026 | 0 | Dissociations of Cognitive Control and Reward Sensitivity on Decision‐Making Under Uncertainty in Adolescents: Insights From Computational Modeling | https://doi.org/10.1002/bdm.70087
+2026 | 0 | Adjustment of Adolescents and Young Adults to the Level of Risk in Ambiguous Risk‐Taking Situation | https://doi.org/10.1002/bdm.70086
+2026 | 0 | From Distance to Ambiguity Perception: A Dual‐Mechanism Account of the Date‐Delay Effect | https://doi.org/10.1002/bdm.70085
+2026 | 0 | Opportunity Versus Threat Appraisals of AI Aids: The Effect of Appraisal Type on Decision Makers' Effort and Compliance When Using Powerful AI Aids | https://doi.org/10.1002/bdm.70084
+2026 | 0 |  | https://doi.org/10.1002/bdm.v39.3
+2026 | 0 | Never … Often? Comparisons That Shape People's Likert‐Type Ratings of Behavior Frequencies | https://doi.org/10.1002/bdm.70083
+2026 | 0 | Issue Information | https://doi.org/10.1002/bdm.70060
+2026 | 0 | Binary Binning: Examining the Mapping Between Continuous and Binary Review Scales | https://doi.org/10.1002/bdm.70080
+2026 | 0 | On Sharing Benefits Created by Costly Help | https://doi.org/10.1002/bdm.70078
+2026 | 0 | The Intricate Nature of Evaluability: How Attribute Framing, Magnitude, and Reference Point Moderate Calibration and Bias | https://doi.org/10.1002/bdm.70079
+2026 | 0 | The Effect of Cognitive Load and Default Nudges on Decision‐Making: Experimental Evidence From a Behavioral Study | https://doi.org/10.1002/bdm.70081
+2026 | 0 | Hard to Resist Quicker Decisions: How Response Time Shapes Conformity in Human–Robot Hybrid Groups | https://doi.org/10.1002/bdm.70082
+2026 | 1 | Warning: Warnings Can Backfire Even When They Provide New and Important Information | https://doi.org/10.1002/bdm.70077
+2026 | 0 | Partisan Differences in Risk‐Taking in a Simulated Pandemic | https://doi.org/10.1002/bdm.70066
+2026 | 0 | The Bright Side of Transparent Sludges: When Friction Promotes Value‐Incongruent Behavioral Intentions | https://doi.org/10.1002/bdm.70075
+2026 | 0 | Relationship Valuation Sensitivity for Family and Friends: A Test of Welfare Tradeoff Ratio Variables and General Social Discounting | https://doi.org/10.1002/bdm.70076
+2026 | 0 | Effects of Opportunity Costs on Delay Discounting for Hypothetical Food and Money | https://doi.org/10.1002/bdm.70074
+2026 | 1 | Between Confidence and Clarity: Objective and Subjective Expertise Differentially Predict Use of Alignable and Nonalignable Product Attributes | https://doi.org/10.1002/bdm.70073
+2026 | 0 | Interpersonal Effects of Using Selection or Elimination: People Are Less Willing to Interact With Elimination Strategy Users Than With Selection Strat | https://doi.org/10.1002/bdm.70071
+2026 | 0 | The Effects of “Time” and “Probability” Formats on Risk Perception and Decision‐Making About Long‐Term Hazards | https://doi.org/10.1002/bdm.70072
+2026 | 3 | Anchoring Bias in the Tradeoff Procedure Within Multi‐Attribute Value Theory | https://doi.org/10.1002/bdm.70069
+2026 | 0 | The Martyrdom Effect in Judgment: Fatal Self‐Sacrifice Boosts Evaluations for Both Beneficial and Harmful Actors | https://doi.org/10.1002/bdm.70057
+2026 | 0 |  | https://doi.org/10.1002/bdm.v39.2
+2026 | 0 | How Responses to Sexual Harassment and Moral Values Shape Investment Decision Making | https://doi.org/10.1002/bdm.70070
+2026 | 0 | Issue Information | https://doi.org/10.1002/bdm.70059
+2026 | 0 | Who Is Afraid of the Pink Elephant? Evidence on (Not) Ignoring Inadmissible Evidence and Debiasing Interventions | https://doi.org/10.1002/bdm.70064
+2026 | 0 | Intertemporal Impatience Across Mental Health in a Community Sample: A Novel Transdiagnostic Approach | https://doi.org/10.1002/bdm.70056
+2026 | 0 | Issue Information | https://doi.org/10.1002/bdm.70058
+2026 | 0 |  | https://doi.org/10.1002/bdm.v39.1
+2026 | 0 | Information on Judgment Invariance Influences Contributors' Opting‐In Behavior in Sequential Collaboration | https://doi.org/10.1002/bdm.70063
+2026 | 0 | Attentional Mechanism Underlying Asymmetric Subjective Opportunity Cost Effect in Intertemporal Choice: Explanation Based on Attribute‐Based Models | https://doi.org/10.1002/bdm.70065
+2026 | 0 | Correction to “Similarity and Consistency in Algorithm‐Guided Exploration” | https://doi.org/10.1002/bdm.70067
+2026 | 0 | Correction to “Who Is Afraid of the Pink Elephant? Evidence on (Not) Ignoring Inadmissible Evidence and Debiasing Interventions” | https://doi.org/10.1002/bdm.70068
+2025 | 1 | Precommitment in Stochastic Versus Deterministic Social Dilemmas | https://doi.org/10.1002/bdm.70052
+2025 | 4 | Assessing Nudge Impact: A Comprehensive Second‐Order Meta‐Analysis | https://doi.org/10.1002/bdm.70053
+2025 | 2 | Similarity and Consistency in Algorithm‐Guided Exploration | https://doi.org/10.1002/bdm.70055
+2025 | 0 | Do Anxious People Take Fewer Risks? A Meta‐Analysis of the Relationship Between Trait Anxiety and Dispositional Risk Taking | https://doi.org/10.1002/bdm.70054
+2025 | 0 | Me?! Never! Social Distance as a Moderator of Other Contextual Factors on Responses to Ethical Scenarios | https://doi.org/10.1002/bdm.70050
+2025 | 1 | Size Does Not Matter: Numeracy and the Effect of Quantity Information on Consumers' Price Judgments | https://doi.org/10.1002/bdm.70051
+2025 | 0 |  | https://doi.org/10.1002/bdm.v38.5
+2025 | 1 | Influencing Confidence: Testing Ways to Increase or Decrease Confidence in Knowledge | https://doi.org/10.1002/bdm.70048
+2025 | 0 | Issue Information | https://doi.org/10.1002/bdm.2394
+2025 | 2 | Information Search Patterns in Intertemporal Choice Do Not Always Reflect Decision Strategies: An Eye‐Tracking Study | https://doi.org/10.1002/bdm.70045
+2025 | 0 | When and Why “Consoling” Marginal Underperformers With a Small Versus Zero Reward Hurts Fairness (Without Consolation) | https://doi.org/10.1002/bdm.70043
+2025 | 0 | Effects of Descriptive Information on Mental Representations of Probability and Future Behavior in the Context of Personal Experience | https://doi.org/10.1002/bdm.70044
+2025 | 0 | All Together Now: Genes, Interpersonal Touch, and Self‐Conscious Processes Jointly Guide Cooperative Behavior | https://doi.org/10.1002/bdm.70046
+2025 | 1 | A Spillover Effect of Altruistic Cheating: When Benefitting Others Goes Wrong | https://doi.org/10.1002/bdm.70049
+2025 | 0 | Correction to “Behavioral Trust in Competence Versus Morality: Experimental Evidence of Differences and Similarities” | https://doi.org/10.1002/bdm.70047
+2025 | 1 | Divided Perceptions of Risk? A New Online Tool to Study the Many Flavors of Polarization | https://doi.org/10.1002/bdm.70041
+2025 | 0 | In Visceral Control: When Visceral States Facilitate Versus Inhibit Priming Effects | https://doi.org/10.1002/bdm.70042
+2025 | 0 | Helping a Boy or a Girl? The Effect of Recipient's Gender and Donor's Culture on Donation Decisions | https://doi.org/10.1002/bdm.70040
+2025 | 0 | Behavioral Trust in Competence Versus Morality: Experimental Evidence of Differences and Similarities | https://doi.org/10.1002/bdm.70037
+2025 | 0 | Choice Modeling With Context Effects: Generalization for Observational Data | https://doi.org/10.1002/bdm.70030
+2025 | 2 | Everything in Its Own Time: Planning Horizons Vary Across Financial Domains | https://doi.org/10.1002/bdm.70035
+2025 | 0 | Correction to “Does Time Pressure Alter the Affect Gap in Risky Choice?” | https://doi.org/10.1002/bdm.70039
+2025 | 1 | Choosing Versus Rejecting: The Effect of Decision Mode on Subsequent Preferential Choices | https://doi.org/10.1002/bdm.70032
+2025 | 0 | Framing, Fairness, and Ambiguity in Plea Decisions and Other Risky Choices: A Unified Approach | https://doi.org/10.1002/bdm.70038
+2025 | 1 | The Moral Dilution Effect: Irrelevant Information Influences Judgments of Moral Character | https://doi.org/10.1002/bdm.70034
+2025 | 0 | Correction to “The Mere Audience‐Size Effect: How Incidental Audience Non‐Normatively Influences the Perceived Product Quality” | https://doi.org/10.1002/bdm.70036
+2025 | 0 | Issue Information | https://doi.org/10.1002/bdm.2393
+2025 | 0 |  | https://doi.org/10.1002/bdm.v38.4
+2025 | 0 | Mouse Cursor Movements in Cognitive Bias Tasks Reveal Underlying Processing Differences | https://doi.org/10.1002/bdm.70025
+2025 | 1 | Behavioral Research in the Shadow of Plea Bargaining | https://doi.org/10.1002/bdm.70031
+2025 | 2 | Learning Processes in the Judge–Advisor System: A Neglected Advantage of Advice Taking | https://doi.org/10.1002/bdm.70029
+2025 | 1 | Does Time Pressure Alter the Affect Gap in Risky Choice? | https://doi.org/10.1002/bdm.70028
+2025 | 0 | Monetary Priming Reduces Children's Sensitivity to Variations in Potential Gain Magnitude in a Cheating Scenario | https://doi.org/10.1002/bdm.70027
+2025 | 2 | Intuition in Decision Making: Insights From Drift Diffusion Modeling | https://doi.org/10.1002/bdm.70033
+2025 | 0 | Expert Decision‐Making Complexity in New Industries: The Case of Security Analysts | https://doi.org/10.1002/bdm.70026
+2025 | 0 | The Mere Audience‐Size Effect: How Incidental Audience Non‐Normatively Influences the Perceived Product Quality | https://doi.org/10.1002/bdm.70022
+2025 | 1 | Framing Biases in Plea Bargaining Decisions: Fairness Under the Law | https://doi.org/10.1002/bdm.70024
+2025 | 1 | Psychological and Behavioral Consequences of Confidence in Knowledge: An Exploratory Examination of General Public and JDM Researcher Perspectives | https://doi.org/10.1002/bdm.70023
+2025 | 0 | Development and Validation of the Calculated and Spontaneous Risk‐Taking Scale (CASPRT) | https://doi.org/10.1002/bdm.70020
+2025 | 0 | The Impact of the Timing of Advice on Its Utilization | https://doi.org/10.1002/bdm.70021
+2025 | 0 | Preceding Options Affect Subsequent Listwise but Not Pairwise Choice, Even for Experts | https://doi.org/10.1002/bdm.70019
+2025 | 0 | Issue Information | https://doi.org/10.1002/bdm.2392
+2025 | 0 |  | https://doi.org/10.1002/bdm.v38.3
+2025 | 1 | Framing Biases in Plea Bargaining Decisions: Insights From the Psychology of Medical Decision Making | https://doi.org/10.1002/bdm.70018
+2025 | 0 | An Exploration of How Motivations and Perceived Ability Influence an Advisor's Willingness to Give Advice | https://doi.org/10.1002/bdm.70017
+2025 | 5 | Using a Foreign Language Increases Risk‐Taking in Prenatal Testing Decisions but Not due to Attenuated Emotional Responses | https://doi.org/10.1002/bdm.70016
+2025 | 2 | From Preparation to Performance: Conscientiousness Predicts Negotiation Planning and Value Claiming | https://doi.org/10.1002/bdm.70015
+2025 | 1 | When Certainty Backfires: The Effects of Unwarranted Precision on Consumer Loyalty | https://doi.org/10.1002/bdm.70013
+2025 | 0 | Correction to “Determinants of Economic Risk Preferences Across Adolescence” | https://doi.org/10.1002/bdm.70014
+2025 | 0 | The “Why Me?” Model: Explaining Moral Judgments in the Eyes of Single Versus Several Victims | https://doi.org/10.1002/bdm.70012
+2025 | 0 | Acting Wastefully but Feeling Satisfied: Understanding Waste Aversion | https://doi.org/10.1002/bdm.70011
+2025 | 0 |  | https://doi.org/10.1002/bdm.v38.2
+2025 | 8 | Framing Biases in Plea Bargaining Decisions in Those With and Without Criminal Involvement: Tests of Theoretical Assumptions | https://doi.org/10.1002/bdm.70008
+2025 | 0 | Issue Information | https://doi.org/10.1002/bdm.2391
+2025 | 0 |  | https://doi.org/10.1002/bdm.v38.1
+2025 | 1 | Blaming the Strawless Brickmaker: Constraint Neglect in Judging Decision Quality | https://doi.org/10.1002/bdm.70006
+2025 | 0 | Issue Information | https://doi.org/10.1002/bdm.2390

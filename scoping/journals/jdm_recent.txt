@@ -1,0 +1,100 @@
+2026 | 0 | Bot or not: Can people tell the difference between stories written by a human or by an AI system? | https://doi.org/10.1017/jdm.2026.10042
+2026 | 0 | The ironic effect of entitlement: Giving behavior increases with entitled pursuit of information | https://doi.org/10.1017/jdm.2025.10027
+2026 | 0 | One life of ours equals X lives of theirs: Motivated proportional thinking about the value of lives in different countries | https://doi.org/10.1017/jdm.2025.10026
+2026 | 0 | Information distortion as a source of overconfidence in managerial decisions | https://doi.org/10.1017/jdm.2025.10025
+2026 | 0 | Wishful thinking in the 2020 U.S. presidential election: Does perspective taking mitigate the preference–expectation link? | https://doi.org/10.1017/jdm.2026.10029
+2026 | 1 | Sibling kinship, prosociality, language AI, and norms | https://doi.org/10.1017/jdm.2026.10032
+2026 | 0 | Strategic misrepresentation in personality testing: An experimental study using the public goods game | https://doi.org/10.1017/jdm.2026.10031
+2026 | 2 | Norm conflicts and morality: The CNIS Conflict model of moral decision-making | https://doi.org/10.1017/jdm.2026.10030
+2026 | 1 | Open-mindedness predicts support for public health measures and disbelief in conspiracy theories during the COVID-19 pandemic across 68 countries | https://doi.org/10.1017/jdm.2026.10033
+2026 | 0 | Bayesian combination of correlated subjective probability estimates | https://doi.org/10.1017/jdm.2026.10035
+2026 | 0 | Are conspiracy beliefs negatively associated with generosity? | https://doi.org/10.1017/jdm.2026.10036
+2026 | 0 | Framing effects on time preferences: The impact of investment and loan contexts in intertemporal choices | https://doi.org/10.1017/jdm.2026.10034
+2026 | 0 | A possible disconnect in JDM research articles: Results sections display an estimation perspective while Discussion sections belie an estimation minds | https://doi.org/10.1017/jdm.2026.10037
+2026 | 0 | Relations between natural, technology, and sustainability: A common belief in a causal link between natural and sustainable | https://doi.org/10.1017/jdm.2026.10028
+2026 | 0 | Noticing negligence or noticing numbers? Preference reversals in punishment judgments of moral luck cases | https://doi.org/10.1017/jdm.2026.10038
+2026 | 0 | Socially problematic juveniles find social norms as more obligating than moral norms | https://doi.org/10.1017/jdm.2026.10039
+2026 | 0 | Examining potential behavioral and psychological consequences of unjustified confidence in knowledge and in forecasting | https://doi.org/10.1017/jdm.2026.10040
+2026 | 0 | Omission matters: Reframing omission as action reduces apparent loss aversion | https://doi.org/10.1017/jdm.2026.10041
+2026 | 0 | Trapped in the past? Routinized rule compliance and the speed of adaptation after rule change | https://doi.org/10.1017/jdm.2026.10050
+2026 | 0 | Integration of argument-based advice: An evaluative ecological perspective on the structural differences between positive and negative advice | https://doi.org/10.1017/jdm.2026.10045
+2026 | 0 | The local default: Children’s reports of parental birthplace track population base rates | https://doi.org/10.1017/jdm.2026.10044
+2026 | 0 | Adapting to information search costs in sample-based decisions | https://doi.org/10.1017/jdm.2026.10043
+2026 | 0 | Agree to disagree: The role of competitive debate in fostering adolescents’ actively open-minded thinking | https://doi.org/10.1017/jdm.2026.10048
+2026 | 0 | People are aware of the impact of defaults and use them strategically | https://doi.org/10.1017/jdm.2026.10046
+2026 | 0 | Effect of gambling odds framing on younger and older adults’ comprehension and perceived chances of winning | https://doi.org/10.1017/jdm.2026.10049
+2025 | 4 | Actively Open-Minded Thinking About Evidence (AOT-E) Scale: Adaptation and Evidence of Validity in a Brazilian Sample | https://doi.org/10.1017/jdm.2024.37
+2025 | 0 | Surprisingly robust violations of stochastic dominance despite splitting training: A quasi-adversarial collaboration | https://doi.org/10.1017/jdm.2024.40
+2025 | 3 | When and why does observability increase honesty? The role of gossip and reputational concern | https://doi.org/10.1017/jdm.2024.10
+2025 | 3 | Do people like financial nudges? | https://doi.org/10.1017/jdm.2024.32
+2025 | 1 | Accentuation explains the difference between choice and rejection better than compatibility: A commentary on Chandrashekar et al. (2021) | https://doi.org/10.1017/jdm.2024.26
+2025 | 3 | A registered report on presentation factors that influence the attraction effect | https://doi.org/10.1017/jdm.2024.27
+2025 | 0 | The development of a task to study advice taking across nations and its application in a China-Germany comparison | https://doi.org/10.1017/jdm.2024.43
+2025 | 6 | Exploring the distribution and correlates of future self-continuity in a large, nationally representative sample | https://doi.org/10.1017/jdm.2024.23
+2025 | 3 | Mitigating climate change with financial investments: exploring sustainable investment strategies in a novel experimental investment paradigm | https://doi.org/10.1017/jdm.2024.35
+2025 | 1 | The Nation or The Leader? Exploring the Effect of Framing in News Coverage of International Conflicts | https://doi.org/10.1017/jdm.2024.36
+2025 | 1 | Do losses trigger deliberative reasoning? | https://doi.org/10.1017/jdm.2024.19
+2025 | 2 | Cognitive Reflection and Religious Belief: A Test of Two Models | https://doi.org/10.1017/jdm.2024.41
+2025 | 1 | Recurrent carbon labels induce bipartisan effects in environmental choices under risk | https://doi.org/10.1017/jdm.2024.42
+2025 | 1 | Overcoming ideology-consistent biases: does it help to make things easier? | https://doi.org/10.1017/jdm.2024.44
+2025 | 4 | When deciding creates overconfidence | https://doi.org/10.1017/jdm.2024.39
+2025 | 11 | Toward a (more) parsimonious account of the link between ‘dark’ personality and social decision-making in economic games | https://doi.org/10.1017/jdm.2025.1
+2025 | 3 | No evidence of risk aversion or foreign language effects in incentivized verbal probability gambles | https://doi.org/10.1017/jdm.2025.3
+2025 | 0 | Recurrent carbon labels induce bipartisan effects in environmental choices under risk – ERRATUM | https://doi.org/10.1017/jdm.2025.5
+2025 | 2 | Trust is a two-way street: Why advisors who trust others are more persuasive | https://doi.org/10.1017/jdm.2025.2
+2025 | 0 | Ingroup favoritism in cooperation in a dynamic intergroup context: Data from Israeli professional volleyball players | https://doi.org/10.1017/jdm.2025.9
+2025 | 0 | When one graph judgment leads to another: Signal detection analysis of base rate effects | https://doi.org/10.1017/jdm.2025.4
+2025 | 3 | Using conventional framing to offset bias against algorithmic errors | https://doi.org/10.1017/jdm.2025.8
+2025 | 3 | Artificial intelligence and dichotomania | https://doi.org/10.1017/jdm.2025.7
+2025 | 0 | Range-frequency models of within-subjects contextual effects: Salary satisfaction | https://doi.org/10.1017/jdm.2025.6
+2025 | 1 | The martingale index: A measure of self-deception in betting and finance | https://doi.org/10.1017/jdm.2025.12
+2025 | 6 | Is overconfidence an individual difference? | https://doi.org/10.1017/jdm.2025.11
+2025 | 2 | Test–retest reliability of the SVO-Slider Measure and other psychometric measures of personality traits | https://doi.org/10.1017/jdm.2025.13
+2025 | 2 | Behavioral effects in time preference for losses depend on direction of delay discounting and level of data analysis | https://doi.org/10.1017/jdm.2025.10004
+2025 | 0 | Sabotaging competitors, both real and illusory | https://doi.org/10.1017/jdm.2025.10005
+2025 | 1 | Defaults change choices, not minds: Practical and ethical benefits of brief educational boosts for water recycling acceptance | https://doi.org/10.1017/jdm.2025.10
+2025 | 0 | Causal learning with two confounded causes over weeks | https://doi.org/10.1017/jdm.2025.10006
+2025 | 5 | A systematic review of effort discounting research in humans: Current knowledge, recommendations, and future directions | https://doi.org/10.1017/jdm.2025.10009
+2025 | 0 | On the process and value of direct close replications: A rejoinder to Shafir and Cheek’s (2024) commentary on Chandrashekar et al. (2021) | https://doi.org/10.1017/jdm.2025.10011
+2025 | 2 | Renewable bites: How energy sources shape food healthiness judgments | https://doi.org/10.1017/jdm.2025.10012
+2025 | 2 | ‘Please explain your response’: A guide to uncovering cognitive processes from open-text box data using pragmatic and reflexive content analysis | https://doi.org/10.1017/jdm.2025.10010
+2025 | 0 | The effect of gain and loss framing on cheating: Evidence for the null | https://doi.org/10.1017/jdm.2025.10016
+2025 | 0 | To ‘use or not to use’ nuclear weapons? Understanding public thinking about nuclear weapons decisions in the United States | https://doi.org/10.1017/jdm.2025.10017
+2025 | 0 | Racial differences in the income–well-being gradient | https://doi.org/10.1017/jdm.2025.10015
+2025 | 3 | Emotional language reduces belief in false claims | https://doi.org/10.1017/jdm.2025.10019
+2025 | 0 | Alcohol intoxication and negative mood similarly affect reward learning but not punishment learning in the Iowa gambling task | https://doi.org/10.1017/jdm.2025.10022
+2025 | 0 | Judgements about loyalty: A noise audit in the context of Swedish protective security vetting | https://doi.org/10.1017/jdm.2025.10020
+2025 | 0 | Evaluation of third-party punishment depends on its type and severity | https://doi.org/10.1017/jdm.2025.10021
+2025 | 0 | Foreign language mitigates home bias | https://doi.org/10.1017/jdm.2025.10018
+2025 | 0 | The accuracy of gist: Rethinking public awareness of attitude change | https://doi.org/10.1017/jdm.2025.10023
+2025 | 1 | The little dictator: Understanding altruism in young children | https://doi.org/10.1017/jdm.2025.10024
+2024 | 2 | Pavlovian-to-instrumental transfer in intertemporal choice | https://doi.org/10.1017/jdm.2023.42
+2024 | 3 | Intragroup communication in social dilemmas: An artefactual public good field experiment in small-scale communities | https://doi.org/10.1017/jdm.2023.38
+2024 | 2 | Repeated risky choices become more consistent with themselves but not expected value, with no effect of matched trial order | https://doi.org/10.1017/jdm.2023.41
+2024 | 3 | The impact of diversity on group decision-making in the face of the free-rider problem | https://doi.org/10.1017/jdm.2023.47
+2024 | 2 | Choosing, rejecting, and closely replicating, 30 years later: A commentary on Chandrashekar et al. | https://doi.org/10.1017/jdm.2023.48
+2024 | 1 | The impact of experience on the tendency to accept recommended defaults | https://doi.org/10.1017/jdm.2023.49
+2024 | 4 | Apocalypse now or later? Nuclear war risk perceptions mirroring media coverage and emotional tone shifts in Italian news | https://doi.org/10.1017/jdm.2024.2
+2024 | 0 | Eye movements as a tool to investigate exemplar retrieval in judgments | https://doi.org/10.1017/jdm.2024.3
+2024 | 10 | Negative economic shocks and the compliance to social norms | https://doi.org/10.1017/jdm.2024.1
+2024 | 2 | Factors that promote the repulsion effect in preferential choice | https://doi.org/10.1017/jdm.2023.46
+2024 | 2 | The Dutch moral foundations stimulus database: An adaptation and validation of moral vignettes and sociomoral images in a Dutch sample | https://doi.org/10.1017/jdm.2024.5
+2024 | 5 | Behavioral economics enhancers | https://doi.org/10.1017/jdm.2024.12
+2024 | 1 | A psychological model of collective risk perceptions | https://doi.org/10.1017/jdm.2024.9
+2024 | 1 | Likelihood neglect bias and the mental simulations approach: An illustration using the old and new Monty Hall problems | https://doi.org/10.1017/jdm.2024.8
+2024 | 1 | Measuring vacillations in reasoning | https://doi.org/10.1017/jdm.2024.15
+2024 | 2 | Who is generous and to whom? Generosity among Christians, Muslims, and atheists in the USA, Sweden, Egypt, and Lebanon | https://doi.org/10.1017/jdm.2024.14
+2024 | 17 | What’s moral wiggle room? A theory specification | https://doi.org/10.1017/jdm.2024.16
+2024 | 7 | Americans believe in the benevolence of nature, and this belief is not lower in people who have experienced natural disasters | https://doi.org/10.1017/jdm.2023.44
+2024 | 2 | The role of game riskiness on the expectation-cooperation link in social dilemmas and its relations with fear and greed | https://doi.org/10.1017/jdm.2024.21
+2024 | 1 | Sunk cost predictions as theory of mind | https://doi.org/10.1017/jdm.2024.25
+2024 | 5 | Advice taking when the stakes are high: Evidence from a game show | https://doi.org/10.1017/jdm.2024.4
+2024 | 1 | In political judgment contrast is stronger than assimilation, especially when polarization is high | https://doi.org/10.1017/jdm.2024.6
+2024 | 0 | Applying the sour grapes/sweet lemons rationalization to change beliefs and preferences: Reducing public concerns about vaccine safety and enhancing t | https://doi.org/10.1017/jdm.2024.13
+2024 | 1 | Assessing patience and predictivity validity for mixed sign intertemporal choices | https://doi.org/10.1017/jdm.2024.30
+2024 | 2 | The centrality of reasoning in moral judgments: First- and third-party evaluations of cheating | https://doi.org/10.1017/jdm.2024.7
+2024 | 1 | The transition to an established publisher: Annual Report 2023 and looking ahead | https://doi.org/10.1017/jdm.2024.11
+2024 | 3 | Chasing emotional losses: Negative subjective affect is linked to increased risk-seeking behavior both within and between individuals | https://doi.org/10.1017/jdm.2024.29
+2024 | 12 | Evaluating science: A comparison of human and AI reviewers | https://doi.org/10.1017/jdm.2024.24
+2024 | 3 | Judgments and beliefs about climate change: measurement, stability, and behavioral consequences | https://doi.org/10.1017/jdm.2024.33
+2024 | 0 | Can simulated experience be harnessed to help people make investment decisions? | https://doi.org/10.1017/jdm.2024.17

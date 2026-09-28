@@ -75,7 +75,9 @@ def read_dataset(path):
     sub = sub[sub["acc"].isin([0.0, 1.0])]
     if len(sub) == 0:
         return None
-    sub["item"] = sub["stim"] + "|" + sub[design_present].agg("|".join, axis=1) if design_present else sub["stim"]
+    cols_for_item = ["stim"] + design_present
+    key = sub[cols_for_item].astype("string").fillna("NA")
+    sub["item"] = key.agg("|".join, axis=1)
     return sub, design_present
 
 

@@ -1,0 +1,78 @@
+{
+  "n_datasets_examined": 180,
+  "n_datasets_included": 81,
+  "exclusion_reasons": {
+    "missing_columns": 95,
+    "lt8_subjects": 3,
+    "lt2_items_ge3_judges": 1
+  },
+  "n_trials_analysed": 1753204,
+  "median_calibration_slope": 1.5149728789741397,
+  "median_icc_rho": 0.0198045458684847,
+  "median_confidence_sd": 0.3514399914306887,
+  "median_judges_per_item": 32.0,
+  "acc_ew_m3": 0.9260755538498396,
+  "acc_ew_m40": 0.984351695139995,
+  "acc_cw_m3": 0.9290826717859055,
+  "sign_delta": {
+    "mean": 0.0031045486945702446,
+    "ci95": [
+      0.00033763885993100213,
+      0.007073615378243261
+    ],
+    "frac_le0": 0.6296296296296297,
+    "frac_neg": 0.43209876543209874
+  },
+  "loo_brier": {
+    "mean": -0.0008047848863000557,
+    "ci95": [
+      -0.0013073351728498277,
+      -0.000427518627880291
+    ],
+    "frac_le0": 0.8888888888888888,
+    "frac_neg": 0.8888888888888888
+  },
+  "h5_loo_brier": {
+    "n": 81,
+    "beta_coef": -0.00012878060420035468,
+    "beta_se": 0.00015789952220394407,
+    "rho_coef": -0.020372832315948084,
+    "rho_se": 0.00951501269698162
+  },
+  "h5_sign_accuracy": {
+    "n": 81,
+    "beta_coef": 0.002556623214239373,
+    "beta_se": 0.0020516666702142996,
+    "rho_coef": 0.13297325844898658,
+    "rho_se": 0.05837400714699827
+  },
+  "h6": {
+    "loo_brier": {
+      "sign_agreement": 0.8888888888888888,
+      "n_agree": 72,
+      "n": 81,
+      "supported": true
+    },
+    "sign_accuracy": {
+      "sign_agreement": 0.37037037037037035,
+      "n_agree": 30,
+      "n": 81,
+      "supported": false
+    },
+    "criterion": "H6 supported if sign agreement >= 0.60 for at least one measure",
+    "supported": true
+  },
+  "sim": {
+    "n_cells": 48,
+    "frac_negative_sign_cells": 0.10416666666666667,
+    "n_negative_sign_cells": 5,
+    "frac_negative_brier_cells": 1.0,
+    "h3_interior_lambda_cells": 16,
+    "h2_sign_violations": 51,
+    "h2_brier_violations": 34,
+    "h2_total_steps": 384
+  },
+  "sim_phi0_gamma03_mean_brier": 0.0009435300429449,
+  "sim_phi4_gamma03_mean_delta": -0.0062722222222222,
+  "sim_phi0_gamma03_mean_delta": 0.0504472222222222
+}

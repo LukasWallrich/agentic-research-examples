@@ -1,0 +1,100 @@
+2026 | 0 | Within-individual and across-individual variation in a large corpus of conflict tasks | https://doi.org/10.1016/j.cogpsych.2026.101846
+2026 | 0 | Unfolding suppression: statistical learning drives suppression through dynamic attentional states | https://doi.org/10.1016/j.cogpsych.2026.101847
+2026 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(26)00060-5
+2026 | 0 | Implicit and explicit statistical learning in reading: Evidence from a randomized controlled-learning study and computational modeling | https://doi.org/10.1016/j.cogpsych.2026.101835
+2026 | 0 | On the separability of target and distractor processing in conflict tasks | https://doi.org/10.1016/j.cogpsych.2026.101832
+2026 | 0 | The brain's balancing act: Adjusting its neural noise to optimise performance | https://doi.org/10.1016/j.cogpsych.2026.101833
+2026 | 1 | Toddlers show heightened attention to selective distributors | https://doi.org/10.1016/j.cogpsych.2026.101831
+2026 | 0 | The process of object individuation shared across visual and tactile modalities | https://doi.org/10.1016/j.cogpsych.2026.101830
+2026 | 0 | Children use speaker knowledge to learn novel subordinate vs. basic-level nouns | https://doi.org/10.1016/j.cogpsych.2026.101829
+2026 | 0 | Testing the emergentist theory of number perception throughout development | https://doi.org/10.1016/j.cogpsych.2026.101827
+2026 | 0 | Adaptive control in Stroop, Stroop-like, and Simon task types | https://doi.org/10.1016/j.cogpsych.2026.101828
+2026 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(26)00043-5
+2026 | 0 | Sublexical semantic decoding during incidental novel word learning in natural Chinese reading | https://doi.org/10.1016/j.cogpsych.2026.101819
+2026 | 0 | Seeing, hearing, and feeling causation | https://doi.org/10.1016/j.cogpsych.2026.101814
+2026 | 0 | Separating decision and motor contributions to behavioral biases induced by manipulating stimulus probability | https://doi.org/10.1016/j.cogpsych.2026.101818
+2026 | 2 | Congruency drives “conflict adaptation” independent of conflict: Converging evidence from behavior and computational modeling | https://doi.org/10.1016/j.cogpsych.2026.101800
+2026 | 0 | Corrigendum to “Network analyses identify critical factors for facilitating future-oriented decision-making” [Cogn. Psychol. 165 (2026) 101815] | https://doi.org/10.1016/j.cogpsych.2026.101817
+2026 | 0 | The time course of local coherence effects in German: Evidence from self-paced reading times and event-related potentials | https://doi.org/10.1016/j.cogpsych.2026.101816
+2026 | 0 | Effectiveness of a Kalman filter model constrained by efficient coding in explaining the coexistence of repulsive and attractive perceptual biases | https://doi.org/10.1016/j.cogpsych.2026.101804
+2026 | 0 | Network analyses identify critical factors for facilitating future-oriented decision-making | https://doi.org/10.1016/j.cogpsych.2026.101815
+2026 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(26)00028-9
+2026 | 0 | Integration of redundant signals in dynamic multisensory contexts: the principles and computational mechanisms | https://doi.org/10.1016/j.cogpsych.2026.101803
+2026 | 0 | Predictability of trajectory modulates manual tracking: from real-time feedback to internal-model-based control | https://doi.org/10.1016/j.cogpsych.2026.101798
+2026 | 0 | Passive working memory relies on episodic mechanisms for maintenance | https://doi.org/10.1016/j.cogpsych.2026.101802
+2026 | 0 | A single process for deductive and inductive inference? Examining the impact of conclusion typicality and argument validity on immediate inferences | https://doi.org/10.1016/j.cogpsych.2026.101799
+2026 | 0 | Face-like holistic processing in non-face stimuli | https://doi.org/10.1016/j.cogpsych.2026.101801
+2026 | 0 | Anchoring the anchor: judgments of both items assimilate in item-based anchoring | https://doi.org/10.1016/j.cogpsych.2026.101796
+2026 | 1 | Using speed to think about space and time | https://doi.org/10.1016/j.cogpsych.2026.101797
+2026 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(26)00012-5
+2026 | 2 | Counting parts and wholes and the mastery of partitive language | https://doi.org/10.1016/j.cogpsych.2026.101788
+2026 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(26)00004-6
+2025 | 4 | Errors, fast and slow | https://doi.org/10.1016/j.cogpsych.2025.101779
+2025 | 0 | The impact of phonological similarity on production effect | https://doi.org/10.1016/j.cogpsych.2025.101770
+2025 | 1 | Perceiving event structure in brief actions | https://doi.org/10.1016/j.cogpsych.2025.101768
+2025 | 0 | How sampling strategies shape experience-based risky choice | https://doi.org/10.1016/j.cogpsych.2025.101769
+2025 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(25)00062-3
+2025 | 1 | Evaluating three independent-channels models of temporal-order and simultaneity judgment | https://doi.org/10.1016/j.cogpsych.2025.101767
+2025 | 0 | The intelligibility of consonants in American English infant-directed speech | https://doi.org/10.1016/j.cogpsych.2025.101766
+2025 | 4 | The psychophysics of compositionality: Relational scene perception occurs in a canonical order | https://doi.org/10.1016/j.cogpsych.2025.101765
+2025 | 0 | Forest before trees? It depends on not only what you see, but also what you hear | https://doi.org/10.1016/j.cogpsych.2025.101764
+2025 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(25)00049-0
+2025 | 1 | Numerosity adaptation resists filtering: Insights from an illusory contour paradigm | https://doi.org/10.1016/j.cogpsych.2025.101757
+2025 | 1 | Conceptualizing cognitive flexibility: Singular versus modular view – Which one holds up? | https://doi.org/10.1016/j.cogpsych.2025.101755
+2025 | 0 | Natural counting and measuring: The role of linguistic and referential cues in determining which quantity is “More” | https://doi.org/10.1016/j.cogpsych.2025.101756
+2025 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(25)00037-4
+2025 | 0 | Decision making under extinction risk | https://doi.org/10.1016/j.cogpsych.2025.101735
+2025 | 1 | Lossy encoding of distributions in judgment under uncertainty | https://doi.org/10.1016/j.cogpsych.2025.101745
+2025 | 2 | Retrieving past experiences to inform novel decisions through a process of cascading episodic sampling | https://doi.org/10.1016/j.cogpsych.2025.101744
+2025 | 2 | Delay preference in intertemporal choice: Sooner or later OR faster or slower? | https://doi.org/10.1016/j.cogpsych.2025.101732
+2025 | 5 | Processing spatial cue conflict in navigation: Distance estimation | https://doi.org/10.1016/j.cogpsych.2025.101734
+2025 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(25)00027-1
+2025 | 2 | Easy as ABC. Functional-pragmatic factors explain “binding-principle” constraints on pronoun interpretation: Evidence from nine pre-registered rating  | https://doi.org/10.1016/j.cogpsych.2025.101733
+2025 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(25)00014-3
+2025 | 4 | Word order effects in sentence reading | https://doi.org/10.1016/j.cogpsych.2025.101715
+2025 | 4 | Optimal allocation of time in risky choices under opportunity costs | https://doi.org/10.1016/j.cogpsych.2025.101716
+2025 | 0 | Exploring the bounded rationality in human decision anomalies through an assemblable computational framework | https://doi.org/10.1016/j.cogpsych.2025.101713
+2025 | 5 | A position coding model that accounts for the effects of event boundaries on temporal order memory | https://doi.org/10.1016/j.cogpsych.2025.101714
+2025 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(25)00008-8
+2024 | 5 | Updating of information in working memory: Time course and consequences | https://doi.org/10.1016/j.cogpsych.2024.101702
+2024 | 3 | In the United States, children are more likely than adults to condone discrimination | https://doi.org/10.1016/j.cogpsych.2024.101703
+2024 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(24)00078-1
+2024 | 1 | Free time, sharper mind: A computational dive into working memory improvement | https://doi.org/10.1016/j.cogpsych.2024.101701
+2024 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(24)00067-7
+2024 | 0 | Action: the mechanisms of motor control | https://doi.org/10.4324/9781003582885-3
+2024 | 1 | Cognitive psychology: a suitable case for what sort of treatment? | https://doi.org/10.4324/9781003582885-1
+2024 | 0 | Thinking: experiential and information processing approaches | https://doi.org/10.4324/9781003582885-8
+2024 | 5 | Developing the concept of working memory | https://doi.org/10.4324/9781003582885-5
+2024 | 1 | Psycholinguistics: cognitive aspects of human communication | https://doi.org/10.4324/9781003582885-7
+2024 | 1 | Cross-cultural perspectives on cognition | https://doi.org/10.4324/9781003582885-9
+2024 | 30 | Patterns and actions: cognitive mechanisms are content-specific | https://doi.org/10.4324/9781003582885-2
+2024 | 2 | Remembering and understanding | https://doi.org/10.4324/9781003582885-6
+2024 | 633 | Attention and performance | https://doi.org/10.4324/9781003582885-4
+2024 | 5 | Building compressed causal models of the world | https://doi.org/10.1016/j.cogpsych.2024.101682
+2024 | 7 | Doing things efficiently: Testing an account of why simple explanations are satisfying | https://doi.org/10.1016/j.cogpsych.2024.101692
+2024 | 8 | Perceptual inference corrects function word errors in reading: Errors that are not noticed do not disrupt eye movements | https://doi.org/10.1016/j.cogpsych.2024.101691
+2024 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(24)00058-6
+2024 | 20 | Direct lexical control of eye movements in Chinese reading: Evidence from the co-registration of EEG and eye tracking | https://doi.org/10.1016/j.cogpsych.2024.101683
+2024 | 2 | Ethical choice reversals | https://doi.org/10.1016/j.cogpsych.2024.101672
+2024 | 3 | Disentangling the roles of age and knowledge in early language acquisition: A fine-grained analysis of the vocabularies of infant and child language l | https://doi.org/10.1016/j.cogpsych.2024.101681
+2024 | 7 | Recruitment of magnitude representations to understand graded words | https://doi.org/10.1016/j.cogpsych.2024.101673
+2024 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(24)00048-3
+2024 | 17 | How infants predict respect-based power | https://doi.org/10.1016/j.cogpsych.2024.101671
+2024 | 1 | Task imprinting: Another mechanism of representational change? | https://doi.org/10.1016/j.cogpsych.2024.101670
+2024 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(24)00037-9
+2024 | 6 | The fusion point of temporal binding: Promises and perils of multisensory accounts | https://doi.org/10.1016/j.cogpsych.2024.101662
+2024 | 2 | Cognitive complexity explains processing asymmetry in judgments of similarity versus difference | https://doi.org/10.1016/j.cogpsych.2024.101661
+2024 | 4 | Repeated rock, paper, scissors play reveals limits in adaptive sequential behavior | https://doi.org/10.1016/j.cogpsych.2024.101654
+2024 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(24)00029-x
+2024 | 8 | Optimizing competence in the service of collaboration | https://doi.org/10.1016/j.cogpsych.2024.101653
+2024 | 11 | The structure and development of explore-exploit decision making | https://doi.org/10.1016/j.cogpsych.2024.101650
+2024 | 3 | The perceptual timescape: Perceptual history on the sub-second scale | https://doi.org/10.1016/j.cogpsych.2024.101643
+2024 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(24)00018-5
+2024 | 0 | Infants can use temporary or scant categorical information to individuate objects | https://doi.org/10.1016/j.cogpsych.2024.101640
+2024 | 8 | What’s in a sample? Epistemic uncertainty and metacognitive awareness in risk taking | https://doi.org/10.1016/j.cogpsych.2024.101642
+2024 | 3 | No position-specific interference from prior lists in cued recognition: A challenge for position coding (and other) theories of serial memory | https://doi.org/10.1016/j.cogpsych.2024.101641
+2024 | 2 | Anaphoric distance dependencies in visual narrative structure and processing | https://doi.org/10.1016/j.cogpsych.2024.101639
+2024 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0285(24)00004-5
+2024 | 7 | Dual-process modeling of sequential decision making in the balloon analogue risk task | https://doi.org/10.1016/j.cogpsych.2023.101629
+2024 | 18 | A unified account of simple and response-selective inhibition | https://doi.org/10.1016/j.cogpsych.2023.101628
+2024 | 2 | Retrieving effectively from source memory: Evidence for differentiation and local matching processes | https://doi.org/10.1016/j.cogpsych.2023.101617
