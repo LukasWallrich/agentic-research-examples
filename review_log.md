@@ -45,3 +45,70 @@ Source: `reviews/manuscript/agy_answer_r1.txt` (reviewed the first draft).
 | A11 | Minor | Give a concrete example of what b and g mean. | Accepted. Added: for a true value of 100, doubling the anchor raises the estimate by 21% from 50, 17% from 200 and 11% from 500 (numbers computed inline). |
 
 Rejected in part: A1's suggestion that "100% of the items showing significant within-item curvature" used random anchors is incorrect; the one fixed-anchor item with 20 levels also showed negative curvature (S2), which the manuscript reports.
+
+### Reviewer: OpenAI Codex CLI (recommendation: major revision)
+
+Source: `reviews/manuscript/codex_answer_r1.txt`. Codex reviewed the draft that already included the changes made in response to agy (the manuscript text was embedded in the prompt because two earlier codex runs stalled while exploring files).
+
+| # | Severity | Comment | Response |
+|---|---|---|---|
+| X1 | Major | M1R is retained although the observed g lies outside its interval; report a joint check of b and g and call M1R inconclusive. | Accepted. Added a post-hoc joint check (R1a): no M1R replicate produced both b and g inside the observed CIs, compared with 33% of M3 and 4% of M4 replicates. The manuscript now describes M1R as not supported by the within-item data, while reporting that it passed the preregistered rule. |
+| X2 | Major | The across-cell slope compares researcher-chosen items; failing to predict it should not count as decisive against a within-item process model. | Accepted. The H3 results now say that failure on d is weaker evidence than failure on g. The preregistered rule and its outcome are still reported as registered. |
+| X3 | Major | H2 standard errors: give the formula and handle participants who answered under both anchors. | Accepted. The formula is now in the Method. No participant answered under both anchors of any cell (R1d), so the medians are independent. A participant bootstrap within studies gave a similar slope (reported with the caveat that it reflects participant sampling only). |
+| X4 | Major | Scope of the primary inference; report study-specific estimates. | Accepted. Study-specific curvatures are now reported (R1c): negative for Bahník and for the Cologne cathedral item, imprecise for Frech et al., positive for Yoon et al. The abstract and conclusion restrict the claim to random anchors in the observed tasks. |
+| X5 | Major | M2 is constant weight on the log scale; M3/M4 are particular implementations; frame rejections as applying to implementations. | Accepted. The model section now states that the models are specific log-scale implementations. We added an exploratory raw-scale constant-weight model (E6): it predicts the pooled curvature but a rising elasticity above the true value, which the data contradict. The Discussion now speaks of implementations, and M3 is attributed to Mussweiler & Strack (2001) and Epley & Gilovich (2006) with the note that the latter proposed it for self-generated anchors. |
+| X6 | Major | Predictive intervals depend on parameter grids, sampling and assumptions; 300 relaxed draws do not show that no match exists; qualify "too steep". | Accepted. The Method states that parameters were drawn uniformly from accepted grid points; the relaxed-calibration text now says such settings are rare, not absent; the "too steep" statement is qualified as relative to the calibrated ranges. The raw-scale recalibration (S1) and the limitation on calibration remain. We did not run a further grid-weighting sensitivity analysis: the shape predictions of M1, M2, M3 and M4 follow from model structure, and the limitation is stated. |
+| X7 | Minor | b is the elasticity at the true value, not an average; local elasticity is not the share of the gap carried into the estimate. | Accepted; definitions rewritten and the "carried 31% of its log distance" phrasing removed. |
+| X8 | Minor | Report near and far slopes with intervals, not only their difference. | Accepted (R1b): near .31 [.25, .36], far .10 [.04, .17]. |
+| X9 | Minor | Disclose in the manuscript that operating characteristics are approximations and that two safeguards were in the code but not the text. | Accepted; both are now in the Method. The repository link will be added before submission (placeholder in the Data availability statement). |
+| X10 | Minor | The Chicago responses were valid answers in millions; say the whole cell was excluded and run a sensitivity check after conversion; distinguish design and analysed counts. | Accepted. The Method now says the whole cell was excluded because of inconsistent units; the converted-cell sensitivity analysis (R1e) gave a similar slope; the Method labels the design counts as "before exclusions". |
+| X11 | Minor | Figure 3 caption: "precision" vs inverse-variance weight; reference formatting errors (HTML tags, Lieder author). | Accepted. Caption now says point area is proportional to 1/SE; the bibliography builder strips HTML tags and fixes the author entry. |
+
+### Citation-support check (Claude subagent)
+
+Source: `manuscript/citation_check.md` (57 claim-citation pairs; none unsupported, 12 partly supported). All 12 were addressed:
+
+| # | Issue | Response |
+|---|---|---|
+| Q1 | Yoon et al. (2021) anchors were participants' own height or age, not random. | Accepted; described accurately in the Method, Table 1 caption and Limitations; the OpAQ coding was kept because it was preregistered. |
+| Q2 | Imhoff & Barker's Cologne item: authors call the anchors random and found a linear raw-scale relation. | Accepted; both points reported, with the implication that this item alone cannot discriminate raw-scale averaging (led to E6). |
+| Q3 | Epley & Gilovich proposed the plausible-boundary rule for self-generated anchors only. | Accepted; M3 now cites Mussweiler & Strack (2001) and states the extension. |
+| Q4 | Strack & Mussweiler (1997) did not report a larger raw shift; implausible anchors were "at least as effective" in standardised estimates. | Accepted; rephrased. |
+| Q5 | Mussweiler & Strack (2001) did not test that implausible-anchor estimates were no higher than plausible-high ones. | Accepted; rephrased to their finding that very different implausible anchors produced similar estimates. |
+| Q6 | Schley & Weingarten's flag also covered "implausible" anchors. | Accepted; rephrased. |
+| Q7 | Lieder et al. fitted a five-level demonstration with linear bias. | Accepted; stated. |
+| Q8 | Turner & Schley's inverted U is between extremity and the size of the shift. | Accepted; rephrased. |
+| Q9 | Bahník's objects were lengths, heights and distances. | Accepted. |
+| Q10 | Lakens (2017) supports the procedure, not the bounds; 95% interval corresponds to α = .025. | Accepted; rephrased. |
+| Q11 | Chapman & Johnson quote checked against the abstract only; add page. | Accepted; page 223 added. Full text not available (paywall); the quote is verbatim from the abstract. |
+| Q12 | The Weber et al. corrigendum reference was missing or wrong. | Accepted; described in words as an unpublished 2026 corrigendum on the OpAQ project page. |
+
+## Round 2: Manuscript review of the revised version
+
+### Reviewer: OpenAI Codex CLI (recommendation: major revision)
+
+Source: `reviews/manuscript/codex_answer_r2.txt`. Codex judged A2, A4, A5, X2, X3, X4 and X6 resolved, A1 largely resolved, and A3, X1 and X5 reported more fairly but needing interpretive changes.
+
+| # | Severity | Comment | Response |
+|---|---|---|---|
+| X2-1 | Major | The conclusions describe the finding as a smaller "share of the distance between belief and anchor", but the measure is a local elasticity relative to the true value; beliefs were not measured. | Accepted. The abstract, Discussion opening and Conclusion now state the finding as a weaker response of estimates to changes in the anchor when the anchor is far from the true value. "Share of the gap" language is removed from the findings (it remains only in the description of how model M1 works). |
+| X2-2 | Major | The conclusion says the result "supports" plausibility-based accounts, although the calibrated M3/M4 predictions miss ρ and the across-cell slope; no model explains the combined results. | Accepted. The Conclusion now says the result "is consistent with" plausibility-limited accounts and states that no calibrated model explained the combined results; the Discussion calls plausibility-limited influence "one possible account rather than an established mechanism". |
+| X2-3 | Minor | State the exact H3 rule and why either curvature measure can qualify a model. | Accepted; the rule and its rationale (ρ lets a model with mis-calibrated anchoring strength pass on shape) are stated in the Results and in the Table 3 caption. |
+| X2-4 | Minor | Specify the MAD convention. | Accepted; the Method states that the MAD is scaled by 1.4826 (R default). |
+| X2-5 | Minor | "All 15 cells" item-by-item result sits uneasily beside the positive Yoon et al. curvature. | Accepted; the 15 cells are named and the difference in specification is explained. |
+| X2-6 | Minor | Table 2 calls b "average elasticity"; repository link is a placeholder. | Heading corrected. The repository link is left as a placeholder: the goal forbids publishing or creating accounts, so the repository will be made public by the author before any submission. |
+
+### Reviewer: Gemini 3.8 Flash via agy (recommendation: minor revision; no major issues remain)
+
+Source: `reviews/manuscript/agy_answer_r2.txt`. Agy judged every round-1 major issue adequately resolved (A5 substantially).
+
+| # | Severity | Comment | Response |
+|---|---|---|---|
+| A2-1 | Minor | Table 1 truncates the Cheops item (greedy regex) and lacks units. | Accepted; regex fixed, Unit column added, item capitalisation and unit labels harmonised. |
+| A2-2 | Minor | "Average elasticity" survives in Table 2 and one Results sentence. | Accepted; both corrected. |
+| A2-3 | Minor | The level-criteria sentence implies b lay inside only M1R's and M4's intervals. | Accepted; the sentence now lists the models whose interval contains b and, separately, those that contain both level statistics. |
+| A2-4 | Minor | Table 3's "Retained" column hides that M3/M4 passed on g and M1R failed on g. | Accepted; the Table 3 caption now states this explicitly. |
+| A2-5 | Minor | Post-exclusion participant count missing from the Results. | Accepted; added (1,491). |
+| A2-6 | Minor | E5 omits M1R's two across-cell matches. | Accepted; added. |
+| A2-7 | Minor | Hard-coded pre-exclusion count in the Limitations. | Accepted; now computed from the post-exclusion table. |
+| A2-8 | Minor | Literal "&amp;" in a journal name. | Accepted; the bibliography builder now converts it. |

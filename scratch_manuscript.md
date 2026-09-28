@@ -16,14 +16,14 @@ from one study with random anchors for lengths and heights), the
 log-scale elasticity of estimates with respect to anchors averaged 0.31
 and fell as anchors moved away from the true value (curvature -0.041,
 95% CI \[-0.058, -0.023\]). This contradicts anchor-and-adjust with a
-fixed number of adjustments and constant-weight integration, and matches
-the direction predicted by plausibility-based models, which however
-predicted a steeper decline. Across 128 two-anchor cells from 40 studies
-with researcher-chosen anchors, the anchoring index did not change
-detectably with extremity (slope 0.050, \[-0.013, 0.113\]). No model
-reproduced both patterns; a resource-rational variant passed the
-preregistered checks only because its predictions were very wide. Within
-items, extreme anchors pull estimates by a smaller share of their
+fixed number of adjustments and constant-weight integration on the log
+scale, and matches the direction predicted by plausibility-based models,
+which however predicted a steeper decline. Across 128 two-anchor cells
+from 40 studies with researcher-chosen anchors, the anchoring index did
+not change detectably with extremity (slope 0.050, \[-0.013, 0.113\]).
+No model reproduced both patterns; a resource-rational variant passed
+the preregistered checks only because its predictions were very wide.
+Within items, extreme anchors pull estimates by a smaller share of their
 distance, at least for random anchors; whether this holds for
 deliberately chosen anchors remains open.
 
@@ -58,31 +58,32 @@ where they can be tested against each other.
 Experiments that varied anchor extremity have produced mixed results.
 Chapman & Johnson (1994) found that “implausibly extreme anchors had a
 proportionally smaller effect than anchors close to the expected value”
-in lottery valuations. Strack & Mussweiler (1997) found that implausible
-anchors produced a larger raw shift in estimates than plausible ones.
-When implausible anchors were placed far beyond the plausible range,
-estimates under them were no higher than estimates under a plausible
-high anchor (Mussweiler & Strack, 2001), and Wegener et al. (2001) found
-that very extreme anchors had smaller effects than moderate ones. These
-studies compared two to four anchor levels, mostly for a handful of
-items. The most fine-grained test so far used a perceptual task: Imhoff
-& Barker (2023, Study 2) showed participants dot patterns of about 500
-dots next to standards labelled with their exact number of dots, which
-differed from the target by up to 400 dots in 20-dot steps. Estimates
-were drawn towards these symbolic anchors, but the pull levelled off
-once the anchor differed from the target by more than about 300 dots.
+\[p. 223\] in lottery valuations. Strack & Mussweiler (1997) found that
+implausible anchors were at least as effective as plausible ones in
+standardised estimates. Two implausible high anchors that differed
+greatly (e.g., 214 and 271 years for Gandhi’s age at death) produced
+similar estimates (Mussweiler & Strack, 2001), and Wegener et al. (2001)
+found that very extreme anchors had smaller effects than moderate ones.
+These studies compared two to four anchor levels, mostly for a handful
+of items. The most fine-grained test so far used a perceptual task:
+Imhoff & Barker (2023, Study 2) showed participants dot patterns of
+about 500 dots next to standards labelled with their exact number of
+dots, which differed from the target by up to 400 dots in 20-dot steps.
+Estimates were drawn towards these symbolic anchors, but the pull
+levelled off once the anchor differed from the target by more than about
+300 dots.
 
 The two recent meta-analyses reach different conclusions. Using the Open
 Anchoring Quest (OpAQ) data, Röseler & Schütz (2022) found that Hedges’
 *g* increased with the relative distance between anchor and true value
 and concluded against the prediction that extreme anchors produce
 smaller effects. Schley & Weingarten (2026) coded extremity as a binary
-flag for anchors that the original authors described as extreme and
-found no difference in effect size. Barrera-Lemarchand et al. (2024)
-modelled the anchored crowd mean as a weighted average of anchor and
-crowd mean, with a weight that decays exponentially with the distance
-between anchor and truth, and found that this weight fell with distance
-across 30 percentage questions.
+flag, mainly for anchors that the original authors described as extreme
+or implausible, and found no difference in effect size.
+Barrera-Lemarchand et al. (2024) modelled the anchored crowd mean as a
+weighted average of anchor and crowd mean, with a weight that decays
+exponentially with the distance between anchor and truth, and found that
+this weight fell with distance across 30 percentage questions.
 
 These results are hard to compare because they measure anchor influence
 in different units. A standardised mean difference between high- and
@@ -96,14 +97,17 @@ captured this with the anchoring index, the difference between median
 estimates under high and low anchors divided by the difference between
 the anchors, and Röseler & Schütz (2022) called for such a unitless
 measure “to formalize the relationship between anchor distance and
-adjustment strength”.
+adjustment strength” (Röseler & Schütz, 2022, p. 34).
 
 ## Process models and their predictions
 
 We consider five process models. Each maps an anchor and a belief onto
 an estimate, and each implies a shape for the relation between anchor
 extremity and proportional pull
-(<a href="#fig-models" class="quarto-xref">Figure 1</a>).
+(<a href="#fig-models" class="quarto-xref">Figure 1</a>). The models are
+specific formal implementations, all defined on the log scale of the
+estimated quantity; a test of one of them is a test of that
+implementation, not of every version of the theory that inspired it.
 
 In *anchor-and-adjust with a fixed number of adjustments* (M1), people
 start at the anchor and adjust towards their belief in a limited number
@@ -133,12 +137,16 @@ In *constant-weight integration* (M2), the estimate is a weighted
 average of anchor and belief with a fixed weight. This is the simplest
 version of the anchor integration model (Turner & Schley, 2016), and in
 log units it implies a constant proportional pull. It is the null model
-for shape.
+for shape. A constant weight on the raw scale would instead imply a
+declining log-scale elasticity for anchors below the belief and a rising
+one above it; we examine this variant in an exploratory analysis.
 
 In *adjustment to the plausible boundary* (M3), people accept anchors
 that lie inside the range of values they find plausible and adjust from
 implausible anchors only until they reach the edge of that range (Epley
-& Gilovich, 2006). Beyond the boundary the estimate stops moving, so the
+& Gilovich, 2006; Mussweiler & Strack, 2001). Epley & Gilovich (2006)
+proposed this stopping rule for self-generated anchors; M3 applies it to
+provided anchors. Beyond the boundary the estimate stops moving, so the
 proportional pull falls towards zero.
 
 In *plausibility-discounted integration* (M4), the anchor’s weight
@@ -173,11 +181,13 @@ Method).
 
 The models also include a no-anchoring baseline (M0). Lieder et
 al. derived that bias grows linearly with anchor distance when the
-number of adjustments is fixed and showed how the optimal number of
-adjustments depends on distance, but did not test how the anchoring
-index varies with extremity. Turner & Schley (2016) built an inverted U
-between extremity and anchor influence into their model “for simplicity”
-and tested it with one anchor per item.
+number of adjustments is fixed, showed how the optimal number of
+adjustments depends on distance, and fitted a five-level anchoring
+demonstration in which bias rose linearly with the anchor, but did not
+examine whether proportional influence changes for implausibly extreme
+anchors. Turner & Schley (2016) built an inverted U between anchor
+extremity and the size of the shift in estimates into their model “for
+simplicity” and tested it with one anchor per item.
 
 ## The present study
 
@@ -254,19 +264,22 @@ from each participant’s own unanchored estimates. Two sets were formed
 from these estimates.
 
 - **Within-item set** (primary): item-study cells with at least three
-  distinct anchor values. It contains 20 cells from 4 studies (7,952
-  estimates, 1,492 participants). Fifteen cells used random anchors: 13
-  general-knowledge items from Bahník (2021), in which each participant
-  compared 13 random anchors between 1 and 1,000 to 13 lengths and
-  heights, and two items from Yoon et al. (2021). Five cells used fixed
-  anchors: four items with 10 high anchor levels each from unpublished
-  data by Frech et al. (2021), contributed to OpAQ, and one item (the
-  height of Cologne cathedral) with 20 anchor levels from a
-  supplementary anchoring task in Imhoff & Barker (2023, Study 2).
+  distinct anchor values. Before exclusions, it contains 20 cells from 4
+  studies (7,952 estimates, 1,492 participants). OpAQ codes 15 cells as
+  using random anchors: 13 general-knowledge items from Bahník (2021),
+  in which each participant compared 13 random anchors between 1 and
+  1,000 with 13 lengths, heights and distances, and two items from Yoon
+  et al. (2021), in which the anchors were participants’ own height or
+  age. OpAQ codes five cells as using fixed anchors: four items with 10
+  high anchor levels each from unpublished data by Frech et al. (2021),
+  contributed to OpAQ, and one item (the height of Cologne cathedral)
+  with 20 anchor levels from a supplementary task in Imhoff & Barker
+  (2023, Study 2), whose authors describe these anchors as random. We
+  followed the OpAQ coding, as preregistered.
 - **Across-cell set** (secondary): cells with fixed or relevant anchors,
   exactly one low and one high anchor value, a log ratio of at least
-  0.25 between them, and at least 10 estimates per anchor. It contains
-  129 cells from 40 studies (24,147 estimates).
+  0.25 between them, and at least 10 estimates per anchor. Before
+  exclusions, it contains 129 cells from 40 studies (24,147 estimates).
 
 <a href="#tbl-cells" class="quarto-xref">Table 1</a> describes the
 within-item cells. OpAQ labels two of the source studies differently
@@ -278,7 +291,9 @@ Barker, 2022, Study 2” is a supplementary task in Imhoff & Barker
 
 Table 1: The 20 within-item cells (after exclusions). Anchor levels are
 distinct anchor values; the range of x is the log ratio of anchor to
-true value.
+true value. Anchor type follows the OpAQ codes; the anchors of the two
+Yoon et al. items were participants’ own height or age, and Imhoff and
+Barker describe their anchors as random.
 
 <div class="cell-output-display">
 
@@ -320,15 +335,23 @@ elasticity of .5 means that doubling the anchor multiplies the estimate
 by about 1.41.
 
 In the within-item set we modelled *y* = *a*<sub>cell</sub> + *b*·*x* +
-*g*·*x*\|*x*\|. Here *b* is the average elasticity at the true value,
-and the curvature *g* describes how the local elasticity (*b* +
-2*g*\|*x*\|) changes as the anchor moves away from the true value in
-either direction. We also report the relative curvature ρ = *g*/*b*,
-which does not depend on the overall strength of anchoring. In the
-across-cell set we computed each cell’s log anchoring index, the
-difference between the median *y* under the high and the low anchor
-divided by the log ratio of the anchors, and each cell’s extremity, the
-mean absolute log distance of its two anchors from the true value.
+*g*·*x*\|*x*\|. Here *b* is the fitted local elasticity at the true
+value (for an average cell), and the curvature *g* describes how the
+local elasticity, *b* + 2*g*\|*x*\|, changes as the anchor moves away
+from the true value in either direction. The local elasticity is the
+proportional change in the estimate per proportional change in the
+anchor at a given anchor value; it is not the share of the whole
+distance between belief and anchor that ends up in the estimate. We also
+report the relative curvature ρ = *g*/*b*, which does not depend on the
+overall strength of anchoring. In the across-cell set we computed each
+cell’s log anchoring index, the difference between the median *y* under
+the high and the low anchor divided by the log ratio of the anchors, and
+each cell’s extremity, the mean absolute log distance of its two anchors
+from the true value. The standard error of a median was approximated as
+1.2533 × MAD / √*n*, and the standard error of the index as the square
+root of the summed squared standard errors of the two medians, divided
+by the log ratio of the anchors. No participant answered under both
+anchors of the same cell, so the two medians are independent.
 
 ## Model predictions
 
@@ -351,8 +374,8 @@ analysis. The number of accepted grid points per model was M1: 24; M1R:
 56; M2: 30; M3: 11; M4: 250. We then simulated each model on the exact
 OpAQ designs (the same anchors, true values, participants and cell
 sizes; 200 replicates for M0 and 500 for each other model), drawing
-parameters from the accepted set, and passed each simulated dataset
-through the estimators used for the observed data.
+parameters uniformly from the accepted grid points, and passed each
+simulated dataset through the estimators used for the observed data.
 <a href="#tbl-predictions" class="quarto-xref">Table 2</a> lists the
 resulting predictions.
 
@@ -401,12 +424,16 @@ confidence interval for *b* lay above zero (gate G1). We then classified
 the curvature, in this order, as *flat* if the confidence interval for ρ
 lay within the equivalence bounds ±0.05, as *rising* if the interval for
 *g* lay above zero, as *falling* if it lay below zero, and otherwise as
-inconclusive. The bounds sit just below the smallest relative curvature
-in the 95% predictive interval of M1, M3 and M4 and far outside that of
-M2 (Lakens, 2017). Applied to the simulated replicates, this rule
-labelled data generated by M1 as rising in more than 99% of replicates,
-data from M3 and M4 as falling in more than 99%, data from M2 as flat in
-more than 99%, and data from M0 as failing the gate in all replicates.
+inconclusive. Using a 95% interval for this check amounts to an
+equivalence test at α = .025 (Lakens, 2017); the bounds sit just below
+the smallest relative curvature in the 95% predictive interval of M1, M3
+and M4 and far outside that of M2. Applied to the simulated replicates,
+this rule labelled data generated by M1 as rising in more than 99% of
+replicates, data from M3 and M4 as falling in more than 99%, data from
+M2 as flat in more than 99%, and data from M0 as failing the gate in all
+replicates. These operating characteristics are approximations: they use
+normal critical values, always the full random-effects structure, and a
+simplified version of gate G2.
 
 **H2 (secondary).** We regressed the cell-level log anchoring index on
 extremity in a multilevel meta-regression with random intercepts for
@@ -440,12 +467,17 @@ simulated one; we replaced it with the same inverse-variance weighted
 mean. This affects only level criteria, which do not decide model
 survival. Second, the preregistration described one M1R parameter
 incorrectly; the code, and therefore the predictions, were correct.
-Third, we made code changes that altered no reported number. Fourth, we
-clarified that the relative-curvature interval uses a normal critical
-value. One cell was removed by the preregistered gross-error rule
-because its participants answered in millions while its anchors and true
-value were raw counts. All analyses labelled exploratory or sensitivity
-were added after the preregistration.
+Third, we made code changes that altered no reported number, and we
+disclose two numerical safeguards that were in the preregistered code
+but not in its text (a floor for the MAD and the exclusion of cells with
+zero standard error in one robustness analysis); neither affected the
+analysed data. Fourth, we clarified that the relative-curvature interval
+uses a normal critical value. One cell (Shanks et al., 2020, Study 3,
+the population of Chicago) was excluded in full: its participants
+answered in millions, while its anchors and true value were raw counts,
+so all of its responses exceeded the preregistered gross-error limit.
+All analyses labelled exploratory or sensitivity were added after the
+preregistration.
 
 # Results
 
@@ -457,17 +489,16 @@ errors, 870 of them from the cell with the unit mismatch.
 
 ## Within items, the proportional pull falls with extremity (H1)
 
-Anchoring was clearly present in the within-item set: the average
-elasticity was *b* = 0.307, 95% CI \[0.249, 0.365\], so doubling the
-anchor raised estimates by about 24% near the true value. The curvature
-was negative, *g* = -0.041, \[-0.058, -0.023\], *t*(9.1) = -5.22, *p* \<
-.001, with a relative curvature of ρ = -0.13, \[-0.18, -0.09\]. By the
-preregistered rule, the elasticity *falls* with extremity. At the true
-value an anchor carried about 31% of its log distance into the estimate.
-The fitted local elasticity *b* + 2*g*\|*x*\| was 0.23 for anchors one
-log unit (a factor of 2.7) from the true value and 0.14 for anchors two
-log units (a factor of 7.4) away, about half its value at the true
-value. For a quantity whose true value is 100, the fitted curve
+Anchoring was clearly present in the within-item set: the local
+elasticity at the true value was *b* = 0.307, 95% CI \[0.249, 0.365\],
+so doubling the anchor raised estimates by about 24% near the true
+value. The curvature was negative, *g* = -0.041, \[-0.058, -0.023\],
+*t*(9.1) = -5.22, *p* \< .001, with a relative curvature of ρ = -0.13,
+\[-0.18, -0.09\]. By the preregistered rule, the elasticity *falls* with
+extremity. The fitted local elasticity *b* + 2*g*\|*x*\| was 0.23 for
+anchors one log unit (a factor of 2.7) from the true value and 0.14 for
+anchors two log units (a factor of 7.4) away, about half its value at
+the true value. For a quantity whose true value is 100, the fitted curve
 (ignoring item-specific terms) implies that doubling the anchor from 50
 to 100 raises the median estimate by 21%, doubling it from 200 to 400 by
 17%, and doubling it from 500 to 1,000 by 11%. Because the curvature
@@ -533,10 +564,10 @@ alt="Two scatter plots against anchor extremity. Left: the log anchoring index p
 Figure 3: Across-cell relation between anchor extremity and anchor
 influence. (A) Log anchoring index per cell with the preregistered
 meta-regression line and 95% confidence band. (B) Hedges’ *g* per cell
-(exploratory). Point area is proportional to precision (1/SE). The
-standardised effect rises with extremity, while the proportional index
-does not change detectably. Figure produced with R code written by an AI
-system (see Method).
+(exploratory). Point area is proportional to 1/SE of each cell’s
+estimate. The standardised effect rises with extremity, while the
+proportional index does not change detectably. Figure produced with R
+code written by an AI system (see Method).
 
 </div>
 
@@ -556,7 +587,14 @@ mean that M1R predicted the data well: the observed *g* lay outside its
 interval, and M1R passed only because its interval for ρ was very wide
 (\[-0.37, 1.39\]), mainly because some of its parameter settings produce
 almost no anchoring. On the within-item curvature alone, M3 and M4 were
-the models whose intervals contained the observed value.
+the models whose intervals contained the observed value. In a post-hoc
+joint check, 33% of M3’s and 4% of M4’s replicates produced both *b* and
+*g* inside the observed confidence intervals, compared with none for M1,
+M1R and M2; M1R is therefore best described as not supported by the
+within-item data. The across-cell slope compares items whose anchors
+were chosen by researchers, so a model’s failure to predict it is weaker
+evidence against that model than a failure to predict the within-item
+curvature.
 
 <div id="tbl-h3">
 
@@ -592,21 +630,23 @@ that retained the random-anchor data. Median regression without the
 gross-error rule gave *g* = -0.059, \[-0.075, -0.041\]. Replacing the
 curvature term by separate slopes for near and far anchors showed that
 the slope for anchors more than one log unit from the true value
-differed from the slope near the true value by -0.21, \[-0.28, -0.13\].
-Without Bahník (2021) the estimate was similar but very imprecise, *g* =
--0.045, \[-0.36, 0.27\].
+differed from the slope near the true value by -0.21, \[-0.28, -0.13\];
+the slope was 0.31, \[0.25, 0.36\], near the true value and 0.10,
+\[0.04, 0.17\], further away, so far anchors still pulled estimates, but
+less (both reported post hoc). Without Bahník (2021) the estimate was
+similar but very imprecise, *g* = -0.045, \[-0.36, 0.27\].
 
 The across-cell slope stayed positive and imprecise in most checks: with
 design covariates, *d* = 0.044, \[-0.021, 0.108\]; with the largest
 anchor distance as the extremity measure, 0.035, \[-0.009, 0.079\]; with
 the log ratio of the anchors, 0.017, \[-0.014, 0.049\]. Without Weber et
 al. (2021), a study from the OpAQ team whose item coding may be affected
-by item mix-ups that a 2026 corrigendum reported for a related
-publication, the slope was 0.065, \[0.006, 0.124\], the only check in
-which the interval excluded zero. The raw-scale anchoring index, which
-the preregistration designated as descriptive because a constant
-log-scale weight does not imply a constant raw-scale index, gave -0.008,
-\[-0.077, 0.062\].
+by item mix-ups that an unpublished 2026 corrigendum reported for a
+related publication, the slope was 0.065, \[0.006, 0.124\], the only
+check in which the interval excluded zero. The raw-scale anchoring
+index, which the preregistration designated as descriptive because a
+constant log-scale weight does not imply a constant raw-scale index,
+gave -0.008, \[-0.077, 0.062\].
 
 ## Exploratory analyses
 
@@ -643,12 +683,39 @@ relative to people’s uncertainty.
 *Relaxed calibration.* To check whether the model failures stem from the
 calibration to Jacowitz and Kahneman’s index, we drew 300 parameter sets
 per model from wide ranges without calibration and simulated each on the
-OpAQ designs. No parameter set of any model reproduced the observed *b*,
-*g*, *d* and mean index jointly (all four inside their observed 95%
-confidence intervals). Within-item *b* and *g* together were reproduced
-by 24 of 300 M4 draws, 9 M1R draws and 7 M3 draws, and by no M1 or M2
-draw; the across-cell *d* and mean index together were reproduced by 37
-M2 draws and 11 M1 draws, and by no M3 or M4 draw.
+OpAQ designs. None of these draws reproduced the observed *b*, *g*, *d*
+and mean index jointly (all four inside their observed 95% confidence
+intervals); with 300 draws per model, this shows that such parameter
+settings are rare, not that none exist. Within-item *b* and *g* together
+were reproduced by 24 of 300 M4 draws, 9 M1R draws and 7 M3 draws, and
+by no M1 or M2 draw; the across-cell *d* and mean index together were
+reproduced by 37 M2 draws and 11 M1 draws, and by no M3 or M4 draw.
+
+*Constant weight on the raw scale.* M2 assumes a constant weight on the
+log scale. We also simulated a constant weight on the raw scale (the
+estimate is a weighted average of anchor and belief in raw units;
+weights drawn from .30 to .60; 300 replicates). Passed through the H1
+estimator, this model predicted a negative pooled curvature, *g* =
+-0.059, \[-0.084, -0.034\], an interval that contains the observed
+value, because on the log scale raw averaging flattens the response to
+anchors below the belief. It predicted opposite curvatures on the two
+sides of the true value, however: negative below (-0.054, \[-0.077,
+-0.032\]) and positive above (0.134, \[0.101, 0.165\]). The observed
+curvature above the true value was negative (-0.054), which contradicts
+raw-scale constant weighting. The preregistered pooled test alone would
+not have ruled out this model.
+
+*Study-specific estimates.* The curvature was negative in Bahník (2021),
+*g* = -0.035, \[-0.046, -0.024\], and in the Cologne cathedral item of
+Imhoff & Barker (2023), -0.089, \[-0.148, -0.031\]; it was imprecise in
+Frech et al. (2021), -0.083, \[-0.32, 0.15\], and positive in the two
+items of Yoon et al. (2021), whose anchors were participants’ own height
+or age, 0.093, \[0.021, 0.166\]. Imhoff & Barker (2023) reported a
+linear relation between anchor and estimate for the Cologne cathedral
+item on the raw scale; a linear raw-scale relation also produces a
+declining log-scale elasticity for anchors below the belief, so this
+item alone does not discriminate between log-scale plausibility models
+and raw-scale averaging.
 
 ## Sensitivity analyses
 
@@ -676,7 +743,11 @@ item with 20 anchor levels (the supplementary task of Imhoff & Barker,
 With study-clustered robust standard errors, *d* = 0.050, \[-0.048,
 0.148\]. The ten most precise cells carried 61% of the inverse-variance
 weight; without them, *d* = 0.033, \[-0.032, 0.099\]. Leaving out one
-study at a time gave slopes between 0.026 and 0.070.
+study at a time gave slopes between 0.026 and 0.070. Resampling
+participants within studies gave a median slope of 0.044 (this interval,
+\[0.022, 0.069\], reflects participant sampling only, not variation
+between items), and converting the Chicago responses from millions and
+retaining that cell gave *d* = 0.047, \[-0.017, 0.111\].
 
 # Discussion
 
@@ -691,24 +762,27 @@ decline, and its point estimate leaned the other way.
 
 ## What the within-item result rules out
 
-The negative curvature contradicts two simple accounts.
+The negative curvature contradicts two simple implementations.
 Anchor-and-adjust with a fixed number of steps predicts that far anchors
 keep more of their distance, because a bounded number of bounded steps
 cannot correct a large gap; the data show the reverse. Constant-weight
-integration, the simplest version of the anchor integration model,
-predicts no change in proportional pull; it too is contradicted. The
-accounts that predict a decline share one feature: the anchor’s
-influence is limited by how plausible it is. This holds for adjustment
-that stops at the edge of the plausible range (Epley & Gilovich, 2006),
-for integration that discounts implausible anchors (Turner & Schley,
-2016; Wegener et al., 2001), and for a resource-rational agent who
-invests more adjustments when the anchor is far off (Lieder et al.,
-2018). The result fits earlier experiments with few anchor levels in
-which implausible anchors had proportionally smaller effects (Chapman &
-Johnson, 1994; Mussweiler & Strack, 2001; Wegener et al., 2001), the
-distance-decaying anchoring weight of Barrera-Lemarchand et al. (2024),
-and the levelling-off of assimilation to symbolic anchors in dot
-estimation (Imhoff & Barker, 2023). It extends these findings to
+integration on the log scale predicts no change in proportional pull; it
+too is contradicted. Constant weighting on the raw scale predicts the
+observed pooled curvature, but also a rising elasticity above the true
+value, which the exploratory side-specific estimates contradict. The
+implementations that predict a decline on both sides share one feature:
+the anchor’s influence is limited by how plausible it is. This holds for
+adjustment that stops at the edge of the plausible range (Epley &
+Gilovich, 2006; Mussweiler & Strack, 2001) and for integration that
+discounts implausible anchors (Turner & Schley, 2016; Wegener et al.,
+2001). The resource-rational variant can also produce a decline, but its
+calibrated versions did not reproduce the observed combination of
+elasticity and curvature. The result fits earlier experiments with few
+anchor levels in which implausible anchors had proportionally smaller
+effects (Chapman & Johnson, 1994; Mussweiler & Strack, 2001; Wegener et
+al., 2001), the distance-decaying anchoring weight of Barrera-Lemarchand
+et al. (2024), and the levelling-off of assimilation to symbolic anchors
+in dot estimation (Imhoff & Barker, 2023). It extends these findings to
 general-knowledge magnitudes, to anchors far outside the plausible
 range, and to a proportional outcome. In a dot-estimation task with
 anchors 35% or 70% away from the true value, the more distant anchors
@@ -716,12 +790,14 @@ produced larger estimation errors (Mayer & Rebholz, 2024); a larger
 absolute effect is compatible with a declining proportional pull, so the
 two findings do not conflict.
 
-The decline was smaller than M3 and M4 predicted. Their relative
-curvature intervals lay below the observed value, which means that far
-anchors still pulled estimates more than a hard plausibility boundary or
-a steep plausibility discount allows. A mixture in which the weight of
-an anchor falls gradually but does not vanish could describe this. The
-data do not identify such a model, and we did not test one.
+Relative to the overall strength of anchoring, the decline was smaller
+than the calibrated versions of M3 and M4 predicted: their intervals for
+ρ lay below the observed value, and far anchors still had a positive
+slope. Far anchors thus pulled estimates more than a hard plausibility
+boundary or a steep plausibility discount allows, at least within the
+calibrated parameter ranges. A mixture in which the weight of an anchor
+falls gradually but does not vanish could describe this. The data do not
+identify such a model, and we did not test one.
 
 ## The across-cell pattern
 
@@ -790,14 +866,19 @@ reflects the width of its predictions more than a close fit. Formal
 tests of resource-rational anchoring need independent measures of the
 time cost and of people’s uncertainty.
 
-Fourth, OpAQ harmonises data from many studies, and harmonisation can
-introduce errors. We found one item whose responses were recorded in
-different units from its anchors and true value, and a corrigendum to a
-related publication suggests that the item coding of another study may
-contain errors. Our rules removed the first; excluding the second made
-the across-cell slope positive and significant. We used only positive
-ratio-scale quantities with open response scales, so the results do not
-speak to dates, percentages, bounded scales or preferences.
+Fourth, OpAQ harmonises data from many studies, and its codes do not
+always match the original designs: the two items of Yoon et al. (2021)
+used participants’ own height or age as anchors, and the anchors of the
+Cologne cathedral item were described by its authors as random.
+Harmonisation can also introduce errors. We found one item whose
+responses were recorded in different units from its anchors and true
+value, and an unpublished 2026 corrigendum, posted on the OpAQ project
+page for a related publication by the same group, suggests that the item
+coding of another study (Weber et al., 2021) may contain errors. Our
+rules removed the first; excluding the second made the across-cell slope
+positive and significant. We used only positive ratio-scale quantities
+with open response scales, so the results do not speak to dates,
+percentages, bounded scales or preferences.
 
 ## Conclusion
 
@@ -874,8 +955,8 @@ wisdom of crowds. *Psychological Science*, *35*(8), 872–886.
 <div id="ref-bates2015" class="csl-entry">
 
 Bates, D., Mächler, M., Bolker, B., & Walker, S. (2015). Fitting linear
-mixed-effects models using \<b\>lme4\</b\>. *Journal of Statistical
-Software*, *67*(1). <https://doi.org/10.18637/jss.v067.i01>
+mixed-effects models using lme4. *Journal of Statistical Software*,
+*67*(1). <https://doi.org/10.18637/jss.v067.i01>
 
 </div>
 
@@ -962,16 +1043,15 @@ Statistical Software*, *82*(13). <https://doi.org/10.18637/jss.v082.i13>
 
 <div id="ref-lakens2017" class="csl-entry">
 
-Lakens, D. (2017). Equivalence tests: A practical primer for
-\<i\>t\</i\> tests, correlations, and meta-analyses. *Social
-Psychological and Personality Science*, *8*(4), 355–362.
-<https://doi.org/10.1177/1948550617697177>
+Lakens, D. (2017). Equivalence tests: A practical primer for t tests,
+correlations, and meta-analyses. *Social Psychological and Personality
+Science*, *8*(4), 355–362. <https://doi.org/10.1177/1948550617697177>
 
 </div>
 
 <div id="ref-lieder2018a" class="csl-entry">
 
-Lieder, F., Griffiths, T. L., M. Huys, Q. J., & Goodman, N. D. (2018).
+Lieder, F., Griffiths, T. L., Huys, Q. J. M., & Goodman, N. D. (2018).
 The anchoring bias reflects rational use of cognitive resources.
 *Psychonomic Bulletin &Amp; Review*, *25*(1), 322–349.
 <https://doi.org/10.3758/s13423-017-1286-8>
@@ -1086,9 +1166,9 @@ secondary data analysis: A template and tutorial. *Meta-Psychology*,
 
 <div id="ref-viechtbauer2010" class="csl-entry">
 
-Viechtbauer, W. (2010). Conducting meta-analyses in \<i\>r\</i\> with
-the \<b\>metafor\</b\> package. *Journal of Statistical Software*,
-*36*(3). <https://doi.org/10.18637/jss.v036.i03>
+Viechtbauer, W. (2010). Conducting meta-analyses in r with the metafor
+package. *Journal of Statistical Software*, *36*(3).
+<https://doi.org/10.18637/jss.v036.i03>
 
 </div>
 

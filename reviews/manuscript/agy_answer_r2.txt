@@ -1,0 +1,126 @@
+## Answer
+
+# Review of Revised Manuscript (Round 2)
+
+**Journal:** *Judgment and Decision Making*  
+**Manuscript Title:** *Anchor extremity and proportional anchor influence: A preregistered, model-based test in open trial-level data*  
+**Author:** Lukas Wallrich  
+
+---
+
+### Overview
+
+In this second round of review, I assessed the revised manuscript (`manuscript/scratch_manuscript.md` and `manuscript/manuscript.qmd`), the preregistration deviations record (`deviations.md`), the review response log (`review_log.md`), and verified all statistical claims and tabular values against the raw computational outputs in `output/`.
+
+Overall, the revision is exemplary. The authors have systematically addressed the core conceptual, theoretical, and empirical critiques raised in Round 1. The title and claims have been appropriately calibrated to reflect the empirical dominance of random anchors on physical dimensions (Bahník, 2021); the unwarranted extrapolation to strategic negotiation settings has been expunged; the mechanistic status of M1 has been properly contextualized; the technical "survival" of M1R has been clarified alongside a joint predictive check (R1a); the across-cell multivariable meta-regressions (E4) are now transparently reported; the mathematical details and uncertainty estimates for H2 have been completed; and a descriptive table of the within-item cells has been incorporated.
+
+Below, I first evaluate the resolution of each Round-1 **MAJOR** comment, followed by a numbered list of remaining problems (all of which are **MINOR**), and conclude with an overall recommendation.
+
+---
+
+### Part 1: Assessment of Round-1 MAJOR Issues
+
+#### Reviewer 1 (Gemini 3.8 Flash via agy)
+
+1. **A1 [MAJOR] — Overgeneralized conclusions versus narrow empirical base (Dependence on Bahník, 2021)**
+   * **Status: ADEQUATELY RESOLVED.**
+   * **Evaluation:** The authors adopted a neutral title, explicitly stated in the Abstract that 83% of within-item estimates come from a single study using random anchors on lengths and heights (lines 14–15), reported study-specific estimates in the Results (lines 708–718), and restricted their primary conclusion to random anchors in physical estimation, leaving deliberate anchors open (lines 26–28, 886–898).
+
+2. **A2 [MAJOR] — Unwarranted extrapolation to strategic applied anchoring (negotiations/litigation)**
+   * **Status: ADEQUATELY RESOLVED.**
+   * **Evaluation:** The prescriptive advice advising negotiators and litigants that extreme opening offers suffer diminishing returns was removed. The Introduction retains practical applications strictly as motivating questions (lines 47–51), and the Discussion and Conclusion now explicitly state that the present data cannot answer whether deliberately chosen, informative anchors show diminishing returns (lines 819–821, 893–896).
+
+3. **A3 [MAJOR] — Theoretical framing of M1 as a strawman and artifactual survival of M1R**
+   * **Status: ADEQUATELY RESOLVED.**
+   * **Evaluation:** M1 is now introduced as the mechanistic baseline of adjustment rather than an actively defended theory (lines 114–118, 765–768). For M1R, the authors retained their preregistered decision rule but explicitly explained in the Abstract, Results, and Discussion that M1R's survival was purely an artifact of an uninformative predictive interval for relative curvature $\rho$ (lines 24–25, 585–594, 863–867). Crucially, the authors added a joint predictive check (R1a) demonstrating that 0% of calibrated M1R replicates reproduced both $b$ and $g$ jointly, compared to 33% for M3 and 4% for M4, and plainly concluded that M1R is "not supported by the within-item data" (line 593).
+
+4. **A4 [MAJOR] — Selective reporting of Exploratory Analysis E4 (Extremity scaled by response spread)**
+   * **Status: ADEQUATELY RESOLVED.**
+   * **Evaluation:** The Results (lines 671–681) and Discussion (lines 811–816) now report both specifications: the ratio model ($d = -0.023$, 95% CI $[-0.037, -0.010]$) and the simultaneous multivariable model ($d = +0.028$, $[-0.050, 0.106]$). The potential for ratio artifacts is explicitly discussed, and claims that E4 resolved the across-cell divergence have been withdrawn.
+
+5. **A5 [MAJOR] — Missing descriptive table of the 20 within-item cells**
+   * **Status: SUBSTANTIALLY RESOLVED (with remaining presentation flaws).**
+   * **Evaluation:** Table 1 has been added (lines 290–325), detailing the study, item, true value, sample size, number of anchor levels, range of $x$, and anchor type. However, as noted in the numbered list below, an aggressive regex truncated the item name for Cheops pyramid in Row 2, and units of measurement are absent.
+
+---
+
+#### Reviewer 2 (OpenAI Codex CLI)
+
+6. **X1 [MAJOR] — H3 decision rule, Table 3, and M1R's lack of empirical support**
+   * **Status: ADEQUATELY RESOLVED.**
+   * **Evaluation:** The authors adhered to preregistration integrity by reporting the frozen decision rule outcomes, but added the requested joint predictive check of $b$ and $g$ (R1a) and clearly qualified M1R as unsupported by the within-item empirical response functions (lines 585–594).
+
+7. **X2 [MAJOR] — Across-cell analysis confounded by item selection; framing of model failure**
+   * **Status: ADEQUATELY RESOLVED.**
+   * **Evaluation:** The Results and Discussion now explicitly state that failure to predict the across-cell slope $d$ is weaker evidence against within-item process models than failure on within-item curvature $g$, because across-cell designs confound extremity with researcher item selection and prior uncertainty (lines 594–597, 807–816).
+
+8. **X3 [MAJOR] — Mathematical formulation and independence of H2 standard errors**
+   * **Status: ADEQUATELY RESOLVED.**
+   * **Evaluation:** The Method now includes the exact mathematical formulas for the standard error of condition medians and cell anchoring indices (lines 350–354). The authors confirmed empirically that no participant answered under both anchors of any cell (0 paired cells, line 353), and added a participant bootstrap within studies (R1d: median slope 0.044, 95% CI $[0.022, 0.069]$, lines 747–749).
+
+9. **X4 [MAJOR] — Scope of primary inference and reporting of study-specific estimates**
+   * **Status: ADEQUATELY RESOLVED.**
+   * **Evaluation:** Study-specific curvature models were fitted and reported in the Results (lines 708–718; Bahník: $g = -0.035$; Imhoff & Barker: $g = -0.089$; Frech et al.: $g = -0.083$; Yoon et al.: $g = +0.093$). The scope of theoretical claims has been appropriately narrowed.
+
+10. **X5 [MAJOR] — Process-model implementation specificity (log vs. raw scale)**
+    * **Status: ADEQUATELY RESOLVED.**
+    * **Evaluation:** The Introduction and Method explicitly state that models are specific log-scale implementations (lines 108–110). Furthermore, the authors simulated an exploratory raw-scale constant-weight model (E6), showing that while it predicts negative pooled curvature on the log scale, it predicts positive curvature above the truth ($g_{\text{above}} = +0.134$), contradicting the observed negative curvature on both sides (lines 694–706).
+
+11. **X6 [MAJOR] — Predictive intervals, parameter sampling, and calibration sensitivity**
+    * **Status: ADEQUATELY RESOLVED.**
+    * **Evaluation:** The Method clarifies uniform sampling across accepted parameter grid points (lines 376–378). The relaxed-calibration analysis (E5) now states that 300 draws indicate matching parameter sets are rare rather than non-existent (lines 687–689). Claims that plausibility models predict a decline that is "too steep" have been carefully qualified as applying to the calibrated parameter ranges (lines 793–798).
+
+---
+
+### Part 2: Remaining and New Issues (Numbered List)
+
+All remaining issues are **MINOR** technical, wording, or formatting matters. No major theoretical or statistical flaws remain.
+
+#### 1. [MINOR] Regex truncation of item description and omitted units in Table 1
+* **Location:** [scratch_manuscript.md#L300-L325](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L300-L325); [manuscript.qmd#L149](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L149).
+* **Problem:** In Table 1, Row 2 displays the item name as `"height of the highest"`, which is truncated and uninformative. In the raw OpAQ data (`output/within_cells_table.csv`), the item string is `"height of the highest (Cheops) Pyramid in Giza (metres)"`. In [manuscript.qmd#L149](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L149), the R code uses `sub("\\s*\\(.*\\)$", "", item)`. Because `.*` is greedy in R regex, it matches from the first open parenthesis `(` before `Cheops` to the final `)` after `metres`, erroneously stripping the entire target name. Furthermore, Table 1 lacks units of measurement (e.g., metres, kilometres, people, USD, novels), which were requested by Reviewer 1 (comment A5).
+* **Concrete Fix:** Update the string replacement to match only the trailing unit parenthesis (e.g., `sub("\\s*\\([^)]*\\)$", "", item)`), or extract the units into a dedicated "Unit" column in Table 1, and ensure Row 2 displays the complete name: `"Height of the Cheops Pyramid in Giza"`.
+
+#### 2. [MINOR] Inconsistent terminology for parameter $b$ in Table 2 and Results text
+* **Location:** [scratch_manuscript.md#L389](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L389), [scratch_manuscript.md#L621-L622](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L621-L622); [manuscript.qmd#L170](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L170), [manuscript.qmd#L240](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L240).
+* **Problem:** Reviewer 2 (comment X7) requested clarifying that $b$ is the local elasticity *at* the true value ($x = 0$), rather than an average across the curve. The authors accepted this in the Method ([scratch_manuscript.md#L337-L338](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L337-L338)). However, Table 2 column 2 STILL bears the header `"Average elasticity b"`, and line 621 STILL refers to `"the observed average elasticity (b = 0.307)"`.
+* **Concrete Fix:** Change the column header in Table 2 to `"Local elasticity at true value b"` (or `"Elasticity at true value b"`), and change line 621 to read: `"the observed local elasticity at the true value (b = 0.307)"`.
+
+#### 3. [MINOR] Misleading description of level criteria coverage in Results
+* **Location:** [scratch_manuscript.md#L621-L624](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L621-L624); [manuscript.qmd#L240](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L240).
+* **Problem:** The text states: *"For the level criteria, the observed average elasticity (b = 0.307) and weighted mean log anchoring index (0.241) lay inside the intervals of M1R and M4 only."* This phrasing incorrectly implies that $b = 0.307$ fell inside the intervals of M1R and M4 only. In fact, Table 2 confirms that observed $b = 0.307$ lay inside the 95% predictive intervals of FOUR models: M1 ($[0.242, 0.638]$), M1R ($[0.007, 0.336]$), M3 ($[0.140, 0.360]$), and M4 ($[0.063, 0.576]$). Only the *joint* requirement that both level criteria were met simultaneously was satisfied by M1R and M4 only (`survives_level == TRUE`).
+* **Concrete Fix:** Clarify the sentence to: *"For the level criteria, both statistics jointly (local elasticity b = 0.307 and weighted mean log anchoring index of 0.241) lay inside the intervals of M1R and M4 only, whereas elasticity b alone fell within the predictive intervals of M1, M1R, M3, and M4."*
+
+#### 4. [MINOR] Monolithic "Retained" column in Table 3 obscures within-item model performance
+* **Location:** [scratch_manuscript.md#L608-L616](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L608-L616); [manuscript.qmd#L228-L238](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L228-L238).
+* **Problem:** Table 3 reports a single summary column: `Retained` (`yes` for M1R; `no` for M1, M2, M3, M4). While this faithfully reflects the preregistered conjunction rule (`(g_inside | rho_inside) & slope_inside`), it visually obscures the key substantive nuance that Reviewer 2 (comment X2) highlighted: M3 and M4 succeeded on within-item curvature $g$ (marked `in`) and were eliminated solely by the across-cell slope $d$, whereas M1R failed on $g$ (marked `out`) and "survived" solely via an inflated $\rho$ interval and $d$. A reader glancing only at Table 3 will receive the misleading impression that M1R fit the data while M3 and M4 failed across the board.
+* **Concrete Fix:** Add a footnote to Table 3 (or an explicit secondary column, e.g., `Within-item shape supported`) stating: *"M3 and M4 satisfied the within-item curvature criterion (observed g fell inside their predictive intervals) and were contradicted solely by the across-cell slope d. M1R failed the within-item curvature g and was retained under the preregistered rule solely because of its diffuse interval for ρ and acceptance of d."*
+
+#### 5. [MINOR] Omission of post-exclusion unique participant count in text
+* **Location:** [scratch_manuscript.md#L268](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L268), [scratch_manuscript.md#L484](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L484).
+* **Problem:** In the Method (line 268), the pre-exclusion count is given: *"20 cells from 4 studies (7,952 estimates, 1,492 participants)."* In Results (line 484), the post-exclusion estimates are reported: *"7,949 estimates in 20 cells (3 estimates were missing or non-positive; no gross errors)."* The post-exclusion participant count ($N = 1,491$, per `output/confirmatory/h1_within.csv`) was requested by Reviewer 1 (comment A10) and accepted in `review_log.md`, but does not appear in the Results text or Table 1.
+* **Concrete Fix:** Update line 484 to read: *"After exclusions the within-item analysis included 7,949 estimates from 1,491 participants in 20 cells..."*
+
+#### 6. [MINOR] Incomplete reporting of models in Relaxed Calibration Summary (E5)
+* **Location:** [scratch_manuscript.md#L691-L693](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L691-L693).
+* **Problem:** When reporting the relaxed calibration results for across-cell slope $d$ and mean index, the text states: *"the across-cell d and mean index together were reproduced by 37 M2 draws and 11 M1 draws, and by no M3 or M4 draw."* Inspection of `output/exploratory/E5_relaxed_calibration_summary.csv` shows that M1R had 2 draws meeting this criterion. Omitting M1R while reporting the exact counts for M1, M2, M3, and M4 leaves an unexplained gap.
+* **Concrete Fix:** Update line 692 to: *"...reproduced by 37 M2 draws, 11 M1 draws, and 2 M1R draws, and by no M3 or M4 draw."*
+
+#### 7. [MINOR] Hardcoded pre-exclusion estimate count in Limitations
+* **Location:** [scratch_manuscript.md#L838](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L838); [manuscript.qmd#L294](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L294).
+* **Problem:** In the Limitations section, the text states: *"Thirteen of the 20 within-item cells, and 83% of the within-item estimates, come from Bahník (2021)..."* In [manuscript.qmd#L294](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L294), this percentage is computed via a hardcoded pre-exclusion formula: `100 * 6578 / dc$within_rows` ($6,578 / 7,952$). In contrast, the Abstract ([manuscript.qmd#L80](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L80)) computes it dynamically from post-exclusion data: `wct[study == "Bahník, 2021a", sum(estimates)] / P$n_rows` ($6,576 / 7,949$). While both round to 83%, hardcoding 6,578 in `.qmd` is inconsistent with the reproducible reporting principles of the paper.
+* **Concrete Fix:** Replace the hardcoded `6578 / dc$within_rows` in [manuscript.qmd#L294](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd#L294) with the dynamic post-exclusion table expression.
+
+#### 8. [MINOR] Literal HTML entity in Lieder et al. reference
+* **Location:** [scratch_manuscript.md#L1056](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md#L1056); [refs.bib#L15](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/refs.bib#L15), [refs.bib#L17](file:///Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/refs.bib#L17).
+* **Problem:** In `scratch_manuscript.md` line 1056, the journal title for Lieder et al. (2018a) renders with an escaped HTML entity: `*Psychonomic Bulletin &Amp; Review*`. In `manuscript/refs.bib`, lines 15 and 17 contain `journal={Psychonomic Bulletin &amp; Review}`. Reviewer 2 (comment X11) requested repairing literal HTML tags in references.
+* **Concrete Fix:** Replace `&amp;` with `\&` or `and` in `manuscript/refs.bib`.
+
+---
+
+### Overall Recommendation
+
+**Recommendation:** **Minor Revision**
+
+**Explicit Statement on Major Issues:**  
+**NO MAJOR ISSUES REMAIN.** Every major issue raised in Round 1 has been adequately resolved. The manuscript is methodologically sophisticated, transparent, computationally reproducible, and honest about its empirical boundaries. Addressing the minor corrections listed above will prepare this manuscript for immediate publication in *Judgment and Decision Making*.

@@ -20,3 +20,4 @@ done < dois.txt
 # Clean-ups: Crossref titles can contain HTML tags; one author name is mis-split in Crossref.
 sed -i '' -E 's#</?(b|i|sub|sup)>##g' refs.bib
 sed -i '' 's|M\. Huys, Quentin J\.|Huys, Quentin J. M.|g' refs.bib
+sed -i '' 's|&amp;|\\\&|g' refs.bib
