@@ -75,6 +75,47 @@ Full texts: `reviews/round2_codex_rereview.md`, `reviews/round2_agy_manuscript.m
 
 ---
 
-## Round 3 — coarse-review pipeline
+## Round 3 — coarse-review pipeline (Major revision)
 
-Full text: `reviews/round3_coarse_review.md` (pending; the pipeline was launched on an earlier revision and its comments are treated as applying to the structure and substance, which the later revisions did not change in direction).
+Full text: `reviews/round3_coarse_review.md`. Recommendation: **major revision**. The pipeline's meta-comment was that the paper is transparent about its limitations individually but does not adjust its conclusions to their cumulative force. Point by point:
+
+### 3.1 The graded measure answers a different question than the theory; the exploratory result led the paper
+**Comment.** The LOO-Brier predicts a held-out judge, not the item's truth, and the two can disagree when errors are shared. The paper led with the exploratory Brier result while the preregistered decision measure was positive and, if anything, weakly supportive of CW.
+**Response: accepted.** The manuscript was restructured so the preregistered decision result is the headline and the graded measure is explicitly a different, exploratory objective. The abstract now states the divergence and reports the preregistered result first. The conclusion no longer draws truth-recovery claims from the Brier analysis.
+
+### 3.2 Ceiling effects make the decision gap uninformative
+**Comment.** Equal-weighted accuracy is 0.93–0.98, so reweighting has little room; condition on contested items or report the gap as a share of available improvement.
+**Response: accepted.** Added a contested-item analysis: restricting to items the crowd does not already decide (available in 56 datasets), the gap rises from +0.004 to +0.007. The manuscript reports the ceiling explicitly and uses the contested figure.
+
+### 3.3 Item definition does not match the theoretical setup
+**Comment.** Different judges in a condition cell may have seen different exemplars, making errors less correlated than the simulation's ρ.
+**Response: accepted as a limitation.** The one-to-one stimulus-to-exemplar mapping is not recoverable from the corpus; the manuscript states this and its consequence for interpreting ρ and the model fit. A designed experiment is proposed as the fix.
+
+### 3.4 The strongest conclusions rest on a post-hoc outcome
+**Response: accepted and superseded by 3.1.** The empirical section is now led by the preregistered measure; the graded measure is labelled exploratory throughout and its conclusions are restricted to the judge-prediction objective.
+
+### 3.5 Model-rejection claim rests on a crude mapping
+**Comment.** The two-input nearest-cell mapping cannot support "the standard account does not explain why".
+**Response: accepted.** The language was softened to the narrow claim that a two-parameter summary evaluated on a coarse grid does not predict dataset-level signs, and the manuscript says whether a richer account would fit is open. The per-dataset-parameter simulation the reviewer suggests is recorded as future work rather than implemented.
+
+### 3.6 Calibration slope conflates between-judge and within-item variation
+**Comment.** The theory needs the within-item covariance; the pooled β mixes it with the between-judge association.
+**Response: accepted.** Added a within-item decomposition of the calibration slope (item-demeaned linear-probability slope) alongside the between-judge slope, and re-ran the moderation with the within-item slope. The conclusion is unchanged (no moderation detected), and the manuscript now reports the within-item decomposition and names the pooled estimate as the wrong coordinate in principle.
+
+### 3.7 Shrinkage recommended without a way to estimate it, or a test against estimation noise
+**Comment.** The interior optimum is an oracle result; no estimation procedure is given and estimated shrinkage is not tested on the data.
+**Response: accepted.** Added a held-out item test: estimate the shrinkage weight on one half of the items and score it on the other. The estimated-shrinkage rule beat equal weighting in only 24% of datasets and never matched pure confidence weighting. The shrinkage recommendation was removed from the abstract and conclusions, and the oracle status of the interior optimum is stated.
+
+### 3.8 No power analysis for the moderation nulls
+**Comment.** The negative moderation conclusion ignores power; report the minimum detectable effect.
+**Response: accepted.** The minimum detectable effect at 80% power is now reported in the results and discussion (about 0.040 per unit of calibration slope and 0.018 per unit of error correlation), and the conclusion is stated as a failure to detect moderation rather than its absence.
+
+### 3.9 The gap is never written as an equation
+**Comment.** A theory article whose contribution is a parametrisation should display the expression it parametrises.
+**Response: partly accepted.** A compact sign condition is given explicitly (the weighting gain is the within-item covariance of confidence with correctness; the variance cost grows with confidence dispersion and falls with m), and the limiting cases are derived. A full closed form under a simplifying assumption was not derived; the manuscript says so and states that the general case is solved numerically. This is the main point not fully resolved.
+
+### 3.10 Logical inconsistencies between findings and advice
+**Comment.** The advice to check the calibration slope presupposes the moderation that H5 failed to find; "the exception rather than the norm" reintroduces the rejected mechanism; the Jin et al. (2022) citation is a between-subject correlation being used as evidence about within-item confidence.
+**Response: accepted.** The practical advice now says to compare candidate rules directly on held-out items rather than to rely on the slope; the explanatory overreach was removed; and the manuscript notes that Jin et al.'s correlation is between-subject and does not settle the within-item relationship the theory needs.
+
+Round 3 ends the review process, as the brief allows three rounds. The main unresolved point is 3.9: no general closed-form derivation of the boundary is provided.

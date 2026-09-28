@@ -208,6 +208,85 @@ def loo_brier_m(items, m, rng, R=1000):
     return (b_ew - b_cw) / n if n else np.nan
 
 
+def calibration_decomposition(sub):
+    """Within-item and between-judge linear-probability calibration slopes.
+
+    The theory needs the within-item covariance of confidence with correctness;
+    a pooled slope mixes it with the between-judge association.
+    """
+    t = pd.DataFrame({
+        "item": sub["item"].values,
+        "subj": sub["subj"].values,
+        "c": sub["conf"].values.astype(float),
+        "a": sub["acc"].values.astype(float),
+    })
+    c = (t["c"] - t["c"].min()) / (t["c"].max() - t["c"].min() + 1e-12)
+    t["c"] = c
+    # within-item: demean by item, then LPM slope
+    t["cd"] = t["c"] - t.groupby("item")["c"].transform("mean")
+    t["ad"] = t["a"] - t.groupby("item")["a"].transform("mean")
+    v = t["cd"].var()
+    beta_within = float(t["cd"].cov(t["ad"]) / v) if v > 1e-12 else np.nan
+    # between-judge: subject means, then LPM slope
+    sj = t.groupby("subj").agg(c=("c", "mean"), a=("a", "mean"))
+    vv = sj["c"].var()
+    beta_between = float(sj["c"].cov(sj["a"]) / vv) if vv > 1e-12 else np.nan
+    return beta_within, beta_between
+
+
+def contested_delta(items, m_list, rng):
+    """Sign-accuracy gap restricted to items on which the crowd is not decided."""
+    rows = []
+    contested = [(v, c) for v, c in items if abs(v.mean()) < 0.5]
+    if len(contested) < 2:
+        return rows
+    for m in m_list:
+        elig = [(v, c) for v, c in contested if len(v) >= m]
+        if not elig:
+            continue
+        ew_c = cw_c = tot = 0
+        for v, c in elig:
+            idx = draw_idx(rng, len(v), m, R_DRAWS)
+            vs, cs = v[idx], c[idx] + 1e-9
+            ew = vs.mean(1)
+            cw = (cs * vs).sum(1) / cs.sum(1)
+            ew_c += int(np.sum(ew > 0)) + 0.5 * int(np.sum(np.abs(ew) < 1e-12))
+            cw_c += int(np.sum(cw > 0)) + 0.5 * int(np.sum(np.abs(cw) < 1e-12))
+            tot += R_DRAWS
+        rows.append(dict(m=m, n_items=len(elig), acc_ew=ew_c / tot, acc_cw=cw_c / tot,
+                         delta=cw_c / tot - ew_c / tot))
+    return rows
+
+
+def lambda_test(items, rng, lam=0.5, R=300):
+    """Held-out test of estimating the shrinkage lambda on a train half of items.
+
+    Returns mean held-out accuracy for the estimated-lambda rule, EW, and CW.
+    """
+    grid = np.round(np.arange(0, 1.0001, 0.05), 3)
+    arr_v = [v.mean() for v, _ in items]
+    arr_cw = [np.sum(c * v) / np.sum(c) if np.sum(c) > 0 else v.mean() for v, c in items]
+    n = len(items)
+    if n < 4:
+        return dict(acc_lambda=np.nan, acc_ew=np.nan, acc_cw=np.nan)
+    acc_l = acc_e = acc_c = cnt = 0.0
+    for _ in range(R):
+        perm = rng.permutation(n)
+        tr, te = perm[: n // 2], perm[n // 2:]
+        lam_tr = 0.0
+        best = -1
+        for L in grid:
+            acc = np.mean([(1 - L) * arr_v[i] + L * arr_cw[i] > 0 for i in tr])
+            if acc > best + 1e-12:
+                best, lam_tr = acc, L
+        for i in te:
+            acc_l += (1 - lam_tr) * arr_v[i] + lam_tr * arr_cw[i] > 0
+            acc_e += arr_v[i] > 0
+            acc_c += arr_cw[i] > 0
+        cnt += len(te)
+    return dict(acc_lambda=acc_l / cnt, acc_ew=acc_e / cnt, acc_cw=acc_c / cnt)
+
+
 def main():
     files = sorted(glob.glob(os.path.join(SRC, "*.csv")))
     ds_rows, delta_rows = [], []
@@ -259,13 +338,21 @@ def main():
         vals = ji2["c"].values
         ji2["c"] = (vals - vals.min()) / (vals.max() - vals.min() + 1e-12)
         items2 = [(g["v"].values, g["c"].values) for _, g in ji2.groupby("item")]
+        beta_within, beta_between = calibration_decomposition(sub)
+        cont = contested_delta(items, m_list, rng)
+        lam = lambda_test(items, np.random.default_rng(stable_seed(name) + 11))
         for c in curves:
             delta_rows.append(dict(dataset=name, **c))
         ds_rows.append(dict(dataset=name, included=True, n_subjects=n_subj, n_items=int(n_items),
                             n_trials=len(sub), n_design_cols=len(design),
                             mean_judges_per_item=float(jpi[jpi >= 3].mean()),
                             logit_converged=conv,
-                            calibration_slope=beta, icc_rho=rho,
+                            calibration_slope=beta, beta_within=beta_within,
+                            beta_between=beta_between, icc_rho=rho,
+                            contested_mean_delta=float(np.mean([c["delta"] for c in cont]))
+                            if cont else np.nan,
+                            acc_lambda=lam["acc_lambda"], acc_ew_lambda=lam["acc_ew"],
+                            acc_cw_lambda=lam["acc_cw"],
                             confidence_sd=float(conf_n.std()),
                             brier_improvement=loo_brier(items),
                             brier_improvement_clipped=loo_brier(items2),
@@ -295,8 +382,9 @@ def main():
             meta[key + "_frac_neg"] = float(np.mean(d < 0)) if len(d) else None
         meta["logit_nonconverged"] = int((~inc["logit_converged"]).sum())
         meta["h5"] = {}
-        for key in ("brier_improvement", "mean_delta"):
-            X = inc[["calibration_slope", "icc_rho"]].values.astype(float)
+
+        def fit_h5(predictors, key):
+            X = inc[predictors].values.astype(float)
             y = inc[key].values.astype(float)
             ok = np.isfinite(X).all(1) & np.isfinite(y)
             X, y = X[ok], y[ok]
@@ -307,8 +395,23 @@ def main():
             XtXi = np.linalg.inv(Xd.T @ Xd)
             cov = XtXi @ (Xd.T @ (resid[:, None] ** 2 * Xd)) @ XtXi * n / (n - k)
             se_c = np.sqrt(np.diag(cov))
-            meta["h5"][key] = dict(n=int(n), beta_coef=float(coef[1]), beta_se=float(se_c[1]),
-                                   rho_coef=float(coef[2]), rho_se=float(se_c[2]))
+            out = dict(n=int(n), coefs=[float(x) for x in coef[1:]], ses=[float(x) for x in se_c[1:]])
+            out["mde80"] = [float(2.802 * s) for s in se_c[1:]]
+            return out
+
+        for key in ("brier_improvement", "mean_delta"):
+            meta["h5"][key] = fit_h5(["calibration_slope", "icc_rho"], key)
+            meta["h5"][key + "_within"] = fit_h5(["beta_within", "icc_rho"], key)
+        # contested-item and shrinkage summaries
+        cd = inc["contested_mean_delta"].dropna().values.astype(float)
+        meta["contested_items"] = dict(n=int(len(cd)), mean=float(np.mean(cd)) if len(cd) else None)
+        lam = inc[["acc_lambda", "acc_ew_lambda", "acc_cw_lambda"]].dropna()
+        meta["shrinkage_holdout"] = dict(
+            n=int(len(lam)),
+            acc_estimated_lambda=float(lam["acc_lambda"].mean()) if len(lam) else None,
+            acc_ew=float(lam["acc_ew_lambda"].mean()) if len(lam) else None,
+            acc_cw=float(lam["acc_cw_lambda"].mean()) if len(lam) else None,
+            frac_lambda_beats_ew=float((lam["acc_lambda"] > lam["acc_ew_lambda"]).mean()) if len(lam) else None)
         json.dump(meta, open(os.path.join(OUT, "empirical_meta.json"), "w"), indent=2)
         print(json.dumps(meta, indent=2))
 

@@ -39,6 +39,9 @@ n = {
                          frac_neg=float((inc["brier_improvement_m7"] < 0).mean())),
     "h5_loo_brier": meta["h5"]["brier_improvement"],
     "h5_sign_accuracy": meta["h5"]["mean_delta"],
+    "h5_sign_within": meta["h5"]["mean_delta_within"],
+    "contested_items": meta.get("contested_items"),
+    "shrinkage_holdout": meta.get("shrinkage_holdout"),
     "h6": h6,
     "sim": ss,
 }
@@ -63,6 +66,9 @@ p("LOO-Brier clipped", n["loo_brier_clipped"])
 p("LOO-Brier m=7", n["loo_brier_m7"])
 p("H5 LOO-Brier", n["h5_loo_brier"])
 p("H5 sign", n["h5_sign_accuracy"])
+p("H5 sign (within-item slope)", n["h5_sign_within"])
+p("Contested items", n["contested_items"])
+p("Shrinkage holdout", n["shrinkage_holdout"])
 p("H6", n["h6"])
 p("Simulation summary", n["sim"])
 open(os.path.join(MAN, "numbers.md"), "w").write("\n".join(lines) + "\n")
