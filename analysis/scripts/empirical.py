@@ -5,13 +5,13 @@ Implements preregistration sections 3 and 6. Reads per-study CSVs from
 data/confidence_database/ and writes:
   analysis/output/empirical_datasets.csv   one row per included dataset
   analysis/output/empirical_delta.csv      Delta(m) per dataset and group size
-  analysis/output/moderation.json          H5 regression of mean Delta on beta, rho
-  analysis/output/empirical_meta.json      random-effects meta-analysis of mean Delta
+  analysis/output/empirical_meta.json      unweighted mean and bootstrap CI (see deviations)
 """
 import glob
 import json
 import os
 import re
+import zlib
 
 import numpy as np
 import pandas as pd
@@ -25,7 +25,7 @@ os.makedirs(OUT, exist_ok=True)
 SEED = 20260928
 R_DRAWS = 2000
 M_LIST = [3, 5, 7, 9, 13, 17, 25, 40]
-MAX_ITEMS = 64  # per draw, if a dataset has more items (computational bound; see deviations.md)
+MAX_ITEMS = 64  # sampled items per group size when a dataset has more (see deviations.md)
 
 DESIGN_COLS = ["Contrast", "Coherence", "Difficulty", "SN", "SOA", "Orientation",
                "StimulusType", "Condition", "Task", "Category", "Temporal_distance", "Error"]
@@ -43,6 +43,10 @@ def pick(m, *names):
     return None
 
 
+def stable_seed(name):
+    return SEED + zlib.crc32(name.encode("utf-8")) % 100000
+
+
 def read_dataset(path):
     df = pd.read_csv(path, low_memory=False)
     m = norm_map(df.columns)
@@ -53,8 +57,7 @@ def read_dataset(path):
     corr = pick(m, "Accuracy", "Correct")
     if not (subj and stim and conf and corr and resp):
         return None
-    # trial exclusion flags if present
-    ex = pick(m, "trial_excl", "trial_excl_ind", "exclude")
+    ex = pick(m, "trial_excl", "trial_excl_ind")
     if ex is not None:
         df = df[~df[ex].astype(str).str.lower().isin({"true", "1", "yes"})]
     sub = pd.DataFrame({
@@ -63,7 +66,6 @@ def read_dataset(path):
         "conf": pd.to_numeric(df[conf], errors="coerce"),
         "acc": pd.to_numeric(df[corr], errors="coerce"),
     })
-    # coerce string/boolean accuracy
     if df[corr].dtype == object:
         sub["acc"] = df[corr].astype(str).str.lower().map(
             {"true": 1.0, "false": 0.0, "1": 1.0, "0": 0.0, "yes": 1.0, "no": 0.0}).fillna(
@@ -81,34 +83,42 @@ def read_dataset(path):
     return sub, design_present
 
 
-def logistic_slope(x, y):
-    """MLE slope of P(y=1) = sigmoid(b0 + b1 x)."""
+def logistic_slope(x, y, l2=0.05):
+    """Ridge-penalised logistic slope via IRLS (robust to separation)."""
     x = np.asarray(x, float)
     y = np.asarray(y, float)
     if x.std() == 0:
-        return np.nan
+        return np.nan, False
+    x = (x - x.mean()) / x.std()
+    X = np.column_stack([np.ones_like(x), x])
+    w = np.zeros(2)
+    ok = False
+    for _ in range(100):
+        p = 1.0 / (1.0 + np.exp(-(X @ w)))
+        W = np.clip(p * (1 - p), 1e-9, None)
+        z = X @ w + (y - p) / W
+        A = X.T @ (X * W[:, None]) + np.diag([1e-9, l2])
+        b = X.T @ (W * z)
+        w_new = np.linalg.solve(A, b)
+        if np.max(np.abs(w_new - w)) < 1e-9:
+            w, ok = w_new, True
+            break
+        w = w_new
+    return float(w[1]), ok
 
-    def nll(p):
-        z = p[0] + p[1] * x
-        return np.sum(np.logaddexp(0, z) - y * z)
 
-    r = optimize.minimize(nll, [0.0, 0.0], method="BFGS")
-    return float(r.x[1])
-
-
-def icc_item(sub):
-    """One-way random-effects ICC of correctness grouped by item."""
-    g = sub.groupby("item")["acc"]
+def icc_item(ji):
+    """One-way random-effects ICC on the judge-item correctness table."""
+    g = ji.groupby("item")["acc"]
     n = g.size().values.astype(float)
     if len(n) < 2:
         return np.nan
     means = g.mean().values
     N = n.sum()
-    grand = sub["acc"].mean()
+    grand = ji["acc"].mean()
     ssb = np.sum(n * (means - grand) ** 2)
-    ssw = np.sum((sub["acc"] - sub.groupby("item")["acc"].transform("mean")) ** 2)
-    dfb = len(n) - 1
-    dfw = N - len(n)
+    ssw = np.sum((ji["acc"] - ji.groupby("item")["acc"].transform("mean")) ** 2)
+    dfb, dfw = len(n) - 1, N - len(n)
     if dfb <= 0 or dfw <= 0:
         return np.nan
     msb, msw = ssb / dfb, ssw / dfw
@@ -117,55 +127,26 @@ def icc_item(sub):
     return float((msb - msw) / denom) if denom > 0 else np.nan
 
 
-def item_arrays(sub):
-    """Per item: arrays of judge-level vote v and normalised confidence c."""
+def judge_item_table(sub):
+    """Judge-level vote and confidence per item, plus min-max normalised confidence."""
     conf = sub["conf"].values.astype(float)
     lo, hi = np.nanmin(conf), np.nanmax(conf)
     if not np.isfinite(lo) or not np.isfinite(hi) or hi <= lo:
         return None
-    conf_n = (conf - lo) / (hi - lo)
-    sub = sub.assign(v=2 * sub["acc"].values - 1, c=conf_n)
-    items = []
-    for _, g in sub.groupby("item"):
-        j = g.groupby("subj").agg(v=("v", "mean"), c=("c", "mean")).values
-        items.append((j[:, 0], j[:, 1]))
-    return items
+    ji = (sub.assign(v=2 * sub["acc"].values - 1, c=(conf - lo) / (hi - lo))
+          .groupby(["item", "subj"], as_index=False)
+          .agg(v=("v", "mean"), c=("c", "mean"), acc=("acc", "mean")))
+    return ji
 
 
-def delta_curves(items, m_list, rng):
-    """Delta(m) = Acc_CW - Acc_EW via random group subsampling."""
-    rows = []
-    for m in m_list:
-        eligible = [(v, c) for v, c in items if len(v) >= m]
-        if not eligible:
-            continue
-        if len(eligible) > MAX_ITEMS:
-            idx = rng.choice(len(eligible), MAX_ITEMS, replace=False)
-            eligible = [eligible[i] for i in idx]
-        ew_correct, cw_correct, total = 0.0, 0.0, 0
-        for v, c in eligible:
-            n = len(v)
-            idx = rng.integers(0, n, size=(R_DRAWS, m))
-            vs = v[idx]
-            cs = c[idx] + 1e-9
-            ew = vs.mean(axis=1)
-            cw = (cs * vs).sum(axis=1) / cs.sum(axis=1)
-            ew_correct += np.sum(ew > 0)
-            cw_correct += np.sum(cw > 0)
-            total += R_DRAWS
-        rows.append(dict(m=m, n_items=len(eligible), acc_ew=ew_correct / total,
-                         acc_cw=cw_correct / total, delta=cw_correct / total - ew_correct / total))
-    return rows
+def draw_idx(rng, n, m, R):
+    """R groups of m distinct judges (sampling without replacement)."""
+    return np.argsort(rng.random((R, n)), axis=1)[:, :m]
 
 
 def loo_brier(items):
-    """Leave-one-judge-out Brier improvement of CW over EW.
-
-    For each item and each target judge t, the crowd estimate from the other
-    judges predicts t's correctness (1/0). Returns mean Brier(EW) - Brier(CW),
-    so positive means confidence weighting predicts better.
-    """
-    b_ew, b_cw, n = 0.0, 0.0, 0
+    """Leave-one-judge-out Brier improvement of CW over EW (positive = CW better)."""
+    b_ew = b_cw = n = 0
     for v, c in items:
         m = len(v)
         if m < 3:
@@ -176,10 +157,54 @@ def loo_brier(items):
             ew = (vsum - v[t]) / (m - 1)
             denom = csum - c[t]
             cw = (cvsum - c[t] * v[t]) / denom if denom > 1e-12 else ew
-            p_ew, p_cw = (1 + ew) / 2, (1 + cw) / 2
-            b_ew += (p_ew - correct[t]) ** 2
-            b_cw += (p_cw - correct[t]) ** 2
+            b_ew += (((1 + ew) / 2) - correct[t]) ** 2
+            b_cw += (((1 + cw) / 2) - correct[t]) ** 2
             n += 1
+    return (b_ew - b_cw) / n if n else np.nan
+
+
+def delta_curves(items, m_list, rng):
+    rows = []
+    for m in m_list:
+        eligible = [(v, c) for v, c in items if len(v) >= m]
+        if not eligible:
+            continue
+        if len(eligible) > MAX_ITEMS:
+            idx = rng.choice(len(eligible), MAX_ITEMS, replace=False)
+            eligible = [eligible[i] for i in idx]
+        ew_correct = cw_correct = total = 0
+        for v, c in eligible:
+            idx = draw_idx(rng, len(v), m, R_DRAWS)
+            vs = v[idx]
+            cs = c[idx] + 1e-9
+            ew = vs.mean(axis=1)
+            cw = (cs * vs).sum(axis=1) / cs.sum(axis=1)
+            ew_correct += int(np.sum(ew > 0))
+            cw_correct += int(np.sum(cw > 0))
+            total += R_DRAWS
+        rows.append(dict(m=m, n_items=len(eligible), acc_ew=ew_correct / total,
+                         acc_cw=cw_correct / total, delta=cw_correct / total - ew_correct / total))
+    return rows
+
+
+def loo_brier_m(items, m, rng, R=1000):
+    """Leave-one-judge-out Brier improvement at a fixed group size m (subsampled)."""
+    elig = [(v, c) for v, c in items if len(v) >= m]
+    if not elig:
+        return np.nan
+    b_ew = b_cw = n = 0.0
+    for v, c in elig:
+        idx = draw_idx(rng, len(v), m, R)
+        vs, cs = v[idx], c[idx]
+        corr = (vs + 1) / 2
+        vsum, csum, cvsum = vs.sum(1), cs.sum(1), (cs * vs).sum(1)
+        for t in range(m):
+            ew = (vsum - vs[:, t]) / (m - 1)
+            denom = csum - cs[:, t]
+            cw = np.where(denom > 1e-12, (cvsum - cs[:, t] * vs[:, t]) / denom, ew)
+            b_ew += float(np.sum((((1 + ew) / 2) - corr[:, t]) ** 2))
+            b_cw += float(np.sum((((1 + cw) / 2) - corr[:, t]) ** 2))
+            n += R
     return (b_ew - b_cw) / n if n else np.nan
 
 
@@ -197,8 +222,7 @@ def main():
             ds_rows.append(dict(dataset=name, included=False, reason="missing_columns"))
             continue
         sub, design = out
-        n_subj = sub["subj"].nunique()
-        n_items = sub["item"].nunique()
+        n_subj, n_items = sub["subj"].nunique(), sub["item"].nunique()
         if n_subj < 8:
             ds_rows.append(dict(dataset=name, included=False, reason="lt8_subjects"))
             continue
@@ -209,46 +233,67 @@ def main():
         if (jpi >= 3).sum() < 2:
             ds_rows.append(dict(dataset=name, included=False, reason="lt2_items_ge3_judges"))
             continue
-        items = item_arrays(sub)
-        if items is None:
+        ji = judge_item_table(sub)
+        if ji is None:
             ds_rows.append(dict(dataset=name, included=False, reason="confidence_scale_degenerate"))
             continue
-        rng = np.random.default_rng(SEED + abs(hash(name)) % 100000)
-        curves = delta_curves(items, M_LIST, rng)
+        items = [(g["v"].values, g["c"].values) for _, g in ji.groupby("item")]
+        m_max = int(np.floor(np.median(jpi.values)))
+        m_list = [m for m in M_LIST if m <= m_max]
+        if not m_list:
+            m_list = [int(m_max)] if m_max >= 3 else []
+        rng = np.random.default_rng(stable_seed(name))
+        curves = delta_curves(items, m_list, rng)
         if not curves:
             ds_rows.append(dict(dataset=name, included=False, reason="no_eligible_groups"))
             continue
+        brier_m7 = loo_brier_m(items, 7, np.random.default_rng(stable_seed(name) + 7)) \
+            if any(len(v) >= 7 for v, _ in items) else np.nan
         conf_n = (sub["conf"] - sub["conf"].min()) / (sub["conf"].max() - sub["conf"].min())
-        beta = logistic_slope(conf_n.values, sub["acc"].values)
-        rho = icc_item(sub)
+        beta, conv = logistic_slope(conf_n.values, sub["acc"].values)
+        rho = icc_item(ji)
+        # robustness: clip confidence to 5th-95th percentile, renormalise
+        lo, hi = np.percentile(conf_n.values, [5, 95])
+        ji2 = ji.assign(c=np.clip(ji["c"], (lo - conf_n.min()) / (conf_n.max() - conf_n.min()),
+                                  (hi - conf_n.min()) / (conf_n.max() - conf_n.min())))
+        vals = ji2["c"].values
+        ji2["c"] = (vals - vals.min()) / (vals.max() - vals.min() + 1e-12)
+        items2 = [(g["v"].values, g["c"].values) for _, g in ji2.groupby("item")]
         for c in curves:
             delta_rows.append(dict(dataset=name, **c))
-        mean_delta = float(np.mean([c["delta"] for c in curves]))
-        dbrier = loo_brier(items)
         ds_rows.append(dict(dataset=name, included=True, n_subjects=n_subj, n_items=int(n_items),
                             n_trials=len(sub), n_design_cols=len(design),
                             mean_judges_per_item=float(jpi[jpi >= 3].mean()),
+                            logit_converged=conv,
                             calibration_slope=beta, icc_rho=rho,
                             confidence_sd=float(conf_n.std()),
-                            brier_improvement=dbrier,
-                            mean_delta=mean_delta,
-                            mean_delta_ge5=float(np.mean([c["delta"] for c in curves if c["m"] >= 5]))))
+                            brier_improvement=loo_brier(items),
+                            brier_improvement_clipped=loo_brier(items2),
+                            brier_improvement_m7=brier_m7,
+                            m_max=m_max,
+                            mean_delta=float(np.mean([c["delta"] for c in curves]))))
     pd.DataFrame(ds_rows).to_csv(os.path.join(OUT, "empirical_datasets.csv"), index=False)
     pd.DataFrame(delta_rows).to_csv(os.path.join(OUT, "empirical_delta.csv"), index=False)
 
     inc = pd.DataFrame([r for r in ds_rows if r.get("included")])
     print(f"included datasets: {len(inc)} of {len(files)}")
     if len(inc):
-        meta = dict(n_datasets=len(inc))
-        for key, label in [("mean_delta", "sign_accuracy"), ("brier_improvement", "loo_brier")]:
+        meta = dict(n_datasets=len(inc),
+                    note="unweighted mean across datasets with a dataset bootstrap CI; "
+                         "not a random-effects meta-analysis (see deviations.md)")
+        for key in ("mean_delta", "brier_improvement"):
             d = inc[key].values.astype(float)
             d = d[np.isfinite(d)]
             bs = np.array([np.mean(np.random.default_rng(1000 + i).choice(d, len(d), replace=True))
                            for i in range(5000)])
-            meta[label] = dict(mean=float(np.mean(d)),
-                               ci95=[float(np.percentile(bs, 2.5)), float(np.percentile(bs, 97.5))],
-                               frac_le0=float(np.mean(d <= 0)), frac_neg=float(np.mean(d < 0)))
-        # H5 on the LOO-Brier improvement: Delta_brier ~ beta + rho
+            meta[key] = dict(mean=float(np.mean(d)),
+                             ci95=[float(np.percentile(bs, 2.5)), float(np.percentile(bs, 97.5))],
+                             frac_le0=float(np.mean(d <= 0)), frac_neg=float(np.mean(d < 0)))
+        for key in ("brier_improvement", "brier_improvement_clipped"):
+            d = inc[key].dropna().values.astype(float)
+            meta[key + "_mean"] = float(np.mean(d)) if len(d) else None
+            meta[key + "_frac_neg"] = float(np.mean(d < 0)) if len(d) else None
+        meta["logit_nonconverged"] = int((~inc["logit_converged"]).sum())
         meta["h5"] = {}
         for key in ("brier_improvement", "mean_delta"):
             X = inc[["calibration_slope", "icc_rho"]].values.astype(float)

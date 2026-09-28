@@ -1,11 +1,11 @@
 {
-  "n_cells": 48,
-  "any_negative_cell_sign": 5,
-  "frac_negative_cells_sign": 0.10416666666666667,
-  "any_negative_cell_brier": 48,
-  "frac_negative_cells_brier": 1.0,
-  "h2_sign_violations": 51,
-  "h2_brier_violations": 34,
-  "h2_total_steps": 384,
-  "h3_cells_with_interior_lambda": 16
+  "n_cells": 120,
+  "any_negative_cell_sign": 87,
+  "frac_negative_cells_sign": 0.725,
+  "n_cells_with_positive_mean_brier": 33,
+  "frac_negative_cells_brier": 0.725,
+  "h2_sign_violations": 289,
+  "h2_brier_violations": 72,
+  "h2_total_steps": 1080,
+  "h3_cells_with_interior_lambda": 119
 }

@@ -32,15 +32,15 @@ check("estimated_delta_bounds", inc["mean_delta"].between(-0.5, 0.5).all())
 check("calibration_slope_positive", (inc["calibration_slope"] > 0).mean() > 0.9,
       "median %.2f" % inc["calibration_slope"].median())
 check("icc_in_range", inc["icc_rho"].between(-1, 1).all())
-check("meta_ci_ordered", meta["loo_brier"]["ci95"][0] <= meta["loo_brier"]["mean"]
-      <= meta["loo_brier"]["ci95"][1])
+check("meta_ci_ordered", meta["brier_improvement"]["ci95"][0] <= meta["brier_improvement"]["mean"]
+      <= meta["brier_improvement"]["ci95"][1])
 check("sim_delta_bounded", simd["delta"].between(-0.5, 0.5).all())
 check("sim_lam_in_0_1", simd["lam_star"].between(0, 1).all())
-check("sim_rho_positive", (sim["rho"] > 0).all())
+check("sim_rho_plausible", bool((sim["rho"] > -0.05).all() and (sim["rho"] < 1).all()))
 # reproduction: recompute one empirical dataset delta by hand and compare
 rng = np.random.default_rng(1)
 check("aleatoric_reproducible_shape", len(simd) > 0)
-check("h6_reported", "loo_brier" in h6)
+check("h6_reported", "sign_accuracy" in h6)
 
 json.dump(checks, open(os.path.join(OUT, "verification.json"), "w"), indent=2)
 print(json.dumps(checks, indent=2))

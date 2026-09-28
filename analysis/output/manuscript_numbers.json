@@ -1,78 +1,82 @@
 {
   "n_datasets_examined": 180,
-  "n_datasets_included": 81,
-  "exclusion_reasons": {
-    "missing_columns": 95,
-    "lt8_subjects": 3,
-    "lt2_items_ge3_judges": 1
-  },
-  "n_trials_analysed": 1753204,
-  "median_calibration_slope": 1.5149728789741397,
-  "median_icc_rho": 0.0198045458684847,
-  "median_confidence_sd": 0.3514399914306887,
-  "median_judges_per_item": 32.0,
-  "acc_ew_m3": 0.9260755538498396,
-  "acc_ew_m40": 0.984351695139995,
-  "acc_cw_m3": 0.9290826717859055,
+  "n_datasets_included": 76,
+  "n_trials_analysed": 1641000,
+  "median_calibration_slope": 0.5174137751358936,
+  "median_icc_rho": 0.10844561410719411,
+  "median_judges_per_item": 32.66543715846994,
+  "acc_ew_m3": 0.9334224447838345,
+  "acc_ew_m40": 0.98,
   "sign_delta": {
-    "mean": 0.0031045486945702446,
+    "mean": 0.003556586285845097,
     "ci95": [
-      0.00033763885993100213,
-      0.007073615378243261
+      0.00032267089505884757,
+      0.008317350309173556
     ],
-    "frac_le0": 0.6296296296296297,
-    "frac_neg": 0.43209876543209874
+    "frac_le0": 0.6447368421052632,
+    "frac_neg": 0.4473684210526316
   },
   "loo_brier": {
-    "mean": -0.0008047848863000557,
+    "mean": -0.0005528080556683894,
     "ci95": [
-      -0.0013073351728498277,
-      -0.000427518627880291
+      -0.0008484238052172328,
+      -0.0003434097961249268
     ],
-    "frac_le0": 0.8888888888888888,
-    "frac_neg": 0.8888888888888888
+    "frac_le0": 0.9078947368421053,
+    "frac_neg": 0.9078947368421053
+  },
+  "loo_brier_clipped": {
+    "mean": -0.0007316950549254189,
+    "frac_neg": 0.9736842105263158
+  },
+  "loo_brier_m7": {
+    "median": -0.00041602430815469997,
+    "frac_neg": 0.7894736842105263
   },
   "h5_loo_brier": {
-    "n": 81,
-    "beta_coef": -0.00012878060420035468,
-    "beta_se": 0.00015789952220394407,
-    "rho_coef": -0.020372832315948084,
-    "rho_se": 0.00951501269698162
+    "n": 76,
+    "beta_coef": -0.00032438134845108927,
+    "beta_se": 0.0008926752024811854,
+    "rho_coef": -1.4194109385293612e-05,
+    "rho_se": 0.00041864516621814297
   },
   "h5_sign_accuracy": {
-    "n": 81,
-    "beta_coef": 0.002556623214239373,
-    "beta_se": 0.0020516666702142996,
-    "rho_coef": 0.13297325844898658,
-    "rho_se": 0.05837400714699827
+    "n": 76,
+    "beta_coef": 0.015306227336964517,
+    "beta_se": 0.014422602016486666,
+    "rho_coef": 0.01032239652272837,
+    "rho_se": 0.0065675211602081686
   },
   "h6": {
-    "loo_brier": {
-      "sign_agreement": 0.8888888888888888,
-      "n_agree": 72,
-      "n": 81,
-      "supported": true
-    },
+    "criterion": "H6 (preregistered): sign agreement >= 0.60 on the crowd-accuracy gap",
     "sign_accuracy": {
-      "sign_agreement": 0.37037037037037035,
-      "n_agree": 30,
-      "n": 81,
+      "n_agree": 28,
+      "n": 76,
+      "agreement": 0.3684210526315789,
       "supported": false
     },
-    "criterion": "H6 supported if sign agreement >= 0.60 for at least one measure",
-    "supported": true
+    "loo_brier_m7": {
+      "n_agree": 26,
+      "n": 76,
+      "agreement": 0.34210526315789475,
+      "baseline_predict_negative": 0.7894736842105263,
+      "note": "simulated and empirical Brier compared at m = 7"
+    },
+    "supported": false,
+    "mapping": {
+      "n_mapped_to_one_cell": 9,
+      "n_below_min_sim_rho": 7
+    }
   },
   "sim": {
-    "n_cells": 48,
-    "frac_negative_sign_cells": 0.10416666666666667,
-    "n_negative_sign_cells": 5,
-    "frac_negative_brier_cells": 1.0,
-    "h3_interior_lambda_cells": 16,
-    "h2_sign_violations": 51,
-    "h2_brier_violations": 34,
-    "h2_total_steps": 384
-  },
-  "sim_phi0_gamma03_mean_brier": 0.0009435300429449,
-  "sim_phi4_gamma03_mean_delta": -0.0062722222222222,
-  "sim_phi0_gamma03_mean_delta": 0.0504472222222222
+    "n_cells": 120,
+    "any_negative_cell_sign": 87,
+    "frac_negative_cells_sign": 0.725,
+    "n_cells_with_positive_mean_brier": 33,
+    "frac_negative_cells_brier": 0.725,
+    "h2_sign_violations": 289,
+    "h2_brier_violations": 72,
+    "h2_total_steps": 1080,
+    "h3_cells_with_interior_lambda": 119
+  }
 }

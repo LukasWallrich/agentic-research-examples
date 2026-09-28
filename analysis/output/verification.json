@@ -9,7 +9,7 @@
   },
   "calibration_slope_positive": {
     "pass": true,
-    "detail": "median 1.51"
+    "detail": "median 0.52"
   },
   "icc_in_range": {
     "pass": true,
@@ -27,7 +27,7 @@
     "pass": true,
     "detail": ""
   },
-  "sim_rho_positive": {
+  "sim_rho_plausible": {
     "pass": true,
     "detail": ""
   },

@@ -42,7 +42,7 @@ fig.tight_layout(); fig.savefig(os.path.join(FIG, "fig1_empirical.png"), dpi=200
 # Fig 2: simulated boundary surface, mean_brier over (tau, phi), gamma=0.3
 fig, ax = plt.subplots(1, 2, figsize=(8.5, 3.2))
 for k, (col, lab) in enumerate([("mean_brier", "(a) LOO-Brier improvement"), ("mean_delta", "(b) Accuracy $\\Delta$")]):
-    sub = sim[sim.gamma == 0.3].pivot(index="tau", columns="phi", values=col)
+    sub = sim[(sim.gamma == 0.3) & (sim.omega == 0.05)].pivot_table(index="tau", columns="phi", values=col)
     im = ax[k].imshow(sub.values, origin="lower", aspect="auto", cmap="RdBu_r",
                       vmin=-abs(sub.values).max(), vmax=abs(sub.values).max())
     ax[k].set_xticks(range(len(sub.columns)), sub.columns)
@@ -66,7 +66,7 @@ fig.tight_layout(); fig.savefig(os.path.join(FIG, "fig3_moderation.png"), dpi=20
 fig, ax = plt.subplots(figsize=(4.2, 3.0))
 LAM = np.round(np.arange(0, 1.0001, 0.05), 3)
 for phi, col in [(0.0, C["ew"]), (2.0, C["cw"]), (4.0, C["sim"])]:
-    sub = sim_d[(sim_d.gamma == 0.3) & (sim_d.tau == 0.0) & (sim_d.phi == phi)].sort_values("m")
+    sub = sim_d[(sim_d.gamma == 0.3) & (sim_d.omega == 0.05) & (sim_d.tau == 0.0) & (sim_d.phi == phi)].sort_values("m")
     ax.plot(sub["m"], sub["lam_star"], marker="o", ms=3, color=col, label=f"$\\phi$={phi}")
 ax.set_xscale("log"); ax.set_xlabel("Group size $m$"); ax.set_ylabel("Optimal shrinkage $\\lambda^*$")
 ax.set_ylim(-0.02, 1.02); ax.legend(frameon=False, fontsize=8)

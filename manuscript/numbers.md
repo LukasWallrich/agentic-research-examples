@@ -1,15 +1,17 @@
 # Manuscript numbers (from analysis/output; do not edit by hand)
 
 - **Datasets examined**: 180
-- **Datasets included**: 81
-- **Trials analysed**: 1,753,204
-- **Median calibration slope beta**: 1.515
-- **Median within-item error correlation rho**: 0.02
-- **Median judges per item**: 32.0
-- **EW accuracy at m=3**: 0.926
-- **EW accuracy at m=40**: 0.984
-- **Sign-accuracy delta (mean [CI], frac<=0)**: {'mean': 0.0031045486945702446, 'ci95': [0.00033763885993100213, 0.007073615378243261], 'frac_le0': 0.6296296296296297, 'frac_neg': 0.43209876543209874}
-- **LOO-Brier improvement (mean [CI], frac<0)**: {'mean': -0.0008047848863000557, 'ci95': [-0.0013073351728498277, -0.000427518627880291], 'frac_le0': 0.8888888888888888, 'frac_neg': 0.8888888888888888}
-- **H5 LOO-Brier ~ beta, rho**: {'n': 81, 'beta_coef': -0.00012878060420035468, 'beta_se': 0.00015789952220394407, 'rho_coef': -0.020372832315948084, 'rho_se': 0.00951501269698162}
-- **H6**: {'loo_brier': {'sign_agreement': 0.8888888888888888, 'n_agree': 72, 'n': 81, 'supported': True}, 'sign_accuracy': {'sign_agreement': 0.37037037037037035, 'n_agree': 30, 'n': 81, 'supported': False}, 'criterion': 'H6 supported if sign agreement >= 0.60 for at least one measure', 'supported': True}
-- **Simulation summary**: {'n_cells': 48, 'frac_negative_sign_cells': 0.10416666666666667, 'n_negative_sign_cells': 5, 'frac_negative_brier_cells': 1.0, 'h3_interior_lambda_cells': 16, 'h2_sign_violations': 51, 'h2_brier_violations': 34, 'h2_total_steps': 384}
+- **Datasets included**: 76
+- **Trials analysed**: 1,641,000
+- **Median calibration slope (standardised)**: 0.517
+- **Median within-item error correlation**: 0.108
+- **Median judges per item**: 32.7
+- **EW accuracy m=3 / m=40**: (0.933, 0.98)
+- **Sign-accuracy gap**: {'mean': 0.0036, 'ci95': [0.0003, 0.0083], 'frac_le0': 0.6447, 'frac_neg': 0.4474}
+- **LOO-Brier improvement**: {'mean': -0.00055, 'ci95': [-0.00085, -0.00034], 'frac_le0': 0.90789, 'frac_neg': 0.90789}
+- **LOO-Brier clipped**: {'mean': -0.0007316950549254189, 'frac_neg': 0.9736842105263158}
+- **LOO-Brier m=7**: {'median': -0.00041602430815469997, 'frac_neg': 0.7894736842105263}
+- **H5 LOO-Brier**: {'n': 76, 'beta_coef': -0.00032438134845108927, 'beta_se': 0.0008926752024811854, 'rho_coef': -1.4194109385293612e-05, 'rho_se': 0.00041864516621814297}
+- **H5 sign**: {'n': 76, 'beta_coef': 0.015306227336964517, 'beta_se': 0.014422602016486666, 'rho_coef': 0.01032239652272837, 'rho_se': 0.0065675211602081686}
+- **H6**: {'criterion': 'H6 (preregistered): sign agreement >= 0.60 on the crowd-accuracy gap', 'sign_accuracy': {'n_agree': 28, 'n': 76, 'agreement': 0.3684210526315789, 'supported': False}, 'loo_brier_m7': {'n_agree': 26, 'n': 76, 'agreement': 0.34210526315789475, 'baseline_predict_negative': 0.7894736842105263, 'note': 'simulated and empirical Brier compared at m = 7'}, 'supported': False, 'mapping': {'n_mapped_to_one_cell': 9, 'n_below_min_sim_rho': 7}}
+- **Simulation summary**: {'n_cells': 120, 'any_negative_cell_sign': 87, 'frac_negative_cells_sign': 0.725, 'n_cells_with_positive_mean_brier': 33, 'frac_negative_cells_brier': 0.725, 'h2_sign_violations': 289, 'h2_brier_violations': 72, 'h2_total_steps': 1080, 'h3_cells_with_interior_lambda': 119}
