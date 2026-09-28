@@ -2,11 +2,12 @@
                          <char>       <num>       <num>        <num>
 1:                    E1_xx_neg -0.03731295 -0.04804826 -0.026577627
 2:                    E1_xx_pos -0.05398625 -0.09078922 -0.017183294
-3:      E2_cells_far_below_near 15.00000000          NA 15.000000000
-4:            E3_hedges_g_slope  0.39724054  0.23976959  0.554711494
-5: E4_slope_on_scaled_extremity -0.02317839 -0.03677453 -0.009582252
-6:    E4_slope_adjusting_spread  0.02790964 -0.04985277  0.105672055
-7:        E4_spread_coefficient  0.06842885 -0.08429613  0.221153831
+3:      E2_cells_far_below_near 15.00000000          NA           NA
+4:           E2_cells_evaluated 15.00000000          NA           NA
+5:            E3_hedges_g_slope  0.39724054  0.23976959  0.554711494
+6: E4_slope_on_scaled_extremity -0.02317839 -0.03677453 -0.009582252
+7:    E4_slope_adjusting_spread  0.02790964 -0.04985277  0.105672055
+8:        E4_spread_coefficient  0.06842885 -0.08429613  0.221153831
                                                                                                   cell
                                                                                                 <char>
  1:                                       Bahník, 2021a || length of a typical football field (metres)

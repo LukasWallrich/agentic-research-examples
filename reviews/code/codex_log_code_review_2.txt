@@ -719,3 +719,24 @@ tab <- data.table(analysis = names(res), value = unlist(res))
 fwrite(tab, file.path(out_dir, "round3_checks.csv"))
 print(tab)
 
+codex
+## Answer
+
+**Yes, MAJOR bugs exist.**
+
+- **MAJOR — `R/05f_round2_checks.R`, E7:** The stated check asks whether a model matches `b`, `g`, the across-cell slope `d`, **and the mean anchoring index**. The code reads the observed index into `w_ai` but never uses it: `across_ok` checks only `d`. As a result, `E7_both` can count draws whose `mean_ai` misses the observed range, overstating how many draws reproduce all four results.
+
+- **MAJOR — `R/05d_raw_scale_model.R`, E6:** The claim that the raw-scale Jacowitz–Kahneman index “is `w` by construction” does not hold for the responses actually simulated. The code adds log-scale response noise after raw-scale averaging, while the index is based on **medians of raw responses**. With that noise, the median difference need not equal `w` times the anchor difference. Drawing every `w` from `.30–.60` without calculating the resulting index can admit uncalibrated draws and change the reported E6 summaries.
+
+- **MINOR — `R/05_exploratory.R`, E2:** `E2_cells_far_below_near` stores the number of eligible cells in `hi`, which is later written under a column used for upper confidence limits. That reported `hi` is a denominator, not an upper limit; the count in `est` is unaffected.
+tokens used
+25,235
+## Answer
+
+**Yes, MAJOR bugs exist.**
+
+- **MAJOR — `R/05f_round2_checks.R`, E7:** The stated check asks whether a model matches `b`, `g`, the across-cell slope `d`, **and the mean anchoring index**. The code reads the observed index into `w_ai` but never uses it: `across_ok` checks only `d`. As a result, `E7_both` can count draws whose `mean_ai` misses the observed range, overstating how many draws reproduce all four results.
+
+- **MAJOR — `R/05d_raw_scale_model.R`, E6:** The claim that the raw-scale Jacowitz–Kahneman index “is `w` by construction” does not hold for the responses actually simulated. The code adds log-scale response noise after raw-scale averaging, while the index is based on **medians of raw responses**. With that noise, the median difference need not equal `w` times the anchor difference. Drawing every `w` from `.30–.60` without calculating the resulting index can admit uncalibrated draws and change the reported E6 summaries.
+
+- **MINOR — `R/05_exploratory.R`, E2:** `E2_cells_far_below_near` stores the number of eligible cells in `hi`, which is later written under a column used for upper confidence limits. That reported `hi` is a denominator, not an upper limit; the count in `est` is unaffected.

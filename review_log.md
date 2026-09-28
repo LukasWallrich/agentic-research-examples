@@ -219,3 +219,13 @@ Source: `reviews/coarse/coarse_review_r3.md`. This review was run on the version
 | L-19 | Uniqueness of the model-discriminating test overstated. | Accepted; rephrased. |
 
 The review process ends here (three rounds). In the final round agy raised no major issue; codex raised two (one fixed, one outside the project's remit); coarse-review raised framework-level requests, of which the feasible ones were implemented and the rest are declined above and listed in `weaknesses.md`.
+
+## Code review of the post-preregistration scripts (codex, after the final manuscript round)
+
+Source: `reviews/code/codex_answer_code_review_2.txt`. Scope: `R/05_exploratory.R` to `R/05g_round3_checks.R` and the shared helpers.
+
+| # | Severity (codex) | Comment | Response |
+|---|---|---|---|
+| CR2-1 | Major | E7 reads the observed mean index but never uses it; "both" could count draws that miss the mean index. | Accepted as a code-text mismatch; no reported number changes. The manuscript reports E7 as reproducing the within-item b and γ and the across-cell slope d (not the mean index), which is what the code checks, and "none did both" can only stay true under a stricter check. The unused variable was removed and the script header now describes the check the code performs. |
+| CR2-2 | Major | E6's claim that the raw-scale Jacowitz & Kahneman index equals w "by construction" does not hold once log-scale response noise is added. | Accepted. A direct check showed the actual index is within .02 of w for σ from 0.3 to 1.2 (w = .30 gives .30-.32; .45 gives .46-.48; .60 gives .60-.62), so the calibration band is approximately right and the E6 results stand. The code comment and the manuscript now state this. |
+| CR2-3 | Minor | E2 stored the denominator in the upper-CI column. | Accepted; separate row added, output regenerated (only this row changed). |

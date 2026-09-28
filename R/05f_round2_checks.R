@@ -1,6 +1,6 @@
 # Exploratory analyses requested in review round 2 (coarse-review; not preregistered).
 # E7  plausibility-discounted integration with a weight floor (M4f), relaxed parameter draws:
-#     can it reproduce the within-item b and g and the across-cell d and mean index jointly?
+#     can it reproduce the within-item b and g and the across-cell slope d jointly?
 # E8  two-step item-level curvature: quadratic fit per cell, then random-effects meta-analysis.
 # E9  multi-band piecewise response function: separate slopes for |x| in [0, .5), [.5, 1),
 #     [1, 2), [2, 3) and [3, inf).
@@ -87,7 +87,6 @@ e7 <- rbindlist(mclapply(1:400, function(i) {
   if (is.null(fw) || is.null(fa)) return(NULL)
   data.table(rep = i, w = par$w, c = par$c, f = par$f, b = fw$b, g = fw$g, d = fa$slope, mean_ai = fa$mean_ai)
 }, mc.cores = 8))
-w_ai <- fread(file.path("output", "confirmatory", "h3_model_adequacy.csv"))$mean_ai_weighted[1]
 e7[, within_ok := b >= h1$b_lo & b <= h1$b_hi & g >= h1$g_lo & g <= h1$g_hi]
 e7[, across_ok := d >= h2$slope_lo & d <= h2$slope_hi]
 fwrite(e7, file.path(out_dir, "E7_floor_model_draws.csv"))

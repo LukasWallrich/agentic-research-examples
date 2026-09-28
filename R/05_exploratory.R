@@ -37,7 +37,8 @@ res <- list()
                                                        diff = co["h", 1], diff_se = co["h", 2]) }
     else list(n = .N, slope_near = NA_real_, slope_far = NA_real_, diff = NA_real_, diff_se = NA_real_)
   }, by = .(cell, reference_short, anchortype)]
-  res$E2_cells_far_below_near <- c(est = e2[!is.na(diff), sum(diff < 0)], lo = NA, hi = e2[!is.na(diff), .N])
+  res$E2_cells_far_below_near <- c(est = e2[!is.na(diff), sum(diff < 0)], lo = NA, hi = NA)
+  res$E2_cells_evaluated <- c(est = e2[!is.na(diff), .N], lo = NA, hi = NA)
 }
 
 # E3: Hedges' g per across-set cell (log scale) against extremity, as in Röseler & Schütz (2022)

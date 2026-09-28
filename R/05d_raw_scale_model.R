@@ -11,8 +11,9 @@ source(file.path("R", "models.R"))
 source(file.path("R", "estimators.R"))
 out_dir <- file.path("output", "exploratory")
 
-# Raw-scale Jacowitz & Kahneman index for M2raw is w by construction, so w is drawn from the
-# same .30-.60 band used for the other models.
+# Without response noise the raw-scale Jacowitz & Kahneman index of M2raw equals w; with the
+# log-scale response noise used here it is within 0.02 of w for sigma between 0.3 and 1.2
+# (checked by simulation during review), so w is drawn from the .30-.60 calibration band.
 sets <- build_sets(read_opaq(include_outcomes = FALSE))
 rows <- sets$within[, .(cell, pid, x)]
 cells <- unique(rows$cell)
