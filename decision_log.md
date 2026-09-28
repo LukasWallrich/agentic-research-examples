@@ -1,0 +1,41 @@
+# Decision log
+
+Autonomous decisions for `ai-jdm-paper4`, in order. Each entry states the decision, the reason, and (where relevant) what was rejected and why.
+
+## D1. Project setup
+- **Decision:** Initialise git in `/Users/lukaswallrich/Documents/Coding/ai-jdm-paper4`; use a `scoping/ prereg/ analysis/ manuscript/ reviews/` layout mirroring the three sibling papers.
+- **Reason:** The brief requires a committed preregistration before analysis, rerunnable code, and a manuscript, so the layout must separate plan from execution.
+
+## D2. Avoid duplicating the three sibling papers
+- **Decision:** Exclude anchoring (paper 1), Good Judgment Project / probability forecasting / belief-updating (paper 2), and selective feedback / advisor verification (paper 3).
+- **Reason:** Read all three siblings' `novelty.md`. The brief is to produce a *novel* paper; re-treading their territory would fail that test.
+
+## D3. Topic: confidence-weighted vs equal-weighted aggregation of judgments
+- **Decision:** Study when weighting judges by their reported confidence beats simple equal weighting in binary crowd aggregation, with a formal finite-sample boundary, a simulation, and an empirical mapping across open datasets.
+- **Reason:** Scoping (two parallel agents) and an independent codex review of candidates. Codex ranked this first among the candidates and it is distinct from all three siblings (none is about aggregation weights). It is a core JDM question, has a crisp refutable structure, and needs no new data.
+- **Rejected:** (a) cross-study intertemporal-choice model generalisation on the new ITC Database — codex flagged a live priority risk (the database creators presented a 2026 talk on exactly the response-time question) and Krajbich et al. (2015) already made the difficulty-adjustment point; (b) sunk-cost and overprecision "first meta-analyses" — both agents found existing systematic reviews; (c) GPS measurement invariance — agy reported prior invariance work and low JDM interest; (d) inner-crowd noise structure — crowded by van Dolder & van den Assem (2018) and data access is hard.
+
+## D4. Confidence Database as the empirical substrate
+- **Decision:** Use the Confidence Database (Rahnev et al., 2020; OSF `s46pr`; **CC0**) for the empirical component.
+- **Reason:** Most permissive licence (public-domain dedication), 180 per-study CSVs, trial-level confidence + correctness + stimulus identifiers, no identifiers.
+
+## D5. Empirical design: item = shared stimulus/condition cell; vote = signed correctness
+- **Decision:** Define an "item" as a shared stimulus/condition cell (`Stimulus` plus available design columns), a judge's vote in an item as the mean of (2·Accuracy − 1) over their trials in it, and the crowd's decision as the equal-weighted or confidence-weighted mean of votes. Compare crowd-decision accuracy as a function of group size.
+- **Reason:** Feasibility checks showed the database records correctness per trial, so no truth reconstruction from responses is needed; this makes the estimand general across datasets. It also matches the group-size question the theory addresses.
+- **Consequence:** The empirical component is a **descriptive mapping / prevalence estimate**, not a clean randomised crowd experiment. Framed accordingly.
+
+## D6. Make the paper theory/simulation-primary, empirical-secondary
+- **Decision:** The formal finite-sample boundary and the boundary-surface simulation carry the paper; the Confidence Database analysis calibrates the theory's inputs and estimates the prevalence of the CW-harmful region.
+- **Reason:** A focused novelty check found that the atomic claims (weighting can hurt; correlated-error optimal weights; miscalibration degrades optimal rules; confidence weighting beats majority in real crowds) are all published (Shapley–Grofman 1984; Baharad & Ben-Yashar 2009; Meyen et al. 2021; Huang et al. 2024). The defensible novel core is (i) the CW−EW gap written in psychometric coordinates (calibration slope, within-item error correlation, confidence dispersion), (ii) a preregistered boundary-surface simulation, and (iii) a descriptive base-rate estimate across real multi-judge datasets. So the paper must not lean on the empirical leg alone.
+
+## D7. Independent consults before committing
+- **Decision:** Obtained a codex second opinion (read-only) and an agy second opinion on the topic shortlist, and a dedicated novelty/crowding literature check.
+- **Reason:** The brief asks for codex/agy review wherever helpful; the topic choice was the highest-stakes decision and the cheapest place to catch a fatal overlap.
+
+## D8. Target journal (to confirm in Phase 4)
+- **Decision:** *Judgment and Decision Making* (JDM).
+- **Reason:** Open-access, exact scope match, and the intended outlet of sibling paper 3. Final justification (APC, AI policy, guidelines) to be recorded in Phase 4.
+
+## D9. Honesty about what has been seen before preregistration
+- **Decision:** Record in the preregistration exactly which data properties were inspected before writing it: file names and sizes, column headers, counts of rows/subjects/stimuli, whether `Response` has two levels, and the fraction of `Stimulus` cells whose reconstructed truth is unique. No accuracy, confidence, or choice aggregates were computed.
+- **Reason:** The brief requires stating what has been seen for a secondary-data preregistration. Structural feasibility checks are necessary to design an analysable study, but must be disclosed.
