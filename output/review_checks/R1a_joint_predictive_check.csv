@@ -1,7 +1,0 @@
-model,replicates,share_b_and_g_inside,share_g_inside
-M0,200,0,0
-M1,500,0,0
-M1R,500,0,0.064
-M2,500,0,0
-M3,500,0.334,0.798
-M4,500,0.044,0.298
