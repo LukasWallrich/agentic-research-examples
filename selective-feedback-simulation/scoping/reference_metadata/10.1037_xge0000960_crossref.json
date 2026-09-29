@@ -1,0 +1,168 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2026-09-17T01:37:50Z",
+      "timestamp": 1789609070103,
+      "version": "build-2803163510"
+    },
+    "reference-count": 0,
+    "publisher": "American Psychological Association (APA)",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Experimental Psychology: General"
+    ],
+    "DOI": "10.1037/xge0000960",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2020-10-01T14:58:43Z",
+      "timestamp": 1601564323000
+    },
+    "page": "507-526",
+    "source": "Crossref",
+    "is-referenced-by-count": 62,
+    "title": [
+      "The role of decision confidence in advice-taking and trust formation."
+    ],
+    "prefix": "10.1037",
+    "volume": "150",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-8826-2202",
+        "authenticated-orcid": false,
+        "given": "Niccol\u00f2",
+        "family": "Pescetelli",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicholas",
+        "family": "Yeung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "15",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "container-title": [
+      "Journal of Experimental Psychology: General"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://psycnet.apa.org/journals/xge/150/3/507.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          5
+        ]
+      ],
+      "date-time": "2024-02-05T22:46:48Z",
+      "timestamp": 1707173208000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://doi.apa.org/doi/10.1037/xge0000960"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2020-73321-001",
+      "33001684"
+    ],
+    "URL": "https://doi.org/10.1037/xge0000960",
+    "relation": {},
+    "ISSN": [
+      "1939-2222",
+      "0096-3445"
+    ],
+    "issn-type": [
+      {
+        "value": "1939-2222",
+        "type": "electronic"
+      },
+      {
+        "value": "0096-3445",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    }
+  }
+}

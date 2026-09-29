@@ -1,0 +1,11 @@
+# The five weakest points
+
+1. **The empirical bridge is untested.** The study computes consequences of stipulated summaries. It does not establish that people encode advisor feedback this way. A display effect would itself be insufficient to identify unaided cognition; the proposed raw-history, disclosure, and competing-model conditions would be needed.
+
+2. **The contribution is narrow and partly elementary.** Paired discordant outcomes, selection bias, and inverse weighting are established ideas. Elwin et al. already show that representation of selected feedback matters and that selective feedback need not impair performance. The defensible addition is their application to paired advisor–self ranking, the boundary under confidence selection, and finite-feedback loss. A journal may judge that synthesis too incremental.
+
+3. **The decision space excludes useful routing.** A global choice between sources is appropriate only when casewise delegation is constrained. When confidence is available at deployment, within-stratum comparisons can support a better policy. The paper reports the conditional oracle but does not evaluate learned routing policies.
+
+4. **The scenarios favour transparent calculation over realism.** They assume discrete calibrated confidence, correct feedback, stable independent cases, and supplied true sampling ratios for the evaluated correction. Encounter-based estimated-weight and post-stratified alternatives remain unevaluated. The focal scenarios change several features at once; one capped setting is exactly neutral. Grid frequencies cannot estimate practical prevalence. Exploratory misspecification and opportunity checks narrow the conclusions but do not supply external validity.
+
+5. **Prospective and authorship assurances remain limited.** The registration is a local git commitment, not an external timestamp. All substantive work and reviews were AI-assisted; independent numerical/source checks are still performed by software/AI. The intended human author has not yet endorsed the study, verified declarations, or accepted responsibility. This is a complete local research draft and reproducible package, not a certified submission-ready manuscript.

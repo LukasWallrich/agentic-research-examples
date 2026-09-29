@@ -1,0 +1,348 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          16
+        ]
+      ],
+      "date-time": "2026-09-16T08:06:09Z",
+      "timestamp": 1789545969734,
+      "version": "build-2803163510"
+    },
+    "reference-count": 19,
+    "publisher": "SAGE Publications",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2007,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2007-02-01T00:00:00Z",
+          "timestamp": 1170288000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Psychol Sci"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          2
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Although much learning in real-life environments relies on highly selective feedback about outcomes, virtually all cognitive models of learning, judgment, and categorization assume complete and representative feedback. We investigated empirically the effect of selective feedback on decision making and how people code experience with selective feedback. The results showed that, in contrast to a commonly raised concern, performance was not impaired following learning with selective and biased feedback. Furthermore, even in a simple decision task, the experience that people acquired was not a mere recording of the observed outcomes, but rather a reconstruction from general task knowledge.</jats:p>",
+    "DOI": "10.1111/j.1467-9280.2007.01856.x",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          4,
+          5
+        ]
+      ],
+      "date-time": "2007-04-05T17:54:20Z",
+      "timestamp": 1175795660000
+    },
+    "page": "105-110",
+    "source": "Crossref",
+    "is-referenced-by-count": 35,
+    "title": [
+      "Constructivist Coding"
+    ],
+    "prefix": "10.1177",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Ebba",
+        "family": "Elwin",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Uppsala University, Uppsala, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter",
+        "family": "Juslin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Uppsala University, Uppsala, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Henrik",
+        "family": "Olsson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Uppsala University, Uppsala, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tommy",
+        "family": "Enkvist",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Uppsala University, Uppsala, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2007,
+          2,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-j.1467-9280.2007.01856.x",
+        "volume-title": "Remembering",
+        "author": "Bartlett F.C.",
+        "year": "1932"
+      },
+      {
+        "key": "bibr2-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15516709cog1204_4"
+      },
+      {
+        "key": "bibr3-j.1467-9280.2007.01856.x",
+        "first-page": "327",
+        "volume-title": "Similarity and choice: Papers in honour of Clyde Coombs",
+        "author": "Dawes R.M.",
+        "year": "1980"
+      },
+      {
+        "key": "bibr4-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.112.4.951"
+      },
+      {
+        "key": "bibr5-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0096-3445.121.3.275"
+      },
+      {
+        "key": "bibr6-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.85.5.395"
+      },
+      {
+        "key": "bibr7-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.107.4.659"
+      },
+      {
+        "key": "bibr8-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511614576"
+      },
+      {
+        "key": "bibr9-j.1467-9280.2007.01856.x",
+        "volume-title": "The intelligent eye",
+        "author": "Gregory R.L.",
+        "year": "1970"
+      },
+      {
+        "key": "bibr10-j.1467-9280.2007.01856.x",
+        "unstructured": "Grosskopf B., Erev I., Yechiam E. (2001).\n                      Foregone with the wind\n                      . Retrieved April 7, 2006, from http://www2.gsb.columbia.edu/faculty/ierev/foregone4.pdf"
+      },
+      {
+        "key": "bibr11-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.107.3.311"
+      },
+      {
+        "key": "bibr12-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511614576.019"
+      },
+      {
+        "key": "bibr13-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0096-3445.132.1.133"
+      },
+      {
+        "key": "bibr14-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0096-3445.118.1.100"
+      },
+      {
+        "key": "bibr15-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.111.2.309"
+      },
+      {
+        "key": "bibr16-j.1467-9280.2007.01856.x",
+        "volume-title": "Detection theory: A user's guide",
+        "author": "Macmillan N.A.",
+        "year": "1991"
+      },
+      {
+        "key": "bibr17-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3758/BF03196177"
+      },
+      {
+        "key": "bibr18-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0096-3445.110.4.474"
+      },
+      {
+        "key": "bibr19-j.1467-9280.2007.01856.x",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/bdm.509"
+      }
+    ],
+    "container-title": [
+      "Psychological Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1111/j.1467-9280.2007.01856.x",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1111/j.1467-9280.2007.01856.x",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1111/j.1467-9280.2007.01856.x",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2026-05-01T01:30:44Z",
+      "timestamp": 1777599044000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2007.01856.x"
+      }
+    },
+    "subtitle": [
+      "Learning From Selective Feedback"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          2
+        ]
+      ]
+    },
+    "references-count": 19,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1111/j.1467-9280.2007.01856.x"
+    ],
+    "URL": "https://doi.org/10.1111/j.1467-9280.2007.01856.x",
+    "relation": {},
+    "ISSN": [
+      "0956-7976",
+      "1467-9280"
+    ],
+    "issn-type": [
+      {
+        "value": "0956-7976",
+        "type": "print"
+      },
+      {
+        "value": "1467-9280",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          2
+        ]
+      ]
+    }
+  }
+}

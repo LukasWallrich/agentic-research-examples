@@ -1,0 +1,18 @@
+# AI use and accountability
+
+This research package was produced autonomously at the user's request on 28 September 2026. It is an AI-generated research draft for human evaluation, not a human-approved submission. No AI tool is an author. Lukas Wallrich is the intended human author; authorship, affiliation, declarations, and responsibility require his own assessment before any submission.
+
+- **OpenAI Codex, GPT-6 family**, through the Codex application and its collaboration agents: research design, literature and journal searches, mathematical reasoning, preregistration, simulation code, execution, numerical interpretation, prose, source checks, artifact preparation, and response to reviews. The session does not expose a more precise parent model identifier; no unsupported version claim is made.
+- **Claude**, through the authenticated local Claude Code CLI: idea and manuscript reviews. The manuscript review runtime reported `claude-fable-5-1` and auxiliary `claude-haiku-4-5-20251001`; reviewer JSON/logs preserve the metadata; the initial idea call used the authenticated CLI default and its response did not report the underlying model. No model version has been guessed.
+- **Gemini 3.8 Flash (High)**, through the authenticated `agy` CLI and agy-delegate skill: independent idea and manuscript reviews. Explicit model selection was used.
+- **Codex CLI**, through independent code review and coarse-ink 1.4.0: code/results checking and full multi-stage manuscript review. The completed coarse run used `gpt-6-sol` with high effort; a first failed attempt requested unsupported `gpt-5.4` and produced no review. Exact runtime settings and raw comments are retained under `reviews/`.
+
+AI-produced source claims and bibliographic records are checked against primary sources and DOI registries. Crossref is authoritative for the published records; arXiv/DataCite records are explicitly distinguished where Crossref has no entry. Simulated outcomes are generated from code, not composed by a language model. Every numerical manuscript result is inserted by the build script from saved analysis output. These checks reduce but do not eliminate error; none amounts to independent empirical validation or human author approval.
+
+No new human data were collected and no participant-level records used. Synthetic scenarios contain no personal identifiers. Paid API cost: two coarse literature-search calls are estimated at US$0.10 cumulatively, with a conservative allowance below US$0.20; no actual invoice is exposed. Authenticated subscriptions are used for model reviews and the manuscript's Markdown bypasses OCR. Any changes to actual spending are recorded in `decision_log.md`.
+
+This disclosure is also summarised in manuscript Methods and Acknowledgements, consistent with the current Cambridge/JDM AI-use policy. Files remain local; no manuscript was submitted, no account created, and no person contacted.
+
+---
+
+**Note added by Lukas Wallrich, 29 September 2026.** The text above was written by the agent during the run and is left unchanged. The paragraph on OpenAI Codex says that no precise model identifier was exposed. The run's records do identify it: the T3 Code thread settings and all four Codex session records for this run (28 September 2026, codex-cli 0.155.1) record the model as `gpt-6-astra`, with reasoning effort high. The run was started from the T3 Code desktop app.

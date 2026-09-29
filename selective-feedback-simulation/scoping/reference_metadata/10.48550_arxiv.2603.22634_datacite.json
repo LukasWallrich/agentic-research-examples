@@ -1,0 +1,185 @@
+{
+  "data": {
+    "id": "10.48550/arxiv.2603.22634",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.48550/arxiv.2603.22634",
+      "prefix": "10.48550",
+      "suffix": "arxiv.2603.22634",
+      "identifiers": [
+        {
+          "identifier": "2603.22634",
+          "identifierType": "arXiv"
+        }
+      ],
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifierType": "arXiv",
+          "alternateIdentifier": "2603.22634"
+        }
+      ],
+      "creators": [
+        {
+          "name": "Li, ZhaoBin",
+          "nameType": "Personal",
+          "givenName": "ZhaoBin",
+          "familyName": "Li",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Steyvers, Mark",
+          "nameType": "Personal",
+          "givenName": "Mark",
+          "familyName": "Steyvers",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "titles": [
+        {
+          "title": "Learning to Trust: How Humans Mentally Recalibrate AI Confidence Signals"
+        }
+      ],
+      "publisher": "arXiv",
+      "container": {},
+      "publicationYear": 2026,
+      "subjects": [
+        {
+          "lang": "en",
+          "subject": "Human-Computer Interaction (cs.HC)",
+          "subjectScheme": "arXiv"
+        },
+        {
+          "lang": "en",
+          "subject": "Artificial Intelligence (cs.AI)",
+          "subjectScheme": "arXiv"
+        },
+        {
+          "subject": "FOS: Computer and information sciences",
+          "subjectScheme": "Fields of Science and Technology (FOS)"
+        },
+        {
+          "subject": "FOS: Computer and information sciences",
+          "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+          "subjectScheme": "Fields of Science and Technology (FOS)"
+        }
+      ],
+      "contributors": [],
+      "dates": [
+        {
+          "date": "2026-03-23T23:23:25Z",
+          "dateType": "Submitted",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-03-25T00:18:38Z",
+          "dateType": "Updated",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-03",
+          "dateType": "Available",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026",
+          "dateType": "Issued"
+        }
+      ],
+      "language": null,
+      "types": {
+        "ris": "GEN",
+        "bibtex": "misc",
+        "citeproc": "article",
+        "schemaOrg": "CreativeWork",
+        "resourceType": "Article",
+        "resourceTypeGeneral": "Preprint"
+      },
+      "relatedIdentifiers": [],
+      "relatedItems": [],
+      "sizes": [],
+      "formats": [],
+      "version": "1",
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "Productive human-AI collaboration requires appropriate reliance, yet contemporary AI systems are often miscalibrated, exhibiting systematic overconfidence or underconfidence. We investigate whether humans can learn to mentally recalibrate AI confidence signals through repeated experience. In a behavioral experiment (N = 200), participants predicted the AI's correctness across four AI calibration conditions: standard, overconfidence, underconfidence, and a counterintuitive \"reverse confidence\" mapping. Results demonstrate robust learning across all conditions, with participants significantly improving their accuracy, discrimination, and calibration alignment over 50 trials. We present a computational model utilizing a linear-in-log-odds (LLO) transformation and a Rescorla-Wagner learning rule to explain these dynamics. The model reveals that humans adapt by updating their baseline trust and confidence sensitivity, using asymmetric learning rates to prioritize the most informative errors. While humans can compensate for monotonic miscalibration, we identify a significant boundary in the reverse confidence scenario, where a substantial proportion of participants struggled to override initial inductive biases. These findings provide a mechanistic account of how humans adapt their trust in AI confidence signals through experience.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjAzLjIyNjM0PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwMy4yMjYzNDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaSwgWmhhb0JpbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Wmhhb0JpbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TdGV5dmVycywgTWFyazwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+TWFyazwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TdGV5dmVyczwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+TGVhcm5pbmcgdG8gVHJ1c3Q6IEhvdyBIdW1hbnMgTWVudGFsbHkgUmVjYWxpYnJhdGUgQUkgQ29uZmlkZW5jZSBTaWduYWxzPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+SHVtYW4tQ29tcHV0ZXIgSW50ZXJhY3Rpb24gKGNzLkhDKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlIChjcy5BSSk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAzLTIzVDIzOjIzOjI1WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAzLTI1VDAwOjE4OjM4WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDM8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+MTwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJTUERYIiByaWdodHNJZGVudGlmaWVyPSJDQy1CWS00LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5Qcm9kdWN0aXZlIGh1bWFuLUFJIGNvbGxhYm9yYXRpb24gcmVxdWlyZXMgYXBwcm9wcmlhdGUgcmVsaWFuY2UsIHlldCBjb250ZW1wb3JhcnkgQUkgc3lzdGVtcyBhcmUgb2Z0ZW4gbWlzY2FsaWJyYXRlZCwgZXhoaWJpdGluZyBzeXN0ZW1hdGljIG92ZXJjb25maWRlbmNlIG9yIHVuZGVyY29uZmlkZW5jZS4gV2UgaW52ZXN0aWdhdGUgd2hldGhlciBodW1hbnMgY2FuIGxlYXJuIHRvIG1lbnRhbGx5IHJlY2FsaWJyYXRlIEFJIGNvbmZpZGVuY2Ugc2lnbmFscyB0aHJvdWdoIHJlcGVhdGVkIGV4cGVyaWVuY2UuIEluIGEgYmVoYXZpb3JhbCBleHBlcmltZW50IChOID0gMjAwKSwgcGFydGljaXBhbnRzIHByZWRpY3RlZCB0aGUgQUkncyBjb3JyZWN0bmVzcyBhY3Jvc3MgZm91ciBBSSBjYWxpYnJhdGlvbiBjb25kaXRpb25zOiBzdGFuZGFyZCwgb3ZlcmNvbmZpZGVuY2UsIHVuZGVyY29uZmlkZW5jZSwgYW5kIGEgY291bnRlcmludHVpdGl2ZSAicmV2ZXJzZSBjb25maWRlbmNlIiBtYXBwaW5nLiBSZXN1bHRzIGRlbW9uc3RyYXRlIHJvYnVzdCBsZWFybmluZyBhY3Jvc3MgYWxsIGNvbmRpdGlvbnMsIHdpdGggcGFydGljaXBhbnRzIHNpZ25pZmljYW50bHkgaW1wcm92aW5nIHRoZWlyIGFjY3VyYWN5LCBkaXNjcmltaW5hdGlvbiwgYW5kIGNhbGlicmF0aW9uIGFsaWdubWVudCBvdmVyIDUwIHRyaWFscy4gV2UgcHJlc2VudCBhIGNvbXB1dGF0aW9uYWwgbW9kZWwgdXRpbGl6aW5nIGEgbGluZWFyLWluLWxvZy1vZGRzIChMTE8pIHRyYW5zZm9ybWF0aW9uIGFuZCBhIFJlc2NvcmxhLVdhZ25lciBsZWFybmluZyBydWxlIHRvIGV4cGxhaW4gdGhlc2UgZHluYW1pY3MuIFRoZSBtb2RlbCByZXZlYWxzIHRoYXQgaHVtYW5zIGFkYXB0IGJ5IHVwZGF0aW5nIHRoZWlyIGJhc2VsaW5lIHRydXN0IGFuZCBjb25maWRlbmNlIHNlbnNpdGl2aXR5LCB1c2luZyBhc3ltbWV0cmljIGxlYXJuaW5nIHJhdGVzIHRvIHByaW9yaXRpemUgdGhlIG1vc3QgaW5mb3JtYXRpdmUgZXJyb3JzLiBXaGlsZSBodW1hbnMgY2FuIGNvbXBlbnNhdGUgZm9yIG1vbm90b25pYyBtaXNjYWxpYnJhdGlvbiwgd2UgaWRlbnRpZnkgYSBzaWduaWZpY2FudCBib3VuZGFyeSBpbiB0aGUgcmV2ZXJzZSBjb25maWRlbmNlIHNjZW5hcmlvLCB3aGVyZSBhIHN1YnN0YW50aWFsIHByb3BvcnRpb24gb2YgcGFydGljaXBhbnRzIHN0cnVnZ2xlZCB0byBvdmVycmlkZSBpbml0aWFsIGluZHVjdGl2ZSBiaWFzZXMuIFRoZXNlIGZpbmRpbmdzIHByb3ZpZGUgYSBtZWNoYW5pc3RpYyBhY2NvdW50IG9mIGhvdyBodW1hbnMgYWRhcHQgdGhlaXIgdHJ1c3QgaW4gQUkgY29uZmlkZW5jZSBzaWduYWxzIHRocm91Z2ggZXhwZXJpZW5jZS48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+      "url": "https://arxiv.org/abs/2603.22634",
+      "contentUrl": null,
+      "metadataVersion": 0,
+      "schemaVersion": "http://datacite.org/schema/kernel-4",
+      "source": "mds",
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "referenceCount": 0,
+      "citationCount": 0,
+      "citationsOverTime": [],
+      "partCount": 0,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2026-03-25T02:05:17.000Z",
+      "registered": "2026-03-25T02:05:18.000Z",
+      "published": "2026",
+      "updated": "2026-03-25T02:05:18.000Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "arxiv.content",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "arxiv",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.48550/arxiv.2603.22634",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "citations": {
+        "data": []
+      },
+      "parts": {
+        "data": []
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

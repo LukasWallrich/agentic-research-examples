@@ -1,0 +1,117 @@
+2026-09-28 11:32:21,905 INFO coarse-review: Running coarse pipeline (host=codex, model=gpt-5.4, effort=high)
+2026-09-28 11:32:21,921 WARNING coarse.headless_clients: Codex on this machine does not expose `-c KEY=VALUE` config override (old version). Falling back to text-level effort injection. Upgrade Codex for native reasoning-effort control: npm install -g @openai/codex@latest
+2026-09-28 11:32:24,392 WARNING coarse.structure: Metadata extraction failed, using defaults (document_form=draft)
+Traceback (most recent call last):
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/structure.py", line 331, in _get_metadata
+    return client.complete(messages, PaperMetadata, max_tokens=512, temperature=0.1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/headless_clients.py", line 698, in complete
+    raw = self._run(self._prepare_prompt(prompt), timeout=timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/headless_clients.py", line 579, in _run
+    return self._run_with_retry(prompt, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/headless_clients.py", line 667, in _run_with_retry
+    raise RuntimeError(
+RuntimeError: codex exec exited 1: OpenAI Codex v0.155.1
+--------
+workdir: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper3
+model: gpt-5.4
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: none
+session id: 01a0e792-a2ba-7522-bbfc-00ba8cfbdc04
+--------
+user
+[SYSTEM]
+Reasoning effort: high. Use thorough internal reasoning before answering.
+
+[SYSTEM]
+You are an expert academic paper classifier. Given the first page of a paper and its section headings, ex
+2026-09-28 11:32:27,066 WARNING coarse.structure: Math section detection failed (RuntimeError: codex exec exited 1: OpenAI Codex v0.155.1
+--------
+workdir: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper3
+model: gpt-5.4
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: none
+session id: 01a0e792-ac6d-7113-a214-0613e6befd23
+--------
+user
+[SYSTEM]
+Reasoning effort: high. Use thorough internal reasoning before answering.
+
+[SYSTEM]
+You are an expert academic paper analyst. Given a list of paper sections with brief text previews, identi), falling back to keyword detection
+11:32:27 - LiteLLM:INFO: utils.py:4382 - 
+LiteLLM completion() model= perplexity/sonar-pro-search; provider = openrouter
+2026-09-28 11:32:27,095 INFO LiteLLM: 
+LiteLLM completion() model= perplexity/sonar-pro-search; provider = openrouter
+2026-09-28 11:32:29,398 WARNING coarse.review_stages: Domain calibration failed, using generic prompts
+Traceback (most recent call last):
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/review_stages.py", line 143, in calibrate_domain
+    return client.complete(messages, DomainCalibration, max_tokens=2048, temperature=0.3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/headless_clients.py", line 698, in complete
+    raw = self._run(self._prepare_prompt(prompt), timeout=timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/headless_clients.py", line 579, in _run
+    return self._run_with_retry(prompt, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/headless_clients.py", line 667, in _run_with_retry
+    raise RuntimeError(
+RuntimeError: codex exec exited 1: OpenAI Codex v0.155.1
+--------
+workdir: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper3
+model: gpt-5.4
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: none
+session id: 01a0e792-b6e2-7523-aa9e-8f99055eb853
+--------
+user
+[SYSTEM]
+Reasoning effort: high. Use thorough internal reasoning before answering.
+
+[SYSTEM]
+You are an expert academic reviewer. Given a paper's title, domain, abstract, and section structure, prod
+2026-09-28 11:32:29,744 WARNING coarse.review_stages: Contribution extraction failed, proceeding without
+Traceback (most recent call last):
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/review_stages.py", line 178, in extract_contribution
+    return client.complete(messages, ContributionContext, max_tokens=2048, temperature=0.2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/headless_clients.py", line 698, in complete
+    raw = self._run(self._prepare_prompt(prompt), timeout=timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/headless_clients.py", line 579, in _run
+    return self._run_with_retry(prompt, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lukaswallrich/.cache/uv/archive-v0/Ih7FWOeVIwnWqueMilk2y/lib/python3.12/site-packages/coarse/headless_clients.py", line 667, in _run_with_retry
+    raise RuntimeError(
+RuntimeError: codex exec exited 1: OpenAI Codex v0.155.1
+--------
+workdir: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper3
+model: gpt-5.4
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: none
+session id: 01a0e792-b6e2-7c41-a274-04bf6972aced
+--------
+user
+[SYSTEM]
+Reasoning effort: high. Use thorough internal reasoning before answering.
+
+[SYSTEM]
+You are an expert academic reader. Extract the paper's stated contributions, key mathematical objects, an
+11:33:00 - LiteLLM:INFO: utils.py:1759 - Wrapper: Completed Call, calling success_handler
+2026-09-28 11:33:00,803 INFO LiteLLM: Wrapper: Completed Call, calling success_handler
+2026-09-28 11:33:00,805 INFO coarse.agents.literature: Literature search completed via Perplexity
+ERROR: pipeline failed — codex exec exited 1: OpenAI Codex v0.155.1--------workdir: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper3model: gpt-5.4provider: openaiapproval: neversandbox: workspace-write [workdir, /tmp, $TMPDIR]reasoning effort: highreasoning summaries: nonesession id: 01a0e793-3ab3-7c81-9877-6b03cb606edf--------user[SYSTEM]Reasoning effort: high. Use thorough internal reasoning before answering.[SYSTEM]You are an expert peer reviewer. Your task is to identify the most important high-level issues with a res

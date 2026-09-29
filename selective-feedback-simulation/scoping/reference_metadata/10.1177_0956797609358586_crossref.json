@@ -1,0 +1,325 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          19
+        ]
+      ],
+      "date-time": "2026-08-19T17:26:17Z",
+      "timestamp": 1787160377137,
+      "version": "build-2736575974"
+    },
+    "reference-count": 20,
+    "publisher": "SAGE Publications",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              1,
+              8
+            ]
+          ],
+          "date-time": "2010-01-08T00:00:00Z",
+          "timestamp": 1262908800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Psychol Sci"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          2
+        ]
+      ]
+    },
+    "abstract": "<jats:p>People tend to grossly underestimate the trustworthiness of other people. We tested whether this cynicism grows out of an asymmetry in the feedback people receive when they decide to trust others. When people trust others, they painfully learn when other people prove to be untrustworthy; however, when people refrain from trusting others, they fail to learn of instances when the other person would have honored their trust. Participants saw short videos of other people and had to decide whether to trust each person in an economic game. Participants overall underestimated the trustworthiness of the people they viewed, regardless of whether they were given financial incentives to provide accurate estimates. However, people who received symmetric feedback about the trustworthiness of others (i.e., who received feedback regardless of their own decision to trust) exhibited reduced cynicism relative to those who received no feedback or asymmetric feedback (i.e., who received feedback only after they trusted the other person).</jats:p>",
+    "DOI": "10.1177/0956797609358586",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          8
+        ]
+      ],
+      "date-time": "2010-01-08T22:20:52Z",
+      "timestamp": 1262989252000
+    },
+    "page": "189-193",
+    "source": "Crossref",
+    "is-referenced-by-count": 84,
+    "title": [
+      "Why So Cynical?"
+    ],
+    "prefix": "10.1177",
+    "volume": "21",
+    "author": [
+      {
+        "given": "Detlef",
+        "family": "Fetchenhauer",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Cologne"
+          },
+          {
+            "name": "University of Groningen"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Dunning",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Cornell University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146167207309201"
+      },
+      {
+        "key": "bibr2-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/a0013195"
+      },
+      {
+        "key": "bibr3-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/game.1995.1027"
+      },
+      {
+        "key": "bibr4-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0096-3445.137.3.403"
+      },
+      {
+        "key": "bibr5-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.112.4.951"
+      },
+      {
+        "key": "bibr6-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4324/9780203337998"
+      },
+      {
+        "key": "bibr7-0956797609358586",
+        "doi-asserted-by": "crossref",
+        "volume-title": "Social motivation",
+        "author": "Dunning D.",
+        "DOI": "10.4324/9780203833995"
+      },
+      {
+        "key": "bibr8-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.79.6.861"
+      },
+      {
+        "key": "bibr9-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146167205284007"
+      },
+      {
+        "key": "bibr10-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.87.3.293"
+      },
+      {
+        "key": "bibr11-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature01474"
+      },
+      {
+        "key": "bibr12-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joep.2008.04.006"
+      },
+      {
+        "key": "bibr13-0956797609358586",
+        "author": "Fetchenhauer D.",
+        "journal-title": "Evolution & Human Behavior"
+      },
+      {
+        "key": "bibr14-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.95.1.128"
+      },
+      {
+        "key": "bibr15-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511808098"
+      },
+      {
+        "key": "bibr16-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/3094850"
+      },
+      {
+        "key": "bibr17-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0003-066X.54.12.1053"
+      },
+      {
+        "key": "bibr18-0956797609358586",
+        "volume-title": "Human inference: Strategies and shortcomings of social judgment",
+        "author": "Nisbett R.E.",
+        "year": "1980"
+      },
+      {
+        "key": "bibr19-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0022-1031(03)00015-5"
+      },
+      {
+        "key": "bibr20-0956797609358586",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/a0015072"
+      }
+    ],
+    "container-title": [
+      "Psychological Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0956797609358586",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/0956797609358586",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0956797609358586",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2026-05-01T22:53:23Z",
+      "timestamp": 1777676003000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/0956797609358586"
+      }
+    },
+    "subtitle": [
+      "Asymmetric Feedback Underlies Misguided Skepticism Regarding the Trustworthiness of Others"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          8
+        ]
+      ]
+    },
+    "references-count": 20,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/0956797609358586"
+    ],
+    "URL": "https://doi.org/10.1177/0956797609358586",
+    "relation": {},
+    "ISSN": [
+      "0956-7976",
+      "1467-9280"
+    ],
+    "issn-type": [
+      {
+        "value": "0956-7976",
+        "type": "print"
+      },
+      {
+        "value": "1467-9280",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          8
+        ]
+      ]
+    }
+  }
+}

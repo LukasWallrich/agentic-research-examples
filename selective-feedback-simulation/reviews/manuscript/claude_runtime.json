@@ -1,0 +1,29 @@
+[
+  {
+    "review": "manuscript round 1",
+    "models": [
+      "claude-haiku-4-5-20251001",
+      "claude-fable-5-1"
+    ],
+    "reported_api_equivalent_cost_usd": 1.110712,
+    "billing": "authenticated Claude Max subscription; reported API-equivalent cost is not an incremental invoice"
+  },
+  {
+    "review": "manuscript round 2",
+    "models": [
+      "claude-haiku-4-5-20251001",
+      "claude-fable-5-1"
+    ],
+    "reported_api_equivalent_cost_usd": 1.162097,
+    "billing": "authenticated Claude Max subscription; reported API-equivalent cost is not an incremental invoice"
+  },
+  {
+    "review": "manuscript round 3",
+    "models": [
+      "claude-haiku-4-5-20251001",
+      "claude-fable-5-1"
+    ],
+    "reported_api_equivalent_cost_usd": 1.3111680000000001,
+    "billing": "authenticated Claude Max subscription; reported API-equivalent cost is not an incremental invoice"
+  }
+]

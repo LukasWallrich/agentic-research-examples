@@ -1,0 +1,35 @@
+{
+  "checked_utc": "2026-09-28T11:05:35.200505+00:00",
+  "pdf": "manuscript/manuscript.pdf",
+  "sha256": "fd4024a86a910012f3496281236f3aa939dff9bcfddd2e0756ea618642f27dbe",
+  "pages": 17,
+  "render": "pdftoppm -scale-to 1100 -png",
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "passed": true,
+  "findings": [
+    "All pages inspected; no clipping or missing glyphs.",
+    "Five tables have aligned columns and captions on the same page as their table.",
+    "Figure labels and error bars are legible; the figure remains with its caption.",
+    "All thirteen reference entries render completely without splitting an entry across pages.",
+    "Full title and intended-author approval-pending status appear on the first page."
+  ],
+  "scope": "Visual layout assessment of this exact PDF; not scientific or human authorship validation."
+}

@@ -1,0 +1,152 @@
+## Answer
+
+# Review of "Learning from disagreements when selective feedback helps and harms advisor evaluation"
+
+**Reviewer:** Anonymous Peer Reviewer (Judgment and Decision Making)  
+**Round:** 1 (Maximum 3 rounds)  
+**Recommendation:** Major Revision (Substantial Major Issues Remain)
+
+---
+
+## 1. Overview and Summary of the Paper
+
+This manuscript presents a computational and analytic exploration of how selective outcome feedback influences comparative advisor evaluation. The author formalizes a clean distinction between estimating an advisor’s absolute accuracy and deciding whether an advisor is superior to oneself ($\Delta = E[A - H] > 0$). The core analytical observation is that uniformly sampling disagreements preserves the sign of the comparative accuracy difference ($\Delta / d$), whereas evaluating the advisor's hit rate against an unadjusted marginal self-accuracy benchmark ($h$) introduces an estimand mismatch that can lead a decision maker to reject a superior advisor. When feedback selection is further conditioned on subjective confidence (e.g., verifying disagreements primarily when the human is confident), this sign preservation can break down. The paper explores this through analytic derivations and a prospective simulation comparing absolute, unweighted paired, inverse-probability-weighted (IPW), and capped-weight summaries across fixed label budgets ($N \in \{20, 100, 500\}$) in an 82-environment grid. Finally, the manuscript outlines a proposed laboratory display-manipulation experiment designed to test whether these summary statistics describe human source adoption.
+
+The manuscript addresses a fundamentally important problem at the intersection of advice taking, information sampling, and human-AI decision making. The mathematical demonstration that paired disagreement sampling preserves the comparative sign under uniform sampling is crisp and intuitive. Moreover, the paper is commendable for explicitly stating that the simulated agents implement stipulated estimators and that behavioral learning mechanisms remain unvalidated, rather than masquerading simulation outputs as empirical psychological facts.
+
+However, several fundamental issues must be resolved before the paper can meet the standards of a rigorous JDM Theory Article:
+1. **Epistemic framing:** Framing mathematical identities as empirical "hypotheses" (H1, H2) that are "confirmed" or "supported" by Monte Carlo simulation misrepresents the epistemology of computational modeling.
+2. **Estimand and weighting targets:** The normalized IPW estimator targets the conditional disagreement difference ($\Delta / d$), not the global accuracy difference ($\Delta$), and assumes oracle access to the selection ratio $k$.
+3. **Loss benchmark and action space:** The all-or-nothing global adoption task artificially restricts the action space and ignores stratified delegation (the obvious JDM strategy when confidence is diagnostic).
+4. **Resource matching:** Equating verified labels ($N$) conceals up to a 6.67-fold disparity in the number of cases encountered (opportunity costs).
+5. **Behavioral experiment identification:** The proposed empirical test manipulates explicit software summary displays rather than identifying cognitive learning mechanisms, conflating information display comprehension with psychological feedback processing.
+6. **Literature grounding:** The manuscript lacks an actual bibliography under `# References` and omits foundational JDM literature on selective outcome feedback, confirmation bias, and the Judge-Advisor System.
+7. **Authorship and accountability:** The AI disclosure explicitly disclaims completed human oversight, violating core ethical and authorship standards.
+
+---
+
+## 2. Evaluation Across Core Dimensions
+
+### A. Novelty and Theoretical Contribution
+The paper's primary conceptual strength is linking sampling bias from selective verification to comparative judgment in advice taking. In JDM, the distinction between absolute evaluation (e.g., estimating advisor calibration or hit rate) and paired comparative evaluation (who is better on disputed cases) is often blurred in both experimental paradigms and lay intuition. 
+
+However, the analytical core—that discordant pairs identify the sign and direction of paired binary differences—is the classic foundation of McNemar's test and paired binary comparison models. The paper's novel contribution lies in showing how confidence-stratified verification interacts with this paired structure to invert the sign, and exploring the finite-sample bias-variance tradeoff of IPW correction. This is a valuable theoretical contribution, but its novelty should be framed around the *sampling ecology of advice evaluation*, rather than presented as a discovery of statistical identities.
+
+### B. Mathematical and Statistical Correctness
+1. **Definition of Conditional Advantages ($\delta_L, \delta_H$):**  
+   In the Analytic Framework, the manuscript states that high-confidence disagreements are verified $k$ times as often as low-confidence disagreements, and that the sign of the selected paired comparison is the sign of $p\delta_L + (1-p)k\delta_H$.  
+   *Issue:* For this algebraic cancellation to hold, $\delta_L$ and $\delta_H$ must be defined as the *marginal* advisor advantages within each stratum ($E[A - H \mid C = L]$), not the advantages conditional on disagreement ($E[A - H \mid C = L, D]$). If $\delta_L$ were conditional on disagreement, the stratum disagreement probabilities ($d_L, d_H$) would not cancel out and would have to appear explicitly in the formula: $p d_L \delta_L + (1-p) d_H k \delta_H$. The author must explicitly define $\delta_L \equiv E[A - H \mid C = L]$ and show the intermediate step demonstrating why $d_L$ and $d_H$ drop out.
+2. **Estimand Mismatch in the IPW Estimator ($\Delta / d$ vs. $\Delta$):**  
+   The paper notes that sample-normalized IPW estimates $\Delta / d$ rather than the unscaled advantage $\Delta$. This is not a cosmetic nuance—it is an estimand mismatch:
+   - If adoption is an unconstrained sign test against zero ($\Delta > 0$), then $\Delta / d > 0 \iff \Delta > 0$ because $d > 0$.
+   - However, in real-world or economic decisions where adopting an advisor entails an acquisition cost, hurdle rate, subscription fee, or switching friction $c > 0$, adopting when $\widehat{\Delta/d} > c$ leads to severe over-adoption whenever $d < 1$. Because $d$ cannot be identified from disagreement-only feedback, the weighted learner cannot recover $\Delta$ without knowing or estimating the overall disagreement rate $d$. The paper must clarify this boundary condition.
+3. **Oracle Knowledge of Selection Weights ($k$):**  
+   The weighted learner assumes exact, known weights ($w_L = k, w_H = 1$). In any behavioral setting, decision makers do not possess oracle access to their verification ratio $k$. If $k$ is estimated from empirical counts, or if the decision maker misestimates their verification propensity, IPW estimators suffer substantial finite-sample instability and bias. The manuscript should acknowledge this limitation and ideally evaluate sensitivity to misspecified weights.
+
+### C. Simulated "Confirmation" of Programmed Identities
+In the Method and Results, the author specifies two formal hypotheses:
+- **H1:** In the crossing environment ($k=4, N=100$), weighting produces less regret than unweighted pairing.
+- **H2:** In the homogeneous environment ($k=8, N=20$), weighting produces more regret than unweighted pairing.
+
+The Results section reports that "H1 was supported" and "H2 was supported," providing Monte Carlo standard errors, 97.5% confidence intervals, and Bonferroni adjustments.
+
+*Critique:* **This constitutes a category error.** 
+In the crossing environment, the unweighted estimator has a strictly negative asymptotic expectation ($p\delta_L + (1-p)k\delta_H = 0.5(0.20) + 0.5(4)(-0.10) = -0.10 < 0$), whereas the weighted estimator has a strictly positive expectation ($\Delta/d = +0.05 / d > 0$). By the Weak Law of Large Numbers, as $N$ grows, the probability of selecting the advisor approaches 0 for the unweighted rule and 1 for the weighted rule. At $N=100$, this separation is mathematically guaranteed. In H2, both estimators have positive expectation, but the IPW weights ($8^2 = 64$) drastically inflate the estimator's variance at $N=20$, naturally inflating finite-sample error.
+
+These outcomes are deterministic mathematical consequences of the specified parameters, equations, and pseudo-random number generators. Running 20,000 synthetic trials does not test an empirical hypothesis; it merely numerically computes an integral that could be evaluated directly or approximated via the Central Limit Theorem. The Monte Carlo interval measures only the precision of the author's computer run, not scientific or empirical uncertainty. Framing programmed mathematical tautologies as "supported hypotheses" must be abandoned. The simulation should be described for what it is: a **numerical sensitivity exploration of the finite-sample bias-variance tradeoff**.
+
+### D. Loss Benchmark and Action Space
+1. **Unconditional Global Adoption vs. Stratified Routing:**  
+   The paper restricts the decision maker to an unconditional global choice: adopt the advisor for 100% of future cases or retain oneself for 100% of future cases. In JDM, human decision makers do not treat advice as an irreversible, all-or-nothing takeover; advice utilization is trial-by-trial and confidence-stratified (Soll & Mannes, 2011; Gino & Moore, 2007).  
+   Crucially, in the focal crossing scenario:
+   - Low confidence: Human = 60%, Advisor = 80% (Advisor advantage = +20%)
+   - High confidence: Human = 90%, Advisor = 80% (Human advantage = +10%)  
+   If the decision maker implements the intuitive JDM heuristic of delegating to the advisor only when uncertain ($C=L$) and keeping self when confident ($C=H$), their expected accuracy is $0.5(0.80) + 0.5(0.90) = 85.0\%$. This comfortably outperforms both the pure advisor (80.0%) and the pure human (75.0%)! By constraining the action space to unconditional global adoption, the paper forces the agent to solve an artificial, strictly inferior decision problem. The authors must explicitly justify why unconditional adoption is of interest (e.g., in complete automation handoffs) and discuss how confidence-contingent delegation alters the value of selective feedback.
+2. **Tautological Regret Metric:**  
+   Expected deployment regret is defined as $|\Delta| \times P(\text{selecting inferior source})$. For any single environment, $|\Delta|$ is a fixed scalar constant. Thus, regret is simply a linear rescaling of the binary classification error rate $P(\text{incorrect selection})$. Presenting regret as a distinct decision-theoretic metric adds no analytical depth unless costs of error are asymmetric or varying across environments.
+
+### E. Resource Matching and Acquisition Costs
+The paper matches estimators by the number of *verified outcomes* (labels: $N \in \{20, 100, 500\}$). However, as the author notes in passing:
+- In the crossing environment at $k=4$, verification yield drops to 15.0%, requiring an expected **666.7 case encounters** to observe 100 labels.
+- In uniform disagreement sampling, yield is 30.0%, requiring **333.3 encounters**.
+- Under random sampling, 100 labels requires exactly **100 encounters**.
+
+Holding label count constant equates ground-truth verification costs, but completely ignores **screening, monitoring, and opportunity costs**. In many real-world environments, encountering 666 cases takes 6.67 times longer and incurs substantial operational overhead compared to encountering 100 cases. A fair resource comparison must evaluate learners under both:
+1. Equal label budget ($N_{\text{verified}}$ constant);
+2. Equal opportunity/encounter budget ($N_{\text{encountered}}$ constant).  
+Under equal encounter budgets, the selective learner would receive far fewer labels (e.g., 15 vs. 100), which may entirely eliminate the precision advantages of weighting.
+
+### F. Psychological Falsifiability and Behavioral Experiment Identification
+The paper explicitly states that it does not provide human data and that its behavioral claims are untested. A Theory Article in JDM does not automatically require empirical data, provided it offers a genuine, falsifiable theoretical model. However, the proposed behavioral experiment (Section "A behavioural test that could reject the account") suffers from a severe **identification confound**:
+1. **Display Evaluation vs. Learning Mechanism:**  
+   The proposed experiment manipulates *external information displays* (advisor-only display, paired display, selection-adjusted display). Showing participants an experimenter-calculated "selection-adjusted score" and observing whether they follow it tests **graphical/numeric display comprehension and experimenter demand**, not whether humans internally adjust for selection or how they learn from feedback.
+2. **Alternative Psychological Explanations:**  
+   The paper notes that choice could be governed by itemwise confidence, but ignores well-established JDM phenomena:
+   - **Algorithm Aversion / Asymmetric Error Weighting:** People penalize advisor errors far more severely than personal errors (Dietvorst et al., 2015). Even if $E[A - H \mid D] > 0$, an advisor error on a high-confidence trial may produce an outsized psychological penalty that has nothing to do with linear IPW estimation.
+   - **Confirmation Bias / Positive Test Strategy:** When people verify high-confidence disagreements, they are often seeking to confirm their own correctness (Klayman & Ha, 1987; Einhorn & Hogarth, 1978). If feedback proves them wrong, they may discount the feedback source rather than update their comparative accuracy estimate.
+   - **Numeracy and Trust in Adjustments:** If an interface presents an opaque "selection-corrected" statistic, lay decision makers may distrust it compared to raw frequency counts.
+
+To make the theoretical model genuinely testable as a psychological theory, the author must distinguish between:
+- (a) A normative/prescriptive benchmark for decision-support tool design (how software *should* summarize selective feedback to humans);
+- (b) A descriptive cognitive model of human belief updating from selective experience.
+
+### G. Reference Support and Literature Grounding
+1. **Empty References Section:**  
+   The manuscript ends with the header `# References`, but **not a single bibliographic entry is printed**. While `references.json` is referenced in the YAML frontmatter, the submitted text lacks the bibliography. This must be populated in full.
+2. **Missing JDM Foundations:**  
+   The manuscript currently frames its literature primarily around recent computer science and AI routing preprints (@gao2021, @zavattari2026, @li2026) while neglecting essential foundations of JDM and behavioral decision research:
+   - **Selective outcome feedback and persistence of invalidity:** The seminal work of Einhorn & Hogarth (1978) (*"Confidence in judgment: Persistence of the illusion of validity"*) is the classic JDM foundation for learning from outcome feedback when non-selected or unverified cases are ignored.
+   - **Information sampling and cognitive bias:** Fiedler's (2000) sampling approach to judgment biases, and Denrell & Le Mens (2011) on sampling explanations of social judgment.
+   - **Judge-Advisor System (JAS):** Sniezek & Buckley (1995), Harvey & Fischer (1997), Yaniv & Kleinberger (2000), Yaniv (2004), and Soll & Mannes (2011) on egocentric advice discounting and confidence-weighted integration.
+   - **Algorithm aversion and appreciation:** Dietvorst, Simmons, & Massey (2015, 2018) and Logg, Minson, & Moore (2019).
+
+### H. Autonomous AI Disclosure and Academic Accountability
+In the Transparency and Declarations section, the manuscript states:
+> *"OpenAI Codex (GPT-6 family, application and independent agents) carried out ideation, searching, design, coding, analysis, drafting, and checking on 28 September 2026. Claude via its authenticated CLI and Gemini 3.8 Flash (High) via agy reviewed ideas and drafts; Codex CLI reviewed code and ran the full coarse-ink 1.4.0 manuscript pipeline... This autonomous draft requires the intended human author's assessment and approval before submission; no claim of completed human oversight is made."*
+
+*Critique:* **This statement is unacceptable for a formal journal submission.**  
+All major academic publishing bodies (COPE, ICMJE, APA) require that every named human author take full public responsibility and intellectual accountability for the integrity, validity, and veracity of the manuscript's methods, data, and conclusions. Submitting a manuscript with the explicit declaration that *"no claim of completed human oversight is made"* implies that the submitted work has not been verified or endorsed by the named author. Before this paper can be considered for review or publication, the human author must personally review, verify, and take full scientific ownership of every claim, derivation, and line of code.
+
+---
+
+## 3. Major vs. Minor Issues
+
+### Major Issues
+1. **Reframe Simulation Hypotheses:** Eliminate the language of empirical hypothesis testing ("H1 supported", "H2 supported", Monte Carlo significance intervals) for mathematical consequences of the model parameters. Treat the simulation as a numerical exploration of the bias-variance tradeoff across finite sample sizes.
+2. **Address Estimand Mismatch ($\Delta/d$ vs. $\Delta$):** Formally explain that IPW over disagreements targets $\Delta/d$ and cannot identify $\Delta$ or support decision thresholds $c > 0$ without knowledge of the base disagreement rate $d$.
+3. **Justify Action Space and Explore Stratified Delegation:** Acknowledge that unconditional global adoption is a restrictive baseline. Discuss or simulate how selective feedback affects conditional/stratified advice taking ($A$ when $C=L$, $H$ when $C=H$), which yields superior performance in the crossing scenario.
+4. **Dual Resource Matching (Labels vs. Encounters):** Provide comparisons holding the total number of encountered cases constant alongside the fixed-label comparisons, highlighting the substantial opportunity cost of selective verification.
+5. **Decouple Cognitive Theory from Display Manipulation:** Clarify whether the paper proposes a descriptive cognitive model of human learning or a prescriptive design principle for feedback interfaces. Address psychological confounds (algorithm aversion, asymmetric error weighting, demand effects) in the proposed experiment.
+6. **Integrate Foundational JDM Literature:** Cite and thoroughly engage with Einhorn & Hogarth (1978), Fiedler (2000), Sniezek & Buckley (1995), Yaniv (2004), and Dietvorst et al. (2015). Ensure the bibliography is rendered completely.
+7. **Affirm Human Oversight and Authorship Responsibility:** Remove the disclaimer disclaiming human oversight. The named author must explicitly attest to having verified the work and taking full responsibility for the paper.
+
+### Minor Issues
+1. **Clarify Notation:** In the Analytic Framework, explicitly state that $\delta_L$ and $\delta_H$ denote stratum-specific marginal accuracy differences ($E[A - H \mid C]$) rather than disagreement-conditional differences, and explicitly demonstrate the cancellation of $d_L$ and $d_H$.
+2. **Justify Weight Cap of 2:** Explain the theoretical rationale for choosing a cap of 2 for the capped-weight estimator, or analyze sensitivity to alternative cap thresholds.
+3. **Table 1 and 2 Clarifications:** In Table 1, replace "Outcome: supported" with a descriptive label such as "Direction: weighted < paired". In Table 2, clarify that adoption probabilities reflect the proportion of simulation runs where the rule selected the advisor.
+4. **Clarify the "Absolute Learner" Benchmark:** Acknowledge that equipping the absolute learner with perfect knowledge of marginal human accuracy $h$, while depriving it of paired outcome data on the verified trials, creates an asymmetric, somewhat artificial baseline.
+5. **Grammar and Typographical Details:** Correct the minor typographical error in the Discussion ("The prespecified simulation show..." $\to$ "The prespecified simulations show...").
+
+---
+
+## 4. Numbered List of Actionable Comments
+
+1. **Remove pseudo-hypothesis testing:** Reframe H1 and H2 from "confirmatory empirical hypotheses" to analytical propositions or numerical demonstrations. Eliminate claims that Monte Carlo intervals "support" or "confirm" mathematical identities.
+2. **Provide the complete bibliography:** Populate the `# References` section with full bibliographic citations for all works cited in the text.
+3. **Integrate foundational JDM citations:** Frame the contribution within classic JDM research on selective outcome feedback (Einhorn & Hogarth, 1978), information sampling (Fiedler, 2000; Denrell, 2005), and the Judge-Advisor System (Sniezek & Buckley, 1995; Yaniv, 2004; Soll & Mannes, 2011; Dietvorst et al., 2015).
+4. **Explicitly define conditional advantages:** Define $\delta_L \equiv E[A - H \mid C = L]$ and $\delta_H \equiv E[A - H \mid C = H]$, and show the step where disagreement probabilities $d_L$ and $d_H$ cancel out in the numerator of the selected contrast.
+5. **Explicate the estimand mismatch ($\Delta/d$ vs. $\Delta$):** Add a formal discussion of the fact that sample-normalized IPW estimates $\Delta/d$, explaining why this prevents recovering the true magnitude $\Delta$ and fails if adoption entails a non-zero adoption cost or hurdle rate ($c > 0$).
+6. **Incorporate case-encounter resource matching:** Add an analysis or table matching estimators by the number of encountered opportunities (trials) rather than solely by verified labels, explicitly illustrating the trade-off between label acquisition costs and case search/waiting costs.
+7. **Expand discussion of the action space (stratified delegation):** Discuss the limitation of restricting the agent to unconditional global adoption. Explicitly note that in the crossing environment, a confidence-contingent policy achieves 85% accuracy, surpassing both pure sources.
+8. **Re-conceptualize the proposed behavioral experiment:** Distinguish between testing interface display aids (decision support) versus testing human cognitive updating. Address how the design will isolate selection correction from algorithm aversion, asymmetric error salience, and experimenter demand.
+9. **Examine weight misspecification:** Discuss what occurs when decision makers do not know the exact sampling ratio $k$ and must estimate it with noise or cognitive bias.
+10. **Provide rationale for weight capping:** Explain why a cap of 2 was chosen for the capped-weight estimator and discuss how optimal caps depend on sample size and variance inflation.
+11. **Revise the AI disclosure and confirm human oversight:** Remove the statement that "no claim of completed human oversight is made." The named author must actively review and verify all analyses and take full academic responsibility for the manuscript.
+12. **Correct typographical error:** Fix subject-verb agreement on line 1 of the Discussion ("simulation show" $\to$ "simulations show").
+
+---
+
+## 5. Verdict
+
+**Major issues remain.**  
+The manuscript has a solid mathematical core regarding the properties of paired disagreement sampling, and it commendably avoids claiming that simulated behavior represents human data. However, the mischaracterization of mathematical identities as empirical simulation hypotheses, the artificial restrictions of the decision setting, the incomplete resource matching, the confounding in the proposed behavioral experiment, the omitted literature, and the disclaimer of human oversight constitute major obstacles that must be thoroughly resolved in revision.

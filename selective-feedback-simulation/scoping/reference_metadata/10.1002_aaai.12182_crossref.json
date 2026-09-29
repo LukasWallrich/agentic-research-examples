@@ -1,0 +1,728 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          3
+        ]
+      ],
+      "date-time": "2026-09-03T14:43:14Z",
+      "timestamp": 1788446594224,
+      "version": "build-2803163510"
+    },
+    "reference-count": 77,
+    "publisher": "Wiley",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2024-07-01T00:00:00Z",
+          "timestamp": 1719792000000
+        },
+        "content-version": "am",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2024-07-01T00:00:00Z",
+          "timestamp": 1719792000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000006",
+        "name": "Office of Naval Research",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "N00014\u201021\u20101\u20102707"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "N00014\u201021\u20101\u20102707"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000006",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100017005",
+        "name": "Allen Institute for Artificial Intelligence",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100017005",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "AI Magazine"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          9
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>The current literature on AI\u2010advised decision making\u2014involving explainable AI systems advising human decision makers\u2014presents a series of inconclusive and confounding results. To synthesize these findings, we propose a simple theory that elucidates the frequent failure of AI explanations to engender appropriate reliance and complementary decision making performance. In contrast to other common desiderata, for example, interpretability or spelling out the AI's reasoning process, we argue that explanations are only useful to the extent that they <jats:italic>allow a human decision maker to verify the correctness of the AI's prediction</jats:italic>. Prior studies find in many decision making contexts that AI explanations <jats:italic>do not</jats:italic> facilitate such verification. Moreover, most tasks fundamentally do not allow easy verification, regardless of explanation method, limiting the potential benefit of any type of explanation. We also compare the objective of complementary performance with that of appropriate reliance, decomposing the latter into the notions of outcome\u2010graded and strategy\u2010graded\u00a0reliance.</jats:p>",
+    "DOI": "10.1002/aaai.12182",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2024-07-01T15:23:45Z",
+      "timestamp": 1719847425000
+    },
+    "page": "317-332",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 40,
+    "title": [
+      "In search of verifiability: Explanations rarely enable complementary performance in AI\u2010advised decision making"
+    ],
+    "prefix": "10.1002",
+    "volume": "45",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0612-5782",
+        "authenticated-orcid": false,
+        "given": "Raymond",
+        "family": "Fok",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Washington Seattle Washington USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel S.",
+        "family": "Weld",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Allen Institute for AI Seattle Washington USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_11_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2018.2870052"
+      },
+      {
+        "key": "e_1_2_11_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12911-021-01542-6"
+      },
+      {
+        "key": "e_1_2_11_4_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Alqaraawi Ahmed MartinSchuessler PhilippWei\u00df EnricoCostanza andNadiaBerthouze.2020. \u201cEvaluating Saliency Map Explanations for Convolutional Neural Networks: A User Study.\u201d InProceedings of the 25th International Conference on Intelligent User Interfaces (IUI '20) Cagliari Italy 275\u2013285.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3377325.3377519"
+      },
+      {
+        "key": "e_1_2_11_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v35i8.16819"
+      },
+      {
+        "key": "e_1_2_11_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/hcomp.v7i1.5285"
+      },
+      {
+        "key": "e_1_2_11_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v33i01.33012429"
+      },
+      {
+        "key": "e_1_2_11_8_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bansal Gagan TongshuangWu JoyceZhou RaymondFok BesmiraNushi EceKamar Marco TulioRibeiro andDanielWeld.2021. \u201cDoes the Whole Exceed Its Parts? The Effect of AI Explanations on Complementary Team Performance.\u201d InProceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI'21) Yokohama Japan 16.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3411764.3445717"
+      },
+      {
+        "key": "e_1_2_11_9_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bell Andrew IanSolano\u2010Kamaiko OdedNov andJuliaStoyanovich.2022. \u201cIt's Just Not That Simple: An Empirical Study of the Accuracy\u2010Explainability Trade\u2010off in Machine Learning for Public Policy.\u201d In2022 ACM Conference on Fairness Accountability and Transparency (FAccT'22) Seoul Republic of Korea 248\u2013266.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3531146.3533090"
+      },
+      {
+        "key": "e_1_2_11_10_1",
+        "unstructured": "Bilgic Mustafa andRaymond J.Mooney.2005. \u201cExplaining Recommendations: Satisfaction vs. Promotion.\u201d InProceedings of Beyond Personalization 2005: A Workshop on the Next Stage of Recommender Systems Research at the 2005 International Conference on Intelligent User Interfaces (IUI '05) 1\u20136.San Diego CA: Association for Computing Machinery."
+      },
+      {
+        "key": "e_1_2_11_11_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Biran Or andKathleenMcKeown.2017. \u201cHuman\u2010Centric Justification of Machine Learning Predictions.\u201d InProceedings of the Twenty\u2010Sixth International Joint Conference on Artificial Intelligence 1461\u20131467.Melbourne Australia: International Joint Conferences on Artificial Intelligence Organization.",
+        "DOI": "10.24963/ijcai.2017/202"
+      },
+      {
+        "key": "e_1_2_11_12_1",
+        "unstructured": "Bowman Samuel R. JeeyoonHyun EthanPerez EdwinChen CraigPettit ScottHeiner Kamil\u0117Luko\u0161i\u016bt\u0117 et al.2022. \u201cMeasuring Progress on Scalable Oversight for Large Language Models.\u201darXiv preprint arXiv:2211.03540."
+      },
+      {
+        "key": "e_1_2_11_13_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bu\u00e7inca Zana PhoebeLin Krzysztof Z.Gajos andElena L.Glassman.2020. \u201cProxy Tasks and Subjective Measures Can Be Misleading in Evaluating Explainable AI Systems.\u201d InProceedings of the 25th International Conference on Intelligent User Interfaces (IUI '20) Cagliari Italy 454\u2013464.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3377325.3377498"
+      },
+      {
+        "key": "e_1_2_11_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3449287"
+      },
+      {
+        "key": "e_1_2_11_15_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bunt Andrea MatthewLount andCatherineLauzon.2012. \u201cAre Explanations Always Important? A Study of Deployed Low\u2010Cost Intelligent Interactive Systems.\u201d InProceedings of the 2012 ACM International Conference on Intelligent User Interfaces (IUI'12) Lisbon Portugal 169\u2013178.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/2166966.2166996"
+      },
+      {
+        "key": "e_1_2_11_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1368430211419174"
+      },
+      {
+        "key": "e_1_2_11_17_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Carton Samuel QiaozhuMei andPaulResnick.2020. \u201cFeature\u2010Based Explanations Don't Help People Detect Misclassifications of Online Toxicity.\u201d InProceedings of the International AAAI Conference on Web and Social Media14 95\u2013106.",
+        "DOI": "10.1609/icwsm.v14i1.7282"
+      },
+      {
+        "key": "e_1_2_11_18_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Caruana Rich YinLou JohannesGehrke PaulKoch MarcSturm andNoemieElhadad.2015. \u201cIntelligible Models for HealthCare: Predicting Pneumonia Risk and Hospital 30\u2010Day Readmission.\u201d InProceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining KDD'15 Sydney NSW Australia 1721\u20131730. New York NY USA: Association for Computing Machinery.",
+        "DOI": "10.1145/2783258.2788613"
+      },
+      {
+        "key": "e_1_2_11_19_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chandrasekaran Arjun VirajPrabhu DeshrajYadav PrithvijitChattopadhyay andDeviParikh.2018. \u201cDo Explanations Make VQA Models More Predictable to a Human?\u201d InProceedings of the 2018 Conference on Empirical Methods in Natural Language Processing 1036\u20131042.Brussels Belgium: Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/D18-1128"
+      },
+      {
+        "key": "e_1_2_11_20_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen Chacha Shi Feng Amit Sharma and Chenhao Tan. 2023. \u201cMachine Explanations and Human Understanding.\u201d InProceedings of the 2023 ACM Conference on Fairness Accountability and Transparency (FAccT'23) Chicago IL USA 1. New York NY USA: Association for Computing Machinery.",
+        "DOI": "10.1145/3593013.3593970"
+      },
+      {
+        "key": "e_1_2_11_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3610219"
+      },
+      {
+        "key": "e_1_2_11_22_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cheng Hao\u2010Fei RuotongWang ZhengZhang FionaO'Connell TerranceGray F.Maxwell Harper andHaiyiZhu.2019. \u201cExplaining Decision\u2010Making Algorithms through UI: Strategies to Help Non\u2010Expert Stakeholders.\u201d InProceedings of the 2019 CHI Conference on Human Factors in Computing Systems 1\u201312.Glasgow Scotland UK: ACM.",
+        "DOI": "10.1145/3290605.3300789"
+      },
+      {
+        "key": "e_1_2_11_23_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chromik Michael MalinEiband FelicitasBuchner AdrianKr\u00fcger andAndreasButz.2021. \u201cI Think I Get Your Point AI! The Illusion of Explanatory Depth in Explainable AI.\u201d In26th International Conference on Intelligent User Interfaces 307\u2013317.College Station TX USA: ACM.",
+        "DOI": "10.1145/3397481.3450644"
+      },
+      {
+        "key": "e_1_2_11_24_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Das Devleena andSoniaChernova.2020. \u201cLeveraging Rationales to Improve Human Task Performance.\u201d InProceedings of the 25th International Conference on Intelligent User Interfaces (IUI'20) Cagliari Italy 510\u2013518.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3377325.3377512"
+      },
+      {
+        "key": "e_1_2_11_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0749-5978(92)90044-8"
+      },
+      {
+        "key": "e_1_2_11_26_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Eiband Malin DanielBuschek AlexanderKremer andHeinrichHussmann.2019. \u201cThe Impact of Placebic Explanations on Trust in Intelligent Systems.\u201d InExtended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems (CHI EA'19) Glasgow Scotland UK 1\u20136.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3290607.3312787"
+      },
+      {
+        "key": "e_1_2_11_27_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Feng Shi andJordanBoyd\u2010Graber.2019. \u201cWhat Can AI Do for Me? Evaluating Machine Learning Interpretations in Cooperative Play.\u201d InProceedings of the 24th International Conference on Intelligent User Interfaces (IUI'19) Marina del Ray California 229\u2013239.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3301275.3302265"
+      },
+      {
+        "key": "e_1_2_11_28_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gajos Krzysztof Z. andLenaMamykina.2022. \u201cDo People Engage Cognitively with AI? Impact of AI Assistance on Incidental Learning.\u201d In27th International Conference on Intelligent User Interfaces (IUI'22) Helsinki Finland 794\u2013806.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3490099.3511138"
+      },
+      {
+        "key": "e_1_2_11_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3432934"
+      },
+      {
+        "key": "e_1_2_11_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2589-7500(21)00208-9"
+      },
+      {
+        "key": "e_1_2_11_31_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Valeria Gonz\u00e1lez Ana GaganBansal AngelaFan YasharMehdad RobinJia andSrinivasanIyer.2021. \u201cDo Explanations Help Users Detect Errors in Open\u2010Domain QA? An Evaluation of Spoken vs. Visual Explanations.\u201d InFindings of the Association for Computational Linguistics: ACL\u2010IJCNLP 2021 1103\u20131116.Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/2021.findings-acl.95"
+      },
+      {
+        "key": "e_1_2_11_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3359152"
+      },
+      {
+        "key": "e_1_2_11_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0065-2601(08)60248-8"
+      },
+      {
+        "key": "e_1_2_11_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-2909.91.3.517"
+      },
+      {
+        "key": "e_1_2_11_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/icwsm.v13i01.3226"
+      },
+      {
+        "key": "e_1_2_11_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41398-021-01224-x"
+      },
+      {
+        "key": "e_1_2_11_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/tacl_a_00367"
+      },
+      {
+        "key": "e_1_2_11_38_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jesus S\u00e9rgio CatarinaBel\u00e9m VladimirBalayan Jo\u00e3oBento PedroSaleiro PedroBizarro andJo\u00e3oGama.2021. \u201cHow Can I Choose An Explainer? An Application\u2010grounded Evaluation of Post\u2010hoc Explanations.\u201d InProceedings of the 2021 ACM Conference on Fairness Accountability and Transparency FAccT'21 805\u2013815.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3442188.3445941"
+      },
+      {
+        "key": "e_1_2_11_39_1",
+        "volume-title": "Thinking, Fast and Slow",
+        "author": "Kahneman Daniel",
+        "year": "2011"
+      },
+      {
+        "key": "e_1_2_11_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-020-0232-8"
+      },
+      {
+        "key": "e_1_2_11_41_1",
+        "unstructured": "Kim Joon Sik ValerieChen DanishPruthi Nihar B.Shah andAmeetTalwalkar.2023. \u201cAssisting Human Decisions in Document Matching.\u201darXiv preprint arXiv:2302.08450."
+      },
+      {
+        "key": "e_1_2_11_42_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kim Sunnie S. Y. NicoleMeister Vikram V.Ramaswamy RuthFong andOlgaRussakovsky.2022. \u201cHIVE: Evaluating the Human Interpretability of Visual Explanations.\u201d InComputer Vision \u2013 ECCV 2022: 17th European Conference Proceedings Part XII Tel Aviv Israel October 23\u201327 2022 280\u2013298.Berlin Heidelberg:Springer\u2010Verlag.",
+        "DOI": "10.1007/978-3-031-19775-8_17"
+      },
+      {
+        "key": "e_1_2_11_43_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kim Sunnie S. Y. Elizabeth AnneWatkins OlgaRussakovsky RuthFong andAndr\u00e9sMonroy\u2010Hern\u00e1ndez.2023. \u201c\u201cHelp Me Help the AI\u201d: Understanding How Explainability Can Support Human\u2010AI Interaction.\u201d InProceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI'23) Hamburg Germany 1\u201317.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3544548.3581001"
+      },
+      {
+        "key": "e_1_2_11_44_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lai Vivian HanLiu andChenhaoTan.2020. \u201c\u201cWhy is \u2018Chicago\u2019 Deceptive?\u201d Towards Building Model\u2010Driven Tutorials for Humans.\u201d InProceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI'20) Honolulu HI USA 1\u201313.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3313831.3376873"
+      },
+      {
+        "key": "e_1_2_11_45_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lai Vivian andChenhaoTan.2019. \u201cOn Human Predictions with Explanations and Predictions of Machine Learning Models: A Case Study on Deception Detection.\u201d InProceedings of the Conference on Fairness Accountability and Transparency (FAT*'19) Atlanta GA USA 29\u201338.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3287560.3287590"
+      },
+      {
+        "key": "e_1_2_11_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.38.6.941"
+      },
+      {
+        "key": "e_1_2_11_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-1031(86)90022-3"
+      },
+      {
+        "key": "e_1_2_11_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.90.4.644"
+      },
+      {
+        "key": "e_1_2_11_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-1031(66)90032-1"
+      },
+      {
+        "key": "e_1_2_11_50_1",
+        "unstructured": "Lee Mina MeghaSrivastava AmeliaHardy JohnThickstun EsinDurmus AshwinParanjape InesGerard\u2010Ursin et\u00a0al.2023. \u201cEvaluating Human\u2010Language Model Interaction.\u201dTransactions on Machine Learning Research."
+      },
+      {
+        "key": "e_1_2_11_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3479867"
+      },
+      {
+        "key": "e_1_2_11_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tics.2006.08.004"
+      },
+      {
+        "key": "e_1_2_11_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41551-018-0304-0"
+      },
+      {
+        "key": "e_1_2_11_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artint.2018.07.007"
+      },
+      {
+        "key": "e_1_2_11_55_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Miller Tim.2023. \u201cExplainable AI is Dead Long Live Explainable AI! Hypothesis\u2010Driven Decision Support Using Evaluative AI.\u201d InProceedings of the 2023 ACM Conference on Fairness Accountability and Transparency (FAccT'23) Chicago IL USA 333\u2013342.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3593013.3594001"
+      },
+      {
+        "key": "e_1_2_11_56_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mittelstadt Brent ChrisRussell andSandraWachter.2019. \u201cExplaining Explanations in AI.\u201d InProceedings of the Conference on Fairness Accountability and Transparency (FAT*'19) Atlanta GA USA 279\u2013288.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3287560.3287574"
+      },
+      {
+        "key": "e_1_2_11_57_1",
+        "first-page": "26422",
+        "article-title": "The Effectiveness of Feature Attribution Methods and its Correlation with Automatic Evaluation Scores",
+        "volume": "34",
+        "author": "Nguyen Giang",
+        "year": "2021",
+        "journal-title": "Advances in Neural Information Processing Systems"
+      },
+      {
+        "key": "e_1_2_11_58_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mahsan Nourani ChiradeepRoy Jeremy EBlock Donald RHoneycutt TahrimaRahman EricRagan andVibhavGogate.2021. \u201cAnchoring Bias Affects Mental Model Formation and User Reliance in Explainable AI Systems.\u201d In26th International Conference on Intelligent User Interfaces 340\u2013350.College Station TX USA:ACM.",
+        "DOI": "10.1145/3397481.3450639"
+      },
+      {
+        "key": "e_1_2_11_59_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Parrish Alicia HarshTrivedi EthanPerez AngelicaChen NikitaNangia JasonPhang andSamuelBowman.2022. \u201cSingle\u2010Turn Debate Does Not Help Humans Answer Hard Reading\u2010Comprehension Questions.\u201d InProceedings of the First Workshop on Learning with Natural Language Supervision 17\u201328.Dublin Ireland:Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/2022.lnls-1.3"
+      },
+      {
+        "key": "e_1_2_11_60_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Poursabzi\u2010Sangdeh Forough Daniel GGoldstein Jake MHofman Jennifer WortmanVaughan andHannaWallach.2021. \u201cManipulating and Measuring Model Interpretability.\u201d InProceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI'21) Yokohama Japan 1\u201352pages.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3411764.3445315"
+      },
+      {
+        "key": "e_1_2_11_61_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "RibeiroMarco Tulio SameerSingh andCarlosGuestrin.2016. \u201c\u201cWhy Should I Trust You?\u201d: Explaining the Predictions of Any Classifier.\u201d InProceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining KDD'16 San Francisco California USA 1135\u20131144.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/2939672.2939778"
+      },
+      {
+        "key": "e_1_2_11_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42256-019-0048-x"
+      },
+      {
+        "key": "e_1_2_11_63_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Schemmer Max NiklasKuehl CarinaBenz AndreaBartos andGerhardSatzger.2023. \u201cAppropriate Reliance on AI Advice: Conceptualization and the Effect of Explanations.\u201d InProceedings of the 28th International Conference on Intelligent User Interfaces (IUI'23) Sydney NSW Australia 410\u2013422.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3581641.3584066"
+      },
+      {
+        "key": "e_1_2_11_64_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sivaraman Venkatesh Leigh ABukowski JoelLevin Jeremy M.Kahn andAdamPerer.2023. \u201cIgnore Trust or Negotiate: Understanding Clinician Acceptance of AI\u2010Based Treatment Recommendations in Health Care.\u201d InProceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI'23) Hamburg Germany 1\u201318.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3544548.3581075"
+      },
+      {
+        "key": "e_1_2_11_65_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Stasser Garold andBethDietz\u2010Uhler.2001. \u201cCollective Choice Judgment and Problem Solving.\u201dBlackwell Handbook of Social Psychology 31\u201355.Malden MA USA:Blackwell Publishers Ltd.",
+        "DOI": "10.1002/9780470998458.ch2"
+      },
+      {
+        "key": "e_1_2_11_66_1",
+        "volume-title": "Group Process and Productivity",
+        "author": "Steiner Ivan Dale",
+        "year": "1972"
+      },
+      {
+        "key": "e_1_2_11_67_1",
+        "first-page": "34287",
+        "article-title": "Visual Correspondence\u2010Based Explanations Improve AI Robustness and Human\u2010AI Team Accuracy",
+        "volume": "35",
+        "author": "Reza Taesiri Mohammad",
+        "year": "2022",
+        "journal-title": "Advances in Neural Information Processing Systems"
+      },
+      {
+        "key": "e_1_2_11_68_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tan Chenhao.2022. \u201cOn the Diversity and Limits of Human Explanations.\u201d InProceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies 2173\u20132188.Seattle USA:Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/2022.naacl-main.158"
+      },
+      {
+        "key": "e_1_2_11_69_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-020-0942-0"
+      },
+      {
+        "key": "e_1_2_11_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3579605"
+      },
+      {
+        "key": "e_1_2_11_71_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang Danding QianYang AshrafAbdul andBrian Y.Lim.2019. \u201cDesigning Theory\u2010Driven User\u2010Centric Explainable AI.\u201d InProceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI'19) Glasgow Scotland UK 1\u201315.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3290605.3300831"
+      },
+      {
+        "key": "e_1_2_11_72_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang Xinru andMingYin.2021. \u201cAre Explanations Helpful? A Comparative Study of the Effects of Explanations in AI\u2010Assisted Decision\u2010Making.\u201d In26th International Conference on Intelligent User Interfaces 318\u2013328.College Station TX USA:ACM.",
+        "DOI": "10.1145/3397481.3450650"
+      },
+      {
+        "key": "e_1_2_11_73_1",
+        "unstructured": "Weerts Hilde J. P. WernervanIpenburg andMykolaPechenizkiy.2019. \u201cA Human\u2010Grounded Evaluation of SHAP for Alert Processing.\u201darXiv preprint arXiv:1907:03324."
+      },
+      {
+        "key": "e_1_2_11_74_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3282486"
+      },
+      {
+        "key": "e_1_2_11_75_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yang Fumeng ZhuanyiHuang JeanScholtz andDustin L.Arendt.2020. \u201cHow Do Visual Explanations Foster End Users' Appropriate Trust in Machine Learning?\u201d InProceedings of the 25th International Conference on Intelligent User Interfaces (IUI'20) Cagliari Italy 189\u2013201.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3377325.3377480"
+      },
+      {
+        "key": "e_1_2_11_76_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yu Kun ShlomoBerkovsky RonnieTaib JianlongZhou andFangChen.2019. \u201cDo I Trust My Machine Teammate? An Investigation from Perception to Decision.\u201d InProceedings of the 24th International Conference on Intelligent User Interfaces (IUI'19) Marina del Ray California 460\u2013468.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3301275.3302277"
+      },
+      {
+        "key": "e_1_2_11_77_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang Yunfeng Q. VeraLiao andRachel K. E.Bellamy.2020. \u201cEffect of Confidence and Explanation on Accuracy and Trust Calibration in AI\u2010Assisted Decision Making.\u201d InProceedings of the 2020 Conference on Fairness Accountability and Transparency (FAT*'20) Barcelona Spain 295\u2013305.New York NY USA:Association for Computing Machinery.",
+        "DOI": "10.1145/3351095.3372852"
+      },
+      {
+        "key": "e_1_2_11_78_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zylberajch Hugo PiyawatLertvittayakumjorn andFrancescaToni.2021. \u201cHILDIF: Interactive Debugging of NLI Models Using Influence Functions.\u201d InProceedings of the First Workshop on Interactive Learning for Natural Language Processing 1\u20136.Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/2021.internlp-1.1"
+      }
+    ],
+    "container-title": [
+      "AI Magazine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/aaai.12182",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/aaai.12182",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2024-09-26T05:24:54Z",
+      "timestamp": 1727328294000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1002/aaai.12182"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "references-count": 77,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            9
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/aaai.12182"
+    ],
+    "URL": "https://doi.org/10.1002/aaai.12182",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0738-4602",
+      "2371-9621"
+    ],
+    "issn-type": [
+      {
+        "value": "0738-4602",
+        "type": "print"
+      },
+      {
+        "value": "2371-9621",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2023-06-05",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-03-13",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-07-01",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "hypothesis": "H1",
+    "env_id": "e040",
+    "schedule": "d4",
+    "n": 100,
+    "contrast": "regret_ipw_minus_paired",
+    "mean": -0.04357375000000004,
+    "mcse": 0.00011453660540881221,
+    "ci_low": -0.0438304726597734,
+    "ci_high": -0.04331702734022669,
+    "confidence_level": 0.975,
+    "predicted_sign": -1,
+    "outcome": "supported"
+  },
+  {
+    "hypothesis": "H2",
+    "env_id": "control",
+    "schedule": "d8",
+    "n": 20,
+    "contrast": "regret_ipw_minus_paired",
+    "mean": 0.011122500000000009,
+    "mcse": 0.00014654333295964638,
+    "ci_low": 0.010794037373792663,
+    "ci_high": 0.011450962626207355,
+    "confidence_level": 0.975,
+    "predicted_sign": 1,
+    "outcome": "supported"
+  }
+]

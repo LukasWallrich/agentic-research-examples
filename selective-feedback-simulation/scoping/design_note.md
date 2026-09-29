@@ -1,0 +1,11 @@
+# Candidate study specification (before preregistration)
+
+Question: When does correcting confidence-selected feedback improve the decision to use an advisor, given a fixed number of verified outcomes?
+
+Binary initial human/advisor decisions; truth feedback verifies both initial responses. Two human-confidence strata have accuracies .60 and .90. Confidence labels are calibrated by construction. Advisor accuracy varies across strata. Both-correct probabilities range over their full Frechet bounds. This is a deliberately transparent scenario model, not fitted human psychology.
+
+Distinguish three statements: (1) paired disagreement evidence preserves the sign of global accuracy advantage under uniform disagreement sampling, a mathematical identity; (2) confidence selection can reverse that sign only when conditional advantages have different signs, an analytic boundary; (3) the finite-label deployment-regret tradeoff among absolute, paired, inverse-weighted, and clipped-weighted learners, the computational question.
+
+Each simulated learner sees a fixed number of independent verified outcomes, then chooses globally between self and advisor. This targets an ex ante advisor-adoption decision, not optimal confidence-contingent delegation. Equal feedback counts are the primary resource constraint; expected opportunities needed to acquire those counts must also be reported. No endogenous audit/reliance loop is assumed. Calling this a model of hot-stove dynamics, permanent abandonment, or cumulative regret would be inaccurate.
+
+Future behavioural test: randomise both feedback schedule (uniform vs confidence-skewed disagreement) and summary display (advisor accuracy vs paired accuracy vs selection-adjusted paired estimate); measure estimated comparative accuracy and ex ante advisor choice on fresh randomly drawn tasks. Under the proposed display-to-estimator mapping, paired display should increase correct adoption under uniform disagreement feedback but lose protection when confidence selection reverses the audited advantage. Selection-adjusted display should recover at sufficient feedback budgets. Human failure to follow these quantitative predictions refutes the proposed mapping; it does not refute probability identities. No existing behavioural confirmation is claimed.

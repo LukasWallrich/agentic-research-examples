@@ -1,0 +1,89 @@
+# Peer Review Report (Round 3 — Final Review)
+
+**Manuscript Title:** Selective Feedback and Comparative Advisor Evaluation  
+**Article Type:** Computational Theory Article  
+**Evaluation Stage:** Round 3 (Final Review; maximum 3 rounds)  
+**Verdict:** **Accept (Pending Human Endorsement & Administrative Submission Requirements)**  
+**Substantive Major Issues Remaining:** **None**
+
+---
+
+## 1. Executive Summary & Assessment of Revisions
+
+In this third and final round of review, the manuscript, accompanying review logs, and independent verification audits were evaluated critically. 
+
+The revisions across Rounds 1 and 2 have resolved all previous methodological, mathematical, and conceptual concerns:
+1. **Mathematical & Numerical Exactness:** The exact finite-feedback risk formulation using Laurent polynomial convolution ($G_m(z)$) has been verified. Both registered focal contrasts (H1 and H2) were checked by independent exact convolution; all exact values fall comfortably within the prespecified Monte Carlo intervals. The identical E3 minimum differences ($-2.310$ percentage points) in the exploratory symmetric sign-pattern extension were independently verified to be the exact algebraic consequence of sign-mirrored conditional scores and reversed global superiority under maximal overlap.
+2. **Estimators and Information Requirements:** The manuscript now cleanly distinguishes between known-ratio weighting and encounter-level estimation. It explicitly formulates the post-stratified comparative estimator $\widehat\Delta = \sum_c \widehat{p_c d_c}\,\overline{(A-H)}_{V,D,c}$, demonstrates that a known sampling ratio is sufficient but not mathematically necessary when unverified encounter logs are retained, and transparently notes the finite-sample boundary conditions (e.g., empty verified strata) that prevent treating the risks of estimated-weight rules as identical to known-weight rules.
+3. **Task Scope & Action Space:** The manuscript carefully distinguishes the bounded global-adoption task (a constrained batch handoff) from casewise delegation. It provides the exact performance of a confidence-contingent routing oracle (85.0% in the crossing scenario vs 80.0% best fixed source) and evaluates within-stratum pairing, justifying the focus on global adoption without overclaiming optimality over adaptive routing.
+4. **Behavioural Extension & Refutability:** The proposed future experiment is presented with genuine scientific refutability. It specifies an explicit response family ($P(\mathrm{adopt}\mid S) = \lambda/2 + (1-\lambda)\operatorname{logit}^{-1}(\beta S)$), constrains parameters across schedules, specifies exact inequality conditions for directional predictions, separates display compliance from unaided cognitive updating via no-summary controls, and explicitly distinguishes third-party judge evaluation from self-evaluation.
+5. **Transparency & Epistemic Status:** The prospective git commitment (`68c07e4`) is accurately described as an internal, local recoverable record rather than an independently timestamped public registry. All exploratory analyses (fixed-opportunity matching, weight misspecification, and 4-quadrant sign patterns) are explicitly designated as exploratory.
+
+No substantive major issues remain. Below are minor, actionable recommendations for final polish and the formal record of human accountability requirements.
+
+---
+
+## 2. Evaluation of Scope, Task Boundaries, and Refutability
+
+### Bounded Global-Adoption Task vs. Casewise Routing
+Objections that global adoption is suboptimal compared to casewise routing conflate the chosen decision problem with errors within that problem. The paper does not claim that global adoption is an unconstrained optimal policy; rather, it formalizes a common organizational constraint: delegating an entire future batch to one source when item-level routing is unavailable or cost-prohibitive. The scope is sufficiently and rigorously justified:
+- The paper explicitly derives the performance of the confidence-contingent oracle (85.0% crossing, 80.0% homogeneous).
+- It explains that within-stratum paired evaluation identifies conditional signs without between-stratum weighting, but notes that sparse strata introduce finite-sample noise.
+- The distinction between estimation accuracy and finite-sample decision risk is maintained throughout.
+
+### Refutability of the Future Behavioural Extension
+The future experiment avoids the pitfall of treating simulated agents as human empirical findings:
+- It specifies exact directional orderings on realised scores rather than asymptotic limits.
+- It formulates an explicit two-parameter response family ($\beta, \lambda$) and requires parameters to be shared across schedules to prevent post-hoc accommodation.
+- It identifies unambiguous falsification criteria: a reversed empirical ordering rejects the directional account; an interval concentrated near zero rejects a practically relevant display effect.
+- It isolates the locus of inference by requiring third-party evaluation with explicit marginal benchmarks first, separating feedback interpretation from self-serving or egocentric bias, which is appropriately reserved for a separate yoked/replay design.
+
+---
+
+## 3. Remaining Actionable Comments
+
+### Major Issues
+*None.*
+
+---
+
+### Minor Issues (Actionable)
+
+1. **Table 3 Subgroup Partition Across Feedback Budgets**  
+   In Table 3 (*Registered environment counts comparing weighted with paired regret at selection ratio 8*), the partition into Superior (54), Inferior (24), and Tied (3) environments is presented only for the 500-label budget. The 20-label row displays only the aggregate "All" count ($44 / 22 / 15$). While the text explains that the full machine-readable outputs contain all cells, add a brief parenthetical or table footnote clarifying that the subgroup partition is shown at $N=500$ specifically to illustrate the asymptotic regime where weighting reliably separates superior from inferior advisors.
+
+2. **Explicit Linking of Polynomial Notation to Tie-Breaking in Discrete Convolution**  
+   In the subsection *Exact finite-feedback risk*, the formula defines expected regret for $\Delta \ne 0$ as:
+   $$R_m(n)=|\Delta|\left\{\sum_{s:\,s\Delta<0}[z^s]G_m(z)^n+\tfrac12[z^0]G_m(z)^n\right\}.$$
+   To ensure complete clarity for readers who may not routinely work with generating functions, add a brief clause explicitly stating that the term $[z^0]G_m(z)^n$ extracts the exact probability of a tie ($\tilde S_m = 0$), matching the fair random coin toss defined in the simulation decision rule.
+
+3. **Concrete Finite-Sample Fallback Rules for Post-Stratification**  
+   In the *Method* section discussing encounter-based post-stratification ($\widehat\Delta = \sum_c \widehat{p_c d_c}\,\overline{(A-H)}_{V,D,c}$), the text states: *"Empty verified strata require an additional finite-sample rule."* Provide one or two concrete illustrative examples of such rules (e.g., falling back to the unweighted paired mean across verified cases, applying a Laplace/Bayesian prior, or pooling across adjacent confidence bins) so that researchers implementing this estimator have clear guidance on how empty strata are typically handled in practice.
+
+4. **Consistency of Document Title Block / Frontmatter**  
+   The provided markdown body begins directly at `# Abstract`. Ensure that in the final compiled outputs (LaTeX/PDF/HTML), the top matter consistently renders the complete document metadata, including the full article title, the designated author byline, and the status note (*"Autonomous draft; author approval pending"*), to preserve traceability across all distributed formats.
+
+---
+
+## 4. Submission & Administrative Requirements (Future Action)
+
+Because this research package was developed as an autonomous local draft, formal submission is not yet authorised. The following items must be addressed by the human author prior to formal journal submission:
+
+1. **Human Oversight & Accountability:**  
+   The intended human author must independently read, critique, and endorse the final manuscript, taking full public responsibility for the integrity of the work, mathematical derivations, code, and reporting. (The autonomous pipeline has properly declined to falsely certify human oversight).
+2. **Author Declarations & Disclosures:**  
+   The human author must confirm and provide institutional affiliations, dedicated funding sources, and explicit conflict-of-interest declarations.
+3. **Public Archiving & Persistent Identifiers:**  
+   While the prospective local git commitment (`68c07e4`) satisfactorily documents the internal provenance for this local draft, public dissemination requires depositing the complete replication bundle (code, configuration, raw count histories, and scripts) into a persistent public registry (e.g., Zenodo, OSF, or GitHub with a versioned release and DOI).
+
+---
+
+## ## Answer
+
+**Verdict:** **Accept (Pending Human Endorsement & Administrative Submission Requirements)**
+
+**Substantive Major Issues Remaining:** **None.**
+
+The manuscript successfully satisfies all requirements of a rigorous computational Theory Article. The mathematical identities and finite-sample Laurent polynomial risk formulas are exact; the registered contrasts have been independently verified by exact convolution; the exploratory analyses are properly bounded; the bounded global-adoption task is clearly distinguished from casewise routing; and the future empirical extension is specified with honest, falsifiable criteria. 
+
+The author may proceed to address the four minor editorial comments (documenting the Table 3 subgroup partition, annotating the tie-extraction polynomial term, exemplifying finite-sample post-stratification fallback rules, and checking compiled frontmatter) prior to human author sign-off and public repository deposit.

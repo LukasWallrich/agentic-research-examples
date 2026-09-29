@@ -1,0 +1,719 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          4
+        ]
+      ],
+      "date-time": "2026-07-04T06:54:33Z",
+      "timestamp": 1783148073071,
+      "version": "3.54.6"
+    },
+    "reference-count": 45,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "9",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              27
+            ]
+          ],
+          "date-time": "2024-09-27T00:00:00Z",
+          "timestamp": 1727395200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100000265",
+        "name": "Medical Research Council",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1943590"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "1943590"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100000265",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS ONE"
+    ],
+    "abstract": "<jats:p>Previous research has shown that people are more influenced by advisors who are objectively more accurate, but also by advisors who tend to agree with their own initial opinions. The present experiments extend these ideas to consider people\u2019s choices of who they receive advice from\u2014the process of source selection. Across a series of nine experiments, participants were first exposed to advisors who differed in objective accuracy, the likelihood of agreeing with the participants\u2019 judgments, or both, and then were given choice over who would advise them across a series of decisions. Participants saw these advisors in the context of perceptual decision and general knowledge tasks, sometimes with feedback provided and sometimes without. We found evidence that people can discern accurate from inaccurate advice even in the absence of feedback, but that without feedback they are biased to select advisors who tend to agree with them. When choosing between advisors who are accurate vs. likely to agree with them, participants overwhelmingly choose accurate advisors when feedback is available, but show wide individual differences in preference when feedback is absent. These findings extend previous studies of advice influence to characterise patterns of advisor choice, with implications for how people select information sources and learn accordingly.</jats:p>",
+    "DOI": "10.1371/journal.pone.0311211",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2024-09-27T17:29:53Z",
+      "timestamp": 1727458193000
+    },
+    "page": "e0311211",
+    "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Preferences for advisor agreement and accuracy"
+    ],
+    "prefix": "10.1371",
+    "volume": "19",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3599-1580",
+        "authenticated-orcid": true,
+        "given": "Matt",
+        "family": "Jaquiery",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1905-2129",
+        "authenticated-orcid": true,
+        "given": "Nick",
+        "family": "Yeung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref001",
+        "first-page": "780",
+        "article-title": "Strategies for revising judgment: How (and how well) people use others\u2019 opinions",
+        "volume": "35",
+        "author": "JB Soll",
+        "year": "2009",
+        "journal-title": "Journal of Experimental Psychology: Learning, Memory, and Cognition"
+      },
+      {
+        "key": "pone.0311211.ref002",
+        "unstructured": "Sunstein CR. Republic.com. Princeton University Press; 2002."
+      },
+      {
+        "issue": "2\u20133",
+        "key": "pone.0311211.ref003",
+        "doi-asserted-by": "crossref",
+        "first-page": "227",
+        "DOI": "10.1080/08913811.2010.508634",
+        "article-title": "When deliberation produces extremism",
+        "volume": "22",
+        "author": "D Schkade",
+        "year": "2010",
+        "journal-title": "Critical Review"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref004",
+        "doi-asserted-by": "crossref",
+        "first-page": "127",
+        "DOI": "10.1016/j.obhdp.2006.07.001",
+        "article-title": "Advice taking and decision-making: An integrative literature review, and implications for the organizational sciences",
+        "volume": "101",
+        "author": "S Bonaccio",
+        "year": "2006",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref005",
+        "doi-asserted-by": "crossref",
+        "first-page": "260",
+        "DOI": "10.1006/obhd.2000.2909",
+        "article-title": "Advice Taking in Decision Making: Egocentric Discounting and Reputation Formation",
+        "volume": "83",
+        "author": "I Yaniv",
+        "year": "2000",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "key": "pone.0311211.ref006",
+        "doi-asserted-by": "crossref",
+        "first-page": "104810",
+        "DOI": "10.1016/j.cognition.2021.104810",
+        "article-title": "Confidence, advice seeking and changes of mind in decision making",
+        "volume": "215",
+        "author": "N Pescetelli",
+        "year": "2021",
+        "journal-title": "Cognition"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref007",
+        "doi-asserted-by": "crossref",
+        "first-page": "272",
+        "DOI": "10.1016/j.obhdp.2011.07.006",
+        "article-title": "The detrimental effects of power on confidence, advice taking, and accuracy",
+        "volume": "116",
+        "author": "KE See",
+        "year": "2011",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref008",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1002/bdm.539",
+        "article-title": "Effects of task difficulty on use of advice",
+        "volume": "20",
+        "author": "F Gino",
+        "year": "2007",
+        "journal-title": "Journal of Behavioral Decision Making"
+      },
+      {
+        "issue": "11",
+        "key": "pone.0311211.ref009",
+        "doi-asserted-by": "crossref",
+        "first-page": "e78433",
+        "DOI": "10.1371/journal.pone.0078433",
+        "article-title": "Social Influence and the Collective Dynamics of Opinion Formation",
+        "volume": "8",
+        "author": "M Moussa\u00efd",
+        "year": "2013",
+        "journal-title": "PLOS ONE"
+      },
+      {
+        "key": "pone.0311211.ref010",
+        "doi-asserted-by": "crossref",
+        "first-page": "2381",
+        "DOI": "10.3389/fpsyg.2018.02381",
+        "article-title": "Why Does Advice Discounting Occur? The Combined Roles of Confidence and Trust",
+        "volume": "9",
+        "author": "X Wang",
+        "year": "2018",
+        "journal-title": "Frontiers in Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref011",
+        "doi-asserted-by": "crossref",
+        "first-page": "288",
+        "DOI": "10.1006/obhd.2000.2926",
+        "article-title": "Trust, Confidence, and Expertise in a Judge-Advisor System",
+        "volume": "84",
+        "author": "JA Sniezek",
+        "year": "2001",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "key": "pone.0311211.ref012",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1016/j.concog.2014.02.002",
+        "article-title": "Does interaction matter? Testing whether a confidence heuristic can replace interaction in collective decision-making",
+        "volume": "26",
+        "author": "D Bang",
+        "year": "2014",
+        "journal-title": "Consciousness and Cognition"
+      },
+      {
+        "issue": "10",
+        "key": "pone.0311211.ref013",
+        "doi-asserted-by": "crossref",
+        "first-page": "1431",
+        "DOI": "10.1037/xge0000471",
+        "article-title": "The persuasive power of knowledge: Testing the confidence heuristic",
+        "volume": "147",
+        "author": "BD Pulford",
+        "year": "2018",
+        "journal-title": "Journal of Experimental Psychology: General"
+      },
+      {
+        "key": "pone.0311211.ref014",
+        "doi-asserted-by": "crossref",
+        "first-page": "71",
+        "DOI": "10.1016/j.jecp.2015.04.007",
+        "article-title": "Young children heed advice selectively",
+        "volume": "138",
+        "author": "H Rakoczy",
+        "year": "2015",
+        "journal-title": "Journal of Experimental Child Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref015",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1016/j.ijforecast.2010.05.003",
+        "article-title": "Judgmental aggregation strategies depend on whether the self is involved",
+        "volume": "27",
+        "author": "JB Soll",
+        "year": "2011",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref016",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.1016/j.obhdp.2011.10.001",
+        "article-title": "Power, competitiveness, and advice taking: Why the powerful don\u2019t listen",
+        "volume": "117",
+        "author": "LP Tost",
+        "year": "2012",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref017",
+        "doi-asserted-by": "crossref",
+        "first-page": "170",
+        "DOI": "10.1027/1618-3169/a000361",
+        "article-title": "On the Inability to Ignore Useless Advice: A Case for Anchoring in the Judge-Advisor-System",
+        "volume": "64",
+        "author": "T Schultze",
+        "year": "2017",
+        "journal-title": "Experimental Psychology"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref018",
+        "doi-asserted-by": "crossref",
+        "first-page": "507",
+        "DOI": "10.1037/xge0000960",
+        "article-title": "The role of decision confidence in advice-taking and trust formation",
+        "volume": "150",
+        "author": "N Pescetelli",
+        "year": "2021",
+        "journal-title": "Journal of Experimental Psychology: General"
+      },
+      {
+        "key": "pone.0311211.ref019",
+        "first-page": "450",
+        "article-title": "Vox populi (the wisdom of crowds)",
+        "volume": "75",
+        "author": "F Galton",
+        "year": "1907",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "pone.0311211.ref020",
+        "doi-asserted-by": "crossref",
+        "first-page": "105264",
+        "DOI": "10.1016/j.cognition.2022.105264",
+        "article-title": "Flexible use of confidence to guide advice requests",
+        "volume": "230",
+        "author": "N Carlebach",
+        "year": "2023",
+        "journal-title": "Cognition"
+      },
+      {
+        "issue": "11",
+        "key": "pone.0311211.ref021",
+        "doi-asserted-by": "crossref",
+        "first-page": "12391",
+        "DOI": "10.1038/s41598-018-25558-7",
+        "article-title": "Large networks of rational agents form persistent echo chambers",
+        "volume": "8",
+        "author": "JK Madsen",
+        "year": "2018",
+        "journal-title": "Scientific Reports"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0311211.ref022",
+        "doi-asserted-by": "crossref",
+        "first-page": "555",
+        "DOI": "10.1037/a0015701",
+        "article-title": "Feeling validated versus being correct: A meta-analysis of selective exposure to information",
+        "volume": "135",
+        "author": "W Hart",
+        "year": "2009",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0311211.ref023",
+        "doi-asserted-by": "crossref",
+        "first-page": "665",
+        "DOI": "10.1080/15205436.2013.835425",
+        "article-title": "Challenges to Selective Exposure: Selective Seeking and Avoidance in a Multitasking Media Environment",
+        "volume": "17",
+        "author": "SM Jang",
+        "year": "2014",
+        "journal-title": "Mass Communication and Society"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref024",
+        "doi-asserted-by": "crossref",
+        "first-page": "248",
+        "DOI": "10.1080/08838151.2016.1164170",
+        "article-title": "Partisan Enclaves or Shared Media Experiences? A Network Approach to Understanding Citizens\u2019 Political News Environments",
+        "volume": "60",
+        "author": "BE Weeks",
+        "year": "2016",
+        "journal-title": "Journal of Broadcasting & Electronic Media"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref025",
+        "doi-asserted-by": "crossref",
+        "first-page": "194",
+        "DOI": "10.1086/267513",
+        "article-title": "Selective exposure to information: A critical review",
+        "volume": "31",
+        "author": "DO Sears",
+        "year": "1967",
+        "journal-title": "Public Opinion Quarterly"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref026",
+        "doi-asserted-by": "crossref",
+        "first-page": "205630511772931",
+        "DOI": "10.1177/2056305117729314",
+        "article-title": "The Myth of Partisan Selective Exposure: A Portrait of the Online Political News Audience",
+        "volume": "3",
+        "author": "JL Nelson",
+        "year": "2017",
+        "journal-title": "Social Media + Society"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref027",
+        "doi-asserted-by": "crossref",
+        "first-page": "415",
+        "DOI": "10.1146/annurev.soc.27.1.415",
+        "article-title": "Birds of a feather: Homophily in social networks",
+        "volume": "27",
+        "author": "M McPherson",
+        "year": "2001",
+        "journal-title": "Annual review of sociology"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0311211.ref028",
+        "doi-asserted-by": "crossref",
+        "first-page": "778",
+        "DOI": "10.1037/h0022670",
+        "article-title": "Confidence, utility, and selective exposure: A partial replication",
+        "volume": "2",
+        "author": "JL Freedman",
+        "year": "1965",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref029",
+        "doi-asserted-by": "crossref",
+        "first-page": "322",
+        "DOI": "10.1037/met0000061",
+        "article-title": "Sequential hypothesis testing with Bayes factors: Efficiently testing mean differences",
+        "volume": "22",
+        "author": "FD Schonbrodt",
+        "year": "2017",
+        "journal-title": "Psychological methods"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref030",
+        "doi-asserted-by": "crossref",
+        "first-page": "709",
+        "DOI": "10.2307/258792",
+        "article-title": "An integrative model of organizational trust",
+        "volume": "20",
+        "author": "RC Mayer",
+        "year": "1995",
+        "journal-title": "Academy of management review"
+      },
+      {
+        "issue": "46",
+        "key": "pone.0311211.ref031",
+        "doi-asserted-by": "crossref",
+        "first-page": "15643",
+        "DOI": "10.1523/JNEUROSCI.1899-10.2010",
+        "article-title": "Decision Processes in Human Performance Monitoring",
+        "volume": "30",
+        "author": "M Steinhauser",
+        "year": "2010",
+        "journal-title": "Journal of Neuroscience"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref032",
+        "doi-asserted-by": "crossref",
+        "first-page": "1141",
+        "DOI": "10.1038/s41467-019-09075-3",
+        "article-title": "Forming global estimates of self-performance from local confidence",
+        "volume": "10",
+        "author": "M Rouault",
+        "year": "2019",
+        "journal-title": "Nature Communications"
+      },
+      {
+        "issue": "10",
+        "key": "pone.0311211.ref033",
+        "doi-asserted-by": "crossref",
+        "first-page": "2811",
+        "DOI": "10.1093/brain/awu221",
+        "article-title": "Domain-specific impairment in metacognitive accuracy following anterior prefrontal lesions",
+        "volume": "137",
+        "author": "SM Fleming",
+        "year": "2014",
+        "journal-title": "Brain"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref034",
+        "doi-asserted-by": "crossref",
+        "first-page": "104",
+        "DOI": "10.1016/j.obhdp.2006.05.006",
+        "article-title": "Using advice from multiple sources to revise and improve judgments",
+        "volume": "103",
+        "author": "I Yaniv",
+        "year": "2007",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref035",
+        "doi-asserted-by": "crossref",
+        "first-page": "234",
+        "DOI": "10.1016/j.obhdp.2008.03.001",
+        "article-title": "Do we listen to advice just because we paid for it? The impact of advice cost on its use",
+        "volume": "107",
+        "author": "F Gino",
+        "year": "2008",
+        "journal-title": "Organizational Behavior and Human Decision Processes"
+      },
+      {
+        "key": "pone.0311211.ref036",
+        "unstructured": "Jaquiery M. oxacclab/esmData: Thesis. Zenodo; 2021. Available from: https://zenodo.org/record/5543803."
+      },
+      {
+        "key": "pone.0311211.ref037",
+        "unstructured": "Team RC. R: A language and environment for statistical computing. Vienna, Austria; 2021. Available from: https://www.R-project.org/."
+      },
+      {
+        "key": "pone.0311211.ref038",
+        "unstructured": "Team R. RStudio: Integrated development environment for r. Boston, MA; 2021. Available from: http://www.rstudio.com/."
+      },
+      {
+        "key": "pone.0311211.ref039",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xie Y. Dynamic documents with R and knitr. 2nd ed. Boca Raton, Florida: Chapman and Hall/CRC; 2015. Available from: https://yihui.org/knitr/.",
+        "DOI": "10.1201/b15166"
+      },
+      {
+        "issue": "43",
+        "key": "pone.0311211.ref040",
+        "doi-asserted-by": "crossref",
+        "first-page": "1686",
+        "DOI": "10.21105/joss.01686",
+        "article-title": "Welcome to the tidyverse",
+        "volume": "4",
+        "author": "H Wickham",
+        "year": "2019",
+        "journal-title": "Journal of Open Source Software"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref041",
+        "doi-asserted-by": "crossref",
+        "first-page": "273",
+        "DOI": "10.1080/14640746808400161",
+        "article-title": "Reasoning about a rule",
+        "volume": "20",
+        "author": "PC Wason",
+        "year": "1968",
+        "journal-title": "Quarterly Journal of Experimental Psychology"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0311211.ref042",
+        "doi-asserted-by": "crossref",
+        "first-page": "265",
+        "DOI": "10.1111/j.1083-6101.2009.01440.x",
+        "article-title": "Echo chambers online?: Politically motivated selective exposure among Internet news users",
+        "volume": "14",
+        "author": "RK Garrett",
+        "year": "2009",
+        "journal-title": "Journal of Computer-Mediated Communication"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0311211.ref043",
+        "doi-asserted-by": "crossref",
+        "first-page": "158",
+        "DOI": "10.1027/1864-1105/a000265",
+        "article-title": "Avoiding the Other Side? An eye-tracking study of selective exposure and selective avoidance effects in response to political advertising",
+        "volume": "32",
+        "author": "D Schmuck",
+        "year": "2020",
+        "journal-title": "Journal Of Media Psychology-Theories Methods And Applications"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref044",
+        "doi-asserted-by": "crossref",
+        "first-page": "116",
+        "DOI": "10.1037/0022-3514.42.1.116",
+        "article-title": "The need for cognition",
+        "volume": "42",
+        "author": "JT Cacioppo",
+        "year": "1982",
+        "journal-title": "Journal of Personality and Social Psychology"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0311211.ref045",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1002/per.2271",
+        "article-title": "Testing the Information-Seeking Theory of Openness/Intellect",
+        "volume": "35",
+        "author": "HK Jach",
+        "year": "2021",
+        "journal-title": "European Journal of Personality"
+      }
+    ],
+    "container-title": [
+      "PLOS ONE"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0311211",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2024-09-27T17:30:06Z",
+      "timestamp": 1727458206000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0311211"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Diego A.",
+        "family": "Forero",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "editor"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ]
+    },
+    "references-count": 45,
+    "journal-issue": {
+      "issue": "9",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            27
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1371/journal.pone.0311211",
+    "relation": {},
+    "ISSN": [
+      "1932-6203"
+    ],
+    "issn-type": [
+      {
+        "value": "1932-6203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ]
+    }
+  }
+}

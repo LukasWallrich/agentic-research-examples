@@ -1,0 +1,9 @@
+{
+  "commit": "68c07e4ca1858f382b131a0ee990adf562a271b0",
+  "commit_timestamp": "2026-09-28T11:21:16+01:00",
+  "preregistration_sha256": "3fd032d0ae24f6d50597ed86e773d1f0a17e44a98962ca0c8b184571d8396b8c",
+  "record_created_utc": "2026-09-28T10:22:19.388174+00:00",
+  "status": "local prospective git commitment, not public registry",
+  "hypothesis_simulations_before_commit": false,
+  "prior_project_outcomes_inspected": false
+}
