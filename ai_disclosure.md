@@ -12,3 +12,7 @@ AI-produced source claims and bibliographic records are checked against primary 
 No new human data were collected and no participant-level records used. Synthetic scenarios contain no personal identifiers. Paid API cost: two coarse literature-search calls are estimated at US$0.10 cumulatively, with a conservative allowance below US$0.20; no actual invoice is exposed. Authenticated subscriptions are used for model reviews and the manuscript's Markdown bypasses OCR. Any changes to actual spending are recorded in `decision_log.md`.
 
 This disclosure is also summarised in manuscript Methods and Acknowledgements, consistent with the current Cambridge/JDM AI-use policy. Files remain local; no manuscript was submitted, no account created, and no person contacted.
+
+---
+
+**Note added by Lukas Wallrich, 29 September 2026.** The text above was written by the agent during the run and is left unchanged. The paragraph on OpenAI Codex says that no precise model identifier was exposed. The run's records do identify it: the T3 Code thread settings and all four Codex session records for this run (28 September 2026, codex-cli 0.155.1) record the model as `gpt-6-astra`, with reasoning effort high. The run was started from the T3 Code desktop app.
