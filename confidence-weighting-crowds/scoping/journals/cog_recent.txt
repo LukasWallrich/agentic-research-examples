@@ -1,0 +1,100 @@
+2026 | 0 | Semantic generation masks value directed remembering in memory but not metamemory: Evidence from truth-telling and lie fabrication | https://doi.org/10.1016/j.cognition.2026.106730
+2026 | 0 | Contours drive the tilt aftereffect in naturalistic images | https://doi.org/10.1016/j.cognition.2026.106728
+2026 | 0 | Time pressure amplifies gender differences in mental rotation through shifts in evidence accumulation and response caution | https://doi.org/10.1016/j.cognition.2026.106723
+2026 | 0 | The objecthood of visual working memory representations influences their interaction with attention | https://doi.org/10.1016/j.cognition.2026.106727
+2026 | 0 | Intuitions of compromise: Utilitarianism, egalitarianism, contractualism | https://doi.org/10.1016/j.cognition.2026.106694
+2026 | 0 | Phrase-level speech timing preferences predict synchronization in joint reading | https://doi.org/10.1016/j.cognition.2026.106713
+2026 | 0 | Belief updating across information ecologies: The trade-off between information gain and noise filtering | https://doi.org/10.1016/j.cognition.2026.106725
+2026 | 0 | Cross-modal social attention differs across emotional categories: Evidence from biological motion and gaze cues | https://doi.org/10.1016/j.cognition.2026.106721
+2026 | 0 | The role of pitch in the vocal communication of intentions | https://doi.org/10.1016/j.cognition.2026.106714
+2026 | 0 | Social feedback informs generalisation of control beliefs | https://doi.org/10.1016/j.cognition.2026.106704
+2026 | 0 | Internal Bayesian precision modulates the neural representation of social attention: Disentangling implicit and explicit components via model-informed | https://doi.org/10.1016/j.cognition.2026.106720
+2026 | 0 | Music influences the content of spontaneous thought | https://doi.org/10.1016/j.cognition.2026.106722
+2026 | 0 | Temporal separation of meanings facilitates homophone learning | https://doi.org/10.1016/j.cognition.2026.106715
+2026 | 0 | Syntactic headedness aligns with visual narrative structure | https://doi.org/10.1016/j.cognition.2026.106712
+2026 | 0 | What primates know about other minds and how often they use it: A computational approach to comparative theory of mind | https://doi.org/10.1016/j.cognition.2026.106698
+2026 | 0 | Visual perspective-taking and image-like representations: we can see it | https://doi.org/10.1016/j.cognition.2026.106699
+2026 | 0 | Suboptimal but intact integration of reward information during perceptual decision-making in autism | https://doi.org/10.1016/j.cognition.2026.106716
+2026 | 0 | Explanation generation: Questions direct exploration in semantic space | https://doi.org/10.1016/j.cognition.2026.106689
+2026 | 0 | It's about time: Specific and unspecific effects of episodic future thinking on farsighted decisions | https://doi.org/10.1016/j.cognition.2026.106702
+2026 | 0 | Outcome severity increases verbal probabilities used in dyadic communications | https://doi.org/10.1016/j.cognition.2026.106700
+2026 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0277(26)00277-5
+2026 | 0 | The cost of “what might have been”: false memories for counterfactual actions | https://doi.org/10.1016/j.cognition.2026.106701
+2026 | 0 | Adaptive judgment in the cognitive reflection test: A computational analysis | https://doi.org/10.1016/j.cognition.2026.106693
+2026 | 0 | Predictive processing in sentence reading: Semantic prediction but not phonological facilitation in deaf readers | https://doi.org/10.1016/j.cognition.2026.106703
+2026 | 0 | Does disfluency affect social judgments and decisions? Evidence from spontaneous speech | https://doi.org/10.1016/j.cognition.2026.106697
+2026 | 0 | The impact of visual imagery absence on fine-grained memory for object colour and size: an aphantasia study | https://doi.org/10.1016/j.cognition.2026.106695
+2026 | 0 | Corrigendum to “Predictive processing in sentence reading: Semantic prediction but not phonological facilitation in deaf readers” [Cognition 278 (2027 | https://doi.org/10.1016/j.cognition.2026.106724
+2026 | 0 | A sibling to all: Reversed neural pattern of social affiliation in extraordinary altruists | https://doi.org/10.1016/j.cognition.2026.106696
+2026 | 0 | The cognitive architecture of degraded speech intelligibility | https://doi.org/10.1016/j.cognition.2026.106692
+2026 | 0 | Lying and truth-telling in social interaction: Basic mechanisms | https://doi.org/10.1016/j.cognition.2026.106690
+2026 | 0 | Age-related differences in the role of explicit encoding instructions on verbal, visual and spatial Hebb learning | https://doi.org/10.1016/j.cognition.2026.106691
+2026 | 0 | Corrigendum to ‘Towards an attentional theory of second-language speech perception: Evidence from cue ecology’ [Cognition 276 (2026) 106671] | https://doi.org/10.1016/j.cognition.2026.106688
+2026 | 0 | Manipulating prior causal beliefs affects the formation of apparent causal illusions | https://doi.org/10.1016/j.cognition.2026.106684
+2026 | 0 | Decomposing SNARC: How distinct spatial-numerical association components relate to specific early numerical skills in kindergarten | https://doi.org/10.1016/j.cognition.2026.106677
+2026 | 0 | The puzzle of early deception: Lying before belief representation | https://doi.org/10.1016/j.cognition.2026.106687
+2026 | 0 | Pedagogy in the speech-gesture couplings of caregivers: Evidence from a corpus-based analysis | https://doi.org/10.1016/j.cognition.2026.106674
+2026 | 0 | Reward selectively preserves relational structure in memory | https://doi.org/10.1016/j.cognition.2026.106673
+2026 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0277(26)00250-7
+2026 | 0 | Exploring the malleability of Sensitivity to Intersensory Synchrony in typically developing preschoolers: Insights from single-session Intersensory Sy | https://doi.org/10.1016/j.cognition.2026.106676
+2026 | 0 | A speaker-centric motivation for the use of optional adjectives during language production | https://doi.org/10.1016/j.cognition.2026.106675
+2026 | 0 | The tiger moving through the tall grass: Spontaneous perception and tracking of change-defined objects from second-order features | https://doi.org/10.1016/j.cognition.2026.106657
+2026 | 0 | Aha-related surprise tracks violated expectations at multiple levels in perceptual insight | https://doi.org/10.1016/j.cognition.2026.106672
+2026 | 0 | Towards an attentional theory of second-language speech perception: Evidence from cue ecology | https://doi.org/10.1016/j.cognition.2026.106671
+2026 | 0 | Directional asymmetry in event schema activation | https://doi.org/10.1016/j.cognition.2026.106669
+2026 | 0 | Spatial biases of covert attention with dynamic gaze position | https://doi.org/10.1016/j.cognition.2026.106667
+2026 | 0 | Individual differences in overconfidence: A common core and its motivational and cognitive correlates | https://doi.org/10.1016/j.cognition.2026.106665
+2026 | 0 | Sleep consolidation of social memories and common ground | https://doi.org/10.1016/j.cognition.2026.106670
+2026 | 0 | Higher creativity is linked to increased association scores in an audiovisual task | https://doi.org/10.1016/j.cognition.2026.106664
+2026 | 0 | Binary categorization of ordered stimuli implicitly guides attention during visual search | https://doi.org/10.1016/j.cognition.2026.106658
+2026 | 1 | Distinct developmental trajectories shape human sensitivity to rhythms in the environment | https://doi.org/10.1016/j.cognition.2026.106663
+2026 | 0 | Disagreement judgments capture more than differences in beliefs | https://doi.org/10.1016/j.cognition.2026.106659
+2026 | 0 | Statistical learning and mathematics: Are different domains and modalities of statistical learning related to different math skills? | https://doi.org/10.1016/j.cognition.2026.106662
+2026 | 0 | Processing negation may demonstrate compositionality in rhesus macaques | https://doi.org/10.1016/j.cognition.2026.106638
+2026 | 0 | Children expect prior belief strength to constrain belief revision | https://doi.org/10.1016/j.cognition.2026.106668
+2026 | 0 | Multiple motor systems spontaneously track speech structures at distinct levels with individual variability | https://doi.org/10.1016/j.cognition.2026.106666
+2026 | 0 | Music-induced spontaneous thought reflects individual differences in creativity | https://doi.org/10.1016/j.cognition.2026.106660
+2026 | 0 | Coherence and the memorability of supernatural concepts | https://doi.org/10.1016/j.cognition.2026.106661
+2026 | 0 | Silent coach: The role of inner speech in learning and performing new chunked actions | https://doi.org/10.1016/j.cognition.2026.106649
+2026 | 0 | Repetition induced rhythm as an alternative account to statistical word segmentation: A model and meta-analysis | https://doi.org/10.1016/j.cognition.2026.106648
+2026 | 0 | Does communication-based belief attribution in 18-month-olds reflect an altercentric bias? | https://doi.org/10.1016/j.cognition.2026.106645
+2026 | 0 | English-hearing toddlers learn words from consistent and variable labels | https://doi.org/10.1016/j.cognition.2026.106647
+2026 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0277(26)00222-2
+2026 | 0 | Perceived moral objectivity: Why some moral issues seem more objective than others | https://doi.org/10.1016/j.cognition.2026.106642
+2026 | 0 | Serial effects in choice and confidence modulate each other: Evidence from 26 experiments | https://doi.org/10.1016/j.cognition.2026.106643
+2026 | 1 | Overrated intuition and underappreciated deliberation: Reevaluating the Smart System-1 account of reasoning | https://doi.org/10.1016/j.cognition.2026.106640
+2026 | 0 | Executing actions guides the eyes selectively towards action-related body part images suppressed from visual awareness | https://doi.org/10.1016/j.cognition.2026.106646
+2026 | 0 | When criterion control in face matching induces correlation: Commentary on Baker et al. (2026) | https://doi.org/10.1016/j.cognition.2026.106644
+2026 | 0 | Corrigendum to “Productivity matters for the neural processing of novel words, but not existing ones” Cognition Volume 274 (2026) 106593 | https://doi.org/10.1016/j.cognition.2026.106641
+2026 | 0 | Investigating the origins of partisanship: What motivates children to preferentially endorse their ingroups' claims? | https://doi.org/10.1016/j.cognition.2026.106629
+2026 | 1 | The self as an image: Appearance and belief in visual representations of one's own face | https://doi.org/10.1016/j.cognition.2026.106639
+2026 | 0 | People make graded judgments about the inconceivable | https://doi.org/10.1016/j.cognition.2026.106627
+2026 | 0 | Identifying distinct sources of whole number interference in children's decimal comparison: the role of numerical magnitude and inhibitory control | https://doi.org/10.1016/j.cognition.2026.106636
+2026 | 0 | Corrigendum to ‘Consonant, vowel, and tone cues in early wordform recognition: Evidence from Cantonese-learning infants’ [Cognition 275 (2026) 106624] | https://doi.org/10.1016/j.cognition.2026.106635
+2026 | 0 | Evidence for abstract spatial concept learning in young animals | https://doi.org/10.1016/j.cognition.2026.106633
+2026 | 0 | Blurred lines or clear boundaries? Synchrony and social dominance shape domain-specific self–other processing | https://doi.org/10.1016/j.cognition.2026.106632
+2026 | 0 | Knowability predicts curiosity and learning | https://doi.org/10.1016/j.cognition.2026.106626
+2026 | 1 | Throwing good effort after bad: Evidence for a sunk-cost effect in cognitive effort-based decision-making | https://doi.org/10.1016/j.cognition.2026.106628
+2026 | 0 | Cross-linguistic differences in incremental planning under uncertainty | https://doi.org/10.1016/j.cognition.2026.106634
+2026 | 0 | Sensory attenuation scales with the strength of action-outcome coupling: A psychophysical study | https://doi.org/10.1016/j.cognition.2026.106631
+2026 | 1 | Children's narrow learning bottleneck accelerates the emergence of statistical properties of language | https://doi.org/10.1016/j.cognition.2026.106622
+2026 | 0 | Can I believe my voice? Self-similarity and the illusory truth effect | https://doi.org/10.1016/j.cognition.2026.106630
+2026 | 0 | Time resolves syntactic-semantic conflict in temporary semantic illusions: Evidence from role reversal sentences | https://doi.org/10.1016/j.cognition.2026.106625
+2026 | 1 | Sources of imprecision in integrated value comparisons | https://doi.org/10.1016/j.cognition.2026.106619
+2026 | 0 | When arrows behave like eyes: Reversal of spatial stroop interference by visual masking | https://doi.org/10.1016/j.cognition.2026.106623
+2026 | 1 | The adaptive function of analytic thinking styles: Balancing effort and accuracy in meta-reasoning | https://doi.org/10.1016/j.cognition.2026.106618
+2026 | 1 | Consonant, vowel, and tone cues in early wordform recognition: Evidence from Cantonese-learning infants | https://doi.org/10.1016/j.cognition.2026.106624
+2026 | 1 | A folk taxonomy of magic | https://doi.org/10.1016/j.cognition.2026.106610
+2026 | 0 | Delayed structural prediction for relative clauses: A new argument for learning to parse from Santiago Laxopa Zapotec | https://doi.org/10.1016/j.cognition.2026.106599
+2026 | 0 | Editorial Board | https://doi.org/10.1016/s0010-0277(26)00182-4
+2026 | 0 | The bilingual math dilemma - Language switching costs in declarative and procedural arithmetic knowledge | https://doi.org/10.1016/j.cognition.2026.106608
+2026 | 0 | The wham-womb sound symbolic effect: English-speaking children and adults link phonemes with arousal | https://doi.org/10.1016/j.cognition.2026.106603
+2026 | 0 | Can language attrition be reversed: Evidence from speech perception and production | https://doi.org/10.1016/j.cognition.2026.106571
+2026 | 0 | Corrigendum to ‘Russian blues reveal the limits of language influencing colour discrimination’ [Cognition 201, August 2020, 104281] | https://doi.org/10.1016/j.cognition.2026.106566
+2026 | 0 | Eye-tracking emotional responses and moral decisions in bilingual contexts | https://doi.org/10.1016/j.cognition.2026.106600
+2026 | 0 | Perceived coordinated biological motion sequences warp time perception | https://doi.org/10.1016/j.cognition.2026.106611
+2026 | 0 | Corrigendum to ‘You shall know a number by the company it keeps: Neighborhood effects in number processing’ [Cognition 274 (2026) 106591] | https://doi.org/10.1016/j.cognition.2026.106609
+2026 | 0 | Bilingual representation of multi-word phrases: Evidence from phrase-acceptability judgment in Chinese-English bilinguals | https://doi.org/10.1016/j.cognition.2026.106607
+2026 | 0 | Inhibitory control of disconfirmed predictions during sentence processing in aging | https://doi.org/10.1016/j.cognition.2026.106602
+2026 | 0 | Can't wait to relax: First-time evidence for a prospective relaxation of control as revealed by a future-based congruency sequence effect | https://doi.org/10.1016/j.cognition.2026.106606
+2026 | 0 | Individual differences in PROP bitterness responsiveness modulate visual awareness of food stimuli | https://doi.org/10.1016/j.cognition.2026.106605

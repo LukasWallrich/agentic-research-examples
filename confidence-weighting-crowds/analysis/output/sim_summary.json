@@ -1,0 +1,11 @@
+{
+  "n_cells": 120,
+  "any_negative_cell_sign": 86,
+  "frac_negative_cells_sign": 0.7166666666666667,
+  "n_cells_with_positive_mean_brier": 41,
+  "frac_negative_cells_brier": 0.6583333333333333,
+  "h2_sign_violations": 275,
+  "h2_brier_violations": 83,
+  "h2_total_steps": 1080,
+  "h3_cells_with_interior_lambda": 117
+}

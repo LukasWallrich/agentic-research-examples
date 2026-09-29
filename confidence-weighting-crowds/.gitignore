@@ -1,0 +1,14 @@
+# Data (large, re-downloadable from the sources documented in prereg/data_sources.md)
+data/
+data_cpc/
+scoping/data_itc/
+scoping/*.json
+scoping/*.pdf
+
+# Environment
+.venv/
+__pycache__/
+*.pyc
+Rplots.pdf
+*.log
+.DS_Store

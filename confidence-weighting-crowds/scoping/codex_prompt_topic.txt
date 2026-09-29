@@ -1,0 +1,24 @@
+You are advising on the topic choice for a novel judgment-and-decision-making (JDM) research paper that must be produced WITHOUT collecting new data. Work read-only; end with your final answer under the heading "## Answer".
+
+CONTEXT. Earlier papers by the same group (must NOT be duplicated):
+- Paper 1: meta-analysis of the anchoring effect (OpAQ data), anchor extremity vs proportional pull.
+- Paper 2: secondary analysis of Good Judgment Project forecasting data, belief movement by time horizon.
+- Paper 3: simulation of selective feedback in comparative advisor evaluation.
+
+CANDIDATE TOPIC (my current pick):
+"Response-time signatures of intertemporal choice across 100 open studies, and how much is trial difficulty."
+Data: the newly released ITC Database (Pongratz & Schoemann; OSF 3wsae; CC-BY-NC-SA): 100 studies, 11,852 subjects, 1,172,644 trials, trial-level sooner/smaller and larger/later rewards and delays, choice, response time (rt), plus methodological metadata (procedure: full cross / fixed set / random set / Kirby / titration / other; incentivization: hypothetical / potentially real / real; presentation; time pressure; online vs lab). The authors state "the dataset has not been used in any previous publication" and that RT in ITC has been "largely overlooked".
+
+PROPOSED DESIGN:
+- H1 (replication): within-subject RT difference between LL and SS choices is reliably non-zero and consistent in sign across studies.
+- H2 (difficulty confound): a substantial fraction of that RT difference is attributable to trial difficulty, proxied by |subjective-value difference| estimated from a fitted discounting model; test whether the LL-SS RT difference attenuates after conditioning on difficulty.
+- H3 (incremental predictive validity): RT adds out-of-sample predictive value for choice beyond the stimulus-only model (held-out trials).
+- Simulation: show that a process with NO direct RT-choice link but difficulty-driven RT generates a spurious raw LL-SS RT difference; compare its quantitative prediction to the observed data (a test that can fail).
+
+QUESTIONS:
+1. Is this genuinely novel and publishable in a strong JDM outlet (e.g., Judgment and Decision Making, Journal of Behavioral Decision Making, Cognitive Psychology, Psychonomic Bulletin & Review, Decision)? Name the closest existing work and the specific gap.
+2. Are H1-H3 the right, most refutable and most interesting hypotheses? Would you change the framing, the primary endpoint, or the difficulty proxy?
+3. What are the likely fatal weaknesses (e.g., RT units/normalization across studies, exclusion flags, selection of studies, the confound between difficulty and choice, whether the LL-SS RT effect is already established)?
+4. Would you instead choose a different topic from: (a) first meta-analysis of the sunk-cost effect; (b) first meta-analysis of overprecision; (c) confidence-weighting harm boundaries (simulation + Confidence Database); (d) GPS measurement invariance; (e) inner-crowd noise-structure test? Give a clear recommendation.
+
+Be concrete and skeptical. Do not be polite about weaknesses.
