@@ -1,0 +1,21 @@
+study,item,true_value,estimates,participants,anchor_levels,anchor_min,anchor_max,x_min,x_max,anchor_type,sides
+"Bahník, 2021a",length of a typical football field (metres),105,512,512,408,1,1000,-4.65396035015752,2.25379492882461,random,both
+"Bahník, 2021a",height of the highest (Cheops) Pyramid in Giza (metres),139,489,489,387,2,999,-4.24132675257075,1.97228084551786,random,both
+"Bahník, 2021a",distance of the subway tracks between stations Muzeum and Hlavni nadrazi (metres),425,510,510,404,3,1000,-4.95347688025631,0.85566611005772,random,both
+"Bahník, 2021a",length of the Wenceslas Square (metres),750,510,510,404,2,1000,-5.92692602597041,0.287682072451781,random,both
+"Bahník, 2021a",height of the highest tree in the world (metres),116,512,512,400,4,1000,-3.36729582998647,2.15416508787577,random,both
+"Bahník, 2021a",Length of the Petrin funicular (metres),510,510,510,387,1,996,-6.23441072571837,0.669336531866227,random,both
+"Bahník, 2021a",height of the tallest waterfall Salto Angel (metres),979,507,507,392,1,997,-6.88653164253051,0.0182191274313279,random,both
+"Bahník, 2021a",length of the Great Strahov Stadion (metres),310,494,494,386,4,999,-4.3502779363593,1.17018248116936,random,both
+"Bahník, 2021a",Height of the Eiffel tower (m),324,511,511,395,1,995,-5.78074351579233,1.12199922136626,random,both
+"Bahník, 2021a",length of the Nusle bridge (metres),485,511,511,403,1,996,-6.18414889093748,0.719598366647115,random,both
+"Bahník, 2021a",height of the tallest bridge viaduct Millau (metres),341,511,511,396,2,999,-5.13873529672357,1.07487230136504,random,both
+"Bahník, 2021a",length of the longest ship (metres),458,492,492,384,4,999,-4.7405748229943,0.779885594534369,random,both
+"Bahník, 2021a",height of the tallest skyscraper Burj Khalifa (metres),828,507,507,398,1,1000,-6.71901315438526,0.188742124596877,random,both
+"Frech et al., 2021",Distance between Lisbon and Moscow (km),4558.1,104,104,10,5100,9600,0.112334669700328,0.744857228443838,fixed,above truth only
+"Frech et al., 2021",Population of Rome,2860009,104,104,10,3e+06,7500000,0.0477875169881529,0.964078248862308,fixed,above truth only
+"Frech et al., 2021",Altitude of Mt. Kilimanjaro (m),5895,104,104,10,6500,11000,0.0976976429122573,0.623790738809036,fixed,above truth only
+"Frech et al., 2021",Average number of babies born each day in Germany,2112.415,104,104,10,5000,23000,0.861606069680816,2.38766237317587,fixed,above truth only
+"Yoon et al., 2021, Form C",Average price of a sofa bed at IKEA (USD),693,85,85,35,8,1500,-4.46158845751007,0.772190387900398,random,both
+"Yoon et al., 2021, Form C",Number of novels written by Stephen King,51,86,86,33,6,267,-2.14006616349627,1.65542302567592,random,both
+"Imhoff & Barker, 2022, Study 2",Height of the Cologne cathedral (m),157.22,786,786,20,10,390,-2.75506100537156,0.908500640758082,fixed,both

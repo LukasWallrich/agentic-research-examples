@@ -1,0 +1,64 @@
+boundary (singular) fit: see help('isSingular')
+Warning message:
+In checkConv(attr(opt, "derivs"), opt$par, ctrl = control$checkConv,  :
+  Model failed to converge with max|grad| = 0.00387525 (tol = 0.002, component 1)
+  See ?lme4::convergence and ?lme4::troubleshooting.
+Warning message:
+Ratio of largest to smallest sampling variance extremely large. May not be able to obtain stable results. 
+      set  rows invalid_estimate gross_error
+   <char> <int>            <int>       <int>
+1: within  7952                3           0
+2: across 24147              627         987
+      set n_rows n_cells n_participants random_structure         b       b_lo
+   <char>  <int>   <int>          <int>            <int>     <num>      <num>
+1: pooled   7949      20           1491                1 0.3068437  0.2487510
+2: random   6747      15            601                2 0.2653268  0.2151091
+3:  fixed   1202       5            890                2 0.6183229 -0.3116199
+        b_hi           g        g_lo        g_hi        g_df          g_p
+       <num>       <num>       <num>       <num>       <num>        <num>
+1: 0.3649364 -0.04062731 -0.05820153 -0.02305310    9.104833 5.286873e-04
+2: 0.3155445 -0.03358393 -0.04438066 -0.02278719 3936.381491 1.174035e-09
+3: 1.5482658 -0.08495983 -0.14255152 -0.02736814  294.933029 3.971624e-03
+          rho     rho_lo      rho_hi
+        <num>      <num>       <num>
+1: -0.1324039 -0.1775814 -0.08722643
+2: -0.1265757 -0.1595303 -0.09362113
+3: -0.1374037 -0.2090494 -0.06575795
+                                                    verdict
+                                                     <char>
+1:                                                  falling
+2:                                                  falling
+3: gate failed: no measurable anchoring, shape not testable
+   n_cells n_studies n_rows   mean_ai mean_ai_lo mean_ai_hi     slope
+     <int>     <int>  <int>     <num>      <num>      <num>     <num>
+1:     128        40  22533 0.4162904   0.348717  0.4838638 0.0500187
+      slope_lo  slope_hi  slope_p robust_fallback      verdict
+         <num>     <num>    <num>          <lgcl>       <char>
+1: -0.01328594 0.1133233 0.121473           FALSE inconclusive
+Index: <model>
+    model g_inside rho_inside slope_inside b_inside mean_ai_inside
+   <char>   <lgcl>     <lgcl>       <lgcl>   <lgcl>         <lgcl>
+1:     M0    FALSE       TRUE        FALSE    FALSE          FALSE
+2:     M1    FALSE      FALSE         TRUE     TRUE          FALSE
+3:    M1R    FALSE       TRUE         TRUE     TRUE           TRUE
+4:     M2    FALSE      FALSE        FALSE    FALSE          FALSE
+5:     M3     TRUE      FALSE        FALSE     TRUE          FALSE
+6:     M4     TRUE      FALSE        FALSE     TRUE           TRUE
+   mean_ai_weighted survives_shape survives_level
+              <num>         <lgcl>         <lgcl>
+1:        0.2407028          FALSE          FALSE
+2:        0.2407028          FALSE          FALSE
+3:        0.2407028           TRUE           TRUE
+4:        0.2407028          FALSE          FALSE
+5:        0.2407028          FALSE          FALSE
+6:        0.2407028          FALSE           TRUE
+                  analysis          est           lo          hi
+                    <char>        <num>        <num>       <num>
+1:  R1_median_regression_g -0.058942532 -0.075459052 -0.04084279
+2: R2_far_minus_near_slope -0.205630619 -0.276711124 -0.13455011
+3:     R3_without_bahnik_g -0.044984487 -0.357987580  0.26801861
+4:      R4_raw_index_slope -0.007662938 -0.077372202  0.06204633
+5:     R5_covariates_slope  0.043630714 -0.021021244  0.10828267
+6:  R6_without_weber_slope  0.064884878  0.005899639  0.12387012
+7:   R7_max_distance_slope  0.034741109 -0.009351474  0.07883369
+8:     R7_log_spread_slope  0.017164724 -0.014303551  0.04863300

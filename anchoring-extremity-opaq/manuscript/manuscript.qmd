@@ -1,0 +1,366 @@
+---
+title: "Anchor extremity and proportional anchor influence: A preregistered, model-based test in open trial-level data"
+shorttitle: "Anchoring and anchor extremity"
+author:
+  - name: Lukas Wallrich
+    orcid: 0000-0003-2121-5177
+    affiliations:
+      - name: Birkbeck, University of London
+        department: School of Business and Law
+        city: London
+        country: United Kingdom
+    email: lukas.wallrich@gmail.com
+    corresponding: true
+bibliography: [refs.bib, refs_manual.bib]
+csl: apa.csl
+lang: en-GB
+format:
+  docx:
+    toc: false
+    number-sections: false
+    fig-dpi: 300
+  html:
+    embed-resources: true
+    toc: true
+    code-fold: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(data.table)
+library(here)
+o <- function(...) here("output", ...)
+f2 <- function(x, d = 2) sprintf(paste0("%.", d, "f"), x)
+f3 <- function(x) sprintf("%.3f", x)
+ci <- function(lo, hi, d = 3) sprintf("[%s, %s]", sprintf(paste0("%.", d, "f"), lo), sprintf(paste0("%.", d, "f"), hi))
+nf <- function(x) format(x, big.mark = ",", scientific = FALSE, trim = TRUE)
+
+dc <- fread(o("design_counts.csv"))
+wct <- fread(o("within_cells_table.csv"))
+rc <- fread(o("review_checks", "review_checks.csv"))
+rj <- fread(o("review_checks", "R1a_joint_predictive_check.csv"))
+e6 <- fread(o("exploratory", "E6_raw_scale_model_summary.csv"))
+rc_ <- function(k, col = "est") rc[analysis == k][[col]]
+e6_ <- function(k, col = "median") e6[statistic == k][[col]]
+r2 <- fread(o("exploratory", "round2_exploratory.csv"))
+e9 <- fread(o("exploratory", "E9_band_slopes.csv"))
+r3 <- fread(o("review_checks", "round3_checks.csv"))
+r3_ <- function(k) r3[analysis == k]$value
+r2_ <- function(k, col = "est") r2[analysis == k][[col]]
+excl <- fread(o("confirmatory", "exclusions.csv"))
+h1 <- fread(o("confirmatory", "h1_within.csv"))
+h2 <- fread(o("confirmatory", "h2_across.csv"))
+h3 <- fread(o("confirmatory", "h3_model_adequacy.csv"))
+rob <- fread(o("confirmatory", "robustness.csv"))
+ex <- fread(o("exploratory", "exploratory_results.csv"))
+e2 <- fread(o("exploratory", "E2_cell_near_far.csv"))
+e5 <- fread(o("exploratory", "E5_relaxed_calibration_summary.csv"))
+pred <- fread(o("predictions_raw.csv"))[!is.na(b)]
+sens <- fread(o("sensitivity", "sensitivity_results.csv"))
+s1 <- fread(o("sensitivity", "S1_predictions_raw_calibration.csv"))
+s1acc <- fread(o("sensitivity", "S1_accepted_points.csv"))
+s_ <- function(k, col = "est") sens[analysis == k][[col]]
+loc_el <- function(xabs) P$b + 2 * P$g * xabs   # fitted local elasticity at |x|
+fit_y <- function(anchor, truth = 100) { x <- log(anchor / truth); P$b * x + P$g * x * abs(x) }
+dbl <- function(a) sprintf("%.0f%%", 100 * (exp(fit_y(2 * a) - fit_y(a)) - 1))   # gain from doubling the anchor
+pint <- fread(o("predictive_intervals.csv"))
+calib <- fread(o("calibration_grid.csv"))
+ops <- readLines(o("prereg_tables.md"))
+
+P <- h1[set == "pooled"]; R <- h1[set == "random"]; FX <- h1[set == "fixed"]
+r_ <- function(k, col = "est") rob[analysis == k][[col]]
+x_ <- function(k, col = "est") ex[analysis == k][[col]]
+pi_ <- function(m, col) pint[model == m][[col]]
+med_ <- function(m, col) median(pred[model == m][[col]])
+n_rep <- pred[, .N, by = model]
+acc <- calib[accepted == TRUE, .N, by = model]
+w_ai <- h3$mean_ai_weighted[1]
+```
+
+**Abstract**
+
+It is unclear whether an anchor's proportional influence on numeric estimates rises, stays constant or falls with anchor extremity. Meta-analyses report larger standardised effects for more distant anchors, but standardised effects grow with anchor distance even when the proportional pull is constant. We derived the shape of the anchor-response function from five process models, simulated them on the designs of the Open Anchoring Quest, and preregistered the predictions before reading any estimates. In `r dc$within_cells` item-study cells with at least three anchor values (`r nf(P$n_rows)` estimates; `r sprintf("%.0f%%", 100 * wct[study == "Bahník, 2021a", sum(estimates)] / P$n_rows)` from one study with random anchors for lengths, heights and distances), the log-scale elasticity of estimates with respect to anchors was `r f2(P$b)` at the true value and fell as anchors moved away from it (curvature `r f3(P$g)`, 95% CI `r ci(P$g_lo, P$g_hi)`). This contradicts anchor-and-adjust with a fixed number of adjustments and constant-weight integration on the log scale, and matches the direction, though not the steepness, predicted by plausibility-based models. Across `r h2$n_cells` two-anchor cells from `r h2$n_studies` studies with researcher-chosen anchors, the relation between the anchoring index and extremity was inconclusive (slope `r f3(h2$slope)`, `r ci(h2$slope_lo, h2$slope_hi)`). None of the evaluated model simulations reproduced both patterns. A resource-rational variant passed the preregistered checks only because its predictions were too wide to test; in a post-hoc check, a plausible-boundary model reproduced the within-item pattern best. Within items, estimates respond less to changes in the anchor when the anchor is far from the true value, at least for random anchors; whether this holds for deliberately chosen anchors remains open.
+
+**Keywords:** anchoring, anchor extremity, process models, resource rationality, secondary data analysis, preregistration
+
+# Introduction
+
+Numeric judgements are drawn towards numbers people have just considered. In the classic demonstration, participants who first judged whether the percentage of African countries in the United Nations was higher or lower than a random number gave estimates that moved towards that number [@tversky1974]. The effect appears with arbitrary and informative anchors, with lay people and experts, and in consequential settings such as property valuation and criminal sentencing [@northcraft1987; @englich2006; @furnham2011]. A meta-analysis of openly shared trial-level data from 90 anchoring studies estimated a pooled standardised effect of Hedges' *g* = 0.69 [@roseler2022meta; @roseler2022opaq].
+
+Whether an anchor's influence depends on how extreme it is has practical and theoretical weight. Practically, negotiators, litigants and survey designers choose anchor values, and whether a more extreme value buys proportionally more influence than a moderate one depends on this relation. Theoretically, the leading accounts of anchoring make different predictions about this question, and the shape of the relation between anchor extremity and anchor influence is a domain where they yield distinct quantitative predictions that can be tested with existing data.
+
+## Evidence on anchor extremity
+
+Experiments that varied anchor extremity have produced mixed results. @chapman1994 found that "implausibly extreme anchors had a proportionally smaller effect than anchors close to the expected value" [p. 223] in lottery valuations. @strack1997 found that implausible anchors were at least as effective as plausible ones, in estimates z-standardised within each item. Two implausible high anchors that differed greatly (e.g., 214 and 271 years for Gandhi's age at death) produced similar estimates [@mussweiler2001], and @wegener2001 found that very extreme anchors had smaller effects than moderate ones. These studies compared two to four anchor levels, mostly for a handful of items. The most fine-grained test so far used a perceptual task: @imhoff2023 [Study 2] showed participants dot patterns of about 500 dots next to standards labelled with their exact number of dots, which differed from the target by up to 400 dots in 20-dot steps. Estimates were drawn towards these symbolic anchors, but the pull levelled off once the anchor differed from the target by more than about 300 dots.
+
+The two recent meta-analyses reach different conclusions. Using the Open Anchoring Quest (OpAQ) data, @roseler2022meta found that Hedges' *g* increased with the relative distance between anchor and true value and concluded against the prediction that extreme anchors produce smaller effects. @schley2026 coded extremity as a binary flag, mainly for anchors that the original authors described as extreme or implausible, and found no difference in effect size. @barrera2024 estimated, for 30 percentage questions with anchors fixed at 5% and 95%, how far each anchor moved the crowd's mean estimate relative to its distance, and found that this anchoring weight fell with the distance between anchor and truth (*r* = −.56).
+
+These results are hard to compare because they measure anchor influence in different units. A standardised mean difference between high- and low-anchor conditions rises with the distance between the anchors even if every anchor pulls estimates by the same proportion of its distance. Suppose log estimates move by a constant elasticity β per unit of log anchor and have a standard deviation *s* within each condition. Then the high-minus-low difference in mean log estimates is β(*x*~H~ − *x*~L~), and the standardised difference is β(*x*~H~ − *x*~L~)/*s*, which grows in proportion to the log distance between the anchors although β is constant. A finding that Hedges' *g* grows with anchor distance is therefore compatible with constant, rising and falling proportional influence. By the same logic, the null result of @schley2026 would favour declining proportional influence if the anchors flagged as extreme were also further from the truth and the spread of responses was comparable; we could not verify these conditions from their report. The same caution applies to the earlier experiments: @strack1997 compared estimates z-standardised within each item, so implausible anchors that lie further from the truth would produce at least equal standardised effects even under constant proportional pull, and their result need not conflict with that of @chapman1994. The theories speak to the proportional pull: how much of the distance between belief and anchor is carried into the estimate. @jacowitz1995 captured this with the anchoring index, the difference between median estimates under high and low anchors divided by the difference between the anchors, and @roseler2022meta called for such a unitless measure "to formalize the relationship between anchor distance and adjustment strength" [@roseler2022meta, p. 34].
+
+## Process models and their predictions
+
+We consider five process models. Each maps an anchor and a belief onto an estimate, and each implies a shape for the relation between anchor extremity and proportional pull ([@fig-models]). The models are specific formal implementations, all defined on the log scale of the estimated quantity; a test of one of them is a test of that implementation, not of every version of the theory that inspired it.
+
+In *anchor-and-adjust with a fixed number of adjustments* (M1), people start at the anchor and adjust towards their belief in a limited number of stochastic steps. This is not a theory anyone has defended in its own right; it is the mechanistic core of the resource-rational account with the number of adjustments held constant, as in Lieder et al.'s fit to Jacowitz and Kahneman's data (29 adjustments), and it shows what adjustment alone implies. @lieder2018a formalised adjustment as a Metropolis-Hastings chain that starts at the anchor and moves towards the belief distribution. Adjustment steps have a fixed typical size, so when the anchor is far away a fixed number of steps leaves a larger share of the distance uncorrected, and the proportional pull rises with extremity. Lieder et al. approximated the chain's convergence as geometric, which implies a constant proportional pull (their Eq. 4); that approximation holds for anchors near the belief, and our simulations use the chain itself.
+
+In *resource-rational anchor-and-adjust* (M1R), the number of adjustments is chosen to minimise expected error plus a time cost per adjustment [@lieder2018a, Eq. 2]. Anchors inside the plausible range are barely adjusted, because adjusting from them buys little accuracy, while far anchors justify many adjustments. The resulting pull can fall with extremity, but its shape depends on the time cost and on how uncertain people are.
+
+In *constant-weight integration* (M2), the estimate is a weighted average of anchor and belief with a fixed weight. This is the simplest version of the anchor integration model [@turner2016], and in log units it implies a constant proportional pull. It is the null model for shape. A constant weight on the raw scale would instead imply a declining log-scale elasticity for anchors below the belief and a rising one above it; we examine this variant in an exploratory analysis.
+
+In *adjustment to the plausible boundary* (M3), people accept anchors that lie inside the range of values they find plausible and adjust from implausible anchors only until they reach the edge of that range [@mussweiler2001; @epley2006]. @epley2006 proposed this stopping rule for self-generated anchors; M3 applies it to provided anchors. Beyond the boundary the estimate stops moving, so the proportional pull falls towards zero.
+
+In *plausibility-discounted integration* (M4), the anchor's weight declines as the anchor becomes implausible. This formalises the proposal that extreme anchors lose influence because they are implausible [@wegener2001], and it resembles the anchor integration model, in which an anchor's influence depends on how consistent it is with prior beliefs [@turner2016]. Selective-accessibility accounts, in which anchoring arises from anchor-consistent knowledge activated during the comparison [@strack1997; @mussweiler1999], have been read as predicting smaller effects for implausible anchors [@roseler2022meta]. The pull falls, and far enough out, a more extreme anchor moves the estimate back towards the belief.
+
+```{r fig-models}
+#| fig-alt: "Two line charts of five models against anchor distance from the belief centre. Left: mean estimate; M1 and M2 rise linearly, M1R, M3 and M4 flatten beyond about one unit. Right: local elasticity; M1 rises with distance, M2 is flat, M1R, M3 and M4 fall to zero or below."
+#| fig-cap: "Model predictions at the median calibrated parameter values. (A) Mean log estimate relative to the belief centre as a function of the anchor's distance from the belief centre, in units of belief uncertainty. (B) Local elasticity, the proportional pull of the anchor. M1: anchor-and-adjust with a fixed number of adjustments; M1R: resource-rational anchor-and-adjust; M2: constant-weight integration; M3: adjustment to the plausible boundary; M4: plausibility-discounted integration. Figure produced with R code written by an AI system (see Method)."
+knitr::include_graphics(here("manuscript", "figures", "fig1_model_predictions.png"))
+```
+
+The models also include a no-anchoring baseline (M0). Lieder et al. derived that bias grows linearly with anchor distance when the number of adjustments is fixed, showed how the optimal number of adjustments depends on distance, and fitted a five-level anchoring demonstration in which bias rose linearly with the anchor, but did not examine whether proportional influence changes for implausibly extreme anchors. @turner2016 built an inverted U between anchor extremity and the size of the shift in estimates into their model "for simplicity" and tested it with one anchor per item.
+
+## The present study
+
+We tested these predictions on OpAQ, an openly licensed collection of trial-level anchoring data [@roseler2022opaq]. Because anchor values in most studies were chosen by the original authors together with the items, a comparison across items confounds extremity with item properties. Our primary test is therefore within items: in studies that presented at least three different anchors for the same question, we asked how the proportional pull changes as the anchor moves away from the true value. Compared with the dot-estimation evidence of @imhoff2023, these studies use general-knowledge magnitudes and anchors that lie up to several orders of magnitude from the true value. A comparison of the anchoring index across two-anchor studies is a secondary test, which remains subject to the confound between extremity and item properties. We simulated every model on the exact OpAQ designs to derive numeric predictions and passed the simulated data through the same estimators as the observed data. We preregistered the predictions, decision rules and analyses before reading any estimate.
+
+# Method
+
+## Transparency and openness
+
+The preregistration (following the secondary-data template of @vandenakker2021), the frozen model predictions, all code and all outputs are in the project repository. The preregistration was committed to a local git repository, not to a public registry. The preregistration was committed to version control (git) before the estimates were read; a reader function refuses to load the outcome column unless the preregistration is committed. The commit timestamp is recorded in a local repository and is not independently verifiable in the way a registry timestamp is; the repository, including its full history, will be made public. Before the preregistration was committed we had read the design columns of the data file (study, item, true value, anchor value and type, and participant identifiers), from which we derived the inclusion sets and the simulated designs, but not the estimates or any variable derived from them. The one-command script `run_all.sh` reproduces every number from the raw data. Four deviations from the preregistration are listed in the section on deviations below. The study was designed, coded, analysed and written by an AI system under the instruction of the author, as described in the next section.
+
+## Use of AI tools
+
+The study was carried out by an AI system, Claude Opus 5.5 (Anthropic; model identifier claude-opus-5-5), running in Claude Code between 27 and 28 September 2026 under the instruction of the author. The instruction asked for a complete, preregistered study in judgement and decision making based on openly licensed data, with decisions recorded and reviews by other AI systems. The AI searched the literature and data repositories (with subagents of the same model), chose the research question and dataset, specified the models, wrote the preregistration and all analysis code in R, ran the analyses, produced the figures and tables, and drafted the text. OpenAI Codex CLI (version 0.155.1) and Google Gemini 3.8 Flash (accessed through the Antigravity command-line tool) reviewed the choice of study, the code and the manuscript; their comments and our responses are in the repository. At run time, the AI tools used no data other than the openly licensed OpAQ file and published literature; the language models' training data probably include much of the anchoring literature, so their choice of question and expectations about the results may have been shaped by it. The preregistration protects against flexibility in estimation, exclusion and decision rules, not against a choice of hypothesis informed by such prior knowledge or by the design columns read before the commit. All numbers in this article are computed by code from the raw data, and all references were retrieved by script from Crossref or DataCite metadata and checked against the cited sources. The tools can be accessed commercially from Anthropic, OpenAI and Google. The author set the field, the requirement of preregistered analysis of openly licensed data and the review procedure; within these constraints, the author did not select the research question, the dataset, the models or the interpretation. The author is responsible for verifying the work before submission and is accountable for the content of the article.
+
+## Data
+
+OpAQ [@roseler2022opaq; @opaqosf] aggregates openly available and contributed anchoring datasets into one trial-level file with harmonised design codes. We used the newest version of the file (`opaq_70a.csv`, dated 10 February 2023), which contains `r nf(dc$opaq_rows)` estimates from `r dc$opaq_studies` studies and `r dc$opaq_items` items. It is licensed under CC-BY 4.0 and contains no personal identifiers beyond sex, age and nationality, none of which we used.
+
+Estimates entered the analysis if the anchor was explicitly random, fixed, or relevant to the target (self-generated and incidental anchors were excluded); the response scale was open; the quantity was a positive ratio-scale magnitude (e.g., a length, price, population or count, but not a date, temperature, percentage or preference); and anchor and true value were positive. We excluded one study whose anchors were computed from each participant's own unanchored estimates. Two sets were formed from these estimates.
+
+- **Within-item set** (primary): item-study cells with at least three distinct anchor values. Before exclusions, it contains `r dc$within_cells` cells from `r dc$within_studies` studies (`r nf(dc$within_rows)` estimates, `r nf(dc$within_participants)` participants). OpAQ codes 15 cells as using random anchors: 13 general-knowledge items from @bahnik2021, in which each participant compared 13 random anchors between 1 and 1,000 with 13 lengths, heights and distances, and two items from @yoon2021, in which participants first entered their own height in inches or their age and then compared the target quantity with that number. The entered values range from `r nf(wct[grepl("sofa", item)]$anchor_min)` to `r nf(wct[grepl("sofa", item)]$anchor_max)` and from `r nf(wct[grepl("Stephen King", item)]$anchor_min)` to `r nf(wct[grepl("Stephen King", item)]$anchor_max)`, which suggests entries in other units and some errors; because participants compared the target with the number they had entered, we analysed these values as anchors. They differ from the excluded study, whose anchors were computed from participants' own estimates of the target quantity: here the entered number concerns a different quantity. Of the `r r3_("R3b_yoon_entries")` entries, `r r3_("R3b_yoon_implausible")` lie outside plausible ranges for height (48 to 84 inches) or age (10 to 100 years); without them, the pooled curvature was γ = `r f3(r3_("R3b_g_without_implausible_yoon"))`, `r ci(r3_("R3b_g_without_implausible_yoon_lo"), r3_("R3b_g_without_implausible_yoon_hi"))` (post hoc). OpAQ codes five cells as using fixed anchors: four items with 10 high anchor levels each from unpublished data by Frech et al. (2021), contributed to OpAQ, and one item (the height of Cologne cathedral) with 20 anchor levels from a supplementary task in @imhoff2023 [Study 2], whose authors describe these anchors as random. We followed the OpAQ coding, as preregistered. If the Cologne cathedral item were counted as random, the fixed-anchor stratum would consist only of the four Frech et al. items, all with anchors above the true value and 104 participants each.
+- **Across-cell set** (secondary): cells with fixed or relevant anchors, exactly one low and one high anchor value, a log ratio of at least 0.25 between them, and at least 10 estimates per anchor. Before exclusions, it contains `r dc$across_cells` cells from `r dc$across_studies` studies (`r nf(dc$across_rows)` estimates).
+
+[@tbl-cells] describes the within-item cells. OpAQ labels two of the source studies differently from their publications: "Bahník, 2021a" is @bahnik2021, and "Imhoff & Barker, 2022, Study 2" is a supplementary task in @imhoff2023.
+
+```{r tbl-cells}
+#| tbl-cap: "The 20 within-item cells (after exclusions). Anchor levels are distinct anchor values; the range of x is the log ratio of anchor to true value. Anchor type follows the OpAQ codes; the anchors of the two Yoon et al. items were participants' own height or age, and Imhoff and Barker describe their anchors as random."
+lab <- c("Bahník, 2021a" = "Bahník (2021)", "Frech et al., 2021" = "Frech et al. (2021)",
+         "Yoon et al., 2021, Form C" = "Yoon et al. (2021)", "Imhoff & Barker, 2022, Study 2" = "Imhoff & Barker (2023)")
+tc <- wct[, .(Study = lab[study], Item = sub("\\s*\\([^()]*\\)$", "", item),
+              Unit = ifelse(grepl("\\([^()]*\\)$", item), sub(".*\\(([^()]*)\\)$", "\\1", item), "count"),
+              `True value` = sapply(true_value, function(v) format(v, big.mark = ",", scientific = FALSE, trim = TRUE, drop0trailing = TRUE)),
+              N = estimates, `Anchor levels` = anchor_levels, `Range of x` = sprintf("%.1f to %.1f", x_min, x_max),
+              `Anchor type` = anchor_type)]
+tc[, Item := sub("^(\\w)", "\\U\\1", Item, perl = TRUE)][Unit == "m", Unit := "metres"]
+knitr::kable(tc)
+```
+
+## Measures
+
+For every estimate we computed *y* = ln(estimate / true value) and *x* = ln(anchor / true value). Working on the log scale treats a doubling of a height and a doubling of a population alike and matches the roughly log-normal spread of numeric estimates. The log elasticity, the change in *y* per unit change in *x*, is a unitless proportional pull: an elasticity of .5 means that doubling the anchor multiplies the estimate by about 1.41.
+
+In the within-item set we modelled *y* = *a*~cell~ + *b*·*x* + γ·*x*|*x*|. Here *b* is the fitted local elasticity at the true value (for an average cell), and the curvature γ describes how the local elasticity, *b* + 2γ|*x*|, changes as the anchor moves away from the true value in either direction. The local elasticity is the proportional change in the estimate per proportional change in the anchor at a given anchor value; it is not the share of the whole distance between belief and anchor that ends up in the estimate. We also report the relative curvature ρ = γ/*b*, which does not depend on the overall strength of anchoring. In the across-cell set we computed each cell's log anchoring index, the difference between the median *y* under the high and the low anchor divided by the log ratio of the anchors, and each cell's extremity, the mean absolute log distance of its two anchors from the true value. The standard error of a median was approximated as 1.2533 × MAD / √*n*, where MAD is the median absolute deviation scaled by 1.4826 to estimate the standard deviation (the R default), and the standard error of the index as the square root of the summed squared standard errors of the two medians, divided by the log ratio of the anchors. No participant answered under both anchors of the same cell, so the two medians are independent.
+
+## Model predictions
+
+The five process models and the no-anchoring baseline were implemented on the log scale ([@fig-models]; specification in `R/models.R`). Every participant-item combination had a belief centre drawn around the true value, with item-level bias and between-person spread. Responses included response noise and a 2% share of gross errors. Model parameters are expressed in units of the item's belief uncertainty σ, which was drawn from 0.3 to 1.2 log units per item. [@tbl-sim] in the Appendix lists every distributional assumption.
+
+To fix the models' parameters without using OpAQ outcomes, we calibrated each model to the anchoring index that @jacowitz1995 reported for anchors at the 15th and 85th percentiles of unanchored estimates (about .49), accepting parameter values that produced an index between .30 and .60. The preregistered calibration computed this index on the log scale; a raw-scale recalibration is reported as a sensitivity analysis. The number of accepted grid points per model was `r paste(sprintf("%s: %d", acc$model, acc$N), collapse = "; ")`. We then simulated each model on the exact OpAQ designs (the same anchors, true values, participants and cell sizes; `r n_rep[model == "M0"]$N` replicates for M0 and `r n_rep[model == "M1"]$N` for each other model), drawing parameters uniformly from the accepted grid points, and passed each simulated dataset through the estimators used for the observed data. [@tbl-predictions] lists the resulting predictions.
+
+```{r tbl-predictions}
+#| tbl-cap: "Preregistered model predictions: medians and 95% predictive intervals across simulated replicates."
+q <- function(v) sprintf("%.3f [%.3f, %.3f]", median(v), quantile(v, .025), quantile(v, .975))
+tab <- pred[, .(`Elasticity at the true value b` = q(b), `Curvature γ` = q(g),
+                `Relative curvature ρ` = if (.BY$Model == "M0") "—" else q(rho),
+                `Across-cell slope d` = q(across_slope)), by = .(Model = model)]
+tab[, Model := c(M0 = "M0 No anchoring", M1 = "M1 Anchor-and-adjust, fixed", M1R = "M1R Anchor-and-adjust, resource-rational",
+                 M2 = "M2 Constant weight", M3 = "M3 Plausible boundary", M4 = "M4 Plausibility discount")[Model]]
+knitr::kable(tab)
+```
+
+The predictions separate the models by shape. M1 predicts positive curvature (median γ = `r f3(med_("M1", "g"))`), M2 zero curvature, and M3 and M4 negative curvature (`r f3(med_("M3", "g"))` and `r f3(med_("M4", "g"))`). M1R's curvature depends on its parameters, with a predictive interval spanning zero. The across-cell slope follows the same pattern.
+
+## Analysis plan
+
+**H1 (primary).** In the within-item set we fitted a linear mixed model with fixed effects for *x* and *x*|*x*|, uncorrelated random intercepts, slopes and curvatures by cell, and random intercepts by participant, using lme4 and lmerTest [@bates2015; @kuznetsova2017] in R [@rcore2026]. Confidence intervals for *b* and γ used Satterthwaite degrees of freedom; the interval for ρ used a delta-method standard error. Estimates were removed as gross errors when their log distance from the true value exceeded both ln(1000) and the cell's largest anchor distance plus ln(10), a rule that never removes a response equal to an anchor. H1a and H1b applied the same model to the random-anchor and fixed-anchor strata.
+
+**Decision rules.** The shape test was interpreted only if the confidence interval for *b* lay above zero (gate G1). We then classified the curvature, in this order, as *flat* if the confidence interval for ρ lay within the equivalence bounds ±0.05, as *rising* if the interval for γ lay above zero, as *falling* if it lay below zero, and otherwise as inconclusive. Using a 95% interval for this check amounts to an equivalence test at α = .025 [@lakens2017]; the bounds sit just below the smallest relative curvature in the 95% predictive interval of M1, M3 and M4 and far outside that of M2. Applied to the simulated replicates, this rule labelled data generated by M1 as rising in more than 99% of replicates, data from M3 and M4 as falling in more than 99%, data from M2 as flat in more than 99%, and data from M0 as failing the gate in all replicates. These operating characteristics are approximations: they use normal critical values, always the full random-effects structure, and a simplified version of gate G2.
+
+**H2 (secondary).** We regressed the cell-level log anchoring index on extremity in a multilevel meta-regression with random intercepts for studies and cells within studies [@viechtbauer2010], using standard errors derived from the median absolute deviation (MAD) of each condition. Gate G2 required the mean index to exceed zero; the slope *d* was classified with the same ordered rule and equivalence bounds of ±0.03.
+
+**H3 (model adequacy).** A model was retained if the observed across-cell slope *d* and at least one of the two curvature statistics (γ or ρ) lay inside its 95% predictive intervals, and contradicted otherwise; M0 was also contradicted if gate G1 passed. The observed level of anchoring (*b* and the mean index) was compared with each model's interval but did not decide survival, because levels inherit the calibration to Jacowitz and Kahneman's design.
+
+**Robustness.** We preregistered seven robustness analyses: median regression without the gross-error rule, with a participant-cluster bootstrap [@koenker1978; @quantreg]; separate slopes for near (|*x*| ≤ 1) and far anchors; H1 without @bahnik2021; H2 with the raw-scale anchoring index; H2 with design covariates; H2 without one study whose item coding may contain errors; and two alternative extremity measures.
+
+## Deviations from the preregistration
+
+We made four changes after the confirmatory analysis had been run. First, a code review found that the observed mean anchoring index in the H3 level check was computed with a different estimator from the simulated one; we replaced it with the same inverse-variance weighted mean. This affects only level criteria, which do not decide model survival. Second, the preregistration described M1R's parameter κ as the agent's uncertainty relative to the spread of belief centres across people, whereas the code defines it relative to the item's belief uncertainty σ (the spread of belief centres is 0.6σ). The predictions were generated by the committed code, so where text and code differed we treated the code as the operative plan and report the difference here. Third, we made code changes that altered no reported number, and we disclose two numerical safeguards that were in the preregistered code but not in its text (a floor for the MAD and the exclusion of cells with zero standard error in one robustness analysis); neither affected the analysed data. Fourth, the preregistration text specified Satterthwaite-based intervals without distinguishing ρ from *b* and γ; the preregistered code, used both for the simulations that set the equivalence bounds and for the analysis, computes the ρ interval with a normal critical value, and we report it that way. One cell (Shanks et al., 2020, Study 3, the population of Chicago) was excluded in full: its participants answered in millions, while its anchors and true value were raw counts, so all of its responses exceeded the preregistered gross-error limit. All analyses labelled exploratory or sensitivity were added after the preregistration.
+
+# Results
+
+After exclusions the within-item analysis included `r nf(P$n_rows)` estimates from `r nf(P$n_participants)` participants in `r P$n_cells` cells (`r excl[set == "within"]$invalid_estimate` estimates were missing or non-positive; no gross errors). The across-cell analysis included `r h2$n_cells` cells and `r nf(h2$n_rows)` estimates; `r nf(excl[set == "across"]$invalid_estimate)` estimates were missing or non-positive and `r nf(excl[set == "across"]$gross_error)` were removed as gross errors, `r nf(870)` of them from the cell with the unit mismatch (all of that cell's responses, so no estimate from it entered any analysis).
+
+## Within items, the proportional pull falls with extremity (H1)
+
+Anchoring was clearly present in the within-item set: the local elasticity at the true value was *b* = `r f3(P$b)`, 95% CI `r ci(P$b_lo, P$b_hi)`, so doubling the anchor raised estimates by about `r sprintf("%.0f%%", 100 * (2^P$b - 1))` near the true value. The curvature was negative, γ = `r f3(P$g)`, `r ci(P$g_lo, P$g_hi)`, *t*(`r f2(P$g_df, 1)`) = `r f2(P$g / ((P$g_hi - P$g_lo) / (2 * qt(.975, P$g_df))))`, *p* `r if (P$g_p < .001) "< .001" else paste("=", sprintf("%.3f", P$g_p))`, with a relative curvature of ρ = `r f2(P$rho)`, `r ci(P$rho_lo, P$rho_hi, 2)`. By the preregistered rule, the elasticity *falls* with extremity. The fitted local elasticity *b* + 2γ|*x*| was `r f2(loc_el(1))` for anchors one log unit (a factor of 2.7) from the true value and `r f2(loc_el(2))` for anchors two log units (a factor of 7.4) away, about half its value at the true value. For a quantity whose true value is 100, the fitted curve (ignoring item-specific terms) implies that doubling the anchor from 50 to 100 raises the median estimate by `r dbl(50)`, doubling it from 200 to 400 by `r dbl(200)`, and doubling it from 500 to 1,000 by `r dbl(500)`. Because the curvature term is quadratic, the fitted local elasticity would turn negative beyond |*x*| = `r f2(P$b / (2 * abs(P$g)))` (a factor of `r sprintf("%.0f", exp(P$b / (2 * abs(P$g))))`), where few anchors lie; this turning point is a property of the functional form, and the piecewise analysis below, which has no turning point, shows the same flattening. [@fig-within] shows the binned observed estimates and the fitted curves for each cell.
+
+In the random-anchor stratum the result was the same: *b* = `r f3(R$b)`, `r ci(R$b_lo, R$b_hi)`, and γ = `r f3(R$g)`, `r ci(R$g_lo, R$g_hi)`, again classified as falling. In this stratum the full model did not converge, and the preregistered fallback removed the between-cell variance of the curvature. The curvature is then estimated as common to all cells, which inflates its degrees of freedom (`r nf(round(R$g_df))`) and makes its interval narrower than one that allowed the curvature to vary between items. In the fixed-anchor stratum the point estimates were similar (*b* = `r f3(FX$b)`, γ = `r f3(FX$g)`, `r ci(FX$g_lo, FX$g_hi)`), but with only five cells the confidence interval for *b* spanned `r ci(FX$b_lo, FX$b_hi, 2)`, so the gate failed and the shape was not testable there under the preregistered rules.
+
+```{r fig-within}
+#| fig-alt: "Four panels, one per source study, plotting the median log estimate against the log anchor relative to the true value. Points rise with the anchor but flatten for anchors far from the true value; fitted curves per item bend in the same way."
+#| fig-cap: "Observed within-item response functions. Points are median log estimates in 0.5-unit bins of the log anchor (bins with at least 10 estimates), connected within each item. Blue curves are the fitted H1 model for each item (fixed plus item-level random effects), drawn over the central 95% of that item's anchors. The dashed line marks estimates equal to the anchor. Axes differ between panels. Figure produced with R code written by an AI system (see Method)."
+knitr::include_graphics(here("manuscript", "figures", "fig2_within_item.png"))
+```
+
+## Across cells, the anchoring index shows no clear trend (H2)
+
+Anchoring was present across cells: the mean log anchoring index, estimated as the intercept of a multilevel model that weights studies and cells, was `r f2(h2$mean_ai)`, `r ci(h2$mean_ai_lo, h2$mean_ai_hi, 2)`. (A simple inverse-variance weighted mean, which gives most weight to a few very precise cells, is `r f3(w_ai)`; we use it only to compare with the simulations, which computed the same quantity.) The slope of the index on extremity was *d* = `r f3(h2$slope)`, `r ci(h2$slope_lo, h2$slope_hi)`. This interval includes zero but is not narrow enough to establish equivalence within ±0.03, so the result is inconclusive under the preregistered rule. With a standard error of `r f3(r3_("R3a_h2_slope_se"))`, the analysis had 80% power only for slopes of about ±`r f2(r3_("R3a_min_detectable_slope"))`, close to the declines that M3 and M4 predicted, so it is a weak basis for judging these models. Because the standard error of a cell's index is inversely proportional to the log distance between its anchors, cells with widely spaced anchors, which also tend to be the more extreme cells, receive more weight ([@fig-across], panel A). The point estimate is positive, the opposite sign to the within-item curvature.
+
+```{r fig-across}
+#| fig-alt: "Two scatter plots against anchor extremity. Left: the log anchoring index per cell, with a flat, slightly rising regression line and a wide confidence band. Right: Hedges' g per cell, with a clearly rising regression line."
+#| fig-cap: "Across-cell relation between anchor extremity and anchor influence. (A) Log anchoring index per cell with the preregistered meta-regression line and 95% confidence band. (B) Hedges' *g* per cell (exploratory). Point area is proportional to 1/SE of each cell's estimate. The standardised effect rises with extremity, while the relation for the proportional index is inconclusive. Figure produced with R code written by an AI system (see Method)."
+knitr::include_graphics(here("manuscript", "figures", "fig3_across_cells.png"))
+```
+
+## Model adequacy (H3)
+
+[@tbl-h3] compares the observed statistics with each model's predictive interval. M1 predicts positive curvature and is contradicted by the negative observed curvature. M2 predicts no curvature and is contradicted as well. M3 and M4 predict negative curvature and contain the observed γ in their intervals, but they predict stronger relative curvature than observed (their intervals for ρ lie below `r f2(max(pi_("M3", "rho_hi"), pi_("M4", "rho_hi")))`) and a clearly negative across-cell slope, which the data do not show. The preregistered survival rule retains a model if the observed across-cell slope falls inside its interval and at least one of the two curvature statistics (γ or ρ) does; ρ was included so that a model whose overall anchoring strength was mis-calibrated could still pass on shape. Under this rule, only M1R survived. This does not mean that M1R predicted the data well: the observed γ lay outside its interval, and M1R passed only because its interval for ρ was very wide (`r ci(pi_("M1R", "rho_lo"), pi_("M1R", "rho_hi"), 2)`), mainly because some of its parameter settings produce almost no anchoring. On the within-item curvature alone, M3 and M4 were the models whose intervals contained the observed value. The preregistered retention rule rewards wide predictions. A more informative, though post-hoc, comparison asks how often each model reproduces the observed *b* and γ together. In this joint check, `r sprintf("%.0f%%", 100 * rj[model == "M3"]$share_b_and_g_inside)` of M3's and `r sprintf("%.0f%%", 100 * rj[model == "M4"]$share_b_and_g_inside)` of M4's replicates produced both *b* and γ inside the observed confidence intervals, compared with none for M1, M1R and M2; M1R is therefore best described as not supported by the within-item data. The across-cell slope compares items whose anchors were chosen by researchers, so a model's failure to predict it is weaker evidence against that model than a failure to predict the within-item curvature.
+
+```{r tbl-h3}
+#| tbl-cap: "Observed statistics compared with each model's 95% predictive interval. Each cell shows whether the observed value lies inside (in) or outside (out) the model's interval, followed by the interval. Under the preregistered rule a model is retained if d and at least one of γ and ρ lie inside its intervals. M3 and M4 contained the observed γ and were rejected only because of the across-cell slope d; M1R was retained although the observed γ lay outside its interval, because its interval for ρ was very wide."
+obs <- c(g = P$g, rho = P$rho, d = h2$slope, b = P$b, ai = w_ai)
+t3 <- merge(pint, h3, by = "model")
+t3 <- t3[, .(Model = model,
+             `Curvature γ` = sprintf("%s %s", ifelse(g_inside, "in", "out"), ci(g_lo, g_hi)),
+             `Relative curvature ρ` = ifelse(model == "M0", "—", sprintf("%s %s", ifelse(rho_inside, "in", "out"), ci(rho_lo, rho_hi, 2))),
+             `Across-cell slope d` = sprintf("%s %s", ifelse(slope_inside, "in", "out"), ci(slope_lo, slope_hi)),
+             Retained = ifelse(survives_shape, "yes", "no"))]
+t3[, Model := c(M0 = "M0 No anchoring", M1 = "M1 Anchor-and-adjust, fixed", M1R = "M1R Anchor-and-adjust, resource-rational",
+                M2 = "M2 Constant weight", M3 = "M3 Plausible boundary", M4 = "M4 Plausibility discount")[Model]]
+knitr::kable(t3)
+```
+
+Observed values were γ = `r f3(obs["g"])`, ρ = `r f2(obs["rho"])` and *d* = `r f3(obs["d"])`. For the level criteria, the observed elasticity at the true value (*b* = `r f3(obs["b"])`) lay inside the intervals of `r paste(h3[b_inside == TRUE]$model, collapse = ", ")`, and both *b* and the weighted mean log anchoring index (`r f3(obs["ai"])`) lay inside the intervals of `r paste(h3[survives_level == TRUE]$model, collapse = " and ")` only.
+
+## Robustness
+
+The within-item result held in the preregistered robustness analyses that retained the random-anchor data. Median regression without the gross-error rule gave γ = `r f3(r_("R1_median_regression_g"))`, `r ci(r_("R1_median_regression_g", "lo"), r_("R1_median_regression_g", "hi"))`. Replacing the curvature term by separate slopes for near and far anchors showed that the slope for anchors more than one log unit from the true value differed from the slope near the true value by `r f2(r_("R2_far_minus_near_slope"))`, `r ci(r_("R2_far_minus_near_slope", "lo"), r_("R2_far_minus_near_slope", "hi"), 2)`; the slope was `r f2(rc_("R1b_near_slope"))`, `r ci(rc_("R1b_near_slope", "lo"), rc_("R1b_near_slope", "hi"), 2)`, near the true value and `r f2(rc_("R1b_far_slope"))`, `r ci(rc_("R1b_far_slope", "lo"), rc_("R1b_far_slope", "hi"), 2)`, further away, so far anchors still pulled estimates, but less (both reported post hoc). Without @bahnik2021 the estimate was similar but very imprecise, γ = `r f3(r_("R3_without_bahnik_g"))`, `r ci(r_("R3_without_bahnik_g", "lo"), r_("R3_without_bahnik_g", "hi"), 2)`.
+
+The across-cell slope stayed positive and imprecise in most checks: with design covariates, *d* = `r f3(r_("R5_covariates_slope"))`, `r ci(r_("R5_covariates_slope", "lo"), r_("R5_covariates_slope", "hi"))`; with the largest anchor distance as the extremity measure, `r f3(r_("R7_max_distance_slope"))`, `r ci(r_("R7_max_distance_slope", "lo"), r_("R7_max_distance_slope", "hi"))`; with the log ratio of the anchors, `r f3(r_("R7_log_spread_slope"))`, `r ci(r_("R7_log_spread_slope", "lo"), r_("R7_log_spread_slope", "hi"))`. Without Weber et al. (2021), a study from the OpAQ team whose item coding may be affected by item mix-ups that an unpublished 2026 corrigendum reported for a related publication, the slope was `r f3(r_("R6_without_weber_slope"))`, `r ci(r_("R6_without_weber_slope", "lo"), r_("R6_without_weber_slope", "hi"))`, the only check in which the interval excluded zero. The Shanks et al. cell was removed because a preregistered rule applied to all its responses; the possible item mix-ups in Weber et al. are unverified, so the study stayed in the preregistered analysis and its influence is shown here. The raw-scale anchoring index, which the preregistration designated as descriptive because a constant log-scale weight does not imply a constant raw-scale index, gave `r f3(r_("R4_raw_index_slope"))`, `r ci(r_("R4_raw_index_slope", "lo"), r_("R4_raw_index_slope", "hi"))`.
+
+## Exploratory analyses
+
+The following analyses were not preregistered.
+
+*Both sides of the true value.* The curvature was negative both for anchors below the true value, γ = `r f3(x_("E1_xx_neg"))`, `r ci(x_("E1_xx_neg", "lo"), x_("E1_xx_neg", "hi"))`, and for anchors above it, γ = `r f3(x_("E1_xx_pos"))`, `r ci(x_("E1_xx_pos", "lo"), x_("E1_xx_pos", "hi"))`.
+
+*Item by item.* In each of the `r e2[!is.na(diff), .N]` cells with at least 20 estimates both within and beyond one log unit of the true value (the 13 cells of @bahnik2021, the Cologne cathedral item and one of the two items of @yoon2021), the slope for far anchors was lower than the slope for near anchors (median difference `r f2(median(e2$diff, na.rm = TRUE))`). The other Yoon et al. item had too few near anchors for this analysis; the positive curvature reported below for the two Yoon et al. items together comes from a different specification (a quadratic fit to both items together, including the item not in this comparison).
+
+*Standardised effect sizes.* Across cells, Hedges' *g* rose with extremity by `r f2(x_("E3_hedges_g_slope"))` per log unit, `r ci(x_("E3_hedges_g_slope", "lo"), x_("E3_hedges_g_slope", "hi"), 2)` ([@fig-across], panel B), in line with @roseler2022meta. The same cells therefore show a clearly rising standardised effect and an inconclusive relation for the proportional pull.
+
+*Extremity relative to response spread.* The across-cell extremity measure ignores how uncertain people are about each quantity. When we divided extremity by the spread of log estimates within each anchor condition (a measure that is itself affected by anchoring), the slope turned negative, *d* = `r f3(x_("E4_slope_on_scaled_extremity"))`, `r ci(x_("E4_slope_on_scaled_extremity", "lo"), x_("E4_slope_on_scaled_extremity", "hi"))`. When we instead entered extremity and spread as separate predictors, the extremity slope was `r f3(x_("E4_slope_adjusting_spread"))`, `r ci(x_("E4_slope_adjusting_spread", "lo"), x_("E4_slope_adjusting_spread", "hi"))`. The two specifications disagree, and a ratio predictor can produce spurious associations when its denominator is related to the outcome's precision, so this analysis does not settle whether the across-cell pattern reflects how anchors were placed relative to people's uncertainty.
+
+*Relaxed calibration.* To check whether the model failures stem from the calibration to Jacowitz and Kahneman's index, we drew 300 parameter sets per model from wide ranges without calibration and simulated each on the OpAQ designs. None of these draws reproduced the observed *b*, γ, *d* and mean index jointly (all four inside their observed 95% confidence intervals); with 300 draws per model, this shows that such parameter settings are rare, not that none exist. Within-item *b* and γ together were reproduced by `r e5[model == "M4"]$within_b_and_g` of 300 M4 draws, `r e5[model == "M1R"]$within_b_and_g` M1R draws and `r e5[model == "M3"]$within_b_and_g` M3 draws, and by no M1 or M2 draw; the across-cell *d* and mean index together were reproduced by `r e5[model == "M2"]$across_d_and_ai` M2 draws, `r e5[model == "M1"]$across_d_and_ai` M1 draws and `r e5[model == "M1R"]$across_d_and_ai` M1R draws, and by no M3 or M4 draw.
+
+*Constant weight on the raw scale.* M2 assumes a constant weight on the log scale. We also simulated a constant weight on the raw scale (the estimate is a weighted average of anchor and belief in raw units; weights drawn from .30 to .60, which give raw-scale Jacowitz and Kahneman indices within .02 of the weight; 300 replicates). Passed through the H1 estimator, this model predicted a negative pooled curvature, γ = `r f3(e6_("g"))`, `r ci(e6_("g", "lo"), e6_("g", "hi"))`, an interval that contains the observed value, because on the log scale raw averaging flattens the response to anchors below the belief. It predicted opposite curvatures on the two sides of the true value, however: negative below (`r f3(e6_("g_below"))`, `r ci(e6_("g_below", "lo"), e6_("g_below", "hi"))`) and positive above (`r f3(e6_("g_above"))`, `r ci(e6_("g_above", "lo"), e6_("g_above", "hi"))`). The observed curvature above the true value was negative (`r f3(x_("E1_xx_pos"))`), which contradicts raw-scale constant weighting. The preregistered pooled test alone would not have ruled out this model.
+
+*Study-specific estimates.* The curvature was negative in @bahnik2021, γ = `r f3(rc_("R1c_g_Bahník, 2021a"))`, `r ci(rc_("R1c_g_Bahník, 2021a", "lo"), rc_("R1c_g_Bahník, 2021a", "hi"))`, and in the Cologne cathedral item of @imhoff2023, `r f3(rc_("R1c_g_Imhoff & Barker, 2022, Study 2"))`, `r ci(rc_("R1c_g_Imhoff & Barker, 2022, Study 2", "lo"), rc_("R1c_g_Imhoff & Barker, 2022, Study 2", "hi"))`; it was imprecise in Frech et al. (2021), `r f3(rc_("R1c_g_Frech et al., 2021"))`, `r ci(rc_("R1c_g_Frech et al., 2021", "lo"), rc_("R1c_g_Frech et al., 2021", "hi"), 2)`, and positive in the two items of @yoon2021, whose anchors were participants' own height or age, `r f3(rc_("R1c_g_Yoon et al., 2021, Form C"))`, `r ci(rc_("R1c_g_Yoon et al., 2021, Form C", "lo"), rc_("R1c_g_Yoon et al., 2021, Form C", "hi"))`. @imhoff2023 reported a linear relation between anchor and estimate for the Cologne cathedral item on the raw scale; a linear raw-scale relation also produces a declining log-scale elasticity for anchors below the belief, so this item alone does not discriminate between log-scale plausibility models and raw-scale averaging.
+
+*Item-level heterogeneity.* Fitting the quadratic model separately to each cell and pooling the `r r2_("E8_cells_negative", "hi")` curvature estimates in a random-effects meta-analysis gave γ = `r f3(r2_("E8_two_step_pooled_g"))`, `r ci(r2_("E8_two_step_pooled_g", "lo"), r2_("E8_two_step_pooled_g", "hi"))`, with heterogeneity τ = `r f3(r2_("E8_tau"))` (*I*^2^ = `r sprintf("%.0f%%", r2_("E8_I2"))`); `r r2_("E8_cells_negative")` of the `r r2_("E8_cells_negative", "hi")` cell estimates were negative, and the 13 cells of @bahnik2021 ranged from `r f3(r2_("E8_bahnik_g_range", "lo"))` to `r f3(r2_("E8_bahnik_g_range", "hi"))`. This two-step estimate allows the curvature to differ between items and agrees with the pooled estimate.
+
+*Shape of the response function.* A model with separate slopes for five bands of anchor distance (|*x*| below 0.5, 0.5 to 1, 1 to 2, 2 to 3, and above 3) gave slopes of `r paste(sprintf("%.2f", e9$slope), collapse = ", ")` respectively. The slope thus fell over the first two log units and then stayed low; the point estimates remained positive, although the confidence intervals of the two most distant bands, which contain few anchors, included zero (repository file `E9_band_slopes.csv`). The band estimates beyond |*x*| = 3 are dominated by anchors near that boundary, where the quadratic curve still predicts a small positive slope, so they cannot adjudicate whether the response reverses beyond |*x*| ≈ `r f2(P$b / (2 * abs(P$g)))`; they do show that the decline is concentrated within the first two log units.
+
+*Curvature and item uncertainty.* If anchor influence is limited by plausibility, items that people know less well should show flatter curvature on the log scale. Across the `r r2_("E10_cells")` cells with at least 20 anchors within 0.5 log units of the true value, cell-level curvature was unrelated to the spread (MAD) of those near-truth estimates, slope `r f3(r2_("E10_slope_g_on_spread"))`, `r ci(r2_("E10_slope_g_on_spread", "lo"), r2_("E10_slope_g_on_spread", "hi"))`.
+
+*Plausibility discount with a floor.* We simulated a variant of M4 in which the anchor's weight falls with implausibility towards a floor instead of zero (weight uniform between 0.1 and 1, discount width between 0.3 and 6 belief SDs, floor between 0 and 0.8 of the weight; `r r2_("E7_draws")` draws). Of these, `r r2_("E7_within_b_g")` reproduced the within-item *b* and γ together and `r r2_("E7_across_d")` reproduced the across-cell slope, but none did both.
+
+## Sensitivity analyses
+
+These analyses were added after a code review and were not preregistered.
+
+*Calibration scale.* The preregistered calibration compared the models' log-scale anchoring index with Jacowitz and Kahneman's value of about .49, which they computed on the raw scale. Recalibrating every model to a raw-scale index accepted largely the same parameter values (`r paste(sprintf("%s: %d of %d", s1acc$model, s1acc$both, s1acc$log_scale), collapse = "; ")` of the originally accepted grid points were also accepted), and new predictions from the recalibrated models led to the same conclusion: only M1R survived the shape criteria.
+
+*Dependence on single studies (H1).* Leaving out any one of the three smaller studies left the curvature negative with confidence intervals excluding zero (γ from `r f3(min(s_("S2_without_Frech et al., 2021"), s_("S2_without_Yoon et al., 2021, Form C"), s_("S2_without_Imhoff & Barker, 2022, Study 2")))` to `r f3(max(s_("S2_without_Frech et al., 2021"), s_("S2_without_Yoon et al., 2021, Form C"), s_("S2_without_Imhoff & Barker, 2022, Study 2")))`). Adding study-level random effects gave γ = `r f3(s_("S2_study_random_effect"))`, `r ci(s_("S2_study_random_effect", "lo"), s_("S2_study_random_effect", "hi"))`. The Cologne cathedral item with 20 anchor levels [the supplementary task of @imhoff2023, Study 2], coded as fixed in OpAQ but described by its authors as using random anchors, showed a negative curvature on its own, γ = `r f3(s_("S2_imhoff_barker_only"))`, `r ci(s_("S2_imhoff_barker_only", "lo"), s_("S2_imhoff_barker_only", "hi"))`.
+
+*Influence and clustering (H2).* The across-cell slope was not robust. With study-clustered robust standard errors, *d* = `r f3(s_("S3_cluster_robust_slope"))`, `r ci(s_("S3_cluster_robust_slope", "lo"), s_("S3_cluster_robust_slope", "hi"))`. The ten most precise cells carried `r sprintf("%.0f%%", 100 * s_("S3_top10_weight_share"))` of the inverse-variance weight; without them, *d* = `r f3(s_("S3_without_top10_weight_cells"))`, `r ci(s_("S3_without_top10_weight_cells", "lo"), s_("S3_without_top10_weight_cells", "hi"))`. Leaving out one study at a time gave slopes between `r f3(s_("S3_loo_slope_range", "lo"))` and `r f3(s_("S3_loo_slope_range", "hi"))`. Resampling participants within studies gave a median slope of `r f3(rc_("R1d_h2_slope_participant_bootstrap"))` (this interval, `r ci(rc_("R1d_h2_slope_participant_bootstrap", "lo"), rc_("R1d_h2_slope_participant_bootstrap", "hi"))`, reflects participant sampling only, not variation between items), and converting the Chicago responses from millions and retaining that cell gave *d* = `r f3(rc_("R1e_h2_slope_chicago_converted"))`, `r ci(rc_("R1e_h2_slope_chicago_converted", "lo"), rc_("R1e_h2_slope_chicago_converted", "hi"))`.
+
+# Discussion
+
+Within items, estimates responded less to changes in the anchor as the anchor moved away from the true value. Near the truth, the local elasticity was `r f2(P$b)`; for anchors a factor of 2.7 from the truth it was `r f2(loc_el(1))`, and for anchors a factor of 7.4 away, `r f2(loc_el(2))`. In exploratory analyses, the decline appeared on both sides of the true value and in every item with enough near and far anchors; all of these items used random or self-generated anchors, in one case coded otherwise in OpAQ. Across two-anchor studies, where authors chose one anchor pair per item, the relation between the anchoring index and extremity was inconclusive, with a point estimate that leaned the other way.
+
+## What the within-item result rules out
+
+The negative curvature contradicts two simple implementations. Anchor-and-adjust with a fixed number of steps predicts that far anchors keep more of their distance, because a bounded number of bounded steps cannot correct a large gap; the data show the reverse. Constant-weight integration on the log scale predicts no change in proportional pull; it too is contradicted. Constant weighting on the raw scale predicts the observed pooled curvature, but also a rising elasticity above the true value, which the exploratory side-specific estimates contradict. The implementations that predict a decline on both sides share one feature: the anchor's influence is limited by how plausible it is. The within-item shape is consistent with this feature, but the calibrated versions of these models did not reproduce the data quantitatively, so plausibility-limited influence is one possible account rather than an established mechanism. This holds for adjustment that stops at the edge of the plausible range [@mussweiler2001; @epley2006] and for integration that discounts implausible anchors [@wegener2001; @turner2016]. The resource-rational variant can also produce a decline, but its calibrated versions did not reproduce the observed combination of elasticity and curvature. The result fits earlier experiments with few anchor levels in which implausible anchors had proportionally smaller effects [@chapman1994; @mussweiler2001; @wegener2001], the distance-decaying anchoring weight of @barrera2024, and the levelling-off of assimilation to symbolic anchors in dot estimation [@imhoff2023]. It extends these findings to general-knowledge magnitudes, to anchors far outside the plausible range, and to a proportional outcome. In a dot-estimation task with anchors 35% or 70% away from the true value, the more distant anchors produced larger estimation errors [@mayer2024]; a larger absolute effect is compatible with a declining proportional pull, so the two findings do not conflict.
+
+Relative to the overall strength of anchoring, the decline was smaller than the calibrated versions of M3 and M4 predicted: their intervals for ρ lay below the observed value, and far anchors still had a positive slope. Far anchors thus pulled estimates more than a hard plausibility boundary or a steep plausibility discount allows, at least within the calibrated parameter ranges. The multi-band analysis shows the same picture: the slope fell from about `r f2(e9[band == "0-0.5"]$slope)` near the true value to about `r f2(e9[band == "1-2"]$slope)` one to two log units away and stayed low further out. A plausibility discount with a floor, in which an anchor's weight falls but never reaches zero, can reproduce the within-item pattern (`r r2_("E7_within_b_g")` of `r r2_("E7_draws")` exploratory draws), but none of these draws also reproduced the across-cell slope. A direct test of the mechanism was uninformative: with only `r r2_("E10_cells")` items and an outcome-based measure of spread, the relation between item-level curvature and the spread of near-truth estimates was *r* = `r f2(r2_("E10_correlation"))`, with a slope interval (`r ci(r2_("E10_slope_g_on_spread", "lo"), r2_("E10_slope_g_on_spread", "hi"), 2)`) wide enough to include large effects in either direction.
+
+## The across-cell pattern
+
+The across-cell analysis did not reproduce the within-item decline, and no model with a single parameter set reproduced both patterns. Two explanations are plausible, and our data cannot fully separate them. First, extremity measured against the true value is not extremity measured against people's uncertainty. Researchers may place anchors further from the truth for quantities that people know poorly. An anchor ten times the true population of a city may be less implausible than an anchor twice the height of a familiar building. The spread of estimates is itself affected by anchoring, so it does not cleanly measure how implausible an anchor is; scaling extremity by spread gave a negative across-cell slope, but entering spread as a separate predictor left the extremity slope positive and imprecise, and neither analysis resolves the question. A design that could separate the explanations would present informative and random anchors at many levels for the same items, after eliciting each participant's unanchored estimate and plausible range, so that extremity could be measured against each person's belief. Second, the two sets differ in anchor type: the within-item set is mostly random anchors, and the across-cell set only fixed or relevant anchors. None of the five models distinguishes random from informative anchors; their identical predictions for the two reflect this omission, not a tested equivalence, and informative anchors may lose less pull with extremity than anchors that people know to be random. The fixed-anchor stratum of the within-item set was too small for the preregistered test; its one well-resolved item (Cologne cathedral) used anchors that its authors describe as random, and the remaining four items (Frech et al., 2021) gave an imprecise estimate, γ = `r f3(rc_("R1c_g_Frech et al., 2021"))`, `r ci(rc_("R1c_g_Frech et al., 2021", "lo"), rc_("R1c_g_Frech et al., 2021", "hi"), 2)`. The data therefore contain no informative test for fixed, deliberately chosen anchors.
+
+The divergence also bears on how moderator analyses of anchoring should be read. In the same cells, the standardised effect rose clearly with extremity, while the relation for the proportional index was inconclusive. Meta-analytic findings that larger anchor distances produce larger standardised effects [@roseler2022meta] therefore say little about whether extreme anchors are more influential per unit of distance. Tests of anchoring theories need a proportional outcome and variation in extremity that the researcher controls.
+
+## Limitations
+
+The primary evidence rests largely on one study. Thirteen of the 20 within-item cells, and `r sprintf("%.0f%%", 100 * wct[study == "Bahník, 2021a", sum(estimates)] / P$n_rows)` of the within-item estimates, come from @bahnik2021, in which participants compared 13 random anchors with 13 different lengths, heights and distances. Without this study the within-item curvature had the same sign but a confidence interval too wide to be informative. The random anchors also differ from the fixed anchors that dominate applied settings. The preregistered test of the fixed-anchor stratum was not informative, and the only item in that stratum with many anchor levels used anchors that its authors describe as random, so the within-item evidence concerns random or self-generated anchors only. A direct test of the extremity function for informative anchors needs experiments that present many anchor levels for many items.
+
+Second, extremity was measured relative to the true value, not relative to each participant's belief. Where people systematically over- or underestimate a quantity, the anchor's distance from their belief differs from its distance from the truth. The simulations drew item-level biases from a generic distribution, which does not represent the specific over- or underestimation of the Prague locations and world landmarks that supply most of the data, and the curvature was negative on both sides of the true value. However, a study that elicits unanchored estimates or plausible ranges from the same participants would give a cleaner measure.
+
+Third, the models were specified on the log scale and calibrated to a single external benchmark. The shape predictions of M1, M2, M3 and M4 follow from their structure and held across all calibrated parameter values, but the level predictions depend on the calibration, and the resource-rational model's predictions depend strongly on its time cost and on how uncertain people are. That this model survived our tests reflects the width of its predictions more than a close fit. Formal tests of resource-rational anchoring need independent measures of the time cost and of people's uncertainty.
+
+Fourth, OpAQ harmonises data from many studies, and its codes do not always match the original designs: the two items of @yoon2021 used participants' own height or age as anchors, and the anchors of the Cologne cathedral item were described by its authors as random. Harmonisation can also introduce errors. We found one item whose responses were recorded in different units from its anchors and true value, and an unpublished 2026 corrigendum, posted on the OpAQ project page for a related publication by the same group, suggests that the item coding of another study (Weber et al., 2021) may contain errors. Our rules removed the first; excluding the second made the across-cell slope positive and significant. We used only positive ratio-scale quantities with open response scales, so the results do not speak to dates, percentages, bounded scales or preferences.
+
+## Conclusion
+
+Within the same questions, estimates responded less to changes in the anchor when the anchor was far from the true value than when it was close to it. The evidence comes from random anchors, mostly for lengths, heights and distances in one study; the data contain no informative within-item test for fixed, deliberately chosen anchors. It contradicts anchor-and-adjust with a fixed number of steps and constant-weight integration, and is consistent with accounts in which an anchor's influence is limited by its plausibility. No calibrated model, however, explained the combined results: the plausibility models predicted a steeper within-item decline and a falling across-cell trend. Across studies with researcher-chosen anchors, the pattern was not visible. Whether deliberately chosen, informative anchors, such as opening offers in negotiations, also show diminishing returns to extremity cannot be answered with these data. The extremity function should be estimated within items, with proportional measures and with anchors of the kind used in practice.
+
+# Acknowledgements
+
+The text of this article, including the abstract, tables and figure captions, was generated by Claude Opus 5.5 (Anthropic) on 27-28 September 2026, as described under Use of AI tools in the Method section. The figures were produced by R code written by the same system. We thank the researchers who contributed their data to the Open Anchoring Quest.
+
+# Competing interests
+
+The author declares none.
+
+# Data availability
+
+The OpAQ data are openly available under CC-BY 4.0 at https://osf.io/ygnvb [@opaqosf]. The preregistration (committed before any estimate was read; git tag `prereg-v1`, 27 September 2026), the frozen model predictions, all code, all outputs, the list of deviations and the review records are available in the project repository [link to be added before submission]. The script `run_all.sh` reproduces all results from the raw data.
+
+# Ethics
+
+The study used only openly licensed, anonymised secondary data. No new data were collected, and no ethics approval was sought.
+
+# Financial support
+
+This research received no specific grant from any funding agency, commercial or not-for-profit sectors.
+
+# References
+
+::: {#refs}
+:::
+
+# Appendix
+
+```{r tbl-sim}
+#| tbl-cap: "Assumptions of the model simulations (implemented in R/models.R and R/03_simulate_predictions.R). All quantities are on the natural-log scale relative to the true value; σ is the item's belief uncertainty."
+sim <- data.table(
+  Component = c("Item belief uncertainty σ", "Item bias (mean belief relative to truth)", "Participant offset",
+                "Participant belief centre μ", "Response noise", "Gross errors", "M1 step proposals", "M1R number of adjustments",
+                "Model parameters", "Replicates"),
+  Assumption = c("Uniform(0.3, 1.2), drawn per item and replicate",
+                 "Normal(m, 0.3), with m ~ Uniform(−0.3, 0.3) per replicate",
+                 "Normal(0, 0.15), shared across a participant's items",
+                 "Item bias + participant offset + Normal(0, 0.6σ)",
+                 "Normal(0, 0.3σ), added to the model output",
+                 "2% of responses; Normal(0, 2) added",
+                 "Normal(0, sσ); Metropolis-Hastings acceptance towards Normal(μ, σ)",
+                 "Minimises expected absolute error under the belief plus cost × adjustments (tabulated by distance)",
+                 "Drawn uniformly from grid points whose Jacowitz-Kahneman index lay in [.30, .60]",
+                 "200 (M0) or 500 (other models) per model"))
+knitr::kable(sim)
+```

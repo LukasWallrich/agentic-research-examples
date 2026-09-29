@@ -1,0 +1,17 @@
+## Answer
+
+The revision substantially addresses the round-1 major requests. A2, A4, A5, X2, X3, X4 and X6 are adequately resolved; A1 is largely resolved by narrowing the scope. A3, X1 and X5 are now reported more fairly, but the interpretation still needs work.
+
+1. **MAJOR — Measures, Abstract and Conclusion.** The manuscript defines “proportional pull” as a *local elasticity*, then concludes that extreme anchors pull estimates by a smaller *share of the distance between belief and anchor*. Those are different quantities. The model uses distance from the true value, while participants’ unanchored beliefs were not measured. **Fix:** State the primary finding as a decline in local response to changes in the anchor. Use “share of the belief–anchor gap” only if that share can be estimated against a justified belief baseline.
+
+2. **MAJOR — Model adequacy and Discussion.** The conclusion says the result “supports” plausibility-based accounts, although the calibrated M3 and M4 predictions miss both relative curvature and the across-cell slope. M1R misses curvature and the post-hoc joint check of elasticity and curvature. Negative curvature is consistent with a plausibility mechanism, but these tests do not establish one. **Fix:** State prominently that no calibrated model adequately explains the combined results; describe plausibility as one possible account of the within-item shape. This completes the interpretive response to A3, X1 and X5.
+
+3. **MINOR — H3 decision rules and Table 3.** The prose says a model is contradicted when curvature “(*g* or ρ)” falls outside its interval, yet M1R is retained despite *g* falling outside. **Fix:** Write the exact logical rule—whether rejection requires both curvature measures to miss—and explain why either measure can qualify a model for retention.
+
+4. **MINOR — H2 standard errors.** The formula `1.2533 × MAD / √n` is appropriate if MAD has been scaled to estimate the standard deviation under a normal model. If it means the unscaled median absolute deviation, it understates the standard error. **Fix:** Specify the MAD convention used in code and confirm that the stated formula matches it.
+
+5. **MINOR — Results, “Item by item.”** The claim that all 15 eligible cells had lower far-anchor slopes sits uneasily beside the positive quadratic curvature reported for Yoon et al. These fits can differ, but the reader cannot see why here. **Fix:** Identify the 15 cells and briefly reconcile the two summaries, or narrow the “every item” claim.
+
+6. **MINOR — Table 2 and Data availability.** Table 2 calls *b* “average elasticity,” although *b* is the fitted elasticity at the true value. The repository link is still a placeholder, preventing verification of the preregistration and frozen predictions. **Fix:** Correct the column heading and add the repository link before submission.
+
+**Recommendation: major revision.** **Yes, MAJOR issues remain:** the central claim conflates local elasticity with the share of a belief–anchor gap, and the process-model conclusion is stronger than the model comparisons support. The reported sample-count arithmetic is consistent, and I found no clear numerical contradiction requiring a new analysis.

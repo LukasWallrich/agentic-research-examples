@@ -1,0 +1,460 @@
+reference_short,anchoring_item,n,n_anchor_values,n_high_values,n_low_values,n_high,n_low,anchortype,scaletype,tasktype,true,a_low,a_high
+"Bahník & Strack, 2016, Study 1",Price of an average new car (USD),415,2,1,1,210,205,2,1,price,17157,1000,1e+05
+"Bahník & Strack, 2016, Study 2",Average summer temperature in NYC (F),197,2,1,1,98,99,2,1,temperature,82.7,-4,102
+"Bahník & Strack, 2016, Study 2",Average winter temperature in NYC (F),188,2,1,1,97,91,2,1,temperature,29.5,-4,102
+"Bahník, 2021a",length of a typical football field (metres),512,408,362,46,456,56,1,1,length,105,49.5,540.5
+"Bahník, 2021a",height of the highest (Cheops) Pyramid in Giza (metres),489,387,353,34,444,45,1,1,height,139,62,589
+"Bahník, 2021a",distance of the subway tracks between stations Muzeum and Hlavni nadrazi (metres),511,405,225,180,290,221,1,1,distance,425,191,725.5
+"Bahník, 2021a",length of the Wenceslas Square (metres),510,404,111,293,144,366,1,1,length,750,357,884
+"Bahník, 2021a",height of the highest tree in the world (metres),512,400,357,43,459,53,1,1,height,116,63,560
+"Bahník, 2021a",Length of the Petrin funicular (metres),511,388,196,192,250,261,1,1,length,510,271,760
+"Bahník, 2021a",height of the tallest waterfall Salto Angel (metres),507,392,11,381,13,494,1,1,height,979,492,985
+"Bahník, 2021a",length of the Great Strahov Stadion (metres),494,386,272,114,354,140,1,1,length,310,148,624.5
+"Bahník, 2021a",Height of the Eiffel tower (m),511,395,262,133,345,166,1,1,height,324,162,682
+"Bahník, 2021a",length of the Nusle bridge (metres),511,403,198,205,253,258,1,1,length,485,235.5,747
+"Bahník, 2021a",height of the tallest bridge viaduct Millau (metres),511,396,271,125,340,171,1,1,height,341,184,656.5
+"Bahník, 2021a",length of the longest ship (metres),492,384,214,170,270,222,1,1,length,458,214,754
+"Bahník, 2021a",height of the tallest skyscraper Burj Khalifa (metres),507,398,68,330,86,421,1,1,height,828,391,913.5
+"Barrera & Navajas, 2018, Study 1","distance (miles) between Memphis (Tennessee, USA) and Oklahoma City (Oklahoma, USA)",79,2,1,1,35,44,2,1,distance,421.51,113,1488
+"Barrera & Navajas, 2018, Study 1","distance (miles) between Milwaukee (Wisconsin, USA) and Faith (South Dakota, USA)",79,2,1,1,44,35,2,1,distance,714.18,144,2656
+"Barrera & Navajas, 2018, Study 1","distance (miles) between Davenport (Iowa, USA) and Indianapolis (Indiana, USA)",79,2,1,1,44,35,2,1,distance,261.47,68,1673
+"Barrera & Navajas, 2018, Study 1",distance (miles) between Paris (France) and Florence (Italy)?,79,2,1,1,35,44,2,1,distance,550.81,108,3905
+"Barrera & Navajas, 2018, Study 1",distance (miles) between Athens (Greece) and Rome (Italy),79,2,1,1,44,35,2,1,distance,652.97,64,2000
+"Barrera & Navajas, 2018, Study 1","height (to the tip, in yards) of the Eiffel Tower",79,2,1,1,44,35,2,1,height,354.331,66,3015
+"Barrera & Navajas, 2018, Study 1","height (to the tip, in yards) of Mount Vesuvius",79,2,1,1,35,44,2,1,height,1400.92,327,39443
+"Barrera & Navajas, 2018, Study 1",Number of floors of the Franklin Center,79,2,1,1,35,44,2,1,quantity,60,3,90
+"Barrera & Navajas, 2018, Study 1","number of times the word Jesus appears in the New Testament (New International Version, case insensitive)",79,2,1,1,35,44,2,1,quantity,1273,23,9564
+"Barrera & Navajas, 2018, Study 1",number of times the word Allah appears in the Qur`an (case insensitive),79,2,1,1,44,35,2,1,quantity,2699,46,10000
+"Barrera & Navajas, 2018, Study 1",number of times the word Wisdom appears in the Qur`an (case insensitive),79,2,1,1,35,44,2,1,quantity,50,2,1136
+"Barrera & Navajas, 2018, Study 1",number of emperors that the Roman Empire had (Unified Empire only),79,2,1,1,35,44,2,1,quantity,71,3,91
+"Barrera & Navajas, 2018, Study 1",Number of heart transplantations made in 2016 in the USA,79,2,1,1,44,35,2,1,quantity,3191,6,34682
+"Barrera & Navajas, 2018, Study 1","Number of bridges in Paris, France",79,2,1,1,44,35,2,1,quantity,37,2,349
+"Barrera & Navajas, 2018, Study 2",Percentage of the argentine population not affiliated with any religion,131,2,1,1,64,67,2,2,percentage,12.2,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of the argentine population under 20 years old that is either overweight or obese,131,2,1,1,67,64,2,2,percentage,52,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of members from the argentine chamber of deputies that are women,131,2,1,1,64,67,2,2,percentage,39,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of the argentine population that is under 15 years of age,131,2,1,1,64,67,2,2,percentage,24.9,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the argentine population that believes homosexuality is not morally acceptable, according with a 2013 representative survey",131,2,1,1,64,67,2,2,percentage,27,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the argentine population that believes abortion is not morally acceptable, according with a 2013 representative survey",131,2,1,1,67,64,2,2,percentage,56,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the argentine population that believes they have good or very good health, according with a 2013 representative survey",131,2,1,1,67,64,2,2,percentage,75,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of deaths of males between 15 and 24 years old that are by suicide in Argentina,131,2,1,1,67,64,2,2,percentage,15.3,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of the argentine population over 12 years of age that has a Facebook account,131,2,1,1,64,67,2,2,percentage,60,5,95
+"Barrera & Navajas, 2018, Study 2","percentage of the argentine population that believes they can distinguish between real news and 'fake news' (stories or facts completely made up), according with a 2017 representative survey",131,2,1,1,67,64,2,2,percentage,72,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of people between 3 and 18 years old that attends an educational institution, according to the 2010 argentine census",131,2,1,1,64,67,2,2,percentage,88.85,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the population that inhabits a household without a toilet or a water discharge, according to the 2010 argentine census",131,2,1,1,64,67,2,2,percentage,15.2,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of women that didn't have a child, counting only women over 14 years old, according to the 2010 argentine census",131,2,1,1,67,64,2,2,percentage,30.26,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of people that are either employed or looking for employment, counting only people over 20 years of age, according to the 2010 argentine census",131,2,1,1,67,64,2,2,percentage,70.57,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the population inhabiting private households that have health care, according to the 2010 argentine census",131,2,1,1,67,64,2,2,percentage,63.9,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of women between 18 and 60 years of age that are employed in Argentina.,146,2,1,1,74,72,2,2,percentage,50.2,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the argentine population that has internet access at their homes, either through a computer or mobile device",146,2,1,1,72,74,2,2,percentage,73,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the argentine population that believes that it is not morally acceptable that two unmarried individuals engage in sexual intercourse, according to a 2013 representative survey",146,2,1,1,74,72,2,2,percentage,22,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of the argentine population that inhabits a household they own,146,2,1,1,74,72,2,2,percentage,72,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of the argentine population that owns a smartphone,146,2,1,1,74,72,2,2,percentage,48,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the argentine population that believes that most people can be trusted, according to a 2013 representative survey",146,2,1,1,72,74,2,2,percentage,19.2,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of the argentine population that believes some vaccines can cause autism in healthy children,146,2,1,1,72,74,2,2,percentage,10,5,95
+"Barrera & Navajas, 2018, Study 2",Percentage of the total real estate wealth that belongs to the wealthiest 1% of the argentine population,146,2,1,1,72,74,2,2,percentage,44,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of people over 20 years old that completed high school, according to the 2010 argentine census",146,2,1,1,74,72,2,2,percentage,20.11,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of people over 80 years old that was born abroad, according to the 2010 argentine census",146,2,1,1,72,74,2,2,percentage,11.76,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the argentine population that is not at all interested in politics, according to the 2010 argentine census",146,2,1,1,74,72,2,2,percentage,30.7,5,95
+"Barrera & Navajas, 2018, Study 2","percentage of the population that lives in the Santa Fe province (Argentina) that is under 65 years old, according to the 2010 argentine census",146,2,1,1,74,72,2,2,percentage,88.2,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the population whose marital status is single and is not in a relationship, according to the 2010 argentine census",146,2,1,1,72,74,2,2,percentage,33.52,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of the population that does not inhabit an apartment, according to the 2010 argentine census",146,2,1,1,72,74,2,2,percentage,88.1,5,95
+"Barrera & Navajas, 2018, Study 2","Percentage of people between 20 and 29 years old that both work and study, according to the 2010 argentine census",146,2,1,1,74,72,2,2,percentage,19.21,5,95
+"Bermeitinger & Unger, 2014, Study 1",Grade for an examination,49,2,1,1,24,25,3,2,evaluation,,2,3
+"Bermeitinger & Unger, 2014, Study 2",Grade for an examination,76,2,1,1,38,38,3,2,evaluation,,3.7,4.3
+"Bermeitinger & Unger, 2014, Study 3",Grade for an examination,51,2,1,1,26,25,3,2,evaluation,,2.7,4.3
+"Cheek & Norem, 2017",Number of countries in Africa,593,2,1,1,296,297,2,1,quantity,54,20,60
+"Cheek & Norem, 2017",Length of the Mississippi river (miles),597,2,1,1,306,291,2,1,length,2350,200,2557
+"Cheek & Norem, 2017",Distance from San Francisco to New York City (miles),591,2,1,1,324,267,2,1,distance,2565.68,1500,5000
+"Cheek & Norem, 2017",Number of United Nations (UN) member states,602,2,1,1,305,297,2,1,date,193,18,193
+"Cheek & Norem, 2017",Population of Chicago (millions),597,2,0,2,0,597,2,1,population,2723000,15,
+"Cheek & Norem, 2017",Year the telephone was invented,599,2,1,1,304,295,2,1,date,1875,1830,1915
+"Cheek & Norem, 2017",Average number of babies born each day in the United States,586,2,1,1,319,267,2,1,quantity,10557,300,67500
+"Cheek & Norem, 2017",Maximum speed of a housecat (mph),602,2,1,1,301,301,2,1,speed,30,8,30
+"Cheek & Norem, 2017",Amount of gas used per month by an American (gallons),596,2,1,1,300,296,2,1,volume,374,28,200
+"Cheek & Norem, 2017",Average winter temperature of Antarctica (F),597,2,1,1,306,291,2,1,temperature,-68.8,-50,10
+"Cheek & Norem, 2017",Height of Mount Everest (feet),595,2,1,1,338,257,2,1,height,29032,2992,32650
+"Cheek & Norem, 2020",Meat eaten per year by American (pounds),919,2,1,1,448,471,2,1,quantity,216.9,30,500
+"Cheek & Norem, 2020",Population of Chicago (millions),925,2,0,2,0,925,2,1,population,2746388,15,
+"Cheek & Norem, 2020",Year the telephone was invented,935,2,1,1,477,458,2,1,date,1875,1830,1915
+"Cheek & Norem, 2020",Maximum speed of a housecat (mph),942,2,1,1,468,474,2,1,speed,30.00001,8,30
+"Cheek & Norem, 2020",Amount of gas used per month by American (gallons),927,2,0,2,0,927,2,1,volume,374,28,
+"Cheek & Norem, 2020",Average winter temperature of Antarctica (F),939,2,1,1,471,468,2,1,temperature,-56,-50,10
+"Cheek & Norem, 2022",Number of United Nations (UN) member states,412,2,1,1,209,203,2,1,quantity,193,18,193
+"Cheek & Norem, 2022",Average number of babies born each day in the United States,356,2,1,1,160,196,2,1,birth rate,10557,300,67500
+"Cheek & Norem, 2022",Maximum speed of a housecat (mph),412,2,1,1,203,209,2,1,speed,30,8,30
+"Cheek & Norem, 2022",Amount of gas used per month by an American (gallons),409,2,1,1,203,206,2,1,volume,374,28,200
+"Cheek & Norem, 2022",Average winter temperature of Antarctica (F),408,2,1,1,204,204,2,1,temperature,-68.8,-50,10
+"Cheek & Norem, 2022",Year the telephone was invented,413,2,1,1,207,206,2,1,date,1861,1830,1915
+"Cheek, Coe-Odess, & Schwartz, 2015, Study 1",number of unscrambled anagrams,63,2,1,1,31,32,2,1,quantity,20,10,30
+"Cheek, Coe-Odess, & Schwartz, 2015, Study 2a",number of correctly solved math problems,79,2,1,1,42,37,2,1,quantity,22,11,33
+"Cheek, Coe-Odess, & Schwartz, 2015, Study 2b",number of correctly solved math problems,90,2,1,1,46,44,2,1,quantity,22,-128,172
+"Cheek, Coe-Odess, & Schwartz, 2015, Study 3a",number of climbed stairs,94,2,1,1,47,47,2,1,quantity,23,11,35
+"Cheek, Coe-Odess, & Schwartz, 2015, Study 3b",number of climbed stairs,74,2,1,1,37,37,2,1,quantity,23,-31,77
+"Cheek, Coe-Odess, & Schwartz, 2015, Study 4",number of completed paper and pencil mazes (Solver),131,2,1,1,65,66,2,1,quantity,18,9,27
+"Dijkstra & Wessel, 2021, Study 3",Reported age in earliest memory (months),203,2,1,1,102,101,3,1,age,,24,72
+"Dohle, 2021",Probability of a heart attack for a vignette,57,2,1,1,29,28,2,2,probability,,1,90
+"Frech et al., 2021",Distance between Lisbon and Moscow (km),104,10,10,0,104,0,2,1,distance,4558.1,,7100
+"Frech et al., 2021",Population of Rome,104,10,10,0,104,0,2,1,population,2860009,,5e+06
+"Frech et al., 2021",Altitude of Mt. Kilimanjaro (m),104,10,10,0,104,0,2,1,height,5895,,8750
+"Frech et al., 2021",Average number of babies born each day in Germany,104,10,10,0,104,0,2,1,birth rate,2112.415,,15000
+"Freira et al., 2020, Study 1",Predicted number of COVID-19 deaths in Argentina,637,2,1,1,313,324,2,1,quantity,43245,600,60000
+"Freira et al., 2020, Study 2",Predicted number of COVID-19 deaths in Uruguay,367,2,1,1,191,176,2,1,quantity,181,40,4000
+"Freira et al., 2020, Study 3",Predicted number of COVID-19 deaths in Brazil,336,2,1,1,167,169,2,1,quantity,194949,80000,8e+06
+"Freira et al., 2020, Study 4",Predicted number of COVID-19 deaths in USA,615,2,1,1,207,408,2,1,quantity,351754,8000,8e+06
+"Genschow, 2019",Height of Mont Blanc (m),176,2,1,1,79,97,3,1,height,4809,4310,5310
+"Genschow, 2019",Length of Mississippi (km)?,176,2,1,1,79,97,3,1,length,3766,2788,4788
+"Genschow, 2019",Average monthly income in the USA (EUR)?,176,2,1,1,79,97,3,1,income,4708,3335,5335
+"Harris et al., 2019, Experiment 1",Average annual temperature in the UK (C),128,2,1,1,64,64,2,1,temperature,14,10,18
+"Harris et al., 2019, Experiment 1",Average price of a new car (Pounds),125,2,0,2,0,125,2,1,price,38585,8000,
+"Harris et al., 2019, Experiment 2",Average annual temperature in the UK (C),126,2,1,1,64,62,2,1,temperature,14,2,25
+"Harris et al., 2019, Experiment 2",Average price of a new car (Pounds2),127,2,2,0,127,0,2,1,price,38.585,,2e+05
+"Harris et al., 2019, Experiment 3",Average weight of a dog (kg),106,2,1,1,54,52,2,1,weight,,5,85
+"Harris et al., 2019, Experiment 4",Average annual temperature in the UK (C),128,2,1,1,64,64,2,1,temperature,14,2,25
+"Harris et al., 2019, Experiment 5",Average price of a new car (Pounds),124,2,1,1,64,60,2,1,price,38585,13000,2e+05
+"Klamar et al., 2018, Study 1",Height of Mount Everest (m),50,2,1,1,26,24,3,1,height,8848,610,13870
+"Klamar et al., 2018, Study 1",Population of Chicago (millions),50,2,1,1,26,24,3,1,population,2.705,0.2,5
+"Klamar et al., 2018, Study 1",Height of the tallest sequioa tree (m),50,2,1,1,26,24,3,1,height,84,20,168
+"Klamar et al., 2018, Study 1",Length of the Elbe river (km),15,2,1,1,5,10,3,1,length,1091,700,2500
+"Klamar et al., 2018, Study 1",Height of the Eiffel tower (m),17,2,1,1,7,10,3,1,height,300,150,500
+"Klamar et al., 2018, Study 1",Maximum length of a wale (m),17,2,1,1,7,10,3,1,length,33.6,15,45
+"Klamar et al., 2018, Study 1",Length of the Elbe river (km) [cto],32,2,1,1,18,14,3,1,length,1091,700,2500
+"Klamar et al., 2018, Study 1",Height of the Eiffel tower (m) [cto],33,2,1,1,19,14,3,1,height,300,150,500
+"Klamar et al., 2018, Study 1",Maximum length of a wale (m) [cto],33,2,1,1,19,14,3,1,length,33.6,15,45
+"Klamar et al., 2018, Study 2",Average temperature of Antarctica (C),223,2,2,0,223,0,1,1,temperature,-68,,-43
+"Klamar et al., 2018, Study 2",Year Albert Einstein first visited the United States of America,223,2,1,1,112,111,1,1,date,1921,1905,1939
+"Klamar et al., 2018, Study 2",Year of birth of Leonardo da Vinci,223,2,1,1,112,111,1,1,date,1452,1391,1698
+"Klamar et al., 2018, Study 2",Age of Mahatma Gandhi when he died [cto],74,1,1,0,74,0,1,1,age,78,,79
+"Klamar et al., 2018, Study 2",Altitude of Ulm (m) [cto],74,2,0,2,0,74,1,1,height,479,150,
+"Klamar et al., 2018, Study 2",Maximum length of a wale (m) [cto],74,2,1,1,40,34,1,1,length,33.5,21,49
+"Klamar et al., 2018, Study 2",Age of Mahatma Gandhi when he died,149,2,1,1,76,73,1,1,age,78,64,79
+"Klamar et al., 2018, Study 2",Altitude of Ulm (m),149,2,0,2,0,149,1,1,height,479,150,
+"Klamar et al., 2018, Study 2",Maximum length of a wale (m),149,2,1,1,71,78,1,1,length,33.5,21,49
+"Klusmann & Wessel, 2019",Reported age in earliest memory (months),407,2,1,1,203,204,3,1,age,,18,66
+"Knappe et al., 2017",Self-esteem percentile,163,2,1,1,85,78,1,1,self-perception,66.08696,14,86
+"Lammers & Burgmer, 2017, Study 1",Height of the Eiffel Tower (ft),199,2,1,1,100,99,2,1,height,1063,100,2500
+"Lammers & Burgmer, 2017, Study 2",Height of the Eiffel Tower (ft),198,2,1,1,98,100,3,1,height,1063,400,2500
+"Lammers & Burgmer, 2017, Study 3",Evaluation of essay writing task,201,2,1,1,98,103,3,3,evaluation,,3,97
+"Lammers & Burgmer, 2017, Study 4",Hourly consultancy fee as freelance consultant (USD),202,2,1,1,100,102,3,3,price,,15,185
+"Lee & Morewedge, 2021, Study 1a",Willingness to pay for 2 star hotel (USD per night),194,2,1,1,98,96,3,1,willingness to pay,109.4272,44,610
+"Lee & Morewedge, 2021, Study 1a",Willingness to pay for 3 star hotel (USD per night),194,2,1,1,98,96,3,1,willingness to pay,145.0777,44,610
+"Lee & Morewedge, 2021, Study 1a",Willingness to pay for 4 star hotel (USD per night),194,2,1,1,98,96,3,1,willingness to pay,197.2816,44,610
+"Lee & Morewedge, 2021, Study 1b",Average weight of a Bernese Mountain Dog (pounds),201,2,1,1,104,97,3,1,weight,,12,200
+"Lee & Morewedge, 2021, Study 1b",Average weight of a American Staffordshire Terrier (pounds),201,2,1,1,104,97,3,1,weight,,12,200
+"Lee & Morewedge, 2021, Study 1b",Average weight of a Basenji dog (pounds),201,2,1,1,104,97,3,1,weight,,12,200
+"Lee & Morewedge, 2021, Study 3a",Willingness to pay for 2 star hotel (USD per night),200,2,1,1,104,96,3,1,willingness to pay,,44,610
+"Lee & Morewedge, 2021, Study 3a",Willingness to pay for 4 star hotel (USD per night),200,2,1,1,96,104,3,1,willingness to pay,,44,610
+"Lee & Morewedge, 2021, Study 3b",Number of dots in graph A,197,2,1,1,93,104,3,1,quantity,35,10,500
+"Lee & Morewedge, 2021, Study 3b",Number of dots in graph B,203,2,1,1,104,99,3,1,quantity,273,10,500
+"Lee & Morewedge, 2021, Study 4a",Willingness to pay for one donut (USD),202,2,1,1,102,100,3,1,willingness to pay,,1,3
+"Lee & Morewedge, 2021, Study 4a",Willingness to pay for one dozen donuts (USD),202,2,1,1,102,100,3,1,willingness to pay,,1,3
+"Lee & Morewedge, 2021, Study 6a",Willingness to pay for 2 star hotel (USD per night),202,2,1,1,91,111,3,1,willingness to pay,,44,610
+"Lee & Morewedge, 2021, Study 6a",Willingness to pay for 4 star hotel (USD per night),205,2,1,1,112,93,3,1,willingness to pay,,44,610
+"Lee & Morewedge, 2021, Study 6b",Number of dots in graph B,203,2,0,2,0,203,3,1,quantity,35,500,
+"Lee & Morewedge, 2021, Study 6b",Number of dots in graph A,197,2,0,2,0,197,3,1,quantity,273,10,
+"Lewis et al., 2019, Study S1",Preference of pepperoni over cheese pizza,89,2,2,0,89,0,2,2,preference,0.37,,80
+"Lewis et al., 2019, Study S1",Preference of violin over saxophone,90,2,2,0,90,0,2,2,preference,0.36,,20
+"Lewis et al., 2019, Study S1",Preference of chicken coop over pet pig,98,2,2,0,98,0,2,2,preference,0.46,,20
+"Lewis et al., 2019, Study S1",Preference of the color green over yellow,100,2,2,0,100,0,2,2,preference,0.18,,20
+"Lewis et al., 2019, Study S1",Preference of being able to fly over read minds,107,2,2,0,107,0,2,2,preference,0.49,,20
+"Lewis et al., 2019, Study S1",Scariness of going underwater in a submarine over flying in a plane,95,2,2,0,95,0,2,2,preference,0.21,,20
+"Lewis et al., 2019, Study S1",Memory of US presidents versus foreign capital cities,101,2,2,0,101,0,2,2,preference,0.22,,80
+"Lewis et al., 2019, Study S1",Memory of US states versus foreign countries,88,2,2,0,88,0,2,2,preference,0.23,,50
+"Lewis et al., 2019, Study S1",Preference of visiting Dubai over Barcelona,91,2,2,0,91,0,2,2,preference,0.72,,20
+"Lewis et al., 2019, Study S1",Preference of watching TV shows over movies,91,2,2,0,91,0,2,2,preference,0.44,,20
+"Lewis et al., 2019, Study S1",Preference of cheese over pepperoni pizza,100,2,2,0,100,0,2,2,preference,0.63,,20
+"Lewis et al., 2019, Study S1",Preference of pet pig over chicken coop,91,2,2,0,91,0,2,2,preference,0.54,,80
+"Lewis et al., 2019, Study S1",Preference of being able to read minds over fly,82,2,2,0,82,0,2,2,preference,0.51,,80
+"Lewis et al., 2019, Study S1",Memory of foreign capital cities versus US presidents,88,2,2,0,88,0,2,2,preference,0.78,,20
+"Lewis et al., 2019, Study S1",Memory of foreign countries versus US states,101,2,2,0,101,0,2,2,preference,0.77,,20
+"Lewis et al., 2019, Study S1",Preference of watching movies over TV shows,98,2,2,0,98,0,2,2,preference,0.56,,80
+"Lewis et al., 2019, Study S1",Preference of Barcelona,98,2,2,0,98,0,2,2,preference,0.28,,80
+"Lewis et al., 2019, Study S1",Preference of saxophone over violin,99,2,2,0,99,0,2,2,preference,0.64,,80
+"Lewis et al., 2019, Study S1",Scariness of flying in a plane over going underwater in a submarine,94,2,2,0,94,0,2,2,preference,0.79,,80
+"Lewis et al., 2019, Study S1",Preference of the color yellow over green,89,2,2,0,89,0,2,2,preference,0.82,,80
+"Milstein and Halali, 2021, Study 1",Number of natural sciences and mathematics students in Israel,91,2,1,1,60,31,2,1,quantity,31260,5000,25000
+"Milstein and Halali, 2021, Study 2",Number of natural sciences and mathematics students in Israel,78,2,1,1,39,39,2,1,quantity,32281,5000,25000
+"Milstein and Halali, 2021, Study 3",Number of natural sciences and mathematics students in Israel,89,2,1,1,48,41,2,1,quantity,33728,5000,25000
+"Milstein and Halali, 2021, Study 4",Number of natural sciences and mathematics students in Israel,112,2,1,1,58,54,2,1,quantity,35512,5000,25000
+"Milstein and Halali, 2021, Study 5",Number of natural sciences and mathematics students in Israel,98,2,1,1,49,49,2,1,quantity,38406,5000,25000
+"Milstein and Halali, 2021, Study 6",Number of natural sciences and mathematics students in Israel,104,2,1,1,65,39,2,1,quantity,41094,5000,25000
+"Milstein and Halali, 2021, Study 7",Number of natural sciences and mathematics students in Israel,143,2,1,1,70,73,2,1,quantity,43971,5000,25000
+"Molden, 2020",Beef eaten per year on average by Americans (pounds),89,2,1,1,45,44,2,1,quantity,55,10,1000
+"Onuki et al., 2021, Study 1a",Average weight of Czechs (kg),59,2,1,1,29,30,5,1,weight,88.75,25,150
+"Onuki et al., 2021, Study 1b",Average weight of Czechs (kg),63,2,1,1,33,30,5,1,weight,88.75,25,150
+"Onuki et al., 2021, Study 3",Average weight of Czechs (kg),136,2,1,1,69,67,5,1,weight,88.75,25,150
+"Papenmeier & Rebholz, 2021",Height of tallest redwood tree (m),368,2,1,1,176,192,3,1,height,,20,168
+"Papenmeier & Rebholz, 2021",Number of United Nations (UN) member states,368,2,1,1,176,192,3,1,quantity,,14,127
+"Papenmeier & Rebholz, 2021",Maximum speed of a housecat (km/h),368,2,1,1,176,192,3,1,speed,,11,48
+"Papenmeier et al., 2021a","During the Corona Pandemic, what percentage of the day does the average student spend studying in front of the screen? (%)",46,2,1,1,22,24,1,2,percentage,,20,65
+"Papenmeier et al., 2021a",What percentage of the earth's surface does Asia cover? (%),48,2,1,1,24,24,1,2,percentage,,30,80
+"Papenmeier et al., 2021a",What percentage of Germans drink coffee for breakfast? (%),52,2,1,1,26,26,1,2,percentage,,15,75
+"Papenmeier et al., 2021a",What percentage of flowers in German front gardens are daisies? (%),50,2,1,1,25,25,1,2,percentage,,35,85
+"Papenmeier et al., 2021b",Estimate the percentage of high school students who read the required reading in its entirety. (%),52,2,1,1,28,24,1,2,percentage,,15,65
+"Papenmeier et al., 2021b",Estimate the percentage of babies born on the estimated due date. (%),55,2,1,1,28,27,1,2,percentage,,25,75
+"Papenmeier et al., 2021b",Estimate the percentage of trees in Sweden that are spruce. (%),56,2,1,1,29,27,1,2,percentage,,10,60
+"Papenmeier et al., 2021b",Estimate the percentage of people in the world population who eat a vegan diet. (%),55,2,1,1,28,27,1,2,percentage,,35,85
+"Papenmeier et al., 2021b",Estimate the percentage of German motorways that are without speed limits. (%),54,2,1,1,29,25,1,2,percentage,,20,70
+"Papenmeier, 2021",Estimate the percentage of children ( aged 14 and under ) whose favorite ice cream flavor is chocolate. (%),73,2,1,1,37,36,1,2,percentage,,15,65
+"Papenmeier, 2021",Estimate the percentage of forest land that still exists. (%),70,2,1,1,35,35,1,2,percentage,,20,60
+"Papenmeier, 2021",Estimate the percentage of school leavers in Germany who start university in the year they graduate from high school. (%),74,2,1,1,37,37,1,2,percentage,,10,70
+"Papenmeier, 2021",Estimate the percentage of people living in Germany who would describe themselves as happy. (%),74,2,1,1,38,36,1,2,percentage,,25,75
+"Pavlovic, 2021",Percentage of African nations in the UN,85,2,1,1,41,44,2,2,percentage,28,10,60
+"Pavlovic, 2021",Height of the tallest sequioa tree (m),85,2,1,1,44,41,2,1,height,83.8,55,365
+"Pavlovic, 2021",Age of women shown in photograph (years),85,2,1,1,41,44,2,1,age,54,29,64
+"Rinn & Henkel, 2021",Net income needed to be rich (EUR),201,2,1,1,100,101,2,1,income,10725.49,3500,6500
+"Röseler & Röseler, 2017",Height of Will Smith (cm),152,2,1,1,79,73,2,1/3,height,188,177,201
+"Röseler & Röseler, 2017",Height of Clint Eastwood (cm),152,2,1,1,79,73,2,1/3,height,193,177,201
+"Röseler & Röseler, 2017",Height of Ashton Kutsher (cm),152,2,1,1,73,79,2,1/3,height,189,177,201
+"Röseler & Röseler, 2017",Height of Michael Ballack (cm),152,2,1,1,73,79,2,1/3,height,188,177,201
+"Röseler & Röseler, 2017",Height of Hugh Jackman (cm),152,2,1,1,73,79,2,1/3,height,189,177,201
+"Röseler & Röseler, 2017",Height of Arnold Schwarzenegger (cm),152,2,1,1,79,73,2,1/3,height,188,177,201
+"Röseler & Wackershauser-Sablotny, 2017",Number estimate of a matrix on a line,94,1,0,1,0,94,2,3,quantity,50,20,
+"Röseler & Wackershauser-Sablotny, 2017",Number estimate of a matrix in a line,94,1,1,0,94,0,2,3,quantity,50,,80
+"Röseler & Wackershauser-Sablotny, 2017",Number estimate of a matrix on a matrix,188,2,1,1,94,94,2,2,quantity,50,20,80
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 1,59,30,26,4,55,4,2,1,quantity,45,35.5,59
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 2,39,25,24,1,38,1,2,1,quantity,90,51,115
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 3,36,31,28,3,32,4,2,1,quantity,135,98,177.5
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 4,23,19,15,4,19,4,2,1,quantity,180,102,239
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 5,83,42,42,0,83,0,2,1,quantity,45,,74
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 6,75,44,42,2,72,3,2,1,quantity,90,85,133
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 7,66,50,49,1,65,1,2,1,quantity,135,105,193
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 8,48,41,38,3,45,3,2,1,quantity,180,153,256
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 9,85,49,49,0,85,0,2,1,quantity,45,,174
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 10,85,50,50,0,85,0,2,1,quantity,90,,305
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 11,85,64,64,0,85,0,2,1,quantity,135,,407
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 12,85,64,64,0,85,0,2,1,quantity,180,,462
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 13,85,49,49,0,85,0,2,1,quantity,45,,351
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 14,85,50,50,0,85,0,2,1,quantity,90,,618
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 15,85,64,64,0,85,0,2,1,quantity,135,,824
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 16,85,64,64,0,85,0,2,1,quantity,180,,933
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 17,85,25,0,25,0,85,2,1,quantity,45,21,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 18,83,35,0,35,0,83,2,1,quantity,90,35,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 19,84,47,0,47,0,84,2,1,quantity,135,48,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 20,85,51,0,51,0,85,2,1,quantity,180,54,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 21,85,19,0,19,0,85,2,1,quantity,45,14,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 22,85,32,0,32,0,85,2,1,quantity,90,25,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 23,85,42,0,42,0,85,2,1,quantity,135,33,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 24,85,43,0,43,0,85,2,1,quantity,180,37,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 25,85,10,0,10,0,85,2,1,quantity,45,6,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 26,85,19,0,19,0,85,2,1,quantity,90,11,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 27,85,25,0,25,0,85,2,1,quantity,135,14,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 28,85,28,0,28,0,85,2,1,quantity,180,16,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 29,85,5,0,5,0,85,2,1,quantity,45,3,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 30,85,11,0,11,0,85,2,1,quantity,90,5,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 31,85,15,0,15,0,85,2,1,quantity,135,7,
+"Röseler & Wagner, 2021",Estimated number of points for stimulus 32,85,18,0,18,0,85,2,1,quantity,180,8,
+"Röseler et al., 2020",Weight of a rabbit (kg),166,2,1,1,85,81,3,3,weight,4.5,1,8
+"Röseler et al., 2020",Weight of a cat (kg),168,2,1,1,83,85,3,3,weight,4.25,1,8
+"Röseler et al., 2020",Weight of a fox (kg),167,2,1,1,85,82,3,3,weight,8,2,14
+"Röseler et al., 2020",Weight of a racoon (kg),166,2,1,1,81,85,3,3,weight,8,2,14
+"Röseler et al., 2020",Weight of a badger (kg),167,2,1,1,85,82,3,3,weight,15,4,26
+"Röseler et al., 2020",Weight of a pelican (kg),166,2,1,1,81,85,3,3,weight,15,4,26
+"Röseler et al., 2020",Weight of a beaver (kg),167,2,1,1,85,82,3,3,weight,25,10,40
+"Röseler et al., 2020",Weight of a deer (kg),167,2,1,1,82,85,3,3,weight,25,10,40
+"Röseler et al., 2020",Weight of a wolf (kg),166,2,1,1,85,81,3,3,weight,50,25,75
+"Röseler et al., 2020",Weight of a goat (kg),167,2,1,1,81,86,3,3,weight,50,25,75
+"Röseler et al., 2020",Weight of a hyena (kg),166,2,1,1,85,81,3,3,weight,60,36,84
+"Röseler et al., 2020",Weight of a warthog (kg),167,2,1,1,82,85,3,3,weight,60,36,84
+"Röseler et al., 2021, Study 1",Average price of a middle-class car (EUR),158,2,1,1,78,80,5,1,price,23026.32,10000,40000
+"Röseler et al., 2021, Study 2",Probability of the recurrence of a pestilence of the lungs in India within a year,169,2,1,1,73,96,5,1,probability,,10,90
+"Röseler et al., 2022",Population of Wiesbaden,169,2,2,0,169,0,2,1,population,8848,,1e+05
+"Röseler et al., 2022",Maximum speed of a greyhound (km/h),151,2,1,1,56,95,2,1,speed,30,30,100
+"Röseler et al., 2022",Length of the Rhein (km),169,2,1,1,73,96,2,1,length,1233,500,2000
+"Röseler et al., 2022",Average number of babies born each day in Germany,169,2,1,1,95,74,2,1,birth rate,2112,800,8000
+"Röseler et al., 2022",Beer consumption in Germany per person in 2020,168,2,1,1,93,75,2,1,volume,94.6,40,110
+"Röseler et al., 2022",Year the telephone was invented,171,2,1,1,96,75,2,1,date,1861,1850,1920
+"Röseler, 2016",Number of filled squares in matrix A,147,2,1,1,70,77,2,1,quantity,25,10,90
+"Röseler, 2016",Number of filled squares in matrix B,147,2,1,1,70,77,2,1,quantity,25,10,90
+"Röseler, 2016",Number of filled squares in matrix C,146,2,1,1,69,77,2,1,quantity,75,10,90
+"Röseler, 2016",Number of filled squares in matrix D,145,2,1,1,69,76,2,1,quantity,75,10,90
+"Röseler, 2016",Percentage of filled squares in matrix E,147,2,1,1,70,77,2,2,quantity,25,10,90
+"Röseler, 2016",Percentage of filled squares in matrix F,147,2,1,1,70,77,2,2,quantity,25,10,90
+"Röseler, 2016",Percentage of filled squares in matrix G,147,2,1,1,70,77,2,2,quantity,75,10,90
+"Röseler, 2016",Percentage of filled squares in matrix H,146,2,1,1,69,77,2,2,quantity,75,10,90
+"Röseler, 2016b",Grey tone of squares in matrix A,77,2,1,1,33,44,2,3,lightness,150,120,480
+"Röseler, 2016b",Grey tone of squares in matrix B,77,2,1,1,33,44,2,3,lightness,150,120,480
+"Röseler, 2016b",Grey tone of squares in matrix C,77,2,1,1,33,44,2,3,lightness,150,120,480
+"Röseler, 2016b",Length of a line (cm),74,2,1,1,37,37,2,2/3,length,5,1,9
+"Röseler, 2017",Length estimate of a line on a line,124,2,1,1,62,62,2,3,length,50,20,80
+"Röseler, 2017",Length estimate of a line in a matrix,124,2,1,1,62,62,2,2,quantity,50,20,80
+"Röseler, 2017",Length estimate of a matrix on a line,124,2,1,1,62,62,2,3,length,50,20,80
+"Röseler, 2017",Length estimate of a matrix on a matrix,124,2,1,1,62,62,2,2,quantity,50,20,80
+"Röseler, 2017",Matrix estimate of a line on a line,124,2,1,1,62,62,2,3,length,50,20,80
+"Röseler, 2017",Matrix estimate of a line on a matrix,124,2,1,1,62,62,2,2,quantity,50,20,80
+"Röseler, 2017",Matrix estimate of a matrix on a line,124,2,1,1,62,62,2,3,length,50,20,80
+"Röseler, 2017",Matrix estimate of a matrix on a matrix,124,2,1,1,62,62,2,2,quantity,50,20,80
+"Röseler, 2021, Study 2",Length of the Sambesi (km),176,2,1,1,87,89,2,1,length,2574,1287,5148
+"Röseler, 2021, Study 2",Length of the Murrumbidgee (km),176,2,1,1,87,89,2,1,length,1579,790,3158
+"Röseler, 2021, Study 2",Length of the Volga (km),176,2,1,1,89,87,2,1,length,3530,1765,7060
+"Röseler, 2021, Study 2",Length of the Tejo (km),176,2,1,1,89,87,2,1,length,1007,504,2014
+"Röseler, 2021, Study 2",Length of the Rio Purus (km),176,2,1,1,89,87,2,1,length,3210,1605,6420
+"Röseler, 2021, Study 2",Length of the Rio Grande (km),176,2,1,1,87,89,2,1,length,3034,1517,6068
+"Röseler, 2021, Study 2 pretest",Length of the Rio Japura (km),32,2,1,1,12,20,2,1,length,2816,1408,6068
+"Röseler, 2021, Study 2 pretest",Length of the Lena (km),32,2,1,1,12,20,2,1,length,4294,2147,8588
+"Röseler, 2021, Study 2 pretest",Length of the Vistula (km),32,2,1,1,12,20,2,1,length,1047,524,2094
+"Röseler, 2021, Study 2 pretest",Length of the Po (km),32,2,1,1,12,20,2,1,length,652,326,1304
+"Röseler, 2021, Study 2 pretest",Length of the Ems (km),32,2,1,1,12,20,2,1,length,371,186,742
+"Röseler, 2021, Study 2 pretest",Length of the Rhone (km),31,2,1,1,12,19,2,1,length,812,406,1624
+"Röseler, 2021, Study 2 pretest",Length of the Rio Jurua (km),32,2,1,1,12,20,2,1,length,3283,1642,6566
+"Röseler, 2021, Study 2 pretest",Length of the Sambesi (km),32,2,1,1,12,20,2,1,length,2574,1287,5148
+"Röseler, 2021, Study 2 pretest",Length of the Rio Sao Fancisco (km),32,2,1,1,12,20,2,1,length,3199,1600,6398
+"Röseler, 2021, Study 2 pretest",Length of the Wiljui (km),32,2,1,1,12,20,2,1,length,2650,1325,5300
+"Röseler, 2021, Study 2 pretest",Length of the Murrumbidgeekm),32,2,1,1,12,20,2,1,length,1579,790,3158
+"Röseler, 2021, Study 2 pretest",Length of the Brisbane River (km),32,2,1,1,12,20,2,1,length,309,155,618
+"Röseler, 2021, Study 2 pretest",Length of the Rhein (km),32,2,1,1,12,20,2,1,length,1238,619,2476
+"Röseler, 2021, Study 2 pretest",Length of the Niger (km),32,2,1,1,12,20,2,1,length,4184,2092,8368
+"Röseler, 2021, Study 2 pretest",Length of the Indus (km),32,2,1,1,12,20,2,1,length,3180,1590,6360
+"Röseler, 2021, Study 2 pretest",Length of the Tigris (km),32,2,1,1,20,12,2,1,length,1900,950,3800
+"Röseler, 2021, Study 2 pretest",Length of the Volga (km),32,2,1,1,20,12,2,1,length,3530,1765,7060
+"Röseler, 2021, Study 2 pretest",Length of the Meuse (km),32,2,1,1,20,12,2,1,length,874,437,1748
+"Röseler, 2021, Study 2 pretest",Length of the Tejo (km),30,2,1,1,19,11,2,1,length,1007,504,2014
+"Röseler, 2021, Study 2 pretest",Length of the Ottawa Riverkm),32,2,1,1,20,12,2,1,length,1271,636,2542
+"Röseler, 2021, Study 2 pretest",Length of the Rio Purus (km),32,2,1,1,20,12,2,1,length,3210,1605,6420
+"Röseler, 2021, Study 2 pretest",Length of the Arkansas River (km),32,2,1,1,20,12,2,1,length,2333,1167,4666
+"Röseler, 2021, Study 2 pretest",Length of the Ural (km),31,2,1,1,20,11,2,1,length,2428,1214,4856
+"Röseler, 2021, Study 2 pretest",Length of the Vitava (km),31,2,1,1,20,11,2,1,length,430,215,860
+"Röseler, 2021, Study 2 pretest",Length of the Colorado River (km),31,2,1,1,20,11,2,1,length,2330,1165,4660
+"Röseler, 2021, Study 2 pretest",Length of the Irtysh (km),31,2,1,1,19,12,2,1,length,4248,2124,8496
+"Röseler, 2021, Study 2 pretest",Length of the Canadian River (km),31,2,1,1,20,11,2,1,length,1458,729,2916
+"Röseler, 2021, Study 2 pretest",Length of the Snake River ,31,2,1,1,20,11,2,1,length,1674,837,3348
+"Röseler, 2021, Study 2 pretest",Length of the Adige (km),32,2,1,1,20,12,2,1,length,415,208,830
+"Röseler, 2021, Study 2 pretest",Length of the Rio Grande (km),32,2,1,1,20,12,2,1,length,3034,1517,6068
+"Röseler, Schütz, & Starker, 2019",Number of filled squares in matrix E,225,1,0,1,0,225,1/2,1,quantity,50,20,
+"Röseler, Schütz, & Starker, 2019",Number of filled squares in matrix B,225,1,1,0,225,0,1/2,1,quantity,50,,80
+"Röseler, Schütz, & Starker, 2019",Number of filled squares in matrix D,225,1,0,1,0,225,1/2,1,quantity,40,10,
+"Röseler, Schütz, & Starker, 2019",Number of filled squares in matrix A,225,1,1,0,225,0,1/2,1,quantity,40,,70
+"Röseler, Schütz, & Starker, 2019",Number of filled squares in matrix F,225,1,0,1,0,225,1/2,1,quantity,60,30,
+"Röseler, Schütz, & Starker, 2019",Number of filled squares in matrix C,225,1,1,0,225,0,1/2,1,quantity,60,,90
+"Röseler, Schütz, & Starker, 2019",Age of celebrity A (years),224,1,1,0,224,0,1/2,1,age,69,,80
+"Röseler, Schütz, & Starker, 2019",Age of celebrity E (years),225,1,0,1,0,225,1/2,1,age,69,60,
+"Röseler, Schütz, & Starker, 2019",Age of celebrity B (years),225,1,1,0,225,0,1/2,1,age,53,,60
+"Röseler, Schütz, & Starker, 2019",Age of celebrity F (years),225,1,0,1,0,225,1/2,1,age,53,40,
+"Röseler, Schütz, & Starker, 2019",Age of celebrity C (years),224,1,1,0,224,0,1/2,1,age,36,,50
+"Röseler, Schütz, & Starker, 2019",Age of celebrity G (years),224,1,0,1,0,224,1/2,1,age,36,30,
+"Röseler, Schütz, & Starker, 2019",Age of celebrity D (years),224,1,1,0,224,0,1/2,1,age,30,,40
+"Röseler, Schütz, & Starker, 2019",Age of celebrity H (years),224,1,0,1,0,224,1/2,1,age,30,20,
+"Röseler, Schütz, & Starker, 2019",Price of pen A (EUR),225,1,1,0,225,0,1/2,1,price,68,,90
+"Röseler, Schütz, & Starker, 2019",Price of pen C (EUR),223,1,0,1,0,223,1/2,1,price,68,50,
+"Röseler, Schütz, & Starker, 2019",Price of apple A (EUR),224,1,1,0,224,0,1/2,1,price,54,,80
+"Röseler, Schütz, & Starker, 2019",Price of apple B (EUR),223,1,0,1,0,223,1/2,1,price,54,20,
+"Röseler, Schütz, & Starker, 2019",Price of keyboard A (EUR),224,1,1,0,224,0,1/2,1,price,13.47,,20
+"Röseler, Schütz, & Starker, 2019",Price of keyboard B (EUR),224,1,0,1,0,224,1/2,1,price,13.47,10,
+"Röseler, Schütz, Baumeister, & Starker, 2020",Distance between Warsow and Liverpool (km),640,2,1,1,325,315,2,1,distance,1000,600,2600
+"Röseler, Schütz, Baumeister, & Starker, 2020",Life expectancy of a porcupine (years),641,2,1,1,317,324,2,1,duration,18,5,35
+"Schindler et al., 2021",Annual rain in the Sahara  (mm3),992,2,1,1,492,500,2,1,volume,76,45,90
+"Schindler et al., 2021",Year of birth of Leonardo da Vinci,992,2,1,1,500,492,2,1,date,1452,1391,1698
+"Schindler et al., 2021",Year Albert Einstein emigrated to the United States of America,984,2,1,1,498,486,2,1,date,1921,1905,1939
+"Schindler et al., 2021",Age of Mahatma Gandhi when he died,992,2,1,1,492,500,2,1,age,78,64,79
+"Schreiter et al., 2021",How large is the proportion of vegetarians in Germany? (%),46,2,1,1,21,25,3,2,percentage,8,11,83
+"Schreiter et al., 2021",What percentage of Germans smoke? (%),46,2,1,1,21,25,1,2,percentage,24,5,95
+"Schreiter et al., 2021",What percentage of Germany's land area is forested? (%),46,2,1,1,21,25,3,2,percentage,33,17,116
+"Schreiter et al., 2021",What is the percentage of smartphone owners in the world population? (%),46,2,1,1,21,25,1,2,percentage,66,10,75
+"Shanks et al., 2020, Study 1",Price of a meal at a restaurant (incidental anchor),144,2,1,1,73,71,5,1,price,,17,97
+"Shanks et al., 2020, Study 1",Price per night of a hotel room (incidental anchor),144,2,1,1,73,71,5,1,price,,404,44
+"Shanks et al., 2020, Study 1",Price of a Facebook membership (incidental anchor),144,2,1,1,73,71,5,1,price,,2,2020
+"Shanks et al., 2020, Study 1",Price of a pair of virtual reality glasses (incidental anchor),144,2,1,1,71,73,5,1,price,,400,4000
+"Shanks et al., 2020, Study 1",Price of a see-through iPad (incidental anchor),144,2,1,1,73,71,5,1,price,,66,606
+"Shanks et al., 2020, Study 1",Price of a meal at a bar (incidental anchor),144,2,1,1,71,73,5,1,price,,42,92
+"Shanks et al., 2020, Study 1",Price of a holiday package of a a beach resort (incidental anchor),144,2,1,1,73,71,5,1,price,,102,10210
+"Shanks et al., 2020, Study 2",Price of a meal at a restaurant (incidental anchor),273,2,1,1,136,137,5,1,price,,17,97
+"Shanks et al., 2020, Study 2",Price per night of a hotel room (incidental anchor),273,2,1,1,136,137,5,1,price,,404,44
+"Shanks et al., 2020, Study 2",Price of a Facebook membership (incidental anchor),273,2,1,1,136,137,5,1,price,,2,2020
+"Shanks et al., 2020, Study 2",Price of a pair of virtual reality glasses (incidental anchor),273,2,1,1,137,136,5,1,price,,400,4000
+"Shanks et al., 2020, Study 2",Price of a see-through iPad (incidental anchor),273,2,1,1,136,137,5,1,price,,66,606
+"Shanks et al., 2020, Study 2",Price of a meal at a bar (incidental anchor),273,2,1,1,137,136,5,1,price,,42,92
+"Shanks et al., 2020, Study 2",Price of a holiday package of a a beach resort (incidental anchor),273,2,1,1,136,137,5,1,price,,102,10210
+"Shanks et al., 2020, Study 2",Population of Chicago,273,2,1,1,137,136,2,1,population,2746388,1500000,5e+06
+"Shanks et al., 2020, Study 2",Length of the Amazon River (miles),273,2,1,1,136,137,2,1,length,4345,3000,6000
+"Shanks et al., 2020, Study 3",Price of a meal at a restaurant (incidental anchor),874,2,1,1,435,439,5,1,price,,17,97
+"Shanks et al., 2020, Study 3",Population of Chicago,874,2,1,1,439,435,2,1,population,2746388,2e+05,5e+06
+"Shanks et al., 2020, Study 3",Average number of babies born each day in the United States,874,2,1,1,435,439,2,1,birth rate,9850,500,50000
+"Shanks et al., 2020, Study 3",Distance from San Francisco to New York City  (miles),874,2,1,1,439,435,2,1,distance,2567,1500,6000
+"Shanks et al., 2020, Study 3",Year the World Wide Web was invented,874,2,1,1,435,439,2,1,date,1989,1979,1999
+"Weber et al., 2021",Shortest distance between Russia and USA (km),74,2,1,1,38,36,2,1,distance,4,2,7
+"Weber et al., 2021",Number of manned moon landings,67,2,1,1,35,32,2,1,number,6,3,11
+"Weber et al., 2021",Proportion of smokers in Germany,76,2,1,1,38,38,2,1,proportion,28,16,50
+"Weber et al., 2021",Number of sugar cubes in Coca Cola,71,2,1,1,36,35,2,1,quantity,12,7,22
+"Weber et al., 2021",Elon Musk's income per hour (m. dollars),75,2,1,1,38,37,2,1,price,15,8,27
+"Weber et al., 2021",Average temperature in June in Germany (C),73,2,1,1,37,36,2,1,temperature,15.5,9,38
+"Weber et al., 2021",Duration of one moon orbit around the earth (d),62,2,1,1,30,32,2,1,duration,27,15,49
+"Weber et al., 2021",Age of the oldest human on earth (years),64,2,1,1,35,29,2,1,age,122,68,220
+"Weber et al., 2021",Average height of a woman in Germany (cm),56,2,1,1,28,28,2,1,height,163.5,91,294
+"Weber et al., 2021",Top speed of an ICE 4 (kmh),68,2,1,1,34,34,2,1,speed,330,183,594
+"Weber et al., 2021",Average weight of a male icebear (kg),70,2,1,1,36,34,2,1,weight,450,250,810
+"Weber et al., 2021",Probability of four correct ones in the lottery,72,2,1,1,36,36,2,1,probability,1147,637,2065
+"Weber et al., 2021",Length of the Danube (km),76,2,1,1,38,38,2,1,length,2857,1587,5143
+"Weber et al., 2021",Height of the Zugspitze,67,2,1,1,35,32,2,1,height,2962,1646,5332
+"Weber et al., 2021",Size of a standard football field (sq m),74,2,1,1,36,38,2,1,area,7140,3967,12852
+"Weber et al., 2021",Earth circumference (km),62,2,1,1,34,28,2,1,circumference,40075,22264,72135
+"Weber et al., 2021",Average price of a new car in Germany (Euros),78,2,1,1,39,39,2,1,price,34000,18889,61200
+"Yoon et al., 2021, Form A",Film release date of The Godfather,96,1,1,0,96,0,2,1,date,1972,,1991
+"Yoon et al., 2021, Form A",Year of US presidency of J.K. Polk,97,1,0,1,0,97,2,1,date,1845,175,
+"Yoon et al., 2021, Form A",Average temperature in NY in September (F),96,1,0,1,0,96,2,1,temperature,74,58,
+"Yoon et al., 2021, Form A",Soldiers killed during the American Civil War,94,1,0,1,0,94,5,1,quantitity,750000,1700,
+"Yoon et al., 2021, Form A",Film release date of Taxi Driver,96,1,1,0,96,0,2,1,date,1976,,1988
+"Yoon et al., 2021, Form A",Width of Rhode Island state (m),97,1,0,1,0,97,2,1,width,37,200,
+"Yoon et al., 2021, Form A",Year the Boston Tea Party occurred,97,1,1,0,97,0,4,1,date,1773,,1776
+"Yoon et al., 2021, Form A",Gestation period of a puma (months),95,1,1,0,95,0,4,1,duration,3,,9
+"Yoon et al., 2021, Form A",Percentage of African nations that have national soccer teams,97,1,0,1,0,97,1,1,proportion,95,41,
+"Yoon et al., 2021, Form A",Maximum speed of a NASCAR during a race (mph),96,1,1,0,96,0,2,1,speed,215,,4
+"Yoon et al., 2021, Form A",Weight of an average pineapple (pounds),96,1,1,0,96,0,2,1,weight,1.5,,10
+"Yoon et al., 2021, Form A",Average low January temperature in St. Louis (F),96,33,20,13,56,40,1,1,temperature,24,14.5,30
+"Yoon et al., 2021, Form A",Year Van Gogh painted The Starry Night,96,58,27,31,43,53,1,1,date,1889,1820,1920
+"Yoon et al., 2021, Form B",Average winter temperature in Antarctica (F),89,1,1,0,89,0,2,1,temperature,-30,,1
+"Yoon et al., 2021, Form B",Height of the Empire State Building (ft),88,1,1,0,88,0,2,1,height,1454,,2465
+"Yoon et al., 2021, Form B",Year the electric vacuum was invented,90,1,1,0,90,0,2,1,date,1907,,1950
+"Yoon et al., 2021, Form B",Film release date of Casablanca,90,1,1,0,90,0,2,1,date,1942,,1969
+"Yoon et al., 2021, Form B",Age of actress Meryl Streep (years),90,1,0,1,0,90,2,1,age,64,47,
+"Yoon et al., 2021, Form B",Height of tallest redwood tree (ft),90,1,0,1,0,90,2,1,height,367,1516,
+"Yoon et al., 2021, Form B",Number of nations in the UN,90,1,1,0,90,0,2,1,quantity,193,,20
+"Yoon et al., 2021, Form B",Number of states in the US in 1880,90,1,1,0,90,0,4,1,quantity,38,,50
+"Yoon et al., 2021, Form B",Freezing point of saltwater (F),89,1,1,0,89,0,4,1,temperature,28,,32
+"Yoon et al., 2021, Form B",Length of a giraffe's tongue (in),88,1,1,0,88,0,2,1,length,20,,8
+"Yoon et al., 2021, Form B",Year the Spanish Inquisition took place,90,1,1,0,90,0,2,1,date,1478,,2000
+"Yoon et al., 2021, Form B",Gestation period of an African Elephant (m),90,1,0,1,0,90,2,1,duration,22,1,
+"Yoon et al., 2021, Form B",Year the French Revolution started,84,65,32,33,42,42,1,1,date,1789,1703.5,1860.5
+"Yoon et al., 2021, Form B","Average high temperature in July in Death Valley, CA (F)",88,31,20,11,49,39,1,1,temperature,116,104,95
+"Yoon et al., 2021, Form C",Jennifer Lopez's birth year,90,1,1,0,90,0,2,1,date,1970,,1988
+"Yoon et al., 2021, Form C",Number of people in the US killed by lightning strikes each year,88,1,0,1,0,88,2,1,quantity,53,25,
+"Yoon et al., 2021, Form C",Year the microwave was invented,89,1,1,0,89,0,2,1,date,1945,,1974
+"Yoon et al., 2021, Form C",Annual rainfall in Philadelphia (in),89,1,0,1,0,89,2,1,height,41,25,
+"Yoon et al., 2021, Form C",Average temperature in Montreal in December (F),90,1,1,0,90,0,2,1,temperature,26,,3
+"Yoon et al., 2021, Form C",Maximum speed of a housecat (mph),90,1,1,0,90,0,2,1,speed,30,,5
+"Yoon et al., 2021, Form C",Number of interstate highways in the US,90,1,0,1,0,90,2,1,quantity,66,500,
+"Yoon et al., 2021, Form C",Duration of Mars' orbit around sun (d),88,1,0,1,0,88,4,1,duration,687,365,
+"Yoon et al., 2021, Form C",Year the second European explorer after Columbus landed in the West Indies,89,1,0,1,0,89,4,1,date,1501,1492,
+"Yoon et al., 2021, Form C",Percentage of catholic US population,89,1,0,1,0,89,1,2,proportion,25,100,
+"Yoon et al., 2021, Form C","Distance between Washington, D.C., and New York City",88,1,1,0,88,0,1,1,distance,225,,600
+"Yoon et al., 2021, Form C","Population of Sacramento, CA",90,1,1,0,90,0,1,1,population,475000,,5e+06
+"Yoon et al., 2021, Form C",Average price of a sofa bed at IKEA (USD),86,35,7,28,7,79,1,1,price,693,200,72
+"Yoon et al., 2021, Form C",Number of novels written by Stephen King,86,33,5,28,9,77,1,1,quantity,51,25,60
+"Zimdahl & Undorf, 2021, Study 3",Chance of Recall,212,2,1,1,106,106,2,2,probability,,20,80
+"Bahník, 2021b",Average length of a Czech first name,1002,2,1,1,370,632,2,1,length,,4,9
+"Bahník, 2021b",Average price of a new car bought in the Czech Republic (CZK),1002,2,1,1,602,400,2,1,price,,200,900
+"Bahník, 2021b",Average age of current members of the Czech parliament,1002,2,1,1,490,512,2,1,age,,25,80
+"Bahník, 2021b",Unemployment rate in the Czech Republic,1002,2,1,1,430,572,2,2,proportion,,1,10
+"Bahník, 2021b",Average population of EU countries (millions),1002,2,1,1,546,456,2,1,population,,1,80
+"Bahník, 2021b",Average orbital period of Solar System planets around the Sun (d),1002,2,1,1,440,562,2,1,duration,,100,25000
+"Bahník, 2021b",Average weight of mammals in Prague Zoo (kg),1002,2,1,1,642,360,2,1,weight,,1,3000
+"Bahník, 2021b",Average salary in the Czech Republic (CZKK),1002,2,1,1,466,536,2,1,price,,15000,90000
+"Bahník, 2021b",Average annual temperature in Prague (°C),1002,2,1,1,384,618,2,1,temperature,,1,25
+"Bahník, 2021b",Average distance of European capitals from Prague (km),1002,2,1,1,384,618,2,1,distance,,300,2500
+"Imhoff & Barker, 2022, Study 2",Height of the Cologne cathedral (m),786,20,12,8,472,314,2,1,height,157.22,70,290
+"Ioannidis et al., 2020",Personal monetary valuation of one bottle of wine (Arrogant Frog Cabernet Sauvignon Merlot) (EUR),92,62,18,45,28,64,"",1,willingness to accept,,3.85,8.35
+"Ioannidis et al., 2020",Personal monetary valuation of one bottle of wine (Arrogant Frog Chardonnay Viognier) (EUR),94,62,16,46,22,72,"",1,willingness to accept,,3.8,9.05
+"Ioannidis et al., 2020",Personal monetary valuation of one bottle of wine (Adriatico Verdicchio) (EUR),68,48,21,27,34,34,"",1,willingness to accept,,3.5,8.2
+"Ioannidis et al., 2020",Personal monetary valuation of one bottle of wine (Piccini Chianti) (EUR),62,47,15,32,18,44,"",1,willingness to accept,,3.3,8.15
+"Hedgebeth, 2021","Virginia Commonwealth University rank in Virginia, USA",111,2,1,1,54,57,3,2,evaluation,,100,30
+"Hedgebeth, 2021","Turlington State University (fictional university) rank in Virginia, USA",96,2,1,1,49,47,3,2,evaluation,,100,30
+"Ambrus, Hartig, & McKay, 2021",SelfJudgment1,141,2,1,1,71,70,2,3,self-judgments,63.63551,5,95
+"Ambrus, Hartig, & McKay, 2021",SelfJudgment2,141,2,1,1,71,70,2,3,self-judgments,64.69159,5,95
+"Ambrus, Hartig, & McKay, 2021",SelfJudgment3,141,2,1,1,71,70,2,3,self-judgments,27.54206,5,95
+"Ambrus, Hartig, & McKay, 2021",SelfJudgment4,141,2,1,1,71,70,2,3,self-judgments,29.82243,5,95
+"Ambrus, Hartig, & McKay, 2021",SelfJudgment5,141,2,1,1,71,70,2,3,self-judgments,53.48598,5,95
+"Ambrus, Hartig, & McKay, 2021",SelfJudgment6,141,2,1,1,71,70,2,3,self-judgments,58.86916,5,95
+"Ambrus, Hartig, & McKay, 2021",SelfJudgment7,141,2,1,1,71,70,2,3,self-judgments,41.16822,5,95
+"Ambrus, Hartig, & McKay, 2021",SelfJudgment8,141,2,1,1,71,70,2,3,self-judgments,27.39252,5,95
+"McKay et al., 2022",Self-reported alcohol consumption (units),296,2,1,1,142,154,2,1,quantity,6.113095,4,40
+"Pavlovic, 2022",Percentage of children vaccinated against Rotavirus in 2021,24,2,1,1,12,12,2,1,percentage,49,10,60
+"Pavlovic, 2022",Height of the tallest building in the world (m),24,2,1,1,12,12,2,1,height,828,145,715
+"Pavlovic, 2022",Age of women shown in photograph,24,2,1,1,12,12,2,1,age,54,29,64

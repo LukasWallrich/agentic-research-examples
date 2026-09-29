@@ -1,0 +1,89 @@
+                       analysis         est          lo           hi
+                         <char>       <num>       <num>        <num>
+1:                    E1_xx_neg -0.03731295 -0.04804826 -0.026577627
+2:                    E1_xx_pos -0.05398625 -0.09078922 -0.017183294
+3:      E2_cells_far_below_near 15.00000000          NA           NA
+4:           E2_cells_evaluated 15.00000000          NA           NA
+5:            E3_hedges_g_slope  0.39724054  0.23976959  0.554711494
+6: E4_slope_on_scaled_extremity -0.02317839 -0.03677453 -0.009582252
+7:    E4_slope_adjusting_spread  0.02790964 -0.04985277  0.105672055
+8:        E4_spread_coefficient  0.06842885 -0.08429613  0.221153831
+                                                                                                  cell
+                                                                                                <char>
+ 1:                                       Bahník, 2021a || length of a typical football field (metres)
+ 2:                           Bahník, 2021a || height of the highest (Cheops) Pyramid in Giza (metres)
+ 3: Bahník, 2021a || distance of the subway tracks between stations Muzeum and Hlavni nadrazi (metres)
+ 4:                                           Bahník, 2021a || length of the Wenceslas Square (metres)
+ 5:                                  Bahník, 2021a || height of the highest tree in the world (metres)
+ 6:                                           Bahník, 2021a || Length of the Petrin funicular (metres)
+ 7:                              Bahník, 2021a || height of the tallest waterfall Salto Angel (metres)
+ 8:                                      Bahník, 2021a || length of the Great Strahov Stadion (metres)
+ 9:                                                    Bahník, 2021a || Height of the Eiffel tower (m)
+10:                                               Bahník, 2021a || length of the Nusle bridge (metres)
+11:                              Bahník, 2021a || height of the tallest bridge viaduct Millau (metres)
+12:                                               Bahník, 2021a || length of the longest ship (metres)
+13:                            Bahník, 2021a || height of the tallest skyscraper Burj Khalifa (metres)
+14:                                      Frech et al., 2021 || Distance between Lisbon and Moscow (km)
+15:                                                           Frech et al., 2021 || Population of Rome
+16:                                              Frech et al., 2021 || Altitude of Mt. Kilimanjaro (m)
+17:                            Frech et al., 2021 || Average number of babies born each day in Germany
+18:                             Yoon et al., 2021, Form C || Average price of a sofa bed at IKEA (USD)
+19:                              Yoon et al., 2021, Form C || Number of novels written by Stephen King
+20:                              Imhoff & Barker, 2022, Study 2 || Height of the Cologne cathedral (m)
+                                                                                                  cell
+                                                                                                <char>
+                   reference_short anchortype     n slope_near    slope_far
+                            <char>      <int> <int>      <num>        <num>
+ 1:                  Bahník, 2021a          1   512  0.2762018  0.030715882
+ 2:                  Bahník, 2021a          1   489  0.5405879 -0.022025140
+ 3:                  Bahník, 2021a          1   510  0.3594193 -0.146185400
+ 4:                  Bahník, 2021a          1   510  0.2428808  0.014716607
+ 5:                  Bahník, 2021a          1   512  0.3224695 -0.013642104
+ 6:                  Bahník, 2021a          1   510  0.3689884  0.184429859
+ 7:                  Bahník, 2021a          1   507  0.4076408  0.259870134
+ 8:                  Bahník, 2021a          1   494  0.2510148 -0.028786047
+ 9:                  Bahník, 2021a          1   511  0.1960864  0.066062263
+10:                  Bahník, 2021a          1   511  0.2413653 -0.009084251
+11:                  Bahník, 2021a          1   511  0.2517818  0.244745391
+12:                  Bahník, 2021a          1   492  0.2930936  0.256121203
+13:                  Bahník, 2021a          1   507  0.1798946  0.007803955
+14:             Frech et al., 2021          2   104         NA           NA
+15:             Frech et al., 2021          2   104         NA           NA
+16:             Frech et al., 2021          2   104         NA           NA
+17:             Frech et al., 2021          2   104         NA           NA
+18:      Yoon et al., 2021, Form C          1    85         NA           NA
+19:      Yoon et al., 2021, Form C          1    86  0.1695617 -0.034693442
+20: Imhoff & Barker, 2022, Study 2          2   786  0.5409569  0.278075830
+                   reference_short anchortype     n slope_near    slope_far
+                            <char>      <int> <int>      <num>        <num>
+           diff    diff_se
+          <num>      <num>
+ 1: -0.24548588 0.16144899
+ 2: -0.56261302 0.18268693
+ 3: -0.50560469 0.08660412
+ 4: -0.22816418 0.08338214
+ 5: -0.33611156 0.20270771
+ 6: -0.18455852 0.10875999
+ 7: -0.14777063 0.15375634
+ 8: -0.27980086 0.12281363
+ 9: -0.13002413 0.10338552
+10: -0.25044953 0.08544862
+11: -0.00703640 0.13561680
+12: -0.03697239 0.11956030
+13: -0.17209060 0.10139382
+14:          NA         NA
+15:          NA         NA
+16:          NA         NA
+17:          NA         NA
+18:          NA         NA
+19: -0.20425512 0.20344873
+20: -0.26288106 0.09712929
+           diff    diff_se
+          <num>      <num>
+    model draws within_b_and_g across_d_and_ai all_four
+   <char> <int>          <int>           <int>    <int>
+1:     M1   300              0              11        0
+2:    M1R   300              9               2        0
+3:     M2   300              0              37        0
+4:     M3   300              7               0        0
+5:     M4   300             24               0        0

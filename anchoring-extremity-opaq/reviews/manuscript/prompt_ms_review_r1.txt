@@ -1,0 +1,14 @@
+You are an expert reviewer for the journal Judgment and Decision Making, with strong expertise in anchoring, computational cognitive models, meta-analysis and statistics. Review the manuscript below as a critical but fair peer reviewer.
+
+Files (read-only):
+- Rendered manuscript text (read this first; it is the main object of review): /Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/scratch_manuscript.md (tables render as markdown pipes; figures are PNGs in /Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/figures/).
+- Source with inline R: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper/manuscript/manuscript.qmd
+- Preregistration: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper/prereg/preregistration.md
+- Deviations: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper/deviations.md
+- Analysis code: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper/R/ ; outputs: /Users/lukaswallrich/Documents/Coding/ai-jdm-paper/output/
+
+Assess: (1) whether the conclusions follow from the evidence (and are calibrated to its strength — e.g., dependence on one study, random vs fixed anchors, across/within discrepancy); (2) the theoretical framing and whether the process models are fairly represented; (3) statistical and methodological soundness (mixed model with x|x| curvature, delta-method rho, meta-regression, gates, equivalence bounds, simulations); (4) whether the preregistration was followed and deviations are transparently reported; (5) clarity, structure, and anything missing that a JDM reader needs (e.g., a table describing the within-item studies; interpretation of elasticity units); (6) any factual errors or internal inconsistencies between text, tables and figures.
+
+Output: a numbered list of comments, each labelled MAJOR or MINOR, with location, the problem, and a concrete suggested fix. Then give an overall recommendation (accept / minor revision / major revision / reject) and state explicitly whether any MAJOR issue remains. End with your final answer under a heading "## Answer".
+
+Do not rerun analyses or simulations; inspect files only. Keep the review focused; aim to finish within about 15 minutes.

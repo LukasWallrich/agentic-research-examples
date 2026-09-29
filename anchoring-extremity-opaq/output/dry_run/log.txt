@@ -1,0 +1,60 @@
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+      set  rows invalid_estimate gross_error
+   <char> <int>            <int>       <int>
+1: within  7952                0           0
+2: across 24147                0           4
+      set n_rows n_cells n_participants random_structure         b      b_lo
+   <char>  <int>   <int>          <int>            <int>     <num>     <num>
+1: pooled   7952      20           1492                3 0.4476675 0.4272415
+2: random   6750      15            602                3 0.4469793 0.4257600
+3:  fixed   1202       5            890                2 0.4029078 0.2036056
+        b_hi           g         g_lo       g_hi      g_df       g_p
+       <num>       <num>        <num>      <num>     <num>     <num>
+1: 0.4680935 0.003862383 -0.002864892 0.01058966 7849.7048 0.2604273
+2: 0.4681987 0.003957171 -0.002824929 0.01073927 6680.9449 0.2527505
+3: 0.6022100 0.013512952 -0.031910123 0.05893603  903.5335 0.5594645
+           rho       rho_lo     rho_hi      verdict
+         <num>        <num>      <num>       <char>
+1: 0.008627793 -0.006733183 0.02398877         flat
+2: 0.008853141 -0.006676822 0.02438310         flat
+3: 0.033538572 -0.086393825 0.15347097 inconclusive
+   n_cells n_studies n_rows   mean_ai mean_ai_lo mean_ai_hi         slope
+     <int>     <int>  <int>     <num>      <num>      <num>         <num>
+1:     129        40  24143 0.4502634  0.4470823  0.4534446 -0.0001590725
+       slope_lo    slope_hi   slope_p robust_fallback verdict
+          <num>       <num>     <num>          <lgcl>  <char>
+1: -0.003683643 0.003365498 0.9295127           FALSE    flat
+Index: <model>
+    model g_inside rho_inside slope_inside b_inside mean_ai_inside
+   <char>   <lgcl>     <lgcl>       <lgcl>   <lgcl>         <lgcl>
+1:     M0     TRUE       TRUE         TRUE    FALSE          FALSE
+2:     M1    FALSE      FALSE        FALSE     TRUE          FALSE
+3:    M1R     TRUE       TRUE         TRUE    FALSE           TRUE
+4:     M2     TRUE       TRUE         TRUE     TRUE           TRUE
+5:     M3    FALSE      FALSE        FALSE    FALSE          FALSE
+6:     M4    FALSE      FALSE        FALSE     TRUE          FALSE
+   survives_shape survives_level
+           <lgcl>         <lgcl>
+1:          FALSE          FALSE
+2:          FALSE          FALSE
+3:           TRUE          FALSE
+4:           TRUE           TRUE
+5:          FALSE          FALSE
+6:          FALSE          FALSE
+                  analysis           est           lo           hi
+                    <char>         <num>        <num>        <num>
+1:  R1_median_regression_g  1.788261e-03 -0.004218910  0.010433673
+2: R2_far_minus_near_slope  2.405125e-02 -0.012550710  0.060653217
+3:     R3_without_bahnik_g  5.734422e-03 -0.030978266  0.042447109
+4:      R4_raw_index_slope -6.743609e-02 -0.114340769 -0.020531411
+5:     R5_covariates_slope  8.611145e-04 -0.003373256  0.005095485
+6:  R6_without_weber_slope  1.331816e-04 -0.003435527  0.003701890
+7:   R7_max_distance_slope -1.192216e-03 -0.003933070  0.001548639
+8:     R7_log_spread_slope  4.400853e-05 -0.001717274  0.001805291
