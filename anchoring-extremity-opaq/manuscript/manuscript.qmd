@@ -1,4 +1,5 @@
 ---
+# AI-GENERATED DEMONSTRATION — NOT PEER REVIEWED — NOT FOR CITATION. See AI_GENERATED.md in the example folder.
 title: "Anchor extremity and proportional anchor influence: A preregistered, model-based test in open trial-level data"
 shorttitle: "Anchoring and anchor extremity"
 author:
@@ -28,6 +29,8 @@ execute:
   warning: false
   message: false
 ---
+
+> **AI-GENERATED DEMONSTRATION — NOT PEER REVIEWED — NOT FOR CITATION.** agentic-research-examples: AI-generated demonstration for the tutorial "Easing into agentic AI in research". See AI_GENERATED.md.
 
 ```{r setup}
 library(data.table)

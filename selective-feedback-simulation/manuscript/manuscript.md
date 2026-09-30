@@ -1,4 +1,5 @@
 ---
+# AI-GENERATED DEMONSTRATION — NOT PEER REVIEWED — NOT FOR CITATION. See AI_GENERATED.md in the example folder.
 title: "Learning from disagreements: When selective feedback helps and harms advisor evaluation"
 author: "Lukas Wallrich — draft; author approval pending"
 date: ""
@@ -10,6 +11,8 @@ geometry: margin=1in
 linestretch: 1.15
 colorlinks: true
 ---
+
+> **AI-GENERATED DEMONSTRATION — NOT PEER REVIEWED — NOT FOR CITATION.** agentic-research-examples: AI-generated demonstration for the tutorial "Easing into agentic AI in research". See AI_GENERATED.md.
 
 # Abstract
 

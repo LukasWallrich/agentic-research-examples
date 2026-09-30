@@ -1,3 +1,5 @@
+> **AI-GENERATED DEMONSTRATION — NOT PEER REVIEWED — NOT FOR CITATION.** agentic-research-examples: AI-generated demonstration for the tutorial "Easing into agentic AI in research". See AI_GENERATED.md.
+
 Dear Editors of *Judgment and Decision Making*,
 
 Please consider the enclosed manuscript, "Anchor extremity and proportional anchor influence: A preregistered, model-based test in open trial-level data", as an Empirical Article.

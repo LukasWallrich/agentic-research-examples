@@ -1,3 +1,5 @@
+> **AI-GENERATED DEMONSTRATION — NOT PEER REVIEWED — NOT FOR CITATION.** agentic-research-examples: AI-generated demonstration for the tutorial "Easing into agentic AI in research". See AI_GENERATED.md.
+
 Dear Editors,
 
 Please consider “Learning from disagreements: When selective feedback helps and harms advisor evaluation” as a Theory Article for *Judgment and Decision Making*.

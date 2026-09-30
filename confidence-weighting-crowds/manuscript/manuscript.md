@@ -1,3 +1,5 @@
+> **AI-GENERATED DEMONSTRATION — NOT PEER REVIEWED — NOT FOR CITATION.** agentic-research-examples: AI-generated demonstration for the tutorial "Easing into agentic AI in research". See AI_GENERATED.md.
+
 # When does weighting by confidence help the crowd? A finite-sample boundary and a test of the standard account
 
 **Article type:** Theory Article (with an empirical test)
