@@ -33,14 +33,14 @@ Facts that affect how the examples are read:
 
 ## AI-generation watermarks
 
-Commit `WATERMARK_COMMIT` adds a warning to every manuscript and cover letter, on top of the imported history:
+Commit `ee1629c` adds a warning to every manuscript and cover letter, on top of the imported history:
 
 - PDF: a diagonal, semi-transparent watermark on every page ("AI-GENERATED DEMONSTRATION — NOT PEER REVIEWED — NOT FOR CITATION") and a footer line.
 - HTML: a fixed banner at the top of the page.
 - Word: a header on every page and a banner as the first paragraph.
 - Markdown and Quarto sources: a banner at the top.
 
-`tools/watermark_outputs.py` applies these marks. The unwatermarked files are in the final imported commit of each example (`89c45f5`, `61ace46`, `4afe867`) and in the parent of `WATERMARK_COMMIT`. For example:
+`tools/watermark_outputs.py` applies these marks. The unwatermarked files are in the final imported commit of each example (`89c45f5`, `61ace46`, `4afe867`) and in the parent of `ee1629c`. For example:
 
 ```sh
 git show 89c45f5:manuscript/manuscript.pdf > manuscript_original.pdf
