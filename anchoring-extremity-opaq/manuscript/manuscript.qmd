@@ -10,7 +10,6 @@ author:
         department: School of Business and Law
         city: London
         country: United Kingdom
-    email: lukas.wallrich@gmail.com
     corresponding: true
 bibliography: [refs.bib, refs_manual.bib]
 csl: apa.csl
